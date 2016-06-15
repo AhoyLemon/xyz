@@ -289,18 +289,18 @@ header h1 {
   -webkit-box-align: strech;
   -ms-flex-align: strech;
   align-items: strech;
-  justify-content: space-around;
+  justify-content: center;
   padding-left: 1em;
   padding-right: 1em;
 }
 
 .site-cards .card {
-  width: 410px;
-  flex-basis: 410px;
+  width: 370px;
+  flex-basis: 370px;
   flex-grow: 0;
   flex-shrink: 1;
   align-self: auto;
-  height: 280px;
+  height: 310px;
   margin-bottom: 3em;
   margin-left: 1em;
   margin-right: 1em;
@@ -312,13 +312,14 @@ header h1 {
   position: relative;
   transform-style: preserve-3d;
   transition: 0.3s;
+  transition-delay: 0.1s;
   width: 100%;
   height: 100%;
 }
 
 .site-cards .card .logo {
-  width: 190.4px;
-  height: 190.4px;
+  width: 210.8px;
+  height: 210.8px;
 }
 
 .site-cards .card .front, .site-cards .card .back {
