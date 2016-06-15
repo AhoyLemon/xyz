@@ -1,0 +1,88 @@
+- var siteTitle = "Lemon's Dumb Websites"
+- var siteURL = "http://ahoylemon.xyz"
+- var pageTitle = "Lemon makes some dumb websites. Here's a bunch of them."
+- var description = "..."
+- var d = new Date()
+- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()
+
+doctype html
+html(lang="en")
+  head
+    include partials/head.jade
+  body
+    //include partials/header.jade
+    //include partials/sidebar.jade
+    
+    .site-cards
+      figure.card
+        a.flipper(href="http://damn.dog")
+          .front(style="background-color:#222730;")
+            img.logo(src="/svg/damndog.svg")
+          .back
+            h3.title damn.dog
+            p The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.
+            p Called "The Best Game On The Internet" by Gizmodo, damn.dog has been played over two million times.
+            .launched February 4th, 2016
+      
+      figure.card
+        a.flipper(href="http://idiots.win")
+          .front(style="background-color:#f1da5e;")
+            img.logo(src="/svg/idiots.svg")
+          .back
+            h3.title idiots.win
+            p The game that challenges you to figure out what people are searching for on Google.
+            p idiots.win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.
+            .launched June 2nd, 2016
+    
+      figure.card
+        a.flipper(href="http://frankwest.xyz")
+          .front(style="background-color:#e8d4ad;")
+            img.logo(src="/svg/frankwest.svg")
+          .back
+            h3.title frankwest.xyz
+            p Frank West sometimes pronounces emoticons. I thought this would be useful, so I built a soundboard where Frank West would pronounce a whole bunch of emoticons.
+            p Even in comparison to the other sites on this page, this one is really stupid.
+            .launched June 15th, 2016
+      
+      figure.card
+        a.flipper(href="http://ahoylemon.github.io/minnebar2016")
+          .front(style="background-image:url(/img/tyra.jpg)")
+            img.logo(src="/svg/jade-n-sass.svg")
+          .back
+            h3.title Write prettier code with Jade and Sass.
+            p I did a talk on Jade & Sass for Minnebar2016. Afterwards, I put the slideshow I used up for public consumption.
+            p Spacebar to advance screens.
+            .launched April 23rd, 2016
+      
+      figure.card
+        a.flipper(href="http://firings.xyz")
+          .front(style="background-color:#e8d4ad;")
+            img.logo(src="/img/firings.png")
+          .back
+            h3.title firings.xyz
+            p Based on a conversation with somebody, I wanted to try to build a website that would give you up to the second news of who has been fired in the San Francisco Tech Industry.
+            p In reality, it just works an alogorith to generate random strings. Fun for a couple minutes, anyway.
+            .launched October 14th, 2015
+            
+      figure.card
+        a.flipper(href="https://github.com/AhoyLemon")
+          .front(style="background-color:#dedcee;")
+            img.logo(src="/svg/thefplus.svg")
+          .back
+            h3.title The F Plus
+            p When possible (and convenient), I put my code up on GitHub.
+            .launched December 14th, 2014
+            
+      figure.card
+        a.flipper(href="https://thefpl.us")
+          .front(style="background-color:#231f20;")
+            img.logo(src="/svg/github.svg")
+          .back
+            h3.title AhoyLemon on GitHub
+            p When possible (and convenient), I put my code up on GitHub.
+      
+      
+        
+    
+    //include partials/schema.jade
+    include partials/javascripts.jade

@@ -1,0 +1,41 @@
+main { @include flex-container(); justify-content: center; height:80vh; align-content: center; align-items: center;
+  .child { width: 100%; max-width: $max-width; margin-left: auto; margin-right: auto; }
+  .search-top { padding: 0.25em 0.95em; font-size:1.8em; font-weight: $medium;padding: 0; color:lighten($blue,40%); padding-left: 0.6em; }
+}
+
+.search-box { height: 2rem; background: lime; position: relative;
+  .fake-input, input { display: block; border:1px solid $black; outline: none; width:100%; font-size:1.3rem; padding:0.25em 0.65em; background:$white; font-weight: bold; color:$black; }
+  .fake-input { height: 2.6rem; }
+  ul { background-color:$white; border:1px solid $black; @include position(absolute,2.5rem,0,null,0); color:$black; padding:0;
+    li { list-style: none; font-size:1.3rem; padding: 0.15em .75em; position: relative;
+      &:hover { background:$blue; cursor: pointer; }
+      &.wrong-answer { background:rgba($red,0.22); color: rgba($red,0.77);
+        &:after { @include position(absolute,0,0.5em,0); font-size:1.2em; font-weight:bold; }
+        &[data-place="1"]:after { content:'2'; }
+        &[data-place="2"]:after { content:'3'; }
+        &[data-place="3"]:after { content:'4'; }
+        &[data-place="4"]:after { content:'5'; }
+        &[data-place="5"]:after { content:'6'; }
+        &[data-place="6"]:after { content:'7'; }
+        &[data-place="7"]:after { content:'8'; }
+        &[data-place="8"]:after { content:'9'; }
+        &[data-place="9"]:after { content:'10'; }
+      }
+      &.correct-answer { background:rgba($green,0.22); color: rgba($green,0.77);
+        &:after { @include position(absolute,0,0.5em,0); font-size:1.2em; font-weight:bold; content:"\2713 "; cursor: default; }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:$max-width) {
+  main {
+    .search-top { font-size:5.5vw; }
+  }
+}
+
+@media screen and (max-height:720px) {
+  main { align-items: flex-start; padding-top: 7rem;
+    
+  }
+}
