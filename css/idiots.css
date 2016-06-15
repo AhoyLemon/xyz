@@ -198,7 +198,7 @@ html {
 body {
   background-color: #f0f1f2;
   color: #313131;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Yrsa", serif;
 }
 
 img {
@@ -206,17 +206,8 @@ img {
   height: auto;
 }
 
-a {
-  cursor: pointer;
-  color: #ee2a2a;
-}
-
 b, strong {
   font-weight: 600;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Catamaran", sans-serif;
 }
 
 h1 {
@@ -245,6 +236,10 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 105%;
+}
+
+P {
+  margin-bottom: 1em;
 }
 
 ul {
@@ -427,149 +422,19 @@ main .search-top {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
-  height: 3.5rem;
-  z-index: 4;
-}
-
-header > .inner {
-  padding-right: 4rem;
-}
-
-header span {
-  display: block;
-  vertical-align: middle;
-}
-
-header .label {
-  font-size: 0.7em;
-  font-family: "Catamaran", sans-serif;
-  line-height: 200%;
-}
-
-header .number {
-  font-size: 1.8em;
-  font-weight: 300;
-  line-height: 50%;
-  color: #3eae12;
-}
-
-header .number.perfect {
-  color: #52d88e;
-}
-
-header .number.great {
-  color: #1eaefc;
-}
-
-header .number.okay {
-  color: #ca62f0;
-}
-
-header .number.bad {
-  color: #ecb528;
-}
-
-header .number.failure {
-  color: #ee2c2c;
-}
-
-header > .inner {
-  color: #eee;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: strech;
-  -ms-flex-align: strech;
-  align-items: strech;
-  padding-top: 0.2rem;
-}
-
-header > .inner .box {
-  flex-basis: 16.6%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
   text-align: center;
-  height: 2.8em;
+  padding: 1em;
 }
 
-header > .inner .box.zero {
-  opacity: 0;
+header h1, header h3 {
+  display: inline;
 }
 
-header .hamburger-holder {
-  position: absolute;
-  top: 0.8rem;
-  right: 1rem;
+header h1 {
+  font-size: 4.255em;
+  padding-right: 0.25em;
 }
 
-header .hamburger {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: #4885ed;
-  outline: none;
-  height: 2.25rem;
-  width: 2.25rem;
-}
-
-header .hamburger svg {
-  fill: #f0f1f2;
-}
-
-header .hamburger g {
-  transform-origin: center;
-  transition: all 0.3s linear;
-}
-
-header .hamburger .close {
-  opacity: 0.2;
-  transform: scale(0.2);
-}
-
-header .hamburger.is-active .close {
-  opacity: 1;
-  transform: scale(1);
-}
-
-header .hamburger.is-active .open {
-  opacity: 0.2;
-  transform: scale(0.2);
-}
-
-/**
-@media (max-width:$max-width) {
-  header { 
-    //.number { font-size:1.5em;}
-    > .inner {
-      .box { @include flex-item(33.3333%);
-        &.hamburger-holder { @include flex-item(3rem); }
-      }
-    } 
-    .hamburger-holder { text-align: right !important;
-      .hamburger { position:relative; top: auto; right:auto; height: 100%;
-        svg { height: 1.6rem; }
-      }
-    }
-  }
-}
-
-**/
 .sidebar {
   position: fixed;
   top: 3.5rem;

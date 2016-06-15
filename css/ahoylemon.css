@@ -262,6 +262,20 @@ ul li {
   }
 }
 
+header {
+  text-align: center;
+  padding: 1em;
+}
+
+header h1, header h3 {
+  display: inline;
+}
+
+header h1 {
+  font-size: 4.255em;
+  padding-right: 0.25em;
+}
+
 .site-cards {
   display: -webkit-box;
   display: -webkit-flex;
@@ -276,7 +290,8 @@ ul li {
   -ms-flex-align: strech;
   align-items: strech;
   justify-content: space-around;
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .site-cards .card {
@@ -285,7 +300,7 @@ ul li {
   flex-grow: 0;
   flex-shrink: 1;
   align-self: auto;
-  height: 270px;
+  height: 280px;
   margin-bottom: 3em;
   margin-left: 1em;
   margin-right: 1em;
@@ -302,8 +317,8 @@ ul li {
 }
 
 .site-cards .card .logo {
-  width: 183.6px;
-  height: 183.6px;
+  width: 190.4px;
+  height: 190.4px;
 }
 
 .site-cards .card .front, .site-cards .card .back {
@@ -332,8 +347,10 @@ ul li {
   height: 100%;
   background: white;
   border: 1px solid #313131;
-  box-shadow: 0.15em 0.15em 0.35em rgba(49, 49, 49, 0.75);
+  box-shadow: -0.25em -0.25em 0.6em rgba(49, 49, 49, 0.75);
   padding: 1em;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .site-cards .card .back .title {

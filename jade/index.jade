@@ -10,14 +10,14 @@ html(lang="en")
   head
     include partials/head.jade
   body
-    //include partials/header.jade
+    include partials/header.jade
     //include partials/sidebar.jade
     
     .site-cards
       figure.card
         a.flipper(href="http://damn.dog")
           .front(style="background-color:#222730;")
-            img.logo(src="/svg/damndog.svg")
+            img.logo(src="svg/damndog.svg")
           .back
             h3.title damn.dog
             p The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.
@@ -27,7 +27,7 @@ html(lang="en")
       figure.card
         a.flipper(href="http://idiots.win")
           .front(style="background-color:#f1da5e;")
-            img.logo(src="/svg/idiots.svg")
+            img.logo(src="svg/idiots.svg")
           .back
             h3.title idiots.win
             p The game that challenges you to figure out what people are searching for on Google.
@@ -37,7 +37,7 @@ html(lang="en")
       figure.card
         a.flipper(href="http://frankwest.xyz")
           .front(style="background-color:#e8d4ad;")
-            img.logo(src="/svg/frankwest.svg")
+            img.logo(src="svg/frankwest.svg")
           .back
             h3.title frankwest.xyz
             p Frank West sometimes pronounces emoticons. I thought this would be useful, so I built a soundboard where Frank West would pronounce a whole bunch of emoticons.
@@ -46,8 +46,8 @@ html(lang="en")
       
       figure.card
         a.flipper(href="http://ahoylemon.github.io/minnebar2016")
-          .front(style="background-image:url(/img/tyra.jpg)")
-            img.logo(src="/svg/jade-n-sass.svg")
+          .front(style="background-image:url(img/tyra.jpg)")
+            img.logo(src="svg/jade-n-sass.svg")
           .back
             h3.title Write prettier code with Jade and Sass.
             p I did a talk on Jade & Sass for Minnebar2016. Afterwards, I put the slideshow I used up for public consumption.
@@ -57,7 +57,7 @@ html(lang="en")
       figure.card
         a.flipper(href="http://firings.xyz")
           .front(style="background-color:#e8d4ad;")
-            img.logo(src="/img/firings.png")
+            img.logo(src="img/firings.png")
           .back
             h3.title firings.xyz
             p Based on a conversation with somebody, I wanted to try to build a website that would give you up to the second news of who has been fired in the San Francisco Tech Industry.
@@ -67,16 +67,17 @@ html(lang="en")
       figure.card
         a.flipper(href="https://github.com/AhoyLemon")
           .front(style="background-color:#dedcee;")
-            img.logo(src="/svg/thefplus.svg")
+            img.logo(src="svg/thefplus.svg")
           .back
             h3.title The F Plus
-            p When possible (and convenient), I put my code up on GitHub.
+            p I do a podcast, and also work a fair amount on the website for that podcast, which is a complicated piece of web development.
+            p That said, I'm pretty happy with how this whole thing works.
             .launched December 14th, 2014
             
       figure.card
         a.flipper(href="https://thefpl.us")
           .front(style="background-color:#231f20;")
-            img.logo(src="/svg/github.svg")
+            img.logo(src="svg/github.svg")
           .back
             h3.title AhoyLemon on GitHub
             p When possible (and convenient), I put my code up on GitHub.
