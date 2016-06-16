@@ -198,6 +198,7 @@ html {
 body {
   background-color: #f0f1f2;
   color: #313131;
+  background-image: url(../img/cork-wallet.png);
   font-family: "Yrsa", serif;
 }
 
@@ -262,18 +263,99 @@ ul li {
   }
 }
 
-header {
-  text-align: center;
+aside {
   padding: 1em;
+  background: #e4e72c;
+  color: #313131;
+  font-size: 22px;
 }
 
-header h1, header h3 {
-  display: inline;
-}
-
-header h1 {
-  font-size: 4.255em;
+aside h1 {
   padding-right: 0.25em;
+  line-height: 115%;
+}
+
+aside a {
+  color: #c85c0d;
+  text-decoration: none;
+}
+
+aside ul {
+  padding-left: 0;
+}
+
+aside li {
+  list-style: none;
+}
+
+aside li span {
+  line-height: 160%;
+  font-size: 1.35em;
+}
+
+aside li .icon {
+  display: inline-block;
+  height: 1em;
+  margin-right: 0.5em;
+  fill: currentColor;
+}
+
+aside li a:hover span {
+  text-decoration: underline;
+}
+
+aside li a:hover .icon {
+  transform: scale(1.25);
+}
+
+@media screen and (max-width: 887px) {
+  aside {
+    position: relative;
+    margin-bottom: 1em;
+  }
+  aside h1 {
+    font-size: 8.5vw;
+    text-align: center;
+  }
+  aside h1 .big {
+    font-size: 1.5em;
+  }
+  aside ul {
+    text-align: center;
+  }
+  aside ul li {
+    display: inline-block;
+  }
+  aside ul li span {
+    margin-right: 0.5em;
+  }
+}
+
+@media screen and (min-width: 888px) {
+  aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 22rem;
+    box-shadow: inset 0 0 0.5em rgba(49, 49, 49, 0.95);
+  }
+  aside h1 {
+    font-size: 2.35em;
+    margin-bottom: 0.5em;
+  }
+  aside h1 .big {
+    font-size: 2.21em;
+  }
+  aside p {
+    font-size: 26px;
+  }
+  aside ul {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    left: 1em;
+  }
 }
 
 .site-cards {
@@ -382,4 +464,11 @@ header h1 {
 
 .site-cards .card:active {
   transform: scale(0.9);
+}
+
+@media screen and (min-width: 888px) {
+  main {
+    margin-left: 22rem;
+    padding-top: 2em;
+  }
 }

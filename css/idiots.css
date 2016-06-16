@@ -421,18 +421,67 @@ main .search-top {
   }
 }
 
-header {
-  text-align: center;
+aside {
   padding: 1em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #c85c0d;
+  color: #eee;
+  width: 22rem;
+  font-size: 22px;
+  box-shadow: inset 0 0 0.5em rgba(49, 49, 49, 0.95);
 }
 
-header h1, header h3 {
-  display: inline;
-}
-
-header h1 {
-  font-size: 4.255em;
+aside h1 {
+  font-size: 2.4em;
   padding-right: 0.25em;
+  line-height: 115%;
+  text-shadow: 2px 2px 4px rgba(49, 49, 49, 0.75);
+  margin-bottom: 0.5em;
+}
+
+aside h1 .big {
+  font-size: 2.2em;
+}
+
+aside a {
+  color: #f0f663;
+  text-decoration: none;
+}
+
+aside ul {
+  padding-left: 0;
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  left: 1em;
+}
+
+aside li {
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+
+aside li span {
+  line-height: 160%;
+  font-size: 1.35em;
+}
+
+aside li .icon {
+  display: inline-block;
+  height: 1em;
+  margin-right: 0.5em;
+  fill: currentColor;
+}
+
+aside li a:hover span {
+  text-decoration: underline;
+}
+
+aside li a:hover .icon {
+  transform: scale(1.25);
 }
 
 .sidebar {

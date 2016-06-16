@@ -10,10 +10,9 @@ html(lang="en")
   head
     include partials/head.jade
   body
-    include partials/header.jade
-    //include partials/sidebar.jade
+    include partials/aside.jade
     
-    .site-cards
+    main.site-cards
       figure.card
         a.flipper(href="http://damn.dog")
           .front(style="background-color:#222730;")
@@ -66,7 +65,6 @@ html(lang="en")
             
       figure.card
         a.flipper(href="https://thefpl.us")
-        
           .front(style="background-color:#dedcee;")
             img.logo(src="svg/thefplus.svg")
           .back
@@ -74,6 +72,15 @@ html(lang="en")
             p I do a podcast, and also work a fair amount on the website for that podcast, which is a complicated piece of web development.
             p That said, I'm pretty happy with how this whole thing works.
             .launched December 14th, 2014
+      
+      figure.card
+        a.flipper(href="http://ballp.it")
+          .front(style="background-color:#e3eced;")
+            img.logo(src="svg/ballpit.svg")
+          .back
+            h3.title ballp.it
+            p ballp.it is the forum set up to support the community that surrounds The F Plus. It uses PHP software called SMF, but has been modified heavily.
+            .launched February 16th, 2013
       
       figure.card
         a.flipper(href="http://wrongest.website")
@@ -84,13 +91,14 @@ html(lang="en")
             p The Wrongest Words is a multiplayer card game where players must defend the very stupid statements in front of them.
             .launched March 26, 2015
             
-      figure.card
-        a.flipper(href="https://github.com/AhoyLemon")
-          .front(style="background-color:#231f20;")
-            img.logo(src="svg/github.svg")
-          .back
-            h3.title AhoyLemon on GitHub
-            p When possible (and convenient), I put my code up on GitHub.
+      //-
+        figure.card
+          a.flipper(href="https://github.com/AhoyLemon")
+            .front(style="background-color:#231f20;")
+              img.logo(src="svg/github.svg")
+            .back
+              h3.title AhoyLemon on GitHub
+              p When possible (and convenient), I put my code up on GitHub.
       
       
         

@@ -1,0 +1,40 @@
+aside { padding:1em; background:$yellow; color:$black; font-size:22px;
+  
+  h1 {  padding-right: 0.25em; line-height: 115%; // text-shadow:2px 2px 4px rgba($white,0.75);
+  }
+  a { color:$orange; text-decoration: none; }
+  ul { padding-left: 0; }
+  li { list-style: none;
+    span { line-height: 160%; font-size:1.35em; }
+    .icon { display: inline-block; height: 1em; margin-right: 0.5em; fill:currentColor; }
+    a { 
+      &:hover {
+        span { text-decoration: underline; }
+        .icon { transform: scale(1.25); }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:887px) {
+  aside { position: relative; margin-bottom: 1em;
+    h1 { font-size:8.5vw; text-align: center;
+      .big { font-size:1.5em; }
+    }
+    ul { text-align: center; 
+      li { display: inline-block;
+        span { margin-right: 0.5em; }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:888px) {
+  aside { @include position(fixed,0,null,0,0); width:$sidebar; box-shadow:inset 0 0 0.5em rgba($black,0.95);
+    h1 { font-size:2.35em; margin-bottom:0.5em;
+      .big { font-size:2.21em; }
+    }
+    p { font-size:26px; }
+    ul { @include position(absolute,null,1em,1em,1em); }
+  }
+}
