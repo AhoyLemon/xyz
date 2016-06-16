@@ -1,4 +1,4 @@
-![idiots win](http://ahoylemon.xyz/og-image.png)
+![ahoylemon.xyz](http://ahoylemon.xyz/og-image.png)
 ####(A Site Lemon Built To Show Sites Lemon Built)
 
 ### What is this?
