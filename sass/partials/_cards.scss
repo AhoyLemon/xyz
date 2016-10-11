@@ -7,16 +7,16 @@ $logosize:($card-height * 0.68);
     .flipper { display: block; position:relative; transform-style: preserve-3d; transition:0.3s; transition-delay: 0.1s; width:100%; height:100%; }
     .logo { width:$logosize; height:$logosize; }
     .front, .back { backface-visibility: hidden; @include position(absolute,0,0,0,0); color:$black; }
-    .front { border:1px solid $black; box-shadow:-0.15em -0.15em 0.35em rgba($black,0.75); text-align:center; padding-top:2em; @include background(); }
-    .back { transform: rotateY(180deg); width:100%; height:100%; background:white; border:1px solid $black; box-shadow:-0.25em -0.25em 0.6em rgba($black,0.75); padding:1em;
+    .front { border:1px solid $black; box-shadow:-0.075em -0.075em 0.15em rgba($black,0.75); text-align:center; padding-top:2em; @include background(); }
+    .back { transform: rotateY(180deg); width:100%; height:100%; background:white; border:1px solid $black; box-shadow:-0.25em -0.25em 0.6em rgba($black,0.75); padding:1em; overflow-x: hidden; overflow-y: auto;
       .title { text-align: center; display: block; margin-bottom: 0.5em; font-size:1.75em; font-weight:$bold; text-decoration:none; }
-      overflow-x: hidden; overflow-y: auto;
     }
     .launched { font-weight: $bold;
       &:before { content: "Launched: "; font-weight:$medium; }
     }
     &:hover { transform: scale(1.1);
       .flipper { transform: rotateY(180deg); }
+      .front { box-shadow:-0.15em -0.15em 0.3em rgba($black,0.75); }
     }
     &:active { transform:scale(0.9); }
   }

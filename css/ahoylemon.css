@@ -416,7 +416,7 @@ aside li a:hover .icon {
 
 .site-cards .card .front {
   border: 1px solid #313131;
-  box-shadow: -0.15em -0.15em 0.35em rgba(49, 49, 49, 0.75);
+  box-shadow: -0.075em -0.075em 0.15em rgba(49, 49, 49, 0.75);
   text-align: center;
   padding-top: 2em;
   background-size: cover;
@@ -460,6 +460,10 @@ aside li a:hover .icon {
 
 .site-cards .card:hover .flipper {
   transform: rotateY(180deg);
+}
+
+.site-cards .card:hover .front {
+  box-shadow: -0.15em -0.15em 0.3em rgba(49, 49, 49, 0.75);
 }
 
 .site-cards .card:active {
