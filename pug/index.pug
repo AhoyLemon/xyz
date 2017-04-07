@@ -1,0 +1,76 @@
+- var siteTitle = "Hi, my name is Lemon."
+- var siteURL = "http://ahoylemon.xyz"
+- var description = "I make a lot of stuff, including this website to show the stuff I make."
+- var d = new Date()
+- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()
+
+doctype html
+html(lang="en")
+  head
+    include partials/_mixins.pug
+    include partials/_head.pug
+  body
+    include partials/_aside.pug
+    
+    main.site-cards
+    
+      +card('damn.dog', 'http://damn.dog', '#222730', 'damndog.svg')
+        p The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.
+        p Called "The Best Game On The Internet" by Gizmodo, and the subject of dozens of YouTube videos.
+        .launched February 4th, 2016
+    
+      +card('idiots.win', 'http://idiots.win', '#f1da5e', 'idiots.svg')
+        p The game that challenges you to figure out what people are searching for on Google.
+        p idiots.win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.
+        .launched June 2nd, 2016
+      
+      +card('Jerking Online', 'http://jerking.online', '#f0f1f2', 'fist.svg')
+        p Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.
+        p Cause it makes me giggle.
+        .launched January 6th, 2016
+        
+      +card('Hamilton -> DOOM', 'https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&gl=US', 'gold.jpg', 'doom320.png')
+        p This is a simple Chrome extension that replaces all instances of "Hamilton" with "the video game DOOM". For obvious reasons.
+        .launched November 19th, 2016
+            
+      +card('PARTY PARTY PARTY PARTY PARTY', 'http://partypartypartyparty.party', "#161616", 'party.svg')
+        p This is a button to help you party.
+        .launched September 26th, 2016
+        
+      +card('pl_swiftwater','http://www.teamfortress.com/meetyourmatch/','#EDF4F4','swift.svg')
+        p My friend Schwa and I collaborated on a Team Fortress 2 map called Swiftwater. He did the geometry, I did the art assets and built the story of a bottled water company at war with a chemical mining concern.
+        p In 2016, it was bought by Valve and made official.
+        .launched July 7th, 2016
+      
+      +card('Frank West Pronounces Emoticons','http://frankwest.xyz','#e8d4ad','frankwest.svg')
+        p Frank West sometimes pronounces emoticons. And now, via this soundboard, he does it on your command.
+        p Even in comparison to the other sites on this page, this one is really stupid.
+        .launched June 15th, 2016
+        
+      +card('Write prettier code with Jade and Sass','http://ahoylemon.github.io/minnebar2016','tyra.jpg','jade-n-sass.svg')
+        p I did a talk on Jade & Sass for Minnebar2016. Afterwards, I put the slideshow I used up for public consumption.
+        p Spacebar to advance screens.
+        .launched April 23rd, 2016
+        
+      +card('Recent Firings In San Francisco','http://ahoylemon.github.io/sf-firings','#e8d4ad','firings.png')
+        p I wanted to make a site that would give the user up-the-second updates of who was just fired in the San Francisco Tech Industry.
+        p In reality, it just works an alogorithm to generate random strings.
+        .launched October 14th, 2015
+        
+      +card('The F Plus','https://thefpl.us','#dedcee','thefplus.svg')
+        p I do a podcast, and also work a fair amount on the website for that podcast, which is a complicated piece of web development.
+        p That said, I'm pretty happy with how this whole thing works.
+        .launched December 14th, 2014
+      
+      +card('Ball Pit','https://ballp.it','#150f34','ballpit.svg')
+        p ballp.it is the forum set up to support the community that surrounds The F Plus. It uses PHP software called SMF, but has been modified heavily.
+        .launched February 16th, 2013
+        
+      +card('The Wrongest Words','http://ahoylemon.github.io/wrongest.website','#2d2929','wrongest.svg')
+        p The Wrongest Words is a multiplayer card game where players must defend the very stupid statements in front of them.
+        .launched March 26, 2015
+        p Retired:  
+          b March 20th, 2017 
+    
+    include partials/_schema.pug
+    include partials/_javascripts.pug

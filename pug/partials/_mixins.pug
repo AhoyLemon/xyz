@@ -1,0 +1,16 @@
+mixin card(title, url, background, logo, launched)
+  figure.card
+    a.flipper(href=url)
+      - var styl
+      if background.includes('#')
+        - styl = "background-color:" + background
+      else if background.includes('.jpg')
+        - styl = "background-image:url(img/"+background+")"
+      .front(style=styl)
+        if logo.includes('svg')
+          img.logo(src="svg/"+logo)
+        else
+          img.logo(src="img/"+logo)
+      .back
+        h3.title= title
+        block
