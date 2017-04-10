@@ -8,5 +8,5 @@ A simple site that showcases other sites I made.
 Yeah.
 
 ### What's this written in?
-* [Jade](http://jade-lang.com/)
+* [Pug](https://pugjs.org)
 * [Sass](http://sass-lang.com/)
