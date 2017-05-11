@@ -7,70 +7,149 @@
 doctype html
 html(lang="en")
   head
-    include partials/_mixins.pug
     include partials/_head.pug
   body
     include partials/_aside.pug
     
     main.site-cards
     
-      +card('damn.dog', 'http://damn.dog', '#222730', 'damndog.svg')
-        p The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.
-        p Called "The Best Game On The Internet" by Gizmodo, and the subject of dozens of YouTube videos.
-        .launched February 4th, 2016
+      figure.card
+        a.flipper(href="http://2un.ltd")
+          .front(style="background-image:url(svg/2unltd-card.svg)")
+          .back
+            h3.title 2UN 🔵 LTD
+            p This is a very important website that asks if if you're ready for this. And if you 
+              i are 
+              | ready for this, appropriate measures will be taken.
+            .launched April 21st, 2017
     
-      +card('idiots.win', 'http://idiots.win', '#f1da5e', 'idiots.svg')
-        p The game that challenges you to figure out what people are searching for on Google.
-        p idiots.win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.
-        .launched June 2nd, 2016
+      figure.card
+        a.flipper(href="http://damn.dog")
+          .front(style="background-color:#222730;")
+            img.logo(src="svg/damndog.svg")
+          .back
+            h3.title damn.dog
+            p The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.
+            p Called "The Best Game On The Internet" by Gizmodo, and the subject of dozens of YouTube videos.
+            .launched February 4th, 2016
       
-      +card('Jerking Online', 'http://jerking.online', '#f0f1f2', 'fist.svg')
-        p Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.
-        p Cause it makes me giggle.
-        .launched January 6th, 2016
-        
-      +card('Hamilton -> DOOM', 'https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&gl=US', 'gold.jpg', 'doom320.png')
-        p This is a simple Chrome extension that replaces all instances of "Hamilton" with "the video game DOOM". For obvious reasons.
-        .launched November 19th, 2016
+      figure.card
+        a.flipper(href="http://idiots.win")
+          .front(style="background-color:#f1da5e;")
+            img.logo(src="svg/idiots.svg")
+          .back
+            h3.title idiots.win
+            p The game that challenges you to figure out what people are searching for on Google.
+            p idiots.win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.
+            .launched June 2nd, 2016
             
-      +card('PARTY PARTY PARTY PARTY PARTY', 'http://partypartypartyparty.party', "#161616", 'party.svg')
-        p This is a button to help you party.
-        .launched September 26th, 2016
-        
-      +card('pl_swiftwater','http://www.teamfortress.com/meetyourmatch/','#EDF4F4','swift.svg')
-        p My friend Schwa and I collaborated on a Team Fortress 2 map called Swiftwater. He did the geometry, I did the art assets and built the story of a bottled water company at war with a chemical mining concern.
-        p In 2016, it was bought by Valve and made official.
-        .launched July 7th, 2016
+      figure.card
+        a.flipper(href="http://jerking.online")
+          .front(style="background-color:#f0f1f2;")
+            img.logo(src="svg/fist.svg")
+          .back
+            h3.title jerking.online
+            p Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.
+            p Cause it makes me giggle.
+            .launched January 6th, 2017
+            
+      figure.card
+        a.flipper(href="https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&gl=US")
+          .front(style="background-image:url(img/gold.jpg);")
+            img.logo(src="img/doom320.png")
+          .back
+            h3.title Hamilton -> DOOM
+            p This is a simple Chrome extension that replaces all instances of "Hamilton" with "the video game DOOM". For obvious reasons.
+            .launched November 19th, 2016
       
-      +card('Frank West Pronounces Emoticons','http://frankwest.xyz','#e8d4ad','frankwest.svg')
-        p Frank West sometimes pronounces emoticons. And now, via this soundboard, he does it on your command.
-        p Even in comparison to the other sites on this page, this one is really stupid.
-        .launched June 15th, 2016
-        
-      +card('Write prettier code with Jade and Sass','http://ahoylemon.github.io/minnebar2016','tyra.jpg','jade-n-sass.svg')
-        p I did a talk on Jade & Sass for Minnebar2016. Afterwards, I put the slideshow I used up for public consumption.
-        p Spacebar to advance screens.
-        .launched April 23rd, 2016
-        
-      +card('Recent Firings In San Francisco','http://ahoylemon.github.io/sf-firings','#e8d4ad','firings.png')
-        p I wanted to make a site that would give the user up-the-second updates of who was just fired in the San Francisco Tech Industry.
-        p In reality, it just works an alogorithm to generate random strings.
-        .launched October 14th, 2015
-        
-      +card('The F Plus','https://thefpl.us','#dedcee','thefplus.svg')
-        p I do a podcast, and also work a fair amount on the website for that podcast, which is a complicated piece of web development.
-        p That said, I'm pretty happy with how this whole thing works.
-        .launched December 14th, 2014
+      figure.card
+        a.flipper(href="http://partypartypartyparty.party")
+          .front(style="background-color:#161616;")
+            img.logo(src="svg/party.svg")
+          .back
+            h3.title PARTY PARTY PARTY PARTY PARTY
+            p This is a button to help you party.
+            .launched September 26th, 2016
+            
+      figure.card
+        a.flipper(href="http://www.teamfortress.com/meetyourmatch/")
+          .front(style="background-color:#EDF4F4;")
+            img.logo(src="svg/swift.svg")
+          .back
+            h3.title pl_swiftwater
+            p My friend Schwa and I collaborated on a Team Fortress 2 map called Swiftwater. He did the geometry, I did the art assets and built the story of a bottled water company at war with a chemical mining concern.
+            p In 2016, it was bought by Valve and made official.
+            .launched July 7th, 2016
+    
+      figure.card
+        a.flipper(href="http://frankwest.xyz")
+          .front(style="background-color:#e8d4ad;")
+            img.logo(src="svg/frankwest.svg")
+          .back
+            h3.title Frank West Pronounces Emoticons
+            p Frank West sometimes pronounces emoticons. And now, via this soundboard, he does it on your command.
+            p Even in comparison to the other sites on this page, this one is really stupid.
+            .launched June 15th, 2016
       
-      +card('Ball Pit','https://ballp.it','#150f34','ballpit.svg')
-        p ballp.it is the forum set up to support the community that surrounds The F Plus. It uses PHP software called SMF, but has been modified heavily.
-        .launched February 16th, 2013
-        
-      +card('The Wrongest Words','http://ahoylemon.github.io/wrongest.website','#2d2929','wrongest.svg')
-        p The Wrongest Words is a multiplayer card game where players must defend the very stupid statements in front of them.
-        .launched March 26, 2015
-        p Retired:  
-          b March 20th, 2017 
+      figure.card
+        a.flipper(href="http://ahoylemon.github.io/minnebar2016")
+          .front(style="background-image:url(img/tyra.jpg)")
+            img.logo(src="svg/jade-n-sass.svg")
+          .back
+            h3.title Write prettier code with Jade and Sass.
+            p I did a talk on Jade & Sass for Minnebar2016. Afterwards, I put the slideshow I used up for public consumption.
+            p Spacebar to advance screens.
+            .launched April 23rd, 2016
+            
+      figure.card
+        a.flipper(href="https://ahoylemon.github.io/PubConf/#/")
+          .front(style="background-image:url(img/pubconf.jpg)")
+            img.logo(src="svg/pubconf.svg")
+          .back
+            h3.title PubConf Minneapolis 2017
+            p For the first PubConf in Minneapolis, I did a deck on the nature of popularity. It's an ignite deck, meaning it's 5 minutes with strict 15 second lmits.
+            p Also it might not make much sense without me taling over it. Oh well!
+            .launched April 21st, 2017
+      
+      figure.card
+        a.flipper(href="http://ahoylemon.github.io/sf-firings")
+          .front(style="background-color:#e8d4ad;")
+            img.logo(src="img/firings.png")
+          .back
+            h3.title Recent Firings In San Francisco
+            p I wanted to make a site that would give the user up-the-second updates of who was just fired in the San Francisco Tech Industry.
+            p In reality, it just works an alogorithm to generate random strings.
+            .launched October 14th, 2015
+            
+      figure.card
+        a.flipper(href="https://thefpl.us")
+          .front(style="background-color:#dedcee;")
+            img.logo(src="svg/thefplus.svg")
+          .back
+            h3.title The F Plus
+            p I do a podcast, and also work a fair amount on the website for that podcast, which is a complicated piece of web development.
+            p That said, I'm pretty happy with how this whole thing works.
+            .launched December 14th, 2014
+      
+      figure.card
+        a.flipper(href="http://ballp.it")
+          .front(style="background-color:#150f34;")
+            img.logo(src="svg/ballpit.svg")
+          .back
+            h3.title ballp.it
+            p ballp.it is the forum set up to support the community that surrounds The F Plus. It uses PHP software called SMF, but has been modified heavily.
+            .launched February 16th, 2013
+      
+      figure.card
+        a.flipper(href="http://ahoylemon.github.io/wrongest.website")
+          .front(style="background-color:#2d2929;")
+            img.logo(src="svg/wrongest.svg")
+          .back
+            h3.title The Wrongest Words
+            p The Wrongest Words is a multiplayer card game where players must defend the very stupid statements in front of them.
+            .launched March 26, 2015
+            p Retired:  
+              b March 20th, 2017 
     
     include partials/_schema.pug
     include partials/_javascripts.pug
