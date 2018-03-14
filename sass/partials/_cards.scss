@@ -3,6 +3,7 @@ $card-height:310px;
 $logosize:($card-height * 0.68);
 
 .site-cards { @include flex-container(); padding-left:1em; padding-right: 1em;
+  
   .card { @include flex-item($card-width,0,1); height:$card-height; margin-bottom: 2em; margin-left:1em; margin-right:1em; transition:all 0.15s ease;
     .flipper { display: block; position:relative; transform-style: preserve-3d; transition:0.3s; transition-delay: 0.1s; width:100%; height:100%; }
     .logo { width:$logosize; height:$logosize; }
@@ -18,6 +19,9 @@ $logosize:($card-height * 0.68);
     .launched { font-weight: $bold;
       &:before { content: "Launched: "; font-weight:$medium; }
     }
+  }
+  
+  figure.card {
     &:hover { transform: scale(1.1);
       .flipper { transform: rotateY(180deg); }
       .front { box-shadow:-0.15em -0.15em 0.3em rgba($black,0.75); }
@@ -25,6 +29,24 @@ $logosize:($card-height * 0.68);
     &:active { transform:scale(0.9); }
   }
 }
+
+.talk-list { background:#fff; padding: 1em; overflow: hidden; position: relative;
+  .header { font-size:40px; text-align: center; }
+  
+  
+  .talks { padding-left: 0;
+    li { list-style: none; text-align: center;
+      a { color:$orange; font-weight: $bold; text-decoration: none; 
+        &:hover { text-decoration: underline; }
+      }
+      .conference { font-size:180%; }
+      .title { font-size:160%;  display: block; width: 100%; }
+      time { font-size:120%; }
+    }
+  }
+  
+}
+
 
 
 @media screen and (max-width:887px) {

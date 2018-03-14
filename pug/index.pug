@@ -12,6 +12,25 @@ html(lang="en")
     include partials/_aside.pug
     
     main.site-cards
+    
+      section.card.talk-list
+        h3.header Upcoming Talks
+        ul.talks
+          li
+            .conference(href="https://sessions.minnestar.org") Minnebar 13
+            a.title(href="https://sessions.minnestar.org/sessions/583") Literally ANYTHING But Wordpress
+            time April 14th, 2018
+            .city Richfield, MN
+          li
+            a.conference(href="https://ndcminnesota.com") NDC {Minnesota}
+            .title(href="https://ndcminnesota.com/speaker/lemon-lemon/") Let's Build A Website, Right Frickin' Now!
+            time May 10th, 2108
+            .city St. Paul, MN
+          li
+            a.conference(href="https://pubconf.io/") PubConf
+            .title Please Your VP By Hating Your User
+            time May 11th, 2018
+            .city St. Paul, MN
       
       figure.card
         a.flipper(href="https://youtu.be/4YRuHRvniJM")

@@ -371,16 +371,75 @@ aside {
       .site-cards .card .launched:before {
         content: "Launched: ";
         font-weight: 400; }
-    .site-cards .card:hover {
-      transform: scale(1.1); }
-      .site-cards .card:hover .flipper {
-        transform: rotateY(180deg); }
-      .site-cards .card:hover .front {
-        box-shadow: -0.15em -0.15em 0.3em rgba(49, 49, 49, 0.75); }
-    .site-cards .card:active {
-      transform: scale(0.9); }
+  .site-cards figure.card:hover {
+    transform: scale(1.1); }
+    .site-cards figure.card:hover .flipper {
+      transform: rotateY(180deg); }
+    .site-cards figure.card:hover .front {
+      box-shadow: -0.15em -0.15em 0.3em rgba(49, 49, 49, 0.75); }
+  .site-cards figure.card:active {
+    transform: scale(0.9); }
+
+.talk-list {
+  background: #fff;
+  padding: 1em;
+  overflow: hidden;
+  position: relative; }
+  .talk-list .header {
+    font-size: 40px;
+    text-align: center; }
+  .talk-list .talks {
+    padding-left: 0; }
+    .talk-list .talks li {
+      list-style: none;
+      text-align: center; }
+      .talk-list .talks li a {
+        color: #c85c0d;
+        font-weight: 600;
+        text-decoration: none; }
+        .talk-list .talks li a:hover {
+          text-decoration: underline; }
+      .talk-list .talks li .conference {
+        font-size: 180%; }
+      .talk-list .talks li .title {
+        font-size: 160%;
+        display: block;
+        width: 100%; }
+      .talk-list .talks li time {
+        font-size: 120%; }
 
 @media screen and (min-width: 888px) {
   main {
     margin-left: 22rem;
     padding-top: 2em; } }
+
+.slick-slider .slick-arrow {
+  background: transparent;
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  font-family: "Yrsa", serif;
+  font-size: 240%;
+  color: #c85c0d;
+  z-index: 3;
+  cursor: pointer; }
+  .slick-slider .slick-arrow:hover, .slick-slider .slick-arrow:active {
+    transform: scale(1.2); }
+
+.slick-slider .slick-prev {
+  left: 10px; }
+
+.slick-slider .slick-next {
+  right: 10px; }
+
+.slick-slider.talks {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .slick-slider.talks .slick-list {
+    height: 100%;
+    padding-top: 85px;
+    padding-left: 15px;
+    padding-right: 15px; }
