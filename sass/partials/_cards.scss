@@ -42,6 +42,10 @@ $logosize:($card-height * 0.68);
       .conference { font-size:180%; }
       .title { font-size:160%;  display: block; width: 100%; }
       time { font-size:120%; }
+      .button-holder { padding-top: 0.7em; }
+      .button {
+        &:hover { text-decoration: underline; }
+      }
     }
   }
   

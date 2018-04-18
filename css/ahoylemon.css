@@ -407,6 +407,10 @@ aside {
         width: 100%; }
       .talk-list .talks li time {
         font-size: 120%; }
+      .talk-list .talks li .button-holder {
+        padding-top: 0.7em; }
+      .talk-list .talks li .button:hover {
+        text-decoration: underline; }
 
 @media screen and (min-width: 888px) {
   main {
