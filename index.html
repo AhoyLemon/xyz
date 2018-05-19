@@ -5,7 +5,7 @@
     <title>Hi, my name is Lemon.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/ahoylemon.css?v=2018-04-17@11:25:55">
+    <link rel="stylesheet" href="css/ahoylemon.css?v=2018-04-19@16:36:23">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- favicons-->
@@ -69,6 +69,22 @@
       </ul>
     </aside>
     <main class="site-cards">
+      <section class="card talk-list">
+        <h3 class="header">Upcoming Talks</h3>
+        <ul class="talks">
+          <li>
+            <div class="conference">KCDC X</div><a class="title" href="http://www.kcdc.info/sessions">Let's Launch A Website, Right Friggin' Now!</a>
+            <time>July 12th, 2018</time>
+            <div class="city">Kansas City, MO</div>
+          </li>
+          <li>
+            <div class="conference">PubConf Kansas City</div>
+            <div class="title">{TBD}</div>
+            <time>July 13th, 2018</time>
+            <div class="city">Kansas City, MO</div>
+          </li>
+        </ul>
+      </section>
       <figure class="card"><a class="flipper" href="https://greatsex.tips">
           <div class="front" style="background-color:#ef2525;"><img class="logo" src="svg/greatsex.svg"></div>
           <div class="back">
@@ -255,6 +271,14 @@
       }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $('ul.talks').slick({
+        prevArrow: '<button type="button" class="slick-prev slick-arrow">&lt;</button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow">&gt;</button>'
+      });
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
