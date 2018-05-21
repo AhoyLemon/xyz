@@ -246,7 +246,6 @@ aside {
       font-size: 1.35em; }
     aside li .icon {
       display: inline-block;
-      height: 1em;
       margin-right: 0.5em;
       fill: currentColor; }
     aside li a:hover span {
@@ -267,8 +266,10 @@ aside {
       text-align: center; }
       aside ul li {
         display: inline-block; }
+        aside ul li .icon {
+          height: 36px; }
         aside ul li span {
-          margin-right: 0.5em; } }
+          display: none; } }
 
 @media screen and (min-width: 888px) {
   aside {
@@ -289,7 +290,9 @@ aside {
       position: absolute;
       right: 1em;
       bottom: 1em;
-      left: 1em; } }
+      left: 1em; }
+    aside li .icon {
+      height: 1em; } }
 
 .site-cards {
   display: -webkit-box;

@@ -6,7 +6,7 @@ aside { padding:1em; background:$yellow; color:$black; font-size:22px;
   ul { padding-left: 0; }
   li { list-style: none;
     span { line-height: 160%; font-size:1.35em; }
-    .icon { display: inline-block; height: 1em; margin-right: 0.5em; fill:currentColor; }
+    .icon { display: inline-block; margin-right: 0.5em; fill:currentColor; }
     a { 
       &:hover {
         span { text-decoration: underline; }
@@ -23,7 +23,9 @@ aside { padding:1em; background:$yellow; color:$black; font-size:22px;
     }
     ul { text-align: center; 
       li { display: inline-block;
-        span { margin-right: 0.5em; }
+        //span { margin-right: 0.5em; }
+        .icon { height: 36px; }
+        span { display: none; }
       }
     }
   }
@@ -36,5 +38,8 @@ aside { padding:1em; background:$yellow; color:$black; font-size:22px;
     }
     p { font-size:26px; }
     ul { @include position(absolute,null,1em,1em,1em); }
+    li {
+      .icon { height: 1em; }
+    }
   }
 }
