@@ -22,7 +22,7 @@ html(lang="en")
             time July 12th, 2018
             .city Kansas City, MO
           li
-            .conference PubConf Kansas City
+            a.conference(href="https://pubconf.io/") PubConf Kansas City
             .title Please Your VP, Hate Your User
             time July 13th, 2018
             .city Kansas City, MO
@@ -31,6 +31,16 @@ html(lang="en")
             .title Let's Launch A Website, Right Friggin' Now!
             time September 20th, 2018
             .city Sydney, Australia
+
+      //-figure.card
+        a.flipper(href="https://pretend.world")
+          .front(style="background-color:#E6E1C5")
+            img.logo(src="svg/pretend.svg")
+          .back
+            h3.title PRETEND 🌐 WORLD
+            p You are at a party of celebrity impersonators. It's up to you to guess which ones.
+            p This was first launched for KCDC X
+            .launched July 12th, 2018
               
       figure.card
         a.flipper(href="https://greatsex.tips")
@@ -60,44 +70,7 @@ html(lang="en")
             p The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.
             p Called "The Best Game On The Internet" by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.
             .launched February 4th, 2016
-    
-      figure.card
-        a.flipper(href="http://badaccent.club")
-          .front(style="background-color:#a5ed83;")
-            img.logo(src="svg/badaccent.svg")
-          .back
-            h3.title badaccent.club
-            p The game that puts your friends' accents to the test (and they will usually fail the test).
-            .launched August 18th, 2017
-    
-      figure.card
-        a.flipper(href="http://2un.ltd")
-          .front(style="background-image:url(svg/2unltd-card.svg)")
-          .back
-            h3.title 2UN 🔵 LTD
-            p This is a very important website that asks if if you're ready for this. And if you 
-              i are 
-              | ready for this, appropriate measures will be taken.
-            .launched April 21st, 2017
-            
-      figure.card
-        a.flipper(href="https://dumb.men")
-          .front(style="background-image:url(img/men-background.png); background-position:bottom center;")
-            img.logo(src="img/men-foreground.png")
-          .back
-            h3.title dumb.men
-            p This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.
-            .launched November 4th, 2017
-            
-      figure.card
-        a.flipper(href="https://youtu.be/4YRuHRvniJM")
-          .front(style="background-image:url(img/irl.jpg)")
-          .back
-            h3.title Me Making Websites IRL
-            p Using an open source software called "Gource", I made this 3.5 minute YouTube video documenting the process of building most of the websites on this list, set to a Paper Chase song.
-            p Not incredibly informative, but fun to look at.
-            .launched December 19th, 2017
-      
+
       figure.card
         a.flipper(href="http://idiots.win")
           .front(style="background-color:#f1da5e;")
@@ -107,6 +80,52 @@ html(lang="en")
             p The game that challenges you to figure out what people are searching for on Google.
             p idiots.win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.
             .launched June 2nd, 2016
+
+      figure.card
+        a.flipper(href="http://2un.ltd")
+          .front(style="background-image:url(svg/2unltd-card.svg)")
+          .back
+            h3.title 2UN 🔵 LTD
+            p This is a very important website that asks if if you're ready for this. And if you 
+              i are 
+              | ready for this, appropriate measures will be taken.
+            .launched April 21st, 2017
+      
+      figure.card
+        a.flipper(href="http://partypartypartyparty.party")
+          .front(style="background-color:#d1d1d1;")
+            img.logo(src="img/party.png")
+          .back
+            h3.title PARTY PARTY PARTY PARTY PARTY
+            p This is a button to help you party.
+            .launched September 26th, 2016
+
+      figure.card
+        a.flipper(href="https://dumb.men")
+          .front(style="background-image:url(img/men-background.png); background-position:bottom center;")
+            img.logo(src="img/men-foreground.png")
+          .back
+            h3.title dumb.men
+            p This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.
+            .launched November 4th, 2017
+    
+      figure.card
+        a.flipper(href="http://badaccent.club")
+          .front(style="background-color:#a5ed83;")
+            img.logo(src="svg/badaccent.svg")
+          .back
+            h3.title badaccent.club
+            p The game that puts your friends' accents to the test (and they will usually fail the test).
+            .launched August 18th, 2017
+            
+      figure.card
+        a.flipper(href="https://youtu.be/4YRuHRvniJM")
+          .front(style="background-image:url(img/irl.jpg)")
+          .back
+            h3.title Me Making Websites IRL
+            p Using an open source software called "Gource", I made this 3.5 minute YouTube video documenting the process of building most of the websites on this list, set to a Paper Chase song.
+            p Not incredibly informative, but fun to look at.
+            .launched December 19th, 2017
             
       figure.card
         a.flipper(href="https://ahoylemon.github.io/jerking.online")
@@ -119,7 +138,7 @@ html(lang="en")
             .launched January 6th, 2017
             
       figure.card
-        a.flipper(href="http://verifiable.win")
+        a.flipper(href="https://verifiable.win")
           .front(style="background:linear-gradient(to bottom, #4ac29a, #bdfff3);")
             img.logo(src="svg/verifiable.svg")
           .back
@@ -135,15 +154,6 @@ html(lang="en")
             h3.title @rickross_daily
             p This twitterbot (which was either the idea of JW Friedman or myself, we can't remember) will inform you what Rick Ross is doing every day, every day.
             .launched September 5th, 2017
-      
-      figure.card
-        a.flipper(href="http://partypartypartyparty.party")
-          .front(style="background-color:#d1d1d1;")
-            img.logo(src="img/party.png")
-          .back
-            h3.title PARTY PARTY PARTY PARTY PARTY
-            p This is a button to help you party.
-            .launched September 26th, 2016
             
       figure.card
         a.flipper(href="http://www.teamfortress.com/meetyourmatch/")
@@ -229,7 +239,7 @@ html(lang="en")
             img.logo(src="svg/wrongest.svg")
           .back
             h3.title The Wrongest Words
-            p The Wrongest Words is a multiplayer card game where players must defend the very stupid statements in front of them.
+            p The Wrongest Words was a multiplayer card game where players had to defend the very stupid statements in front of them. It has been retired.
             .launched March 26, 2015
             p Retired:  
               b March 20th, 2017 
