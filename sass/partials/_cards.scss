@@ -49,6 +49,17 @@ $logosize:($card-height * 0.68);
     }
   }
   
+
+  &.previous { padding:0 !important;
+    .slick-list { padding-left: 0 !important; padding-right:0 !important; }
+    .talk { height:310px; position: relative; margin-top:-85px; width:400px; cursor: -webkit-grab; cursor:grab; }
+    .header { @include position(absolute,0,0,null,0); z-index: 9; color:$yellow; text-shadow:-2px 2px 0 $black; padding-top:12px; }
+    figure { @include position(absolute,0,0,0,0); background-size:cover; background-position: center; }
+    figcaption { text-align: center; color:$white; text-shadow:-2px 2px 0 $black; font-size:24px; @include position(absolute,null,0,0,0); padding-bottom: 16px; line-height: 90%;
+      .conference { font-size:198%; font-weight:$bold; line-height: 90%; }
+    }
+    //.slick-list { padding:0; }
+  }
 }
 
 

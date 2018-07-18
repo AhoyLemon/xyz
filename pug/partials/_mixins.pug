@@ -14,3 +14,11 @@ mixin card(title, url, background, logo, launched)
       .back
         h3.title= title
         block
+
+mixin prevTalk(title,img,d,city)
+  .talk
+    figure(style="background-image:url(img/talks/"+img+")")
+    figcaption
+      .conference #{title}
+      time #{d}
+      .city #{city}
