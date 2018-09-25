@@ -17,12 +17,12 @@ html(lang="en")
       section.card.talk-list.upcoming
         h3.header Upcoming Talks
         ul.talks
-          li
+          //li
             a.conference(href="https://ndcsydney.com/") NDC {Sydney}
             .title Let's Launch A Website, Right Friggin' Now!
             time September 21st, 2018
             .city Sydney, Australia
-          li
+          //li
             a.conference(href="https://ndcsydney.com/") PubConf Sydney
             .title Please Your VP, Hate Your User
             time September 21st, 2018
@@ -33,8 +33,8 @@ html(lang="en")
             time October 10th, 2018
             .city St. Louis, MO
 
-      //-figure.card
-        a.flipper(href="https://pretend.world")
+      figure.card
+        a.flipper(href="https:/futile.fun")
           .front.big-logo(style="background-image:url(img/futile-512.png); background-position:bottom center;")
           .back
             h3.title futile 💀 fun 
@@ -52,14 +52,7 @@ html(lang="en")
             p This was first launched for KCDC X
             .launched July 12th, 2018
               
-      figure.card
-        a.flipper(href="https://greatsex.tips")
-          .front(style="background-color:#ef2525;")
-            img.logo(src="svg/greatsex.svg")
-          .back
-            h3.title Great Sex Tips!
-            p Birthed from a conversation about the editing process of Cosmo's sex tips, this is a site that generates hetero sex advice for women to please their men. How exhilerating!
-            .launched November 13th, 2017
+      
       
       figure.card
         a.flipper(href="http://trumps.pw")
@@ -85,6 +78,8 @@ html(lang="en")
         h3.header Previous Talks
 
         .talks
+          +prevTalk("PubConf Sydney","pubconf-sydney-preshow.jpg", "September 21st, 2018", "Sydney, NSW")
+          +prevTalk("NDC {Sydney}","ndc-sydney-score.jpg", "September 21st, 2018", "Sydney, NSW")
           +prevTalk("PubConf KC","pubconf-kc-2018.jpg", "July 13th, 2018", "Kansas City, MO")
           +prevTalk("KCDC X","kcdc-2018.jpg", "July 13th, 2018", "Kansas City, MO")
           +prevTalk("PubConf MN","pubconf-mn-2018.jpg", "May 10th, 2018", "St. Paul, MN")
@@ -92,6 +87,15 @@ html(lang="en")
           +prevTalk("Minnebar","minnebar-2018.jpg", "April 14th, 2018", "Richfield, MN")
           +prevTalk("PubConf Mpls","pubconf-mn-2017.jpg", "April 21th, 2017", "Minneapolis, MN")
           +prevTalk("Minnebar","minnebar-2016.jpg", "April 23th, 2016", "Richfield, MN")
+
+      figure.card
+        a.flipper(href="https://greatsex.tips")
+          .front(style="background-color:#ef2525;")
+            img.logo(src="svg/greatsex.svg")
+          .back
+            h3.title Great Sex Tips!
+            p Birthed from a conversation about the editing process of Cosmo's sex tips, this is a site that generates hetero sex advice for women to please their men. How exhilerating!
+            .launched November 13th, 2017
 
       figure.card
         a.flipper(href="http://idiots.win")
