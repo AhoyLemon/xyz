@@ -17,16 +17,6 @@ html(lang="en")
       section.card.talk-list.upcoming
         h3.header Upcoming Talks
         ul.talks
-          //li
-            a.conference(href="https://ndcsydney.com/") NDC {Sydney}
-            .title Let's Launch A Website, Right Friggin' Now!
-            time September 21st, 2018
-            .city Sydney, Australia
-          //li
-            a.conference(href="https://ndcsydney.com/") PubConf Sydney
-            .title Please Your VP, Hate Your User
-            time September 21st, 2018
-            .city Sydney, Australia
           li
             a.conference(href="https://devupconf.org") dev up
             .title Let's Launch A Website, Right Friggin' Now!
@@ -34,7 +24,7 @@ html(lang="en")
             .city St. Louis, MO
 
       figure.card
-        a.flipper(href="https:/futile.fun")
+        a.flipper(href="https://futile.fun")
           .front.big-logo(style="background-image:url(img/futile-512.png); background-position:bottom center;")
           .back
             h3.title futile 💀 fun 
@@ -51,8 +41,6 @@ html(lang="en")
             p You are at a party of celebrity impersonators. It's up to you to guess which ones.
             p This was first launched for KCDC X
             .launched July 12th, 2018
-              
-      
       
       figure.card
         a.flipper(href="http://trumps.pw")
@@ -76,7 +64,6 @@ html(lang="en")
 
       section.card.talk-list.previous
         h3.header Previous Talks
-
         .talks
           +prevTalk("PubConf Sydney","pubconf-sydney-group.jpg", "September 21st, 2018", "Sydney, NSW")
           +prevTalk("NDC {Sydney}","ndc-sydney-score.jpg", "September 21st, 2018", "Sydney, NSW")
