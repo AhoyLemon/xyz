@@ -1,0 +1,36 @@
+//- var imgPath = "../email"
+- var imgPath = "https://ahoylemon.xyz/email"
+
+- var font = 'font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;'
+- var linkStyle = font + ' color:#C85C0D; font-weight:bold; text-decoration:none;'
+
+html
+  head
+    title Email signature, v.1
+  body
+    table
+      tr
+        td(style="padding-left:30px; vertical-align:center;")
+          img(src=imgPath+"/lemon-slice.png" width="100" height="79")
+
+        td(style="padding-left:50px;")
+          table
+            tr
+              td(style="padding-bottom:10px;")
+                a(style=linkStyle href="https://ahoylemon.xyz")
+                  span(style='font-size:180%;') Lemon.
+            tr
+              td
+                table
+                  tr
+                    td
+                      a(href="https://thefpl.us" style=linkStyle)
+                        span The F Plus
+
+                    td(style="padding-left:30px;")
+                      a(href="https://twitter.com/AhoyLemon" style=linkStyle)
+                        span Twitter
+
+                    td(style="padding-left:30px;")
+                      a(href="https://github.com/AhoyLemon" style=linkStyle)
+                        span GitHub
