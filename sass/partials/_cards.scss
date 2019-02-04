@@ -31,7 +31,7 @@ $logosize:($card-height * 0.68);
 }
 
 .talk-list { background:#fff; padding: 1em; overflow: hidden; position: relative;
-  .header { font-size:40px; text-align: center; }
+  .header { font-size:40px; text-align: center; font-weight: $light; }
   
   
   .talks { padding-left: 0;
@@ -40,7 +40,7 @@ $logosize:($card-height * 0.68);
         &:hover { text-decoration: underline; }
       }
       .conference { font-size:180%; }
-      .title { font-size:160%;  display: block; width: 100%; }
+      .title { font-size:160%;  display: block; width: 100%; font-weight: $light; }
       time { font-size:120%; }
       .button-holder { padding-top: 0.7em; }
       .button {
