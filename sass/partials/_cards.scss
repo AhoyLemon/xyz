@@ -47,6 +47,15 @@ $logosize:($card-height * 0.68);
         &:hover { text-decoration: underline; }
       }
     }
+
+    .slick-dots { @include position(absolute,null,0,0,0); text-align: center;
+      li { display: inline-block; padding:0 0.5em 1em 0;
+        button {  display: inline-block; line-height: 1.3em; height: 1.5em; width:1.5em; border:1px solid $black; background:transparent; border-radius:50%; font-family: $font; padding:0; cursor: pointer; }
+        &.slick-active {
+          button { background:$black; color:$white; }
+        }
+      }
+    }
   }
   
 
