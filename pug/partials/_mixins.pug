@@ -1,3 +1,17 @@
+mixin timeStamp()
+  - var d = new Date()
+  - var m = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
+  time 
+    = m[d.getMonth()] 
+    |  
+    = d.getDate()
+    | , 
+    = d.getFullYear() 
+  //- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()  
+
+mixin link(title,url)
+  a(href=url target="_blank" nofollow noopener)= title
+
 mixin card(title, url, background, logo, launched)
   figure.card
     a.flipper(href=url)

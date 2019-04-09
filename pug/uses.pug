@@ -1,0 +1,166 @@
+- var siteTitle = "Hi, my name is Lemon."
+- var siteURL = "https://ahoylemon.xyz"
+- var description = "I make a lot of stuff, including this website to show the stuff I make."
+- var d = new Date()
+- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()
+
+doctype html
+html(lang="en")
+  head
+    include partials/_mixins.pug
+    include partials/_head.pug
+  body
+    include partials/_aside.pug
+    
+    main.site-cards
+    
+      section.fullpage
+        h1 The things I use.
+        .stamp
+          span Last updated 
+          +timeStamp
+        p I just recently came across Wes Bos' 
+          a(href="https://github.com/wesbos/awesome-uses") Awesome Uses
+          |  repository. I thought it was interesting to look at the toolkit that other people used, and thought I'd provide my own. 
+          i But
+          | sometimes the tools a person uses are more about something being the "good enough" option, so I thought I'd get a little more specific: Those things marked with a 
+          span.yes
+          |  are things which I think are great and totally recommend. Those things marked with a 
+          span.no 
+          |  are things which I'm using but don't really endorse and wouldn't mind being convinced to try something else instead.
+
+
+        //- Coding
+        h3 Development
+        ul.things
+          li 
+            | I write code using 
+            +link("VS Code", "https://code.visualstudio.com/")
+            | , having moved away from Brackets some time in 2018. My theme of choice is 
+            +link("Plastic", "https://marketplace.visualstudio.com/itemdetails?itemName=will-stone.plastic")
+            |  (with deprioritized punctuation).
+          li.yes
+            | I almost always have 
+            +link("Prepros","https://prepros.io")
+            |  running to handle my Pug, Sass and JS files.
+          li.no
+            | When working with PHP I have 
+            +link("XAMPP","https://www.apachefriends.org/index.html")
+            |  running on my machine.
+          li.yes
+            | I write code to 
+            +link("Firefox Developer Edition", "https://www.mozilla.org/en-US/firefox/developer")
+            |  first, using Chrome as a secondary browser (but often have them both running) 
+          li
+            | I use 
+            +link("GitHub Desktop", "https://desktop.github.com")
+            |  every day and only use command line Git if I'm absolutely forced to.
+          li.no
+            | When FTP is called for I use 
+            +link("FileZilla", "https://filezilla-project.org")
+            | . I've tried to move away from FileZilla a couple times but never found anything I liked better.
+          li 
+            | I have an Adobe CC license. The programs I use, listed in order of frequency, are: 
+            b Illustrator
+            | , 
+            b Photoshop
+            | , 
+            b XD
+            |  and that's pretty much it.
+
+        h3 Productivity, or what passes for it.
+        ul.things
+          li.no
+            | I use 
+            +link("Wunderlist", "https://www.wunderlist.com")
+            |  as my To Do list of choice. I'm not interested in Microsoft To-Do.
+          li.yes
+            | I recently started using 
+            +link("Mailspring", "https://getmailspring.com")
+            |  to handle all my email accounts. I'm liking it a lot so far.
+          li
+            | I use the 
+            +link("Slack app", "https://slack.com/downloads")
+            | .
+          li
+            | I use 
+            +link("1Password", "https://1password.com")
+            |  to keep track of all my passwords (369 at the time of this post)
+
+        h3 Hardware
+        ul.things
+          li 
+            | My work computer is a Dell XPS Tower, similar to 
+            +link("this one", "https://www.amazon.com/Dell-XPS-8930-Tower-Desktop-x/dp/B077JDVBR3")
+            | . It's got 2 ViewSonic 24" monitors, and 1 Dell 24" monitor turned 90 degrees. It runs Windows 10.
+          li
+            | My home computer is a Cyberpower i5 tower with basically the same specs as that Dell, but it's bigger with more hard drives. It has 2 Acer 24" monitors and two other crappy monitors I'd like to replace soonish. It runs Windows 10.
+          li
+            | My laptop is an Acer I think? I forget.
+          li.yes
+            | All my keyboards are mechanical. 
+            +link("this one", "https://www.amazon.co.uk/Mechanical-Keyboard-Waterproof-Illuminated-Ergonomic/dp/B06XJ2F7CT")
+            |  at work, 
+            +link("this one", "https://www.corsair.com/us/en/Categories/Products/Gaming-Keyboards/Standard-Gaming-Keyboards/STRAFE-Mechanical-Gaming-Keyboard-%E2%80%94-CHERRY%C2%AE-MX-Silent/p/CH-9104023-NA")
+            |  at home,
+            +link("this one", "https://www.amazon.com/gp/product/B07GSXLZJT")
+            |  with the laptop.
+          li
+            | Both my mice are 
+            +link("Anker vertical mice", "https://www.amazon.com/Anker-Ergonomic-Optical-Vertical-Buttons/dp/B00FPAVUHC")
+            | .
+          li.no
+            | My current phone is a 
+            +link("Moto X4", "https://www.motorola.com/us/products/moto-x-gen-4")
+            | , using Google Fi.
+
+        h3 Podcasting
+        ul.things
+          li.yes
+            | My microphone is a 
+            +link("Blue Yeti", "https://www.bluedesigns.com/products/yeti/")
+            |  on 
+            +link("this arm mount", "https://www.amazon.com/gp/product/B0082918X4/ref=oh_aui_search_asin_title?ie=UTF8&psc=1")
+            | .
+          li I record and edit episodes in 
+            +link("Audacity", "https://www.audacityteam.org/")
+          li
+            | The F Plus uses 
+            +link("Discord", "https://discordapp.com/")
+            |  for all our VOIP.
+          li.no
+            | When an episode is edited, I use 
+            +link("MP3TAG", "https://www.mp3tag.de/en/")
+            |  to give that mp3 metadata.
+
+        h3 Misc
+        ul.things
+          li.no 
+            | I'm still using 
+            +link("Google Hangouts", "https://hangouts.google.com/")
+            |  and it gets worse every day.
+          li.no
+            | On the other hand, 
+            +link("Signal", "https://signal.org/")
+            |  is terrific on the phone and awful on the computer.
+          li.yes
+            | I use 
+            +link("Pocket Casts", "https://www.pocketcasts.com/")
+            |  for listening to podcasts. The Android app on the phone, and the Windows app on the computers. They sync together.
+          li
+            | I have a monthly Google Music subscription. I use the Android app on the phone, and the strangely named 
+            +link("Google Play Music Desktop Player", "https://www.googleplaymusicdesktopplayer.com/")
+            |  on computers.
+
+
+
+
+
+
+
+
+
+          
+    
+    include partials/_schema.pug
+    include partials/_javascripts.pug

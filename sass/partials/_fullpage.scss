@@ -1,0 +1,23 @@
+section.fullpage { background:white; display:block; width:100%; padding:2em; margin-bottom: 2em;
+  background:white; border:1px solid rgba($black,0.3); box-shadow:0 0 0.3em rgba($black,0.75); font-size:22px;
+
+  h1 { margin-bottom:0.25em; }
+  .stamp { display:block; margin-bottom:0.5em;}
+  time { font-weight: bold; }
+  a { color:$orange; font-weight:bold; text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+  ul { margin-bottom: 1em;
+    li { margin-bottom: 0.25em; }
+  }
+}
+
+ul.things { margin-left:0.5em; padding:0;
+  li { list-style-type: none; 
+    &:before { content:"⚫️"; display: inline-block; width:40px; text-align: center;  margin-right:0.5em; font-size:65%; }
+    &.yes:before { content: '💚'; }
+    &.no:before  { content: '💔'; }
+  }
+}
+span.yes:before { content: '💚'; font-size:65%; }
+span.no:before  { content: '💔'; font-size:65%; }
