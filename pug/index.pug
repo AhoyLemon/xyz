@@ -22,12 +22,12 @@ html(lang="en")
             .title Shrink The Web!
             time April 27, 2019
             .city Richfield, MN
-          li
+          //-li
             a.conference(href="https://ndcminnesota.com") NDC {Minnesota}
             .title I'm Gonna Make You Stop Hating CSS.
             time May 8, 2019
             .city St. Paul, MN
-          li
+          //-li
             a.conference(href="https://pubconf.io/") PubConf MN
             .title ACME Bears No Responsibility For Mr. Coyote Exploding
             time May 8, 2019
@@ -112,6 +112,8 @@ html(lang="en")
       section.card.talk-list.previous
         h3.header Previous Talks
         .talks
+          +prevTalk("NDC {Minnesota}","ndc-minnesota-2019.jpg", "May 8th, 2019", "St. Paul, MN")
+          +prevTalk("PubConf MN","pubconf-mn-2019.jpg", "May 8th, 2019", "St. Paul, MN")
           +prevTalk("Minnebar","minnebar-2019.jpg", "April 27, 2019", "Richfield, MO")
           +prevTalk("dev up","devup-delorean.jpg", "October 10th, 2018", "St. Louis, MO")
           +prevTalk("PubConf Sydney","pubconf-sydney-group.jpg", "September 21st, 2018", "Sydney, NSW")
