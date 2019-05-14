@@ -39,10 +39,11 @@ $logosize:($card-height * 0.68);
       a { color:$orange; font-weight: $bold; text-decoration: none; 
         &:hover { text-decoration: underline; }
       }
-      .conference { font-size:210%; }
+      .conference { font-size:210%; display: block; margin-bottom:10px; }
       .title { font-size:140%;  display: block; width: 100%; font-weight: $light; line-height: 95%; }
       time { font-size:120%; }
       .button-holder { padding-top: 0.7em; }
+      .city { margin-top:10px; }
       .button {
         &:hover { text-decoration: underline; }
       }
