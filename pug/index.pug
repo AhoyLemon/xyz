@@ -32,7 +32,7 @@ html(lang="en")
             .title ACME Bears No Responsibility For Mr. Coyote Exploding
             time May 8, 2019
             .city St. Paul, MN
-          li
+          //-li
             a.conference(href="https://ndcoslo.com") NDC {Oslo}
             .title I'm Gonna Make You Stop Hating CSS.
             time June 21, 2019
@@ -45,6 +45,11 @@ html(lang="en")
           li
             a.conference(href="http://www.kcdc.info/") KCDC
             .title I'm Gonna Make You Stop Hating CSS.
+            time July 19th, 2019
+            .city Kansas City, MO
+          li
+            a.conference(href="https://pubconf.io/") PubConf KC
+            .title Oops! We Made Simpsons Porn?
             time July 19th, 2019
             .city Kansas City, MO
           li
@@ -68,6 +73,18 @@ html(lang="en")
             .title I'm Gonna Make You Stop Hating CSS.
             time October 2, 2019
             .city Ede, Netherlands
+
+          li
+            a.conference(href="https://www.buildstuff.lt/") BuildStuff LT
+            .title I'm Gonna Make You Stop Hating CSS.
+            time November
+            .city Vilnius, Lithuania
+          
+          li
+            a.conference(href="https://www.ukraine.buildstuff.events") BuildStuff UA
+            .title I'm Gonna Make You Stop Hating CSS.
+            time November
+            .city Kiev, Ukraine
 
   
       figure.card
@@ -112,6 +129,7 @@ html(lang="en")
       section.card.talk-list.previous
         h3.header Previous Talks
         .talks
+          +prevTalk("NDC {Oslo}","ndc-oslo-scooter.jpg", "June 19th, 2019", "Oslo, Norway")
           +prevTalk("NDC {Minnesota}","ndc-minnesota-2019.jpg", "May 8th, 2019", "St. Paul, MN")
           +prevTalk("PubConf MN","pubconf-mn-2019.jpg", "May 8th, 2019", "St. Paul, MN")
           +prevTalk("Minnebar","minnebar-2019.jpg", "April 27, 2019", "Richfield, MO")
