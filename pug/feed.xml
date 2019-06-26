@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ahoylemon 🍋 xyz</title>
+    <link>/feed.xml</link>
+    <item>
+      <title>futile 💀 fun</title>
+      <link>https://futile.fun</link>
+      <description>
+        <p>An incremental game where you click Sisypus to push the rock uphill.</p>
+        <p>This was first launched for NDC {Sydney}</p>
+      </description>
+    </item>
+  </channel>
+</rss>

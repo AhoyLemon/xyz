@@ -9,6 +9,18 @@ mixin timeStamp()
     = d.getFullYear() 
   //- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()  
 
+
+mixin formatDate(d)
+  - var allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
+  - var e = d.split("-");
+  time
+    = allMonths[parseInt(e[1] - 1)]
+    |  
+    = e[2]
+    | , 
+    = e[0]
+
+
 mixin link(title,url)
   a(href=url target="_blank" nofollow noopener)= title
 

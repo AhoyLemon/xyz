@@ -1,0 +1,49 @@
+include partials/_variables.pug
+
+//include partials/_sites.pug
+
+doctype html
+html(lang="en")
+  head
+    include partials/_mixins.pug
+    include partials/_head.pug
+  body
+    include partials/_aside.pug
+    
+    main.site-cards
+
+      each s,index in lemonSites
+
+        - let bgStyle = ""
+        - let fgImage = ""
+        - let bgiFile = ""
+        if s.bgColor
+          - bgStyle = "background-color:" + s.bgColor +"; "
+        else if s.bgImage
+          if s.bgImage.includes("svg")
+            - bgiFile = "svg/"+s.bgImage
+          else if s.bgImage
+            - bgiFile = "img/"+s.bgImage
+          - bgStyle = "background-image:url("+bgiFile+"); "
+        else if s.bgGradient
+          - bgStyle = "background:linear-gradient(to bottom, #4ac29a, #bdfff3); "
+
+        if s.fgImage
+          if s.fgImage.includes("svg")
+            - fgImage = "svg/"+s.fgImage
+          else if s.fgImage
+            - fgImage = "img/"+s.fgImage
+
+        figure.card
+          a.flipper(href=s.url)
+            .front(style=bgStyle)
+              strong
+                +formatDate(s.launched)
+              //-if fgImage != ""
+                img.logo(src=fgImage)
+            .back
+              h3.title= s.title
+              .description !{s.description}
+              div
+                span Launched:
+                strong= s.launched

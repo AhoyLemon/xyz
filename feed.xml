@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ahoylemon 🍋 xyz</title>
+    <link>https://ahoylemon.xyz</link>
+    <author>
+      <name>Lemon</name>
+      <email>lemon@thefpl.us</email>
+      <url>https://thefpl.us/meet/lemon</url>
+    </author>
+    <language>en-us</language>
+    <description>I make a lot of stuff, including this website to show the stuff I make.</description>
+    <icon>https://ahoylemon.xyz/apple-touch-icon-120x120.png</icon>
+    <image>
+      <url>https://ahoylemon.xyz/apple-touch-icon-120x120.png</url>
+      <title>Lemon Logo</title>
+      <link>https://ahoylemon.xyz/feed.xml</link>
+      <width>120</width>
+      <height>120</height>
+    </image>
+    <item>
+      <title>futile 💀 fun</title>
+      <link>https://futile.fun</link>
+      <description>&lt;p&gt;An incremental game where you click Sisypus to push the rock uphill.&lt;/p&gt;&lt;p&gt;This was first launched for NDC {Sydney}&lt;/p&gt;</description>
+      <pubDate>2018-09-21</pubDate>
+    </item>
+    <item>
+      <title>PRETEND 🌐 WORLD</title>
+      <link>https://pretend.world</link>
+      <description>&lt;p&gt;You are at a party of celebrity impersonators. It's up to you to guess which ones.&lt;/p&gt;&lt;p&gt;This was first launched for KCDC X&lt;/p&gt;</description>
+      <pubDate>2018-07-12</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/pretend.svg</url>
+        <title>PRETEND 🌐 WORLD Logo</title>
+        <link>https://pretend.world</link>
+      </image>
+    </item>
+    <item>
+      <title>Trumps PW</title>
+      <link>http://trumps.pw</link>
+      <description>&lt;p&gt;This is a great and good service for members of the Trump family where Trumps can enter in their passwords to &lt;i&gt;earn points!&lt;/i&gt;&lt;/p&gt;</description>
+      <pubDate>2017-12-4</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/trumps.svg</url>
+        <title>Trumps PW Logo</title>
+        <link>http://trumps.pw</link>
+      </image>
+    </item>
+    <item>
+      <title>damn.dog</title>
+      <link>https://damn.dog</link>
+      <description>&lt;p&gt;The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.&lt;/p&gt;&lt;p&gt;Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.&lt;/p&gt;</description>
+      <pubDate>2016-02-04</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/damndog.svg</url>
+        <title>damn.dog Logo</title>
+        <link>https://damn.dog</link>
+      </image>
+    </item>
+    <item>
+      <title>Great Sex Tips!</title>
+      <link>https://greatsex.tips</link>
+      <description>&lt;p&gt;Birthed from a conversation about the editing process of Cosmo's sex tips, this is a site that generates hetero sex advice for women to please their men. How exhilerating!&lt;/p&gt;</description>
+      <pubDate>2017-11-13</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/greatsex.svg</url>
+        <title>Great Sex Tips! Logo</title>
+        <link>https://greatsex.tips</link>
+      </image>
+    </item>
+    <item>
+      <title>Idiots win.</title>
+      <link>https://idiots.win</link>
+      <description>&lt;p&gt;The game that challenges you to figure out what people are searching for on Google.&lt;/p&gt;&lt;p&gt;Idiots Win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.&lt;/p&gt;</description>
+      <pubDate>2016-06-02</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/idiots.svg</url>
+        <title>Idiots win. Logo</title>
+        <link>https://idiots.win</link>
+      </image>
+    </item>
+    <item>
+      <title>2UN 🔵 LTD</title>
+      <link>https://2un.ltd</link>
+      <description>&lt;p&gt;This is a very important website that asks if if you're ready for this. And if you &lt;i&gt;are&lt;/i&gt; ready for this, appropriate measures will be taken.</description>
+      <pubDate>2017-04-21</pubDate>
+    </item>
+    <item>
+      <title>PARTY PARTY PARTY PARTY PARTY</title>
+      <link>https://partypartypartyparty.party</link>
+      <description>&lt;p&gt;This is a button to help you party.&lt;/p&gt;</description>
+      <pubDate>2016-09-21</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/party.png</url>
+        <title>PARTY PARTY PARTY PARTY PARTY Logo</title>
+        <link>https://partypartypartyparty.party</link>
+      </image>
+    </item>
+    <item>
+      <title>Bad Accent Club</title>
+      <link>https://play.google.com/store/apps/details?id=club.badaccent</link>
+      <description>&lt;p&gt;The Android game that puts your friends' accents to the test (and they will usually fail the test).</description>
+      <pubDate>2017-08-18</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/badaccent.svg</url>
+        <title>Bad Accent Club Logo</title>
+        <link>https://play.google.com/store/apps/details?id=club.badaccent</link>
+      </image>
+    </item>
+    <item>
+      <title>jerking online</title>
+      <link>https://ahoylemon.github.io/jerking.online</link>
+      <description>&lt;p&gt;Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.&lt;/p&gt;&lt;p&gt;Cause it makes me giggle.&lt;/p&gt;</description>
+      <pubDate>2017-01-06</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/fist.svg</url>
+        <title>jerking online Logo</title>
+        <link>https://ahoylemon.github.io/jerking.online</link>
+      </image>
+    </item>
+    <item>
+      <title>Verifiable Win</title>
+      <link>https://ahoylemon.github.io/verifiable.win</link>
+      <description>&lt;p&gt;Launched as part of a talk at NDC Minnesota 2018, this is a site to demonstrate you're right about whatever you think.&lt;/p&gt;</description>
+      <pubDate>2018-05-10</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/verifiable.svg</url>
+        <title>Verifiable Win Logo</title>
+        <link>https://ahoylemon.github.io/verifiable.win</link>
+      </image>
+    </item>
+    <item>
+      <title>@rickross_daily</title>
+      <link>https://twitter.com/rickross_daily</link>
+      <description>This twitterbot (which was either the idea of JW Friedman or myself, we can't remember) will inform you what Rick Ross is doing every day, every day.</description>
+      <pubDate>2017-09-05</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/ross_circle.png</url>
+        <title>@rickross_daily Logo</title>
+        <link>https://twitter.com/rickross_daily</link>
+      </image>
+    </item>
+    <item>
+      <title>pl_swiftwater</title>
+      <link>http://www.teamfortress.com/meetyourmatch</link>
+      <description>My friend Schwa and I collaborated on a Team Fortress 2 map called Swiftwater. He did the geometry, I did the art assets and built the story of a bottled water company at war with a chemical mining concern.&lt;/p&gt;&lt;p&gt;In 2016, Valve bought the map and made it official.&lt;/p&gt;</description>
+      <pubDate>2016-07-07</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/swift.svg</url>
+        <title>pl_swiftwater Logo</title>
+        <link>http://www.teamfortress.com/meetyourmatch</link>
+      </image>
+    </item>
+    <item>
+      <title>Frank West Pronounces Emoticons</title>
+      <link>https://ahoylemon.github.io/frankwest</link>
+      <description>&lt;p&gt;Frank West sometimes pronounces emoticons. And now, via this soundboard, he does it on your command.&lt;/p&gt;&lt;p&gt;Even in comparison to the other sites on this page, this one is really stupid.&lt;/p&gt;</description>
+      <pubDate>2016-06-15</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/frankwest.svg</url>
+        <title>Frank West Pronounces Emoticons Logo</title>
+        <link>https://ahoylemon.github.io/frankwest</link>
+      </image>
+    </item>
+    <item>
+      <title>Hamilton -&gt; DOOM</title>
+      <link>https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&amp;gl=US</link>
+      <description>This is a simple Chrome extension that replaces all instances of “Hamilton” with “the video game DOOM”. For obvious reasons.</description>
+      <pubDate>2016-11-19</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/doom320.png</url>
+        <title>Hamilton -&gt; DOOM Logo</title>
+        <link>https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&amp;gl=US</link>
+      </image>
+    </item>
+    <item>
+      <title>Recent Firings In San Francisco</title>
+      <link>http://ahoylemon.github.io/sf-firings</link>
+      <description>&lt;p&gt;I wanted to make a site that would give the user up-the-second updates of who was just fired in the San Francisco Tech Industry.&lt;/p&gt;&lt;p&gt;In reality, it just works an alogorithm to generate random strings.&lt;/p&gt;</description>
+      <pubDate>2015-10-14</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/firings.png</url>
+        <title>Recent Firings In San Francisco Logo</title>
+        <link>http://ahoylemon.github.io/sf-firings</link>
+      </image>
+    </item>
+    <item>
+      <title>The F Plus</title>
+      <link>https://thefpl.us</link>
+      <description>&lt;p&gt;I do a podcast, and also work a fair amount on the website for that podcast, which is a complicated piece of web development.&lt;/p&gt;&lt;p&gt;That said, I'm pretty happy with how this whole thing works.&lt;/p&gt;</description>
+      <pubDate>2014-10-14</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/thefplus.svg</url>
+        <title>The F Plus Logo</title>
+        <link>https://thefpl.us</link>
+      </image>
+    </item>
+    <item>
+      <title>ballp.it</title>
+      <link>https://ballp.it</link>
+      <description>&lt;p&gt;ballp.it is the forum set up to support the community that surrounds The F Plus. It uses PHP software called SMF, but has been modified heavily.&lt;/p&gt;</description>
+      <pubDate>2013-02-16</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/ballpit.svg</url>
+        <title>ballp.it Logo</title>
+        <link>https://ballp.it</link>
+      </image>
+    </item>
+    <item>
+      <title>The Wrongest Words</title>
+      <link>http://ahoylemon.github.io/wrongest.website</link>
+      <description>The Wrongest Words was a multiplayer card game where players had to defend the very stupid statements in front of them. It has been retired.</description>
+      <pubDate>2015-03-26</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/wrongest.svg</url>
+        <title>The Wrongest Words Logo</title>
+        <link>http://ahoylemon.github.io/wrongest.website</link>
+      </image>
+    </item>
+  </channel>
+</rss>
