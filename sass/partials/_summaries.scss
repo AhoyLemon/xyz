@@ -1,0 +1,15 @@
+.project-summaries { padding:20px; display:grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; 
+  .project { display:grid; grid-template-columns: 180px 1fr; grid-gap: 20px; background:white;
+    //> * { border: 1px solid red; }
+    figure { background-size:cover; padding:10px; grid-row: span 2; }
+    figcaption { padding:10px; }
+    .title { font-size:215%;
+      a { color:$orange; text-decoration: none; }
+    }
+    .description { font-size:120%; }
+  }
+}
+
+@media screen and (min-width:888px) {
+  main { margin-left: $sidebar; padding-top: 2em; }
+}

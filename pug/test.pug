@@ -10,7 +10,7 @@ html(lang="en")
   body
     include partials/_aside.pug
     
-    main.site-cards
+    main.project-summaries
 
       each s,index in lemonSites
 
@@ -34,16 +34,34 @@ html(lang="en")
           else if s.fgImage
             - fgImage = "img/"+s.fgImage
 
-        figure.card
-          a.flipper(href=s.url)
+        .project
+          figure(style=bgStyle)
+            if fgImage != ""
+              img.logo(src=fgImage)
+            else if bgImage
+              img.logo(src=bgiFile)
+          figcaption
+            .title
+              a(href=s.url)= s.title
+
+            .description !{s.description}
+
+          .launched
+            span Launched:
+            +formatDate(s.launched)
+          
+
+          
+
+
+          
+          //-a.flipper(href=s.url)
             .front(style=bgStyle)
-              strong
-                +formatDate(s.launched)
-              //-if fgImage != ""
+              if fgImage != ""
                 img.logo(src=fgImage)
             .back
               h3.title= s.title
               .description !{s.description}
               div
                 span Launched:
-                strong= s.launched
+                +formatDate(s.launched)
