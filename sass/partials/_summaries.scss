@@ -1,12 +1,18 @@
 .project-summaries { padding:20px; display:grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; 
-  .project { display:grid; grid-template-columns: 180px 1fr; grid-gap: 20px; background:white;
+  .project { display:grid; grid-template-columns: 200px 1fr; grid-gap: 20px; background:white;
     //> * { border: 1px solid red; }
     figure { background-size:cover; padding:10px; grid-row: span 2; }
     figcaption { padding:10px; }
     .title { font-size:215%;
-      a { color:$orange; text-decoration: none; }
+      a { color:$orange; text-decoration: none;
+        &:hover { text-decoration: underline; }
+      }
     }
     .description { font-size:120%; }
+
+    .detail-row { display:grid; grid-template-columns:repeat(auto-fill, minmax(100px, 200px)); }
+
+
   }
 }
 

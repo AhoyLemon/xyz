@@ -36,19 +36,23 @@ html(lang="en")
 
         .project
           figure(style=bgStyle)
-            if fgImage != ""
-              img.logo(src=fgImage)
-            else if bgImage
-              img.logo(src=bgiFile)
+            a(href=s.url)
+              if fgImage != ""
+                img.logo(src=fgImage)
+              else if bgImage
+                img.logo(src=bgiFile)
           figcaption
             .title
               a(href=s.url)= s.title
 
             .description !{s.description}
 
-          .launched
-            span Launched:
-            +formatDate(s.launched)
+          .detail-row
+            if (s.launched)
+              .detail.launched()
+                span.label LAUNCHED
+                +formatDate(s.launched)
+            
           
 
           
