@@ -16,7 +16,9 @@
   .conference { display: grid; grid-template-columns: 1fr 64px; grid-gap: 15px; }
 
   .pics { position: relative; z-index: 3;
-    a.pic { background-size:cover; height: 64px; width:64px; display: block; margin-bottom: 5px; background-position: center; cursor: pointer; }
+    a.pic { background-size:cover; height: 64px; width:64px; display: block; margin-bottom: 5px; background-position: center; cursor: pointer; border:4px solid transparent; background-repeat: no-repeat;
+      &:hover { border-color:$orange; }
+    }
     a.close-cardpic { font-size: 48px; text-align: center; @include flex-center(); color:$white; display:none; cursor: pointer;
       &:hover { color:$orange; text-decoration: none; }
       &.visible { display: block; }
