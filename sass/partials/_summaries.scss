@@ -1,19 +1,74 @@
-.project-summaries { padding:20px; display:grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; 
-  .project { display:grid; grid-template-columns: 200px 1fr; grid-gap: 20px; background:white;
+.project-summaries { padding:20px; display:grid; grid-template-columns: repeat(2,calc(50% - 15px)); grid-gap: 30px; 
+  .project { display:grid; grid-template-columns: 200px 1fr; grid-gap: 20px; background:white; box-shadow:-0.075em -0.075em 0.15em rgba($black,0.75);
     //> * { border: 1px solid red; }
-    figure { background-size:cover; padding:10px; grid-row: span 2; }
+    figure { background-size:cover; padding:10px; grid-row: span 2; background-position: center; /* @include flex-center(); */
+      //img { width:100%; display: block; }
+    }
     figcaption { padding:10px; }
-    .title { font-size:215%;
+    .title { font-size:215%; line-height: 100%; padding-top:10px;
       a { color:$orange; text-decoration: none;
         &:hover { text-decoration: underline; }
       }
     }
-    .description { font-size:120%; }
+    .type { font-size:120%; }
+    .subhead { text-transform: uppercase; letter-spacing: 0.1em; font-weight:$bold; margin-bottom: 1em; }
+    .description { font-size:120%;
+      p:last-of-type { margin-bottom:0; }
+    }
 
-    .detail-row { display:grid; grid-template-columns:repeat(auto-fill, minmax(100px, 200px)); }
-
-
+    .detail-row { display:grid; grid-template-columns:repeat(auto-fill, minmax(100px, 200px));
+      padding-left:10px; 
+      .label { font-size:80%; }
+      .value { display: block; font-size:140%; }
+    }
   }
+
+
+  .conference { color:#eee; background:$black; padding:15px; margin-right: 15px; height:260px;
+
+  
+
+    &.prev { background-size:cover; background-position: center; position: relative;
+      figcaption { background:rgba($white,0.8); @include position(absolute,null,null,0,0); padding:10px; color:$black;
+        .name { font-size:130%; }
+        .location { font-size:120%; }
+      }
+    }
+    .name { font-size:180%; }
+    a { color:$orange; text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+    .location { font-size:135%; }
+    .presenting { margin-top:0.7em; }
+  }
+
+  .conferences { padding:0; position: relative; overflow: hidden;
+    background:white; box-shadow:-0.075em -0.075em 0.15em rgba($black,0.75);
+
+    .slider-header { display: grid; grid-template-columns: 1fr 120px; grid-gap: 10px; padding:10px;
+      h2 { font-weight: $medium; letter-spacing: 0.05em; font-size:180%;
+        sub { bottom:0; }
+      }
+      .more-holder { text-align: right; @include flex-center(); margin-left: auto;
+        a { font-size:130%; }
+      }
+    }
+
+    .slick-slider { padding-bottom: 40px; }
+    .slick-initialized.slick-slider { margin-right:-15px;}
+    .slick-arrow { bottom: 0; height:30px; line-height: 30px;
+      &.slick-next { right:20px; }
+    }
+    .slick-dots { display: block; text-align: center; @include position(absolute,null,15px,0,15px);
+      li { display: inline-block; padding:0 0.5em 0 0;
+        button {  display: inline-block; line-height: 1.3em; height: 1em; width:1em; border:1px solid $orange; background:transparent; border-radius:50%; font-family: $font; padding:0; cursor: pointer; color:$orange; overflow: hidden; text-indent: -999px; }
+        &.slick-active {
+          button { background:$orange; color:$black; }
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (min-width:888px) {
