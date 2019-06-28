@@ -1,0 +1,25 @@
+.talk-grid { display: grid; grid-template-columns: repeat(3,1fr); grid-gap:30px; padding-left: 30px; padding-right: 30px;
+  .conference { background-color:white; box-shadow:-0.075em -0.075em 0.15em rgba($black,0.75); padding:15px; position: relative;
+    .name { font-size:210%; }
+    a { color:$orange; text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+    .location { font-size:115%; letter-spacing: 0.1em; }
+    .date { font-weight: bold; }
+    .presenting { margin-top:0.5em; }
+  }
+
+  .conference { display: grid; grid-template-columns: 1fr 64px; grid-gap: 15px; }
+
+  .pics { position: relative; z-index: 3;
+    a.pic { background-size:cover; height: 64px; width:64px; display: block; margin-bottom: 5px; background-position: center; cursor: pointer; }
+    a.close-cardpic { font-size: 48px; text-align: center; @include flex-center(); color:$white; display:none; cursor: pointer;
+      &:hover { color:$orange; text-decoration: none; }
+      &.visible { display: block; }
+    }
+  }
+
+  .cardpic { @include position(absolute,0,0,0,0); background:#111; display: none; background-position: center; background-size:contain; background-repeat: no-repeat; z-index: 2;
+    &.visible { display: block; }
+  }
+}

@@ -16,80 +16,13 @@ html(lang="en")
 
       each s,index in lemonSites
 
-
         if index == 4
           +talkSlider('previous')
 
-
-        - let bgStyle = ""
-        - let fgImage = ""
-        - let bgiFile = ""
-        if s.bgColor
-          - bgStyle = "background-color:" + s.bgColor +"; "
-        else if s.bgImage
-          if s.bgImage.includes("svg")
-            - bgiFile = "svg/"+s.bgImage
-          else if s.bgImage
-            - bgiFile = "img/"+s.bgImage
-          - bgStyle = "background-image:url("+bgiFile+"); "
-        else if s.bgGradient
-          - bgStyle = "background:linear-gradient(to bottom, #4ac29a, #bdfff3); "
-
-        if s.fgImage
-          if s.fgImage.includes("svg")
-            - fgImage = "svg/"+s.fgImage
-          else if s.fgImage
-            - fgImage = "img/"+s.fgImage
-
-        .project
-          figure(style=bgStyle)
-            a(href=s.url)
-              if fgImage != ""
-                img.logo(src=fgImage)
-              else if bgImage
-                img.logo(src=bgiFile)
-          figcaption
-            .title
-              a(href=s.url)= s.title
-            if (s.subhead)
-              .subhead= s.subhead
-            else if (s.type)
-              .type= s.type
-
-            .description !{s.description}
-
-          .detail-row
-            //-if (s.type)
-              .detail
-                .label &nbsp;
-                .value= s.type
-            if (s.launched)
-              .detail.launched
-                .label LAUNCHED
-                .value
-                  +formatDate(s.launched)
-            if (s.retired)
-              .detail.retired
-                .label RETIRED
-                .value
-                  +formatDate(s.retired)
-            
-          
-
-          
+        +projectSummary(s)
+        
 
 
-          
-          //-a.flipper(href=s.url)
-            .front(style=bgStyle)
-              if fgImage != ""
-                img.logo(src=fgImage)
-            .back
-              h3.title= s.title
-              .description !{s.description}
-              div
-                span Launched:
-                +formatDate(s.launched)
   script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
   link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")

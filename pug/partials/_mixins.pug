@@ -58,7 +58,7 @@ mixin talkSlider(w)
           | UPCOMING TALKS 
           sub (#{upcomingTalks.length})
         .more-holder
-          a see all
+          a(href="talks.html") see all
       .upcoming-conference-carousel
         each t,index in upcomingTalks
           .conference.upcoming
@@ -87,10 +87,15 @@ mixin talkSlider(w)
           | PREVIOUS TALKS 
           sub (#{previousTalks.length})
         .more-holder
-          a see all
+          a(href="talks.html") see all
       .previous-conference-carousel
         each t,index in previousTalks
-          figure.conference.prev(style="background-image:url(img/talks/"+t.img+")")
+          - let p = ""
+          if t.pics
+            - p = "img/talks/" + t.pics[0]
+          else if t.img
+            - p = "img/talks/" + t.img
+          figure.conference.prev(style="background-image:url("+p+")")
             figcaption
               .name
                 a(href=t.url)= t.name
@@ -101,3 +106,57 @@ mixin talkSlider(w)
                   span #{t.city}, #{t.country}
               .date
                 +formatDate(t.date)
+
+mixin projectSummary(s)
+  - let bgStyle = ""
+  - let fgImage = ""
+  - let bgiFile = ""
+  if s.bgColor
+    - bgStyle = "background-color:" + s.bgColor +"; "
+  else if s.bgImage
+    if s.bgImage.includes("svg")
+      - bgiFile = "svg/"+s.bgImage
+    else if s.bgImage
+      - bgiFile = "img/"+s.bgImage
+    - bgStyle = "background-image:url("+bgiFile+"); "
+  else if s.bgGradient
+    - bgStyle = "background:"+s.bgGradient+"; "
+
+  if s.fgImage
+    if s.fgImage.includes("svg")
+      - fgImage = "svg/"+s.fgImage
+    else if s.fgImage
+      - fgImage = "img/"+s.fgImage
+
+  .project
+    figure(style=bgStyle)
+      a(href=s.url)
+        if fgImage != ""
+          img.logo(src=fgImage)
+        else if bgImage
+          img.logo(src=bgiFile)
+    figcaption
+      .title
+        a(href=s.url)= s.title
+      if (s.subhead)
+        .subhead= s.subhead
+      else if (s.type)
+        .type= s.type
+
+      .description !{s.description}
+
+    .detail-row
+      //-if (s.type)
+        .detail
+          .label &nbsp;
+          .value= s.type
+      if (s.launched)
+        .detail.launched
+          .label LAUNCHED
+          .value
+            +formatDate(s.launched)
+      if (s.retired)
+        .detail.retired
+          .label RETIRED
+          .value
+            +formatDate(s.retired)

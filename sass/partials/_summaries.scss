@@ -45,7 +45,9 @@
         sub { bottom:0; }
       }
       .more-holder { text-align: right; @include flex-center(); margin-left: auto;
-        a { font-size:130%; }
+        a { font-size:130%; color:$orange; text-decoration: none;
+          &:hover { text-decoration: underline; }
+        }
       }
     }
 
@@ -56,9 +58,9 @@
     }
     .slick-dots { display: block; text-align: center; @include position(absolute,null,15px,5px,15px);
       li { display: inline-block; padding:0 0.5em 0 0;
-        button {  display: inline-block; line-height: 1.3em; height: 1em; width:1em; border:1px solid $orange; background:transparent; border-radius:50%; font-family: $font; padding:0; cursor: pointer; color:$orange; overflow: hidden; text-indent: -999px; }
+        button {  display: inline-block; line-height: 1.3em; height: 1em; width:1em; background:transparent; background: $orange; border:none; transition: background 0.2s linear; border-radius:50%; font-family: $font; padding:0; cursor: pointer; overflow: hidden; text-indent: -999px;  }
         &.slick-active {
-          button { background:$orange; color:$black; }
+          button { background:$white; cursor: default; }
         }
       }
     }
