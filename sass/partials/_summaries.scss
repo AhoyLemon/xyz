@@ -21,11 +21,8 @@
       .value { display: block; font-size:140%; }
     }
   }
-  
+
   .conference { background:$white; color:$black; padding:15px; margin-right: 15px; height:260px;
-
-  
-
     &.prev { background-size:cover; background-position: center; position: relative;
       figcaption { background:rgba($white,0.8); @include position(absolute,null,null,0,0); padding:10px; color:$black;
         .name { font-size:130%; }
@@ -43,7 +40,7 @@
   .conferences { padding:0; position: relative; overflow: hidden;
     background:$black; color:$white; box-shadow:-0.075em -0.075em 0.15em rgba($black,0.75);
 
-    .slider-header { display: grid; grid-template-columns: 1fr 120px; grid-gap: 10px; padding:10px;
+    .slider-header { display: grid; grid-template-columns: 1fr 120px; grid-gap: 10px; padding:5px 15px;
       h2 { font-weight: $medium; letter-spacing: 0.05em; font-size:180%;
         sub { bottom:0; }
       }
@@ -54,10 +51,10 @@
 
     .slick-slider { padding-bottom: 40px; }
     .slick-initialized.slick-slider { margin-right:-15px;}
-    .slick-arrow { bottom: 0; height:30px; line-height: 30px;
+    .slick-arrow { bottom: 5px; height:30px; line-height: 30px;
       &.slick-next { right:20px; }
     }
-    .slick-dots { display: block; text-align: center; @include position(absolute,null,15px,0,15px);
+    .slick-dots { display: block; text-align: center; @include position(absolute,null,15px,5px,15px);
       li { display: inline-block; padding:0 0.5em 0 0;
         button {  display: inline-block; line-height: 1.3em; height: 1em; width:1em; border:1px solid $orange; background:transparent; border-radius:50%; font-family: $font; padding:0; cursor: pointer; color:$orange; overflow: hidden; text-indent: -999px; }
         &.slick-active {
