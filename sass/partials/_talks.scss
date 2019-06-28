@@ -1,4 +1,4 @@
-.talk-grid { display: grid; grid-template-columns: repeat(3,1fr); grid-gap:30px; padding-left: 30px; padding-right: 30px;
+.talk-grid { display: grid; grid-template-columns: repeat(3,1fr); grid-gap:30px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;
   .conference { background-color:white; box-shadow:-0.075em -0.075em 0.15em rgba($black,0.75); padding:15px; position: relative;
     .name { font-size:210%; }
     a { color:$orange; text-decoration: none;
@@ -7,6 +7,10 @@
     .location { font-size:115%; letter-spacing: 0.1em; }
     .date { font-weight: bold; }
     .presenting { margin-top:0.5em; }
+  }
+
+  .leading {
+    h2 { font-weight: $light; font-size:250%; letter-spacing: 0.1em; padding-top: 1em; }
   }
 
   .conference { display: grid; grid-template-columns: 1fr 64px; grid-gap: 15px; }

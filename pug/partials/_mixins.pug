@@ -63,7 +63,7 @@ mixin talkSlider(w)
         each t,index in upcomingTalks
           .conference.upcoming
             .name
-              a(href=t.url)= t.name
+              a(href=t.url target="_blank")= t.name
             .location
               if t.city && t.state
                 span #{t.city}, #{t.state}
@@ -87,7 +87,7 @@ mixin talkSlider(w)
           | PREVIOUS TALKS 
           sub (#{previousTalks.length})
         .more-holder
-          a(href="talks.html") see all
+          a(href="talks.html#previous") see all
       .previous-conference-carousel
         each t,index in previousTalks
           - let p = ""
@@ -98,7 +98,7 @@ mixin talkSlider(w)
           figure.conference.prev(style="background-image:url("+p+")")
             figcaption
               .name
-                a(href=t.url)= t.name
+                a(href=t.url target="_blank")= t.name
               .location
                 if t.city && t.state
                   span #{t.city}, #{t.state}

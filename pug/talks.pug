@@ -10,42 +10,26 @@ html(lang="en")
   body
     include partials/_aside.pug
     
-    main.talk-grid
-      each t,index in upcomingTalks
-        figure.conference
-          .details
-            .name
-              a(href=t.url)= t.name
-            .location
-              if t.city && t.state
-                span #{t.city}, #{t.state}
-              else if t.city && t.country
-                span #{t.city}, #{t.country}
-            .date
-              +formatDate(t.date)
-            .presenting Presenting:
-              if t.talks
-                ul.multiple-talks
-                  each u,uindex in t.talks
-                    li.talk= u
-              else if t.talk
-                ul
-                  li.talk= t.talk
+    main.talks-only
 
-      each t,index in previousTalks
-        .conference
-          .details
-            .name
-              a(href=t.url)= t.name
-            .location
-              if t.city && t.state
-                span #{t.city}, #{t.state}
-              else if t.city && t.country
-                span #{t.city}, #{t.country}
-            .date
-              +formatDate(t.date)
-            if t.talks || t.talk
-              .presenting Presented:
+      .talk-grid
+
+        figure.leading
+          a(name="upcoming")
+          h2 Upcoming Conferences &raquo;
+        each t,index in upcomingTalks
+          figure.conference
+            .details
+              .name
+                a(href=t.url)= t.name
+              .location
+                if t.city && t.state
+                  span #{t.city}, #{t.state}
+                else if t.city && t.country
+                  span #{t.city}, #{t.country}
+              .date
+                +formatDate(t.date)
+              .presenting Presenting:
                 if t.talks
                   ul.multiple-talks
                     each u,uindex in t.talks
@@ -53,19 +37,44 @@ html(lang="en")
                 else if t.talk
                   ul
                     li.talk= t.talk
-          .pics
-            if t.pics
-              a.close-cardpic() 
-                span X
-              each pic, index in t.pics
-                a.pic(data-pic=pic style="background-image:url(img/talks/"+pic+")")
-            else if t.img
-              a.close-cardpic
-                span X
-              a.pic(data-pic=t.img style="background-image:url(img/talks/"+t.img+")")
-              
+      .talk-grid
+        figure.leading
+          a(name="previous")
+          h2 Previous Conferences &raquo;
+        each t,index in previousTalks
+          .conference
+            .details
+              .name
+                a(href=t.url)= t.name
+              .location
+                if t.city && t.state
+                  span #{t.city}, #{t.state}
+                else if t.city && t.country
+                  span #{t.city}, #{t.country}
+              .date
+                +formatDate(t.date)
+              if t.talks || t.talk
+                .presenting Presented:
+                  if t.talks
+                    ul.multiple-talks
+                      each u,uindex in t.talks
+                        li.talk= u
+                  else if t.talk
+                    ul
+                      li.talk= t.talk
+            .pics
+              if t.pics
+                a.close-cardpic() 
+                  span X
+                each pic, index in t.pics
+                  a.pic(data-pic=pic style="background-image:url(img/talks/"+pic+")")
+              else if t.img
+                a.close-cardpic
+                  span X
+                a.pic(data-pic=t.img style="background-image:url(img/talks/"+t.img+")")
+                
 
-          figure.cardpic
+            figure.cardpic
     
 
 
