@@ -33,10 +33,10 @@ aside { padding:1em; background:$yellow; color:$black; font-size:22px;
 
 @media screen and (min-width:888px) {
   aside { @include position(fixed,0,null,0,0); width:$sidebar; box-shadow:inset 0 0 0.5em rgba($black,0.95);
-    h1 { font-size:2.35em; margin-bottom:0.5em;
+    h1 { font-size:1.9em; margin-bottom:0.5em;
       .big { font-size:2.21em; }
     }
-    p { font-size:26px; }
+    p { font-size:24px; }
     ul { @include position(absolute,null,1em,1em,1em); }
     li {
       .icon { height: 1em; }

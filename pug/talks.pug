@@ -58,7 +58,11 @@ html(lang="en")
                   if t.talks
                     ul.multiple-talks
                       each u,uindex in t.talks
-                        li.talk= u
+                        if u.url
+                          li.talk
+                            a(href=u.url) #{u.name} (Video)
+                        else
+                          li.talk= u
                   else if t.talk
                     ul
                       li.talk= t.talk

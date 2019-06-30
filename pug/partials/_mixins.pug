@@ -130,11 +130,12 @@ mixin projectSummary(s)
 
   .project
     figure(style=bgStyle)
-      a(href=s.url)
-        if fgImage != ""
+      if fgImage != ""
+        a(href=s.url)
           img.logo(src=fgImage)
-        else if bgImage
-          img.logo(src=bgiFile)
+      else if s.bgImage
+        a.absolute-link(href=s.url style=bgStyle)
+          //-img.logo(src=bgiFile)
     figcaption
       .title
         a(href=s.url)= s.title
