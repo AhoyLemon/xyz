@@ -21,16 +21,20 @@ rss( version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmln
 
     each s,index in lemonSites
       item
+        - var fileName = ""
         title= s.title
         link= s.url
         description= s.description
         pubDate= s.launched
         if s.fgImage
           if s.fgImage.includes("svg")
-            - fgImage = "svg/"+s.fgImage
+            - fileName = "svg/"+s.fgImage
           else if s.fgImage
-            - fgImage = "img/"+s.fgImage
+            - fileName = "img/"+s.fgImage
+        else if s.bgImage
+          - fileName = "img/"+s.bgImage
+        if fileName
           image
-            url #{siteURL}/#{fgImage}
-            title #{s.title} Logo
+            url #{siteURL}/#{fileName}
+            title #{s.title} logo
             link= s.url

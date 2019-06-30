@@ -21,7 +21,7 @@ html(lang="en")
           figure.conference
             .details
               .name
-                a(href=t.url)= t.name
+                a(href=t.url target="_blank")= t.name
               .location
                 if t.city && t.state
                   span #{t.city}, #{t.state}
@@ -37,6 +37,11 @@ html(lang="en")
                 else if t.talk
                   ul
                     li.talk= t.talk
+
+        figure.map
+          a.absolute-link(href="https://drive.google.com/open?id=1UXVK7n3Sxknm92AQXx6WoIgNDiKFC9OW&usp=sharing" target="_blank")
+            span Location Map
+
       .talk-grid
         figure.leading
           a(name="previous")
@@ -45,7 +50,7 @@ html(lang="en")
           .conference
             .details
               .name
-                a(href=t.url)= t.name
+                a(href=t.url target="_blank")= t.name
               .location
                 if t.city && t.state
                   span #{t.city}, #{t.state}
@@ -80,6 +85,9 @@ html(lang="en")
 
             figure.cardpic
     
+        figure.back-home
+          a(href="/")
+            span Back Home
 
 
   script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")

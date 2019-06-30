@@ -19,10 +19,26 @@
       <height>120</height>
     </image>
     <item>
+      <title>damn.dog</title>
+      <link>https://damn.dog</link>
+      <description>&lt;p&gt;The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.&lt;/p&gt;&lt;p&gt;Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.&lt;/p&gt;</description>
+      <pubDate>2016-02-04</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/damndog.svg</url>
+        <title>damn.dog logo</title>
+        <link>https://damn.dog</link>
+      </image>
+    </item>
+    <item>
       <title>futile 💀 fun</title>
       <link>https://futile.fun</link>
       <description>&lt;p&gt;An incremental game where you click Sisypus to push the rock uphill.&lt;/p&gt;&lt;p&gt;This was first launched for NDC {Sydney}&lt;/p&gt;</description>
       <pubDate>2018-09-21</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/futile-512.png</url>
+        <title>futile 💀 fun logo</title>
+        <link>https://futile.fun</link>
+      </image>
     </item>
     <item>
       <title>PRETEND 🌐 WORLD</title>
@@ -31,7 +47,7 @@
       <pubDate>2018-07-12</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/pretend.svg</url>
-        <title>PRETEND 🌐 WORLD Logo</title>
+        <title>PRETEND 🌐 WORLD logo</title>
         <link>https://pretend.world</link>
       </image>
     </item>
@@ -41,20 +57,9 @@
       <description>&lt;p&gt;This is a great and good service for members of the Trump family where Trumps can enter in their passwords to &lt;i&gt;earn points!&lt;/i&gt;&lt;/p&gt;</description>
       <pubDate>2017-12-4</pubDate>
       <image>
-        <url>https://ahoylemon.xyz/svg/trumps.svg</url>
-        <title>Trumps PW Logo</title>
+        <url>https://ahoylemon.xyz/img/pw.png</url>
+        <title>Trumps PW logo</title>
         <link>http://trumps.pw</link>
-      </image>
-    </item>
-    <item>
-      <title>damn.dog</title>
-      <link>https://damn.dog</link>
-      <description>&lt;p&gt;The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.&lt;/p&gt;&lt;p&gt;Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.&lt;/p&gt;</description>
-      <pubDate>2016-02-04</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/svg/damndog.svg</url>
-        <title>damn.dog Logo</title>
-        <link>https://damn.dog</link>
       </image>
     </item>
     <item>
@@ -64,7 +69,7 @@
       <pubDate>2017-11-13</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/greatsex.svg</url>
-        <title>Great Sex Tips! Logo</title>
+        <title>Great Sex Tips! logo</title>
         <link>https://greatsex.tips</link>
       </image>
     </item>
@@ -75,7 +80,7 @@
       <pubDate>2016-06-02</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/idiots.svg</url>
-        <title>Idiots win. Logo</title>
+        <title>Idiots win. logo</title>
         <link>https://idiots.win</link>
       </image>
     </item>
@@ -84,6 +89,11 @@
       <link>https://2un.ltd</link>
       <description>&lt;p&gt;This is a very important website that asks if if you're ready for this. And if you &lt;i&gt;are&lt;/i&gt; ready for this, appropriate measures will be taken.</description>
       <pubDate>2017-04-21</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/2unltd-card.svg</url>
+        <title>2UN 🔵 LTD logo</title>
+        <link>https://2un.ltd</link>
+      </image>
     </item>
     <item>
       <title>PARTY PARTY PARTY PARTY PARTY</title>
@@ -92,8 +102,19 @@
       <pubDate>2016-09-21</pubDate>
       <image>
         <url>https://ahoylemon.xyz/img/party.png</url>
-        <title>PARTY PARTY PARTY PARTY PARTY Logo</title>
+        <title>PARTY PARTY PARTY PARTY PARTY logo</title>
         <link>https://partypartypartyparty.party</link>
+      </image>
+    </item>
+    <item>
+      <title>dumb men</title>
+      <link>https://dumb.men</link>
+      <description>&lt;p&gt;This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.&lt;/p&gt;</description>
+      <pubDate>2017-11-04</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/men-foreground.png</url>
+        <title>dumb men logo</title>
+        <link>https://dumb.men</link>
       </image>
     </item>
     <item>
@@ -103,7 +124,7 @@
       <pubDate>2017-08-18</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/badaccent.svg</url>
-        <title>Bad Accent Club Logo</title>
+        <title>Bad Accent Club logo</title>
         <link>https://play.google.com/store/apps/details?id=club.badaccent</link>
       </image>
     </item>
@@ -114,7 +135,7 @@
       <pubDate>2017-01-06</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/fist.svg</url>
-        <title>jerking online Logo</title>
+        <title>jerking online logo</title>
         <link>https://ahoylemon.github.io/jerking.online</link>
       </image>
     </item>
@@ -125,7 +146,7 @@
       <pubDate>2018-05-10</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/verifiable.svg</url>
-        <title>Verifiable Win Logo</title>
+        <title>Verifiable Win logo</title>
         <link>https://ahoylemon.github.io/verifiable.win</link>
       </image>
     </item>
@@ -136,7 +157,7 @@
       <pubDate>2017-09-05</pubDate>
       <image>
         <url>https://ahoylemon.xyz/img/ross_circle.png</url>
-        <title>@rickross_daily Logo</title>
+        <title>@rickross_daily logo</title>
         <link>https://twitter.com/rickross_daily</link>
       </image>
     </item>
@@ -147,7 +168,7 @@
       <pubDate>2016-07-07</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/swift.svg</url>
-        <title>pl_swiftwater Logo</title>
+        <title>pl_swiftwater logo</title>
         <link>http://www.teamfortress.com/meetyourmatch</link>
       </image>
     </item>
@@ -158,18 +179,18 @@
       <pubDate>2016-06-15</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/frankwest.svg</url>
-        <title>Frank West Pronounces Emoticons Logo</title>
+        <title>Frank West Pronounces Emoticons logo</title>
         <link>https://ahoylemon.github.io/frankwest</link>
       </image>
     </item>
     <item>
       <title>Hamilton -&gt; DOOM</title>
       <link>https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&amp;gl=US</link>
-      <description>This is a simple Chrome extension that replaces all instances of “Hamilton” with “the video game DOOM”. For obvious reasons.</description>
+      <description>This is a Chrome extension that replaces all instances of “Hamilton” with “the video game DOOM”. For obvious reasons.</description>
       <pubDate>2016-11-19</pubDate>
       <image>
         <url>https://ahoylemon.xyz/img/doom320.png</url>
-        <title>Hamilton -&gt; DOOM Logo</title>
+        <title>Hamilton -&gt; DOOM logo</title>
         <link>https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&amp;gl=US</link>
       </image>
     </item>
@@ -180,7 +201,7 @@
       <pubDate>2015-10-14</pubDate>
       <image>
         <url>https://ahoylemon.xyz/img/firings.png</url>
-        <title>Recent Firings In San Francisco Logo</title>
+        <title>Recent Firings In San Francisco logo</title>
         <link>http://ahoylemon.github.io/sf-firings</link>
       </image>
     </item>
@@ -191,7 +212,7 @@
       <pubDate>2014-10-14</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/thefplus.svg</url>
-        <title>The F Plus Logo</title>
+        <title>The F Plus logo</title>
         <link>https://thefpl.us</link>
       </image>
     </item>
@@ -202,19 +223,30 @@
       <pubDate>2013-02-16</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/ballpit.svg</url>
-        <title>ballp.it Logo</title>
+        <title>ballp.it logo</title>
         <link>https://ballp.it</link>
       </image>
     </item>
     <item>
       <title>The Wrongest Words</title>
       <link>http://ahoylemon.github.io/wrongest.website</link>
-      <description>The Wrongest Words was a multiplayer card game where players had to defend the very stupid statements in front of them. It has been retired.</description>
+      <description>&lt;p&gt;The Wrongest Words was a multiplayer card game where players had to defend the very stupid statements in front of them. It has been retired.&lt;/p&gt;</description>
       <pubDate>2015-03-26</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/wrongest.svg</url>
-        <title>The Wrongest Words Logo</title>
+        <title>The Wrongest Words logo</title>
         <link>http://ahoylemon.github.io/wrongest.website</link>
+      </image>
+    </item>
+    <item>
+      <title>Me Making Websites IRL</title>
+      <link>https://youtu.be/4YRuHRvniJM</link>
+      <description>&lt;p&gt;Using an open source software called “Gource”, I made this 3.5 minute YouTube video documenting the process of building most of the websites on this list, set to a Paper Chase song.&lt;/p&gt;&lt;p&gt;Not incredibly informative, but fun to look at.&lt;/p&gt;</description>
+      <pubDate>2017-12-19</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/irl.jpg</url>
+        <title>Me Making Websites IRL logo</title>
+        <link>https://youtu.be/4YRuHRvniJM</link>
       </image>
     </item>
   </channel>
