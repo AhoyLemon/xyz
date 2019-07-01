@@ -74,6 +74,12 @@
   }
 
 }
+@media (min-width:1888px) { 
+  .project-summaries { grid-template-columns: repeat(3,calc(33.333333% - 15px));
+
+  }
+}
+
 
 @media (max-width:1350px) { 
   .project-summaries { 
