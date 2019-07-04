@@ -43,11 +43,10 @@
       &:hover { text-decoration: underline; }
     }
   }
-
-
-
 }
 
+
+.carousel:not(.slick-initialized) { display: none !important; }
 
 .talk-grid { grid-template-columns:repeat(auto-fill, minmax(380px, 1fr));
 

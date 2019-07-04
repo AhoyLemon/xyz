@@ -59,7 +59,7 @@ mixin talkSlider(w)
           sub (#{upcomingTalks.length})
         .more-holder
           a(href="talks.html") see all
-      .upcoming-conference-carousel
+      .upcoming-conference-carousel.carousel
         each t,index in upcomingTalks
           .conference.upcoming
             .name
@@ -88,7 +88,7 @@ mixin talkSlider(w)
           sub (#{previousTalks.length})
         .more-holder
           a(href="talks.html#previous") see all
-      .previous-conference-carousel
+      .previous-conference-carousel.carousel
         each t,index in previousTalks
           - let p = ""
           if t.pics
