@@ -22,10 +22,14 @@
       p:last-of-type { margin-bottom:0; }
     }
 
-    .detail-row { display:grid; grid-template-columns:repeat(auto-fill, minmax(100px, 200px));
-      padding-left:10px; 
+    .detail-row { display:grid; grid-template-columns:repeat(3, 1fr); padding-bottom: 10px; padding-left:10px; 
       .label { font-size:80%; }
       .value { display: block; font-size:140%; }
+      .repository {
+        a { color: $orange; text-decoration: none;
+          &:hover {  text-decoration: underline; }
+        } 
+      }
     }
   }
 

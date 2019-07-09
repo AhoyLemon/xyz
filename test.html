@@ -6,7 +6,7 @@
     <title>Hi, my name is Lemon.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2019-06-01@11:19:24">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2019-06-09@16:50:39">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -49,6 +49,7 @@
     <meta property="og:image:height" content="1200">
     <meta property="og:description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <meta property="og:email" content="lemon@thefpl.us">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <aside>
@@ -84,7 +85,7 @@
                  UPCOMING TALKS <sub>(6)</sub></h2>
               <div class="more-holder"><a href="talks.html">see all</a></div>
             </div>
-            <div class="upcoming-conference-carousel">
+            <div class="upcoming-conference-carousel carousel">
               <div class="conference upcoming">
                 <div class="name"><a href="http://www.kcdc.info" target="_blank">KCDC</a></div>
                 <div class="location"><span>Kansas City, MO</span>
@@ -168,7 +169,7 @@
               </div>
             </div>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/damn.dog">
             <figure style="background-color:#222730; "><a href="https://damn.dog"><img class="logo" src="svg/damndog.svg"></a>
             </figure>
             <figcaption>
@@ -184,9 +185,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/damn.dog" target="_blank"><span>damn.dog</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/damn.dog
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/damn.dog/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/damn.dog"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/damn.dog"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/futile.fun">
             <figure style="background-image:url(img/futile-512.png); "><a class="absolute-link" href="https://futile.fun" style="background-image:url(img/futile-512.png); "></a>
             </figure>
             <figcaption>
@@ -202,9 +222,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/futile.fun" target="_blank"><span>futile.fun</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/futile.fun
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/futile.fun/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/futile.fun"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/futile.fun"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/pretend.world">
             <figure style="background-color:#E6E1C5; "><a href="https://pretend.world"><img class="logo" src="svg/pretend.svg"></a>
             </figure>
             <figcaption>
@@ -220,9 +259,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/pretend.world" target="_blank"><span>pretend.world</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/pretend.world
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/pretend.world/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/pretend.world"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/pretend.world"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/trumps.pw">
             <figure style="background-image:url(img/gold3.jpg); "><a href="http://trumps.pw"><img class="logo" src="img/pw.png"></a>
             </figure>
             <figcaption>
@@ -238,7 +296,26 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/trumps.pw" target="_blank"><span>trumps.pw</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/trumps.pw
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/trumps.pw/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/trumps.pw"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/trumps.pw"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
           <div class="previous-conferences conferences">
             <div class="slider-header">
@@ -246,7 +323,7 @@
                  PREVIOUS TALKS <sub>(14)</sub></h2>
               <div class="more-holder"><a href="talks.html#previous">see all</a></div>
             </div>
-            <div class="previous-conference-carousel">
+            <div class="previous-conference-carousel carousel">
               <figure class="conference prev" style="background-image:url(img/talks/ndc-oslo-scooter.jpg)">
                 <figcaption>
                   <div class="name"><a href="https://ndcoslo.com" target="_blank">NDC {Oslo}</a></div>
@@ -403,7 +480,7 @@
               </figure>
             </div>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/greatsex.tips">
             <figure style="background-color:#ef2525; "><a href="https://greatsex.tips"><img class="logo" src="svg/greatsex.svg"></a>
             </figure>
             <figcaption>
@@ -419,9 +496,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/greatsex.tips" target="_blank"><span>greatsex.tips</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/greatsex.tips
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/greatsex.tips/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/greatsex.tips"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/greatsex.tips"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/idiots.win">
             <figure style="background-color:#f1da5e; "><a href="https://idiots.win"><img class="logo" src="svg/idiots.svg"></a>
             </figure>
             <figcaption>
@@ -437,9 +533,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/idiots.win" target="_blank"><span>idiots.win</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/idiots.win
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/idiots.win/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/idiots.win"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/idiots.win"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/2un.ltd">
             <figure style="background-image:url(svg/2unltd-card.svg); "><a class="absolute-link" href="https://2un.ltd" style="background-image:url(svg/2unltd-card.svg); "></a>
             </figure>
             <figcaption>
@@ -455,9 +570,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/2un.ltd" target="_blank"><span>2un.ltd</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/2un.ltd
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/2un.ltd/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/2un.ltd"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/2un.ltd"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/partypartypartypartyparty">
             <figure style="background-color:#d1d1d1; "><a href="https://partypartypartyparty.party"><img class="logo" src="img/party.png"></a>
             </figure>
             <figcaption>
@@ -473,9 +607,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/partypartypartypartyparty" target="_blank"><span>partypartypartypartyparty</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/partypartypartypartyparty
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/partypartypartypartyparty/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/partypartypartypartyparty"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/partypartypartypartyparty"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/dumb.men">
             <figure style="background-image:url(img/men-background.png); "><a href="https://dumb.men"><img class="logo" src="img/men-foreground.png"></a>
             </figure>
             <figcaption>
@@ -491,9 +644,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/dumb.men" target="_blank"><span>dumb.men</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/dumb.men
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/dumb.men/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/dumb.men"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/dumb.men"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/badaccent.club">
             <figure style="background-color:#a5ed83; "><a href="https://play.google.com/store/apps/details?id=club.badaccent"><img class="logo" src="svg/badaccent.svg"></a>
             </figure>
             <figcaption>
@@ -509,9 +681,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/badaccent.club" target="_blank"><span>badaccent.club</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/badaccent.club
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/badaccent.club/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/badaccent.club"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/badaccent.club"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/jerking.online">
             <figure style="background-color:#f0f1f2; "><a href="https://ahoylemon.github.io/jerking.online"><img class="logo" src="svg/fist.svg"></a>
             </figure>
             <figcaption>
@@ -527,9 +718,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/jerking.online" target="_blank"><span>jerking.online</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/jerking.online
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/jerking.online/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/jerking.online"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/jerking.online"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/verifiable.win">
             <figure style="background:linear-gradient(to bottom, #4ac29a, #bdfff3); "><a href="https://ahoylemon.github.io/verifiable.win"><img class="logo" src="svg/verifiable.svg"></a>
             </figure>
             <figcaption>
@@ -545,7 +755,26 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/verifiable.win" target="_blank"><span>verifiable.win</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/verifiable.win
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/verifiable.win/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/verifiable.win"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/verifiable.win"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
           <div class="project">
             <figure style="background-image:url(img/gold2.jpg); "><a href="https://twitter.com/rickross_daily"><img class="logo" src="img/ross_circle.png"></a>
@@ -583,7 +812,7 @@
               </div>
             </div>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/frankwest">
             <figure style="background-color:#f3c077; "><a href="https://ahoylemon.github.io/frankwest"><img class="logo" src="svg/frankwest.svg"></a>
             </figure>
             <figcaption>
@@ -599,7 +828,26 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/frankwest" target="_blank"><span>frankwest</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/frankwest
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/frankwest/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/frankwest"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/frankwest"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
           <div class="project">
             <figure style="background-image:url(img/gold.jpg); "><a href="https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&amp;gl=US"><img class="logo" src="img/doom320.png"></a>
@@ -619,7 +867,7 @@
               </div>
             </div>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/sf-firings">
             <figure style="background-image:url(img/sf-skyline.jpg); "><a href="http://ahoylemon.github.io/sf-firings"><img class="logo" src="img/firings.png"></a>
             </figure>
             <figcaption>
@@ -635,9 +883,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/sf-firings" target="_blank"><span>sf-firings</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/sf-firings
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/sf-firings/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/sf-firings"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/sf-firings"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/TheFPlus">
             <figure style="background-color:#dedcee; "><a href="https://thefpl.us"><img class="logo" src="svg/thefplus.svg"></a>
             </figure>
             <figcaption>
@@ -653,9 +920,28 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/TheFPlus" target="_blank"><span>TheFPlus</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/TheFPlus
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/TheFPlus/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/TheFPlus"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/TheFPlus"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
-          <div class="project">
+          <div class="project" repo="AhoyLemon/ballpit">
             <figure style="background-color:#150f34; "><a href="https://ballp.it"><img class="logo" src="svg/ballpit.svg"></a>
             </figure>
             <figcaption>
@@ -671,7 +957,26 @@
                       </time>
                 </div>
               </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/ballpit" target="_blank"><span>ballpit</span></a></div>
+              </div>
             </div>
+            <script>//AhoyLemon/ballpit
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/ballpit/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/ballpit"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/ballpit"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
           <div class="project">
             <figure style="background-color:#2d2929; "><a href="http://ahoylemon.github.io/wrongest.website"><img class="logo" src="svg/wrongest.svg"></a>
@@ -718,7 +1023,6 @@
           </div>
     </main>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
@@ -748,7 +1052,16 @@
       dots: true,
       infinite: true,
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
     
   </script>

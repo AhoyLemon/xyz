@@ -7,6 +7,7 @@ html(lang="en")
   head
     include partials/_mixins.pug
     include partials/_head.pug
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
   body
     include partials/_aside.pug
     
@@ -23,7 +24,7 @@ html(lang="en")
         
 
 
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+  
   link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
   script.
@@ -53,7 +54,16 @@ html(lang="en")
       dots: true,
       infinite: true,
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 
   script.
