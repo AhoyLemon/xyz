@@ -1,12 +1,11 @@
-
-<!--include partials/_sites.pug--><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Hi, my name is Lemon.</title>
+    <title>Lemon speaks at conferences.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2019-06-01@11:19:54">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2019-06-09@22:45:22">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -36,12 +35,12 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@AhoyLemon">
     <meta name="twitter:creator" content="@AhoyLemon">
-    <meta name="twitter:title" content="Hi, my name is Lemon.">
+    <meta name="twitter:title" content="ahoylemon 🍋 xyz">
     <meta name="twitter:description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <meta name="twitter:image" content="https://ahoylemon.xyz/og-image.png">
     <meta name="twitter:url" content="https://ahoylemon.xyz">
     <!-- OpenGraph-->
-    <meta property="og:title" content="Hi, my name is Lemon.">
+    <meta property="og:title" content="ahoylemon 🍋 xyz">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ahoylemon.xyz">
     <meta property="og:image" content="https://ahoylemon.xyz/og-image.png">
@@ -52,7 +51,8 @@
   </head>
   <body>
     <aside>
-      <h1> <span class="small">Hi, my name is </span><span class="big">Lemon.</span></h1>
+      <h1><a class="homelink" href="https://ahoylemon.xyz"><span class="small">Hi, my name is </span><span class="big">Lemon.</span></a>
+      </h1>
       <p>I do a podcast called The F Plus and I also make weird little projects when I can find the time.</p>
       <ul>
         <li><a href="https://twitter.com/AhoyLemon">
@@ -84,7 +84,7 @@
         </figure>
         <figure class="conference">
           <div class="details">
-            <div class="name"><a href="http://www.kcdc.info" target="_blank">KCDC</a></div>
+            <div class="name"> <a href="http://www.kcdc.info" target="_blank">KCDC</a></div>
             <div class="location"><span>Kansas City, MO</span>
             </div>
             <div class="date">
@@ -101,7 +101,7 @@
         </figure>
         <figure class="conference">
           <div class="details">
-            <div class="name"><a href="https://pubconf.io" target="_blank">PubConf KC</a></div>
+            <div class="name"> <a href="https://pubconf.io" target="_blank">PubConf KC</a></div>
             <div class="location"><span>Kansas City, MO</span>
             </div>
             <div class="date">
@@ -117,7 +117,7 @@
         </figure>
         <figure class="conference">
           <div class="details">
-            <div class="name"><a href="http://www.codepalousa.com" target="_blank">Code PaLOUsa</a></div>
+            <div class="name"> <a href="http://www.codepalousa.com" target="_blank">Code PaLOUsa</a></div>
             <div class="location"><span>Louisville, KY</span>
             </div>
             <div class="date">
@@ -134,7 +134,7 @@
         </figure>
         <figure class="conference">
           <div class="details">
-            <div class="name"><a href="https://techorama.nl" target="_blank">Techorama NL</a></div>
+            <div class="name"> <a href="https://techorama.nl" target="_blank">Techorama NL</a></div>
             <div class="location"><span>Ede, Netherlands</span>
             </div>
             <div class="date">
@@ -151,7 +151,23 @@
         </figure>
         <figure class="conference">
           <div class="details">
-            <div class="name"><a href="https://www.buildstuff.lt" target="_blank">Build Stuff LT</a></div>
+            <div class="name"> <a href="https://techorama.nl" target="_blank">PubConf Amsterdam</a></div>
+            <div class="location"><span>Amsterdam, Netherlands</span>
+            </div>
+            <div class="date">
+                  <time>Oct 02, 2019
+                  </time>
+            </div>
+            <div class="presenting">Presenting:
+              <ul class="multiple-talks">
+                <li class="talk">[tbd]</li>
+              </ul>
+            </div>
+          </div>
+        </figure>
+        <figure class="conference">
+          <div class="details">
+            <div class="name"> <a href="https://www.buildstuff.lt" target="_blank">Build Stuff LT</a></div>
             <div class="location"><span>Vilnus, Lithuania</span>
             </div>
             <div class="date">
@@ -167,7 +183,7 @@
         </figure>
         <figure class="conference">
           <div class="details">
-            <div class="name"><a href="https://www.ukraine.buildstuff.events" target="_blank">Build Stuff UA</a></div>
+            <div class="name"> <a href="https://www.ukraine.buildstuff.events" target="_blank">Build Stuff UA</a></div>
             <div class="location"><span>Kiev, Ukraine</span>
             </div>
             <div class="date">
@@ -457,52 +473,16 @@
         <figure class="back-home"><a href="/"><span>Back Home</span></a></figure>
       </div>
     </main>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-15129990-14', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script>
-    $('.upcoming-conference-carousel').slick({
-      prevArrow: '<button type="button" class="slick-prev slick-arrow">&lt;</button>',
-      nextArrow: '<button type="button" class="slick-next slick-arrow">&gt;</button>',
-      //arrows: false,
-      dots: true,
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 2
-    });
-    
-    $('.previous-conference-carousel').slick({
-      prevArrow: '<button type="button" class="slick-prev slick-arrow">&lt;</button>',
-      nextArrow: '<button type="button" class="slick-next slick-arrow">&gt;</button>',
-      //arrows: false,
-      dots: true,
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 2
-    });
-    
-    $('.conference a.pic').click(function() {
-      let f = $(this).attr('data-pic');
-      let i = 'img/talks/'+f;
-      $(this).parent().siblings('.cardpic').css('background-image', 'url('+i+')');
-      $(this).parent().siblings('.cardpic').addClass('visible');
-      $(this).siblings('a.close-cardpic').addClass('visible');
-    });
-    
-    $('a.close-cardpic').click(function() {
-      $(this).parent().siblings('.cardpic').removeClass('visible');
-      $(this).removeClass('visible');
-    });
-    
-  </script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
-    ga('create', 'UA-15129990-14', 'auto');
-    ga('send', 'pageview');
-  </script>
 </html>

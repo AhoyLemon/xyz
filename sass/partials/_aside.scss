@@ -1,8 +1,11 @@
 aside { padding:1em; background:$yellow; color:$black; font-size:22px;
   
-  h1 {  padding-right: 0.25em; line-height: 115%; // text-shadow:2px 2px 4px rgba($white,0.75);
+  h1 {  padding-right: 0.25em; line-height: 115%; }
+  a { color:$orange; text-decoration: none;
+    &.homelink { color:currentColor;
+      &:hover { color:$orange; }
+    }
   }
-  a { color:$orange; text-decoration: none; }
   ul { padding-left: 0; }
   li { list-style: none;
     span { line-height: 160%; font-size:1.35em; }

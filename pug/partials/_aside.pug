@@ -1,7 +1,13 @@
 aside
-  h1 
-    span.small Hi, my name is 
-    span.big Lemon.
+  h1
+    if (slug != "index")
+      a.homelink(href=siteURL)
+        span.small Hi, my name is 
+        span.big Lemon.
+    else
+      span.small Hi, my name is 
+      span.big Lemon.
+
   p I do a podcast called The F Plus and I also make weird little projects when I can find the time.
 
   ul

@@ -15,7 +15,7 @@ rss( version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmln
     image
       url #{siteURL}/apple-touch-icon-120x120.png
       title Lemon Logo
-      link #{siteURL}/feed.xml
+      link #{siteURL}
       width 120
       height 120
 
@@ -24,6 +24,7 @@ rss( version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmln
         - var fileName = ""
         title= s.title
         link= s.url
+        guid= s.url
         description= s.description
         pubDate= s.launched
         if s.fgImage
@@ -38,3 +39,11 @@ rss( version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmln
             url #{siteURL}/#{fileName}
             title #{s.title} logo
             link= s.url
+
+    each p,index in subpages
+      item
+        title= p.title
+        link= p.url
+        guid= p.url
+        description= p.description
+        pubDate= p.posted

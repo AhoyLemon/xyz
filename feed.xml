@@ -14,13 +14,14 @@
     <image>
       <url>https://ahoylemon.xyz/apple-touch-icon-120x120.png</url>
       <title>Lemon Logo</title>
-      <link>https://ahoylemon.xyz/feed.xml</link>
+      <link>https://ahoylemon.xyz</link>
       <width>120</width>
       <height>120</height>
     </image>
     <item>
       <title>damn.dog</title>
       <link>https://damn.dog</link>
+      <guid>https://damn.dog</guid>
       <description>&lt;p&gt;The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.&lt;/p&gt;&lt;p&gt;Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.&lt;/p&gt;</description>
       <pubDate>2016-02-04</pubDate>
       <image>
@@ -32,6 +33,7 @@
     <item>
       <title>futile 💀 fun</title>
       <link>https://futile.fun</link>
+      <guid>https://futile.fun</guid>
       <description>&lt;p&gt;An incremental game where you click Sisypus to push the rock uphill.&lt;/p&gt;&lt;p&gt;This was first launched for NDC {Sydney}&lt;/p&gt;</description>
       <pubDate>2018-09-21</pubDate>
       <image>
@@ -43,6 +45,7 @@
     <item>
       <title>PRETEND 🌐 WORLD</title>
       <link>https://pretend.world</link>
+      <guid>https://pretend.world</guid>
       <description>&lt;p&gt;You are at a party of celebrity impersonators. It's up to you to guess which ones.&lt;/p&gt;&lt;p&gt;This was first launched for KCDC X&lt;/p&gt;</description>
       <pubDate>2018-07-12</pubDate>
       <image>
@@ -54,6 +57,7 @@
     <item>
       <title>Trumps PW</title>
       <link>http://trumps.pw</link>
+      <guid>http://trumps.pw</guid>
       <description>&lt;p&gt;This is a great and good service for members of the Trump family where Trumps can enter in their passwords to &lt;i&gt;earn points!&lt;/i&gt;&lt;/p&gt;</description>
       <pubDate>2017-12-4</pubDate>
       <image>
@@ -65,6 +69,7 @@
     <item>
       <title>Great Sex Tips!</title>
       <link>https://greatsex.tips</link>
+      <guid>https://greatsex.tips</guid>
       <description>&lt;p&gt;Birthed from a conversation about the editing process of Cosmo's sex tips, this is a site that generates hetero sex advice for women to please their men. How exhilerating!&lt;/p&gt;</description>
       <pubDate>2017-11-13</pubDate>
       <image>
@@ -76,6 +81,7 @@
     <item>
       <title>Idiots win.</title>
       <link>https://idiots.win</link>
+      <guid>https://idiots.win</guid>
       <description>&lt;p&gt;The game that challenges you to figure out what people are searching for on Google.&lt;/p&gt;&lt;p&gt;Idiots Win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.&lt;/p&gt;</description>
       <pubDate>2016-06-02</pubDate>
       <image>
@@ -87,6 +93,7 @@
     <item>
       <title>2UN 🔵 LTD</title>
       <link>https://2un.ltd</link>
+      <guid>https://2un.ltd</guid>
       <description>&lt;p&gt;This is a very important website that asks if if you're ready for this. And if you &lt;i&gt;are&lt;/i&gt; ready for this, appropriate measures will be taken.</description>
       <pubDate>2017-04-21</pubDate>
       <image>
@@ -98,6 +105,7 @@
     <item>
       <title>PARTY PARTY PARTY PARTY PARTY</title>
       <link>https://partypartypartyparty.party</link>
+      <guid>https://partypartypartyparty.party</guid>
       <description>&lt;p&gt;This is a button to help you party.&lt;/p&gt;</description>
       <pubDate>2016-09-21</pubDate>
       <image>
@@ -109,6 +117,7 @@
     <item>
       <title>dumb men</title>
       <link>https://dumb.men</link>
+      <guid>https://dumb.men</guid>
       <description>&lt;p&gt;This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.&lt;/p&gt;</description>
       <pubDate>2017-11-04</pubDate>
       <image>
@@ -120,6 +129,7 @@
     <item>
       <title>Bad Accent Club</title>
       <link>https://play.google.com/store/apps/details?id=club.badaccent</link>
+      <guid>https://play.google.com/store/apps/details?id=club.badaccent</guid>
       <description>&lt;p&gt;The Android game that puts your friends' accents to the test (and they will usually fail the test).</description>
       <pubDate>2017-08-18</pubDate>
       <image>
@@ -131,6 +141,7 @@
     <item>
       <title>jerking online</title>
       <link>https://ahoylemon.github.io/jerking.online</link>
+      <guid>https://ahoylemon.github.io/jerking.online</guid>
       <description>&lt;p&gt;Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.&lt;/p&gt;&lt;p&gt;Cause it makes me giggle.&lt;/p&gt;</description>
       <pubDate>2017-01-06</pubDate>
       <image>
@@ -142,6 +153,7 @@
     <item>
       <title>Verifiable Win</title>
       <link>https://ahoylemon.github.io/verifiable.win</link>
+      <guid>https://ahoylemon.github.io/verifiable.win</guid>
       <description>&lt;p&gt;Launched as part of a talk at NDC Minnesota 2018, this is a site to demonstrate you're right about whatever you think.&lt;/p&gt;</description>
       <pubDate>2018-05-10</pubDate>
       <image>
@@ -153,6 +165,7 @@
     <item>
       <title>@rickross_daily</title>
       <link>https://twitter.com/rickross_daily</link>
+      <guid>https://twitter.com/rickross_daily</guid>
       <description>This twitterbot (which was either the idea of JW Friedman or myself, we can't remember) will inform you what Rick Ross is doing every day, every day.</description>
       <pubDate>2017-09-05</pubDate>
       <image>
@@ -164,6 +177,7 @@
     <item>
       <title>pl_swiftwater</title>
       <link>http://www.teamfortress.com/meetyourmatch</link>
+      <guid>http://www.teamfortress.com/meetyourmatch</guid>
       <description>My friend Schwa and I collaborated on a Team Fortress 2 map called Swiftwater. He did the geometry, I did the art assets and built the story of a bottled water company at war with a chemical mining concern.&lt;/p&gt;&lt;p&gt;In 2016, Valve bought the map and made it official.&lt;/p&gt;</description>
       <pubDate>2016-07-07</pubDate>
       <image>
@@ -175,6 +189,7 @@
     <item>
       <title>Frank West Pronounces Emoticons</title>
       <link>https://ahoylemon.github.io/frankwest</link>
+      <guid>https://ahoylemon.github.io/frankwest</guid>
       <description>&lt;p&gt;Frank West sometimes pronounces emoticons. And now, via this soundboard, he does it on your command.&lt;/p&gt;&lt;p&gt;Even in comparison to the other sites on this page, this one is really stupid.&lt;/p&gt;</description>
       <pubDate>2016-06-15</pubDate>
       <image>
@@ -186,6 +201,7 @@
     <item>
       <title>Hamilton -&gt; DOOM</title>
       <link>https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&amp;gl=US</link>
+      <guid>https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&amp;gl=US</guid>
       <description>This is a Chrome extension that replaces all instances of “Hamilton” with “the video game DOOM”. For obvious reasons.</description>
       <pubDate>2016-11-19</pubDate>
       <image>
@@ -197,6 +213,7 @@
     <item>
       <title>Recent Firings In San Francisco</title>
       <link>http://ahoylemon.github.io/sf-firings</link>
+      <guid>http://ahoylemon.github.io/sf-firings</guid>
       <description>&lt;p&gt;I wanted to make a site that would give the user up-the-second updates of who was just fired in the San Francisco Tech Industry.&lt;/p&gt;&lt;p&gt;In reality, it just works an alogorithm to generate random strings.&lt;/p&gt;</description>
       <pubDate>2015-10-14</pubDate>
       <image>
@@ -208,6 +225,7 @@
     <item>
       <title>The F Plus</title>
       <link>https://thefpl.us</link>
+      <guid>https://thefpl.us</guid>
       <description>&lt;p&gt;I do a podcast, and also work a fair amount on the website for that podcast, which is a complicated piece of web development.&lt;/p&gt;&lt;p&gt;That said, I'm pretty happy with how this whole thing works.&lt;/p&gt;</description>
       <pubDate>2014-10-14</pubDate>
       <image>
@@ -219,6 +237,7 @@
     <item>
       <title>ballp.it</title>
       <link>https://ballp.it</link>
+      <guid>https://ballp.it</guid>
       <description>&lt;p&gt;ballp.it is the forum set up to support the community that surrounds The F Plus. It uses PHP software called SMF, but has been modified heavily.&lt;/p&gt;</description>
       <pubDate>2013-02-16</pubDate>
       <image>
@@ -230,6 +249,7 @@
     <item>
       <title>The Wrongest Words</title>
       <link>http://ahoylemon.github.io/wrongest.website</link>
+      <guid>http://ahoylemon.github.io/wrongest.website</guid>
       <description>&lt;p&gt;The Wrongest Words was a multiplayer card game where players had to defend the very stupid statements in front of them. It has been retired.&lt;/p&gt;</description>
       <pubDate>2015-03-26</pubDate>
       <image>
@@ -241,6 +261,7 @@
     <item>
       <title>Me Making Websites IRL</title>
       <link>https://youtu.be/4YRuHRvniJM</link>
+      <guid>https://youtu.be/4YRuHRvniJM</guid>
       <description>&lt;p&gt;Using an open source software called “Gource”, I made this 3.5 minute YouTube video documenting the process of building most of the websites on this list, set to a Paper Chase song.&lt;/p&gt;&lt;p&gt;Not incredibly informative, but fun to look at.&lt;/p&gt;</description>
       <pubDate>2017-12-19</pubDate>
       <image>
@@ -248,6 +269,13 @@
         <title>Me Making Websites IRL logo</title>
         <link>https://youtu.be/4YRuHRvniJM</link>
       </image>
+    </item>
+    <item>
+      <title>🍋/uses</title>
+      <link>https://ahoylemon.xyz/uses</link>
+      <guid>https://ahoylemon.xyz/uses</guid>
+      <description>&lt;p&gt;I just recently came across Wes Bos&amp;apos; &lt;a href=&quot;https://github.com/wesbos/awesome-uses&quot;&gt;Awesome Uses&lt;/a&gt; repository. I thought it was interesting to look at the toolkit that other people used, and thought I&amp;apos;d provide my own. &lt;i&gt;But&lt;/i&gt; sometimes the tools a person uses are more about something being the &quot;good enough&quot; option, so I thought I&amp;apos;d get a little more specific: Those things marked with a &lt;span class=&quot;yes&quot;&gt;&lt;/span&gt; are things which I think are great and totally recommend. Those things marked with a &lt;span class=&quot;no&quot;&gt; &lt;/span&gt; are things which I&amp;apos;ve compromised into using for one way or another. It&amp;apos;s the best I&amp;apos;ve found, but you could talk me into something else.&lt;/p&gt;</description>
+      <pubDate>2019-07-09</pubDate>
     </item>
   </channel>
 </rss>

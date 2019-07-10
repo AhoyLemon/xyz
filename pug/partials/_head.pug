@@ -1,5 +1,8 @@
 meta(charset="utf-8")
-title= siteTitle
+if pageTitle
+  title= pageTitle
+else
+  title= siteTitle
 meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
 link(href='https://fonts.googleapis.com/css?family=Yrsa:300,400,600' rel='stylesheet' type='text/css')
 link(rel="stylesheet" href="/css/ahoylemon.css?v="+lastUpdated)
