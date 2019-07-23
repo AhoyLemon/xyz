@@ -106,11 +106,11 @@ html(lang="en")
                           li.talk
                             a(href=u.video) 
                               span(itemprop="workFeatured") #{u.name}
-                              span (Video)
+                              |  (Video)
                         else if u.slides && u.name
                           li.talk
                             span(itemprop="workFeatured") #{u.name}
-                            | (
+                            |  (
                             a(href=u.slides) Slides
                             | )
                         else if u.url && u.name
