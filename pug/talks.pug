@@ -32,6 +32,7 @@ html(lang="en")
                 if t.address
                   meta(itemprop="address" content=t.address) 
 
+              // Date
               if t.startDate && t.endDate
                 .date
                   span(itemprop="startDate" content=t.startDate)
@@ -44,6 +45,7 @@ html(lang="en")
                   +formatDate(t.date)
                 meta(itemprop="endDate" content=t.date)
 
+              // Talks
               .presenting Presenting:
                 if t.talks
                   ul.multiple-talks
@@ -66,17 +68,35 @@ html(lang="en")
           a(name="previous")
           h2 Previous Conferences &raquo;
         each t,index in previousTalks
-          .conference
+          .conference(itemscope itemtype="http://schema.org/Event")
+
             .details
-              .name
-                a(href=t.url target="_blank")= t.name
-              .location
+              .name 
+                a(href=t.url target="_blank" itemprop="url")
+                  span(itemprop="name")= t.name
+              
+              .location(itemprop="location" itemscope itemtype="http://schema.org/City")
                 if t.city && t.state
-                  span #{t.city}, #{t.state}
+                  span(itemprop="name") #{t.city}, #{t.state}
                 else if t.city && t.country
-                  span #{t.city}, #{t.country}
-              .date
-                +formatDate(t.date)
+                  span(itemprop="name") #{t.city}, #{t.country}  
+                if t.address
+                  meta(itemprop="address" content=t.address) 
+
+
+              // Date
+              if t.startDate && t.endDate
+                .date
+                  span(itemprop="startDate" content=t.startDate)
+                    +formatDate(t.startDate, "m d")
+                  | - 
+                  span(itemprop="endDate" content=t.endDate)
+                    +formatDate(t.endDate)
+              else if t.date
+                .date(itemprop="startDate" content=t.date)
+                  +formatDate(t.date)
+                meta(itemprop="endDate" content=t.date)
+
               if t.talks || t.talk
                 .presenting Presented:
                   if t.talks
@@ -84,33 +104,42 @@ html(lang="en")
                       each u,uindex in t.talks
                         if u.video && u.name
                           li.talk
-                            a(href=u.video) #{u.name} (Video)
+                            a(href=u.video) 
+                              span(itemprop="workFeatured") #{u.name}
+                              span (Video)
                         else if u.slides && u.name
                           li.talk
-                            | #{u.name} (
+                            span(itemprop="workFeatured") #{u.name}
+                            | (
                             a(href=u.slides) Slides
                             | )
                         else if u.url && u.name
-                          li.talk
+                          li.talk(itemprop="workFeatured")
                             a(href=u.url) #{u.name}
                         else
-                          li.talk= u
+                          li.talk(itemprop="workFeatured")= u
                   else if t.talk
                     ul
-                      li.talk= t.talk
+                      li.talk(itemprop="workFeatured")= t.talk
+
             .pics
               if t.pics
                 a.close-cardpic() 
                   span X
                 each pic, index in t.pics
                   a.pic(data-pic=pic style="background-image:url(img/talks/"+pic+")")
+                  meta(itemprop="image" content=siteURL+'/img/talks/'+pic)
               else if t.img
                 a.close-cardpic
                   span X
                 a.pic(data-pic=t.img style="background-image:url(img/talks/"+t.img+")")
-                
+                meta(itemprop="image" content=siteURL+'/img/talks/'+t.img)  
 
             figure.cardpic
+
+            div(itemprop="performer" itemscope itemtype="http://schema.org/Person")
+              meta(itemprop="name" content="Lemon")
+              meta(itemprop="name" content=siteURL)
     
         figure.back-home
           a(href="/")
