@@ -10,16 +10,23 @@ mixin timeStamp()
   //- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()  
 
 
-mixin formatDate(d)
+mixin formatDate(d, f)
   - var allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
   - var MonthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
   - var e = d.split("-");
-  time
-    = MonthAbbr[parseInt(e[1] - 1)]
-    |  
-    = e[2]
-    | , 
-    = e[0]
+  if f == "m d"
+    time
+      = MonthAbbr[parseInt(e[1] - 1)]
+      |  
+      = e[2]
+  else
+    time
+      = MonthAbbr[parseInt(e[1] - 1)]
+      |  
+      = e[2]
+      | , 
+      = e[0]
+  
 
 
 mixin link(title,url)

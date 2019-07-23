@@ -18,25 +18,44 @@ html(lang="en")
           a(name="upcoming")
           h2 Upcoming Conferences &raquo;
         each t,index in upcomingTalks
-          figure.conference
+          figure.conference(itemscope itemtype="http://schema.org/Event")
             .details
               .name 
-                a(href=t.url target="_blank")= t.name
-              .location
+                a(href=t.url target="_blank" itemprop="url")
+                  span(itemprop="name")= t.name
+
+              .location(itemprop="location" itemscope itemtype="http://schema.org/City")
                 if t.city && t.state
-                  span #{t.city}, #{t.state}
+                  span(itemprop="name") #{t.city}, #{t.state}
                 else if t.city && t.country
-                  span #{t.city}, #{t.country}
-              .date
-                +formatDate(t.date)
+                  span(itemprop="name") #{t.city}, #{t.country}  
+                if t.address
+                  meta(itemprop="address" content=t.address) 
+
+              if t.startDate && t.endDate
+                .date
+                  span(itemprop="startDate" content=t.startDate)
+                    +formatDate(t.startDate, "m d")
+                  | - 
+                  span(itemprop="endDate" content=t.endDate)
+                    +formatDate(t.endDate)
+              else if t.date
+                .date(itemprop="startDate" content=t.date)
+                  +formatDate(t.date)
+                meta(itemprop="endDate" content=t.date)
+
               .presenting Presenting:
                 if t.talks
                   ul.multiple-talks
                     each u,uindex in t.talks
-                      li.talk= u
+                      li.talk(itemprop="workFeatured")= u
                 else if t.talk
                   ul
                     li.talk= t.talk
+              
+              div(itemprop="performer" itemscope itemtype="http://schema.org/Person")
+                meta(itemprop="name" content="Lemon")
+                meta(itemprop="name" content=siteURL)
 
         figure.map
           a.absolute-link(href="https://drive.google.com/open?id=1UXVK7n3Sxknm92AQXx6WoIgNDiKFC9OW&usp=sharing" target="_blank")
