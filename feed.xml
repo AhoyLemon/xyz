@@ -31,15 +31,15 @@
       </image>
     </item>
     <item>
-      <title>futile 💀 fun</title>
-      <link>https://futile.fun</link>
-      <guid>https://futile.fun</guid>
-      <description>&lt;p&gt;An incremental game where you click Sisypus to push the rock uphill.&lt;/p&gt;&lt;p&gt;This was first launched for NDC {Sydney}&lt;/p&gt;</description>
-      <pubDate>2018-09-21</pubDate>
+      <title>Idiots win.</title>
+      <link>https://idiots.win</link>
+      <guid>https://idiots.win</guid>
+      <description>&lt;p&gt;The game that challenges you to figure out what people are searching for on Google.&lt;/p&gt;&lt;p&gt;Idiots Win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.&lt;/p&gt;</description>
+      <pubDate>2016-06-02</pubDate>
       <image>
-        <url>https://ahoylemon.xyz/img/futile-512.png</url>
-        <title>futile 💀 fun logo</title>
-        <link>https://futile.fun</link>
+        <url>https://ahoylemon.xyz/svg/idiots.svg</url>
+        <title>Idiots win. logo</title>
+        <link>https://idiots.win</link>
       </image>
     </item>
     <item>
@@ -55,18 +55,6 @@
       </image>
     </item>
     <item>
-      <title>Trumps PW</title>
-      <link>http://trumps.pw</link>
-      <guid>http://trumps.pw</guid>
-      <description>&lt;p&gt;This is a great and good service for members of the Trump family where Trumps can enter in their passwords to &lt;i&gt;earn points!&lt;/i&gt;&lt;/p&gt;</description>
-      <pubDate>2017-12-4</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/pw.png</url>
-        <title>Trumps PW logo</title>
-        <link>http://trumps.pw</link>
-      </image>
-    </item>
-    <item>
       <title>Great Sex Tips!</title>
       <link>https://greatsex.tips</link>
       <guid>https://greatsex.tips</guid>
@@ -79,15 +67,27 @@
       </image>
     </item>
     <item>
-      <title>Idiots win.</title>
-      <link>https://idiots.win</link>
-      <guid>https://idiots.win</guid>
-      <description>&lt;p&gt;The game that challenges you to figure out what people are searching for on Google.&lt;/p&gt;&lt;p&gt;Idiots Win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.&lt;/p&gt;</description>
-      <pubDate>2016-06-02</pubDate>
+      <title>futile 💀 fun</title>
+      <link>https://futile.fun</link>
+      <guid>https://futile.fun</guid>
+      <description>&lt;p&gt;An incremental game where you click Sisypus to push the rock uphill.&lt;/p&gt;&lt;p&gt;This was first launched for NDC {Sydney}&lt;/p&gt;</description>
+      <pubDate>2018-09-21</pubDate>
       <image>
-        <url>https://ahoylemon.xyz/svg/idiots.svg</url>
-        <title>Idiots win. logo</title>
-        <link>https://idiots.win</link>
+        <url>https://ahoylemon.xyz/img/futile-512.png</url>
+        <title>futile 💀 fun logo</title>
+        <link>https://futile.fun</link>
+      </image>
+    </item>
+    <item>
+      <title>Trumps PW</title>
+      <link>http://trumps.pw</link>
+      <guid>http://trumps.pw</guid>
+      <description>&lt;p&gt;This is a great and good service for members of the Trump family where Trumps can enter in their passwords to &lt;i&gt;earn points!&lt;/i&gt;&lt;/p&gt;</description>
+      <pubDate>2017-12-4</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/pw.png</url>
+        <title>Trumps PW logo</title>
+        <link>http://trumps.pw</link>
       </image>
     </item>
     <item>
