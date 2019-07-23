@@ -63,9 +63,17 @@ html(lang="en")
                   if t.talks
                     ul.multiple-talks
                       each u,uindex in t.talks
-                        if u.url
+                        if u.video && u.name
                           li.talk
-                            a(href=u.url) #{u.name} (Video)
+                            a(href=u.video) #{u.name} (Video)
+                        else if u.slides && u.name
+                          li.talk
+                            | #{u.name} (
+                            a(href=u.slides) Slides
+                            | )
+                        else if u.url && u.name
+                          li.talk
+                            a(href=u.url) #{u.name}
                         else
                           li.talk= u
                   else if t.talk
