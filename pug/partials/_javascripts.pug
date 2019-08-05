@@ -29,7 +29,16 @@ if (slug == "index")
       dots: true,
       infinite: true,
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 
 if (slug == "talks")

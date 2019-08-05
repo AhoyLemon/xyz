@@ -2,21 +2,11 @@ include partials/_variables.pug
 - const pageTitle = "Hi, my Name is Lemon."
 - const slug = "index"
 
-//include partials/_sites.pug
-
 doctype html
 html(lang="en")
   head
     include partials/_mixins.pug
     include partials/_head.pug
-
-    script.
-      function formatDate(d) {
-        const allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
-        const MonthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
-        const e = d.split("-");
-        return '<time>'+MonthAbbr[parseInt(e[1] - 1)]+' '+e[2]+', '+e[0]+'</time>';
-      }
 
   body
     include partials/_aside.pug
