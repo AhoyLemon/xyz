@@ -1,4 +1,4 @@
-.talk-grid { display: grid; grid-template-columns: repeat(3,1fr); grid-gap:30px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;
+.talk-grid { display: grid;  grid-gap:30px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;
   .conference { background-color:white; box-shadow:-0.075em -0.075em 0.15em rgba($black,0.75); padding:15px; position: relative; min-height: 240px;
     .name { font-size:210%; }
     a { color:$orange; text-decoration: none;
@@ -48,6 +48,8 @@
 
 .carousel:not(.slick-initialized) { display: none !important; }
 
-.talk-grid { grid-template-columns:repeat(auto-fill, minmax(380px, 1fr));
 
+.talk-grid { 
+  @media (min-width:401px) { grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); }
+  @media (max-width:400px) { grid-template-columns:1fr; }
 }
