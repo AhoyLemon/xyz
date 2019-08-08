@@ -5,7 +5,7 @@
     <title>Lemon uses technology.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2019-07-05@16:04:09">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2019-07-08@16:12:58">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -83,7 +83,7 @@
         <article>
           <h1>The Things I Tend To Use In A Day</h1>
           <div class="stamp"><span>Last updated </span>
-                <time> August 5, 2019
+                <time> August 8, 2019
                 </time>
           </div>
           <p>I just recently came across Wes Bos' <a href="https://github.com/wesbos/awesome-uses">Awesome Uses</a> repository. I thought it was interesting to look at the toolkit that other people used, and thought I'd provide my own. <i>But</i> sometimes the tools a person uses are more about something being the "good enough" option, so I thought I'd get a little more specific: Those things marked with a <span class="yes"></span> are things which I think are great and totally recommend. Those things marked with a <span class="no"> </span> are things which I've compromised into using for one way or another. It's the best I've found, but you could talk me into something else.</p>
@@ -186,6 +186,15 @@
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      function formatDate(e) {
+        let allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
+        let MonthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
+        let g = e.split("-");
+        return '<time>' + MonthAbbr[parseInt(g[1] - 1)] + ' ' + g[2] + ", " + g[0];
+      }
+      
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

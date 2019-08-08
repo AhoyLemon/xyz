@@ -1,6 +1,14 @@
 link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
 
+script.
+  function formatDate(e) {
+    let allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
+    let MonthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
+    let g = e.split("-");
+    return '<time>' + MonthAbbr[parseInt(g[1] - 1)] + ' ' + g[2] + ", " + g[0];
+  }
+
 if (slug == "index")
   script.
     $('.upcoming-conference-carousel').slick({
