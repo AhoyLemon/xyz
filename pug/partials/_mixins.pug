@@ -29,7 +29,35 @@ mixin formatDate(e, f)
       = g[2]
       | , 
       = g[0]
-  
+
+
+mixin dateRange(e,f)
+  - var allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
+  - var MonthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
+  - var g = e.split("-");
+  - var h = f.split("-");
+
+  if (g[1] == h[1])
+    time
+      = MonthAbbr[parseInt(g[1] - 1)]
+      |  
+      = g[2]
+      |  -  
+      = h[2]
+      | ,  
+      = h[0]
+  else
+    time
+      = MonthAbbr[parseInt(g[1] - 1)]
+      |  
+      = g[2]
+      |  -  
+      = MonthAbbr[parseInt(h[1] - 1)]
+      |  
+      = h[2]
+      | ,  
+      = h[0]
+      
 
 
 mixin link(title,url)
@@ -80,7 +108,15 @@ mixin talkSlider(w)
               else if t.city && t.country
                 span #{t.city}, #{t.country}
             .date
-              +formatDate(t.date)
+              // Date
+              if t.startDate && t.endDate
+                +dateRange(t.startDate, t.endDate)
+              else if t.date
+                .date(itemprop="startDate" content=t.date)
+                  +formatDate(t.date)
+                //-meta(itemprop="endDate" content=t.date)
+
+
             .presenting Presenting:
             if t.talks
               ul.multiple-talks
@@ -115,7 +151,16 @@ mixin talkSlider(w)
                 else if t.city && t.country
                   span #{t.city}, #{t.country}
               .date
-                +formatDate(t.date)
+                if t.startDate && t.endDate
+                  .date
+                    span(itemprop="startDate" content=t.startDate)
+                      +formatDate(t.startDate, "m d")
+                    | - 
+                    span(itemprop="endDate" content=t.endDate)
+                      +formatDate(t.endDate)
+                else if t.date
+                  .date(itemprop="startDate" content=t.date)
+                    +formatDate(t.date)
 
 mixin projectSummary(s)
   - let bgStyle = ""
