@@ -29,8 +29,8 @@ html(lang="en")
                   span(itemprop="name") #{t.city}, #{t.state}
                 else if t.city && t.country
                   span(itemprop="name") #{t.city}, #{t.country}  
-              if t.address
-                meta(itemprop="address" content=t.address)
+                if t.address
+                  meta(itemprop="address" content=t.address)
 
               // Date
               if t.startDate && t.endDate
