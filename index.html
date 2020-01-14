@@ -5,7 +5,7 @@
     <title>Hi, my name is Lemon.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2020-00-10@10:54:41">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2020-00-13@19:54:41">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -134,19 +134,19 @@
               </div>
             </div>
           </div>
-          <div class="project" repo="AhoyLemon/BG2COOL">
-            <figure style="background-image:url(img/terrazzo.gif); "><a class="absolute-link" href="https://bg2.cool" style="background-image:url(img/terrazzo.gif); "></a>
+          <div class="project" repo="AhoyLemon/notpoutine.fyi">
+            <figure style="background-color:#D12222; "><a href="https://notpoutine.fyi"><img class="logo" src="svg/poutine.svg"></a>
             </figure>
             <figcaption>
-              <div class="title"><a href="https://bg2.cool">BG2😎COOL</a></div>
-              <div class="subhead">a radical pattern library</div>
-              <div class="description"><p>We've spent enough of our lives looking at flat, minimalist websites that all look art directed by the same person. Let's turn this ship around.</p><p>BG2COOL provides you with patterns and options. Make your choices, and the site will hand you some CSS.</p></div>
+              <div class="title"><a href="https://notpoutine.fyi">Not Poutine, FYI</a></div>
+              <div class="subhead">an archive of poutine crimes</div>
+              <div class="description"><p>Poutine is a dish made with french fries, fresh cheese curds and brown gravy.</p><p>This site catalogs meals that describe themselves as poutine and yet are not poutine.</p></div>
             </figcaption>
             <div class="detail-row">
               <div class="detail launched">
                 <div class="label">LAUNCHED</div>
                 <div class="value">
-                      <time>Sep 04, 2019
+                      <time>Jan 12, 2020
                       </time>
                 </div>
               </div>
@@ -156,18 +156,18 @@
               </div>
               <div class="detail repository">
                 <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/BG2COOL" target="_blank"><span>BG2COOL</span></a></div>
+                <div class="value"><a href="https://github.com/AhoyLemon/notpoutine.fyi" target="_blank"><span>notpoutine.fyi</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/BG2COOL
-              $.getJSON( "https://api.github.com/repos/AhoyLemon/BG2COOL/commits", function( data ) {
+            <script>//AhoyLemon/notpoutine.fyi
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/notpoutine.fyi/commits", function( data ) {
                 var items = [];
                 let timeStamp = data[0].commit.author.date;
                 let lU = timeStamp.split('T');
                 let lastUpdated = lU[0];
                 console.log(lastUpdated);
-                $('.project[repo="AhoyLemon/BG2COOL"] .last-updated .value').html(formatDate(lastUpdated));
-                $('.project[repo="AhoyLemon/BG2COOL"] .last-updated .value').removeClass('invisible');
+                $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated .value').removeClass('invisible');
               });
             </script>
           </div>
@@ -213,7 +213,7 @@
             </figure>
             <figcaption>
               <div class="title"><a href="https://idiots.win">Idiots win.</a></div>
-              <div class="subhead">the game of outwitting Google's autocomplete</div>
+              <div class="subhead">the game of stupid searches</div>
               <div class="description"><p>The game that challenges you to figure out what people are searching for on Google.</p><p>Idiots Win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.</p></div>
             </figcaption>
             <div class="detail-row">
@@ -574,6 +574,43 @@
                 </figcaption>
               </figure>
             </div>
+          </div>
+          <div class="project" repo="AhoyLemon/BG2COOL">
+            <figure style="background-image:url(img/terrazzo.gif); "><a class="absolute-link" href="https://bg2.cool" style="background-image:url(img/terrazzo.gif); "></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://bg2.cool">BG2😎COOL</a></div>
+              <div class="subhead">a radical pattern library</div>
+              <div class="description"><p>We've spent enough of our lives looking at flat, minimalist websites that all look art directed by the same person. Let's turn this ship around.</p><p>BG2COOL provides you with patterns and options. Make your choices, and the site will hand you some CSS.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Sep 04, 2019
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/BG2COOL" target="_blank"><span>BG2COOL</span></a></div>
+              </div>
+            </div>
+            <script>//AhoyLemon/BG2COOL
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/BG2COOL/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/BG2COOL"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/BG2COOL"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
           </div>
           <div class="project" repo="AhoyLemon/greatsex.tips">
             <figure style="background-color:#ef2525; "><a href="https://greatsex.tips"><img class="logo" src="svg/greatsex.svg"></a>

@@ -102,11 +102,20 @@ html(lang="en")
                   if t.talks
                     ul.multiple-talks
                       each u,uindex in t.talks
-                        if u.video && u.name
+                        if u.video && u.slides && u.name
                           li.talk
-                            a(href=u.video) 
-                              span(itemprop="workFeatured") #{u.name}
-                              |  (Video)
+                            span(itemprop="workFeatured") #{u.name} 
+                            | ( 
+                            a(href=u.slides) Slides
+                            |  | 
+                            a(href=u.video) Video
+                            | )
+                        else if u.video && u.name
+                          li.talk
+                            span(itemprop="workFeatured") #{u.name}
+                            |  (
+                            a(href=u.video) Video
+                            | )
                         else if u.slides && u.name
                           li.talk
                             span(itemprop="workFeatured") #{u.name}
