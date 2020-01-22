@@ -19,15 +19,15 @@
       <height>120</height>
     </image>
     <item>
-      <title>BG2😎COOL</title>
-      <link>https://bg2.cool</link>
-      <guid>https://bg2.cool</guid>
-      <description>&lt;p&gt;We've spent enough of our lives looking at flat, minimalist websites that all look art directed by the same person. Let's turn this ship around.&lt;/p&gt;&lt;p&gt;BG2COOL provides you with patterns and options. Make your choices, and the site will hand you some CSS.&lt;/p&gt;</description>
-      <pubDate>2019-09-04</pubDate>
+      <title>Not Poutine, FYI</title>
+      <link>https://notpoutine.fyi</link>
+      <guid>https://notpoutine.fyi</guid>
+      <description>&lt;p&gt;Poutine is a dish made with french fries, fresh cheese curds and brown gravy.&lt;/p&gt;&lt;p&gt;This site catalogs meals that describe themselves as poutine and yet are not poutine.&lt;/p&gt;</description>
+      <pubDate>2020-01-12</pubDate>
       <image>
-        <url>https://ahoylemon.xyz/img/terrazzo.gif</url>
-        <title>BG2😎COOL logo</title>
-        <link>https://bg2.cool</link>
+        <url>https://ahoylemon.xyz/svg/poutine.svg</url>
+        <title>Not Poutine, FYI logo</title>
+        <link>https://notpoutine.fyi</link>
       </image>
     </item>
     <item>
@@ -64,6 +64,18 @@
         <url>https://ahoylemon.xyz/svg/pretend.svg</url>
         <title>PRETEND 🌐 WORLD logo</title>
         <link>https://ahoylemon.github.io/pretend.world</link>
+      </image>
+    </item>
+    <item>
+      <title>BG2😎COOL</title>
+      <link>https://bg2.cool</link>
+      <guid>https://bg2.cool</guid>
+      <description>&lt;p&gt;We've spent enough of our lives looking at flat, minimalist websites that all look art directed by the same person. Let's turn this ship around.&lt;/p&gt;&lt;p&gt;BG2COOL provides you with patterns and options. Make your choices, and the site will hand you some CSS.&lt;/p&gt;</description>
+      <pubDate>2019-09-04</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/terrazzo.gif</url>
+        <title>BG2😎COOL logo</title>
+        <link>https://bg2.cool</link>
       </image>
     </item>
     <item>
