@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /Art%20Assets
+Disallow: /email
+
+sitemap: https://ahoylemon.xyz/sitemap.xml
