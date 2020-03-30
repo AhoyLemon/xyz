@@ -109,7 +109,9 @@ mixin talkSlider(w)
                 span #{t.city}, #{t.country}
             .date
               // Date
-              if t.startDate && t.endDate
+              if t.postponed
+                strong POSTPONED
+              else if t.startDate && t.endDate
                 +dateRange(t.startDate, t.endDate)
               else if t.date
                 .date(itemprop="startDate" content=t.date)
