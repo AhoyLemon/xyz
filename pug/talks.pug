@@ -25,7 +25,9 @@ html(lang="en")
                   span(itemprop="name")= t.name
 
               .location(itemprop="location" itemscope itemtype="http://schema.org/City")
-                if t.city && t.state
+                if t.online
+                  span Online Conference
+                else if t.city && t.state
                   span(itemprop="name") #{t.city}, #{t.state}
                 else if t.city && t.country
                   span(itemprop="name") #{t.city}, #{t.country}  

@@ -103,7 +103,9 @@ mixin talkSlider(w)
             .name
               a(href=t.url target="_blank")= t.name
             .location
-              if t.city && t.state
+              if t.online
+                span Online Conference
+              else if t.city && t.state
                 span #{t.city}, #{t.state}
               else if t.city && t.country
                 span #{t.city}, #{t.country}
