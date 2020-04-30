@@ -24,15 +24,19 @@ html(lang="en")
                 a(href=t.url target="_blank" itemprop="url")
                   span(itemprop="name")= t.name
 
-              .location(itemprop="location" itemscope itemtype="http://schema.org/City")
-                if t.online
+
+              if t.online
+                .location(itemprop="location" itemscope itemtype="http://schema.org/VirtualLocation")
                   span Online Conference
-                else if t.city && t.state
-                  span(itemprop="name") #{t.city}, #{t.state}
-                else if t.city && t.country
-                  span(itemprop="name") #{t.city}, #{t.country}  
-                if t.address
-                  meta(itemprop="address" content=t.address)
+                  meta(itemprop="url" content=t.url)
+              else 
+                .location(itemprop="location" itemscope itemtype="http://schema.org/City")
+                  if t.city && t.state
+                    span(itemprop="name") #{t.city}, #{t.state}
+                  else if t.city && t.country
+                    span(itemprop="name") #{t.city}, #{t.country} 
+                  if t.address
+                    meta(itemprop="address" content=t.address)
 
               // Date
               if t.startDate && t.endDate
