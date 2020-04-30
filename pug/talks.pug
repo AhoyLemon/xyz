@@ -24,11 +24,15 @@ html(lang="en")
                 a(href=t.url target="_blank" itemprop="url")
                   span(itemprop="name")= t.name
 
-
               if t.online
+                .organizer(itemprop="organizer" itemscope itemtype="https://schema.org/Organization")
+                  meta(itemprop="name" content=t.name)
+                  meta(itemprop="url" content=t.url)
+                  
                 .location(itemprop="location" itemscope itemtype="http://schema.org/VirtualLocation")
                   span Online Conference
                   meta(itemprop="url" content=t.url)
+                
               else 
                 .location(itemprop="location" itemscope itemtype="http://schema.org/City")
                   if t.city && t.state
