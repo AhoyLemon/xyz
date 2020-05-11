@@ -43,7 +43,9 @@ html(lang="en")
                     meta(itemprop="address" content=t.address)
 
               // Date
-              if t.startDate && t.endDate
+              if t.postponed
+                strong POSTPONED
+              else if t.startDate && t.endDate
                 .date
                   span(itemprop="startDate" content=t.startDate)
                     +formatDate(t.startDate, "m d")
