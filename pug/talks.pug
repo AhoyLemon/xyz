@@ -85,7 +85,7 @@ html(lang="en")
             .details
               .name 
                 a(href=t.url target="_blank" itemprop="url")
-                  span(itemprop="name")= t.name
+                  span(itemprop="name")= t.name 
               
               .location(itemprop="location" itemscope itemtype="http://schema.org/City")
                 if t.city && t.state
@@ -95,6 +95,8 @@ html(lang="en")
                 if t.address
                   meta(itemprop="address" content=t.address) 
 
+                if t.online
+                  span (Virtual)
 
               // Date
               if t.startDate && t.endDate
