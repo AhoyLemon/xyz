@@ -6,7 +6,7 @@
     <title>ahoylemon 🍋 xyz</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2020-05-11@12:43:03">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2020-05-16@16:56:55">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -737,6 +737,43 @@
                 console.log(lastUpdated);
                 $('.project[repo="AhoyLemon/futile.fun"] .last-updated .value').html(formatDate(lastUpdated));
                 $('.project[repo="AhoyLemon/futile.fun"] .last-updated .value').removeClass('invisible');
+              });
+            </script>
+          </div>
+          <div class="project" repo="AhoyLemon/wookieepedia">
+            <figure style="background-color:#111; "><a href="https://heelies.info/"><img class="logo" src="img/wookieepedia.png"></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://heelies.info/">Heelies Info</a></div>
+              <div class="subhead">useless facts about a guy</div>
+              <div class="description"><p>My friend likes the website Wookieepedia a lot and then he had a birthday. So I made a Wookieepedia page just for him.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Jun 07, 2020
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/wookieepedia" target="_blank"><span>wookieepedia</span></a></div>
+              </div>
+            </div>
+            <script>//AhoyLemon/wookieepedia
+              $.getJSON( "https://api.github.com/repos/AhoyLemon/wookieepedia/commits", function( data ) {
+                var items = [];
+                let timeStamp = data[0].commit.author.date;
+                let lU = timeStamp.split('T');
+                let lastUpdated = lU[0];
+                console.log(lastUpdated);
+                $('.project[repo="AhoyLemon/wookieepedia"] .last-updated .value').html(formatDate(lastUpdated));
+                $('.project[repo="AhoyLemon/wookieepedia"] .last-updated .value').removeClass('invisible');
               });
             </script>
           </div>
