@@ -136,6 +136,12 @@ mixin talkSlider(w)
               ul
                 li.talk= t.talk
 
+        if upcomingTalks.length == 1
+          .conference.upcoming(style="display:flex; align-items:center; justify-content:center;")
+            p(style="font-size:120%")
+              a(href="https://sessionize.com/lemon") Invite me to speak
+              | , please.
+
   else if w == 'previous'
     .previous-conferences.conferences
       .slider-header
