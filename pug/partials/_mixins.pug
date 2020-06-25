@@ -1,5 +1,11 @@
-mixin timeStamp()
-  - var d = new Date()
+mixin timeStamp(t)
+  - var d
+  if t
+    - d = new Date(t)
+  else
+    - d = new Date()
+
+
   - var m = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
   time 
     = m[d.getMonth()] 
