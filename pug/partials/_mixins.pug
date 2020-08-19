@@ -79,9 +79,9 @@ mixin card(title, url, background, logo, launched)
         - styl = "background-image:url(img/"+background+")"
       .front(style=styl)
         if logo.includes('svg')
-          img.logo(src="svg/"+logo)
+          img.logo(src="svg/"+logo alt=title+" logo")
         else
-          img.logo(src="img/"+logo)
+          img.logo(src="img/"+logo alt=title+" logo")
       .back
         h3.title= title
         block
@@ -203,7 +203,7 @@ mixin projectSummary(s)
     figure(style=bgStyle)
       if fgImage != ""
         a(href=s.url)
-          img.logo(src=fgImage)
+          img.logo(src=fgImage alt=s.title+" logo")
       else if s.bgImage
         a.absolute-link(href=s.url style=bgStyle)
           //-img.logo(src=bgiFile)
