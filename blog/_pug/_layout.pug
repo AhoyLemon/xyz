@@ -1,6 +1,9 @@
 include ../../pug/partials/_variables.pug
 block variables
 
+if slug
+  - pageURL = siteURL + '/blog/' + slug + '.html'
+
 doctype html
 html(lang="en")
   head
@@ -13,4 +16,9 @@ html(lang="en")
     
       section.fullpage
         article
+          if postDate
+            .stamp
+              span Posted 
+              +timeStamp(postDate)
+            
           block article

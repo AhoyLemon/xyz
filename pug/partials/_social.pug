@@ -2,15 +2,29 @@
 meta(name="twitter:card" content="summary")
 meta(name="twitter:site" content="@AhoyLemon")
 meta(name="twitter:creator" content="@AhoyLemon")
-meta(name="twitter:title" content=siteTitle)
+if pageTitle
+  meta(name="twitter:title" content=pageTitle)
+else 
+  meta(name="twitter:title" content=siteTitle)
 meta(name="twitter:description" content=description)
 meta(name="twitter:image" content=siteURL+"/og-image.png")
-meta(name="twitter:url" content=siteURL)
+if pageURL
+  meta(name="twitter:url" content=pageURL)  
+else 
+  meta(name="twitter:url" content=siteURL)
 
 // OpenGraph
-meta(property="og:title" content=siteTitle)
+
+if pageTitle
+  meta(property="og:title" content=pageTitle)
+else 
+  meta(property="og:title" content=siteTitle)
 meta(property="og:type" content="website")
-meta(property="og:url" content=siteURL)
+if pageURL
+  meta(property="og:url" content=pageURL)
+else 
+  meta(property="og:url" content=siteURL)
+
 meta(property="og:image" content=siteURL+"/og-image.png")
 meta(property="og:image:width" content="1200")
 meta(property="og:image:height" content="1200")
