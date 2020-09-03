@@ -1,0 +1,16 @@
+include ../../pug/partials/_variables.pug
+block variables
+
+doctype html
+html(lang="en")
+  head
+    include ../../pug/partials/_mixins.pug
+    include ../../pug/partials/_head.pug
+  body
+    include ../../pug/partials/_aside.pug
+    
+    main.site-cards
+    
+      section.fullpage
+        article
+          block article

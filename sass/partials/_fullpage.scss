@@ -11,6 +11,9 @@ section.fullpage { background:white; display:block; width:100%; padding:2em; mar
   ul { margin-bottom: 1em;
     li { margin-bottom: 0.25em; }
   }
+  ol { margin-bottom: 1em;
+    li { margin-bottom: 0.5em; list-style-type: decimal; margin-left: 1.5em; }
+  }
 }
 
 ul.things { margin-left:0.5em; padding:0;
