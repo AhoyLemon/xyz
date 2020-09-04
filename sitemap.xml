@@ -4,7 +4,7 @@
     <loc>https://ahoylemon.xyz</loc>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
-    <lastmod>2020-06-06@15:40:53</lastmod>
+    <lastmod>2020-08-03@20:09:56</lastmod>
   </url>
   <url>
     <loc>https://ahoylemon.xyz/uses</loc>
@@ -12,6 +12,10 @@
   </url>
   <url>
     <loc>https://ahoylemon.xyz/talks.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/blog/apple-names.html</loc>
     <priority>0.5</priority>
   </url>
   <url>
