@@ -264,6 +264,7 @@ ul li {
 }
 body {
   background: #222;
+  padding: 40px;
 }
 
 /* FLIPPING ANIMATION */
@@ -365,7 +366,7 @@ body {
 }
 
 .coin-readout {
-  font-size: 600%;
+  font-size: 18vw;
   color: #eee;
   text-align: center;
 }

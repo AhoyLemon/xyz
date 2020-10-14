@@ -6,7 +6,7 @@
 @import "../../sass/globals/_z-index";
 @import "../../sass/globals/_defaults";
 
-body { background:#222;}
+body { background:#222; padding:40px; }
 
 $body-bg: #12D5CF;
 $text-color: #E8F5FF;
@@ -45,7 +45,6 @@ $flip-speed: 0.7s;
   max-height:80vh;
   max-width:80vh;
 
-  
   margin: 0 auto 60px;
   position: relative;
   perspective: 900px;
@@ -98,7 +97,7 @@ $flip-speed: 0.7s;
   }
 }
 
-.coin-readout { font-size:600%; color:#eee; text-align: center; }
+.coin-readout { font-size:18vw; color:#eee; text-align: center; }
 
 
 .cheat-heads { @include position(fixed,null,null,0,0); width:160px; height:60px; opacity: 0; }
