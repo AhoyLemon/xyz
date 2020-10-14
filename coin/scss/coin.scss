@@ -39,8 +39,13 @@ $flip-speed: 0.7s;
 
 
 .coin-container {
-  height: 300px;
-  width: 300px;
+  height: 80vw;
+  width: 80vw;
+
+  max-height:80vh;
+  max-width:80vh;
+
+  
   margin: 0 auto 60px;
   position: relative;
   perspective: 900px;
