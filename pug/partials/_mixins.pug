@@ -106,8 +106,11 @@ mixin talkSlider(w)
       .upcoming-conference-carousel.carousel
         each t,index in upcomingTalks
           .conference.upcoming
-            .name
-              a(href=t.url target="_blank")= t.name
+            if t.name && t.url
+              .name
+                a(href=t.url target="_blank")= t.name
+            else if t.name
+              .name= t.name
             .location
               if t.online
                 span Online Conference
@@ -159,8 +162,8 @@ mixin talkSlider(w)
             - p = "img/talks/" + t.img
           figure.conference.prev(style="background-image:url("+p+")")
             figcaption
-              .name
-                a(href=t.url target="_blank")= t.name
+              .name= t.name
+                //-a(href=t.url target="_blank")= t.name
               .location
                 if t.city && t.state
                   span #{t.city}, #{t.state}
