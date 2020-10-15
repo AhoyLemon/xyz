@@ -256,7 +256,27 @@ mixin projectSummary(s)
     if s.repo
       script.
         //#{s.repo}
+        $.ajax({
+          url: "https://api.github.com/repos/#{s.repo}/commits",
+          dataType: 'json',
+          success: function( data ) {
+            var items = [];
+            let timeStamp = data[0].commit.author.date;
+            let lU = timeStamp.split('T');
+            let lastUpdated = lU[0];
+            console.log(lastUpdated);
+            $('.project[repo="#{s.repo}"] .last-updated .value').html(formatDate(lastUpdated));
+            $('.project[repo="#{s.repo}"] .last-updated .value').removeClass('invisible');
+          },
+          error: function( data ) {
+            console.log(data);
+          }
+        });
+        /*
         $.getJSON( "https://api.github.com/repos/#{s.repo}/commits", function( data ) {
+          console.log('got json')
+        })
+        .success(function() {
           var items = [];
           let timeStamp = data[0].commit.author.date;
           let lU = timeStamp.split('T');
@@ -264,4 +284,8 @@ mixin projectSummary(s)
           console.log(lastUpdated);
           $('.project[repo="#{s.repo}"] .last-updated .value').html(formatDate(lastUpdated));
           $('.project[repo="#{s.repo}"] .last-updated .value').removeClass('invisible');
+        })
+        .error(function() {
+          alert('error');
         });
+        */
