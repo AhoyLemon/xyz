@@ -24,6 +24,7 @@
 
     .detail-row { display:grid; grid-template-columns:repeat(3, 1fr); padding-bottom: 10px; padding-left:10px; 
       .detail { @extend %truncate; }
+      .invisible { display:none; }
       .label { font-size:80%; }
       .value { display: block; font-size:140%; @extend %truncate; }
       .repository {

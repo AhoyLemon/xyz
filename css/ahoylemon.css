@@ -450,6 +450,9 @@ aside li a:hover .icon {
   padding-bottom: 10px;
   padding-left: 10px;
 }
+.project-summaries .project .detail-row .invisible {
+  display: none;
+}
 .project-summaries .project .detail-row .label {
   font-size: 80%;
 }

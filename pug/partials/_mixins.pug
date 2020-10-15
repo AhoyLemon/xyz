@@ -257,35 +257,19 @@ mixin projectSummary(s)
       script.
         //#{s.repo}
         $.ajax({
-          url: "https://api.github.com/repos/#{s.repo}/commits",
+          url: "https://api.github.com/repos/#{s.repo}/commits/master",
           dataType: 'json',
           success: function( data ) {
             var items = [];
-            let timeStamp = data[0].commit.author.date;
+            let timeStamp = data.commit.author.date;
             let lU = timeStamp.split('T');
             let lastUpdated = lU[0];
             console.log(lastUpdated);
             $('.project[repo="#{s.repo}"] .last-updated .value').html(formatDate(lastUpdated));
-            $('.project[repo="#{s.repo}"] .last-updated .value').removeClass('invisible');
+            $('.project[repo="#{s.repo}"] .last-updated').removeClass('invisible');
           },
           error: function( data ) {
-            console.log(data);
+            console.log('ERROR ' + data.status + ' on #{s.repo}');
+            //$('.project[repo="#{s.repo}"] .last-updated').remove();
           }
         });
-        /*
-        $.getJSON( "https://api.github.com/repos/#{s.repo}/commits", function( data ) {
-          console.log('got json')
-        })
-        .success(function() {
-          var items = [];
-          let timeStamp = data[0].commit.author.date;
-          let lU = timeStamp.split('T');
-          let lastUpdated = lU[0];
-          console.log(lastUpdated);
-          $('.project[repo="#{s.repo}"] .last-updated .value').html(formatDate(lastUpdated));
-          $('.project[repo="#{s.repo}"] .last-updated .value').removeClass('invisible');
-        })
-        .error(function() {
-          alert('error');
-        });
-        */
