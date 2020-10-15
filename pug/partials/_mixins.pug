@@ -164,7 +164,7 @@ mixin talkSlider(w)
             figcaption
               .name= t.name
                 //-a(href=t.url target="_blank")= t.name
-              .location
+              .location(style="text-transform:uppercase; font-size:100%; font-weight:bold;")
                 if t.city && t.state
                   span #{t.city}, #{t.state}
                 else if t.city && t.country
