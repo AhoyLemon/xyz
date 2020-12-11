@@ -30,8 +30,12 @@ html(lang="en")
                   meta(itemprop="url" content=t.url)
                   
                 .location(itemprop="location" itemscope itemtype="http://schema.org/VirtualLocation")
-                  span Online Conference
-                  meta(itemprop="url" content=t.url)
+                  if t.city && t.state
+                    span(itemprop="name") #{t.city}, #{t.state} (Virtual)
+                  else if t.city && t.country
+                    span(itemprop="name") #{t.city}, #{t.country} (Virtual)
+                  else
+                    span Online conference
                 
               else 
                 .location(itemprop="location" itemscope itemtype="http://schema.org/City")

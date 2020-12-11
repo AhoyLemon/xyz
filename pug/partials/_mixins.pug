@@ -112,12 +112,17 @@ mixin talkSlider(w)
             else if t.name
               .name= t.name
             .location
-              if t.online
-                span Online Conference
-              else if t.city && t.state
+              
+              if t.city && t.state
                 span #{t.city}, #{t.state}
+                if t.online
+                  span  (virtual)
               else if t.city && t.country
                 span #{t.city}, #{t.country}
+                if t.online
+                  span  (virtual)
+              else if t.online
+                span Online Conference
             .date
               // Date
               if t.postponed
