@@ -105,12 +105,12 @@
 
 
 @media (min-width:888px) and (max-width:940px) {
-  .project-summaries {  grid-template-columns: 100%;
+  .project-summaries {  grid-template-columns: 1fr;
   }
 }
 
-@media (max-width:502px) {
-  .project-summaries {  grid-template-columns: 100%;
+@media (max-width:610px) {
+  .project-summaries {  grid-template-columns: 1fr;
   }
 }
 
