@@ -5,7 +5,7 @@
     <title>Hi, my name is Lemon.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2020-11-18@10:26:41">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2021-00-26@12:56:53">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -113,19 +113,19 @@
               </div>
             </div>
           </div>
-          <div class="project" repo="AhoyLemon/notpoutine.fyi">
-            <figure style="background-color:#D12222; "><a href="https://notpoutine.fyi"><img class="logo" src="svg/poutine.svg" alt="Not Poutine, FYI logo"></a>
+          <div class="project" repo="AhoyLemon/kindafun">
+            <figure style="background-image:url(img/radial-grey.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/invalid.svg" alt="Invalid! logo"></a>
             </figure>
             <figcaption>
-              <div class="title"><a href="https://notpoutine.fyi">Not Poutine, FYI</a></div>
-              <div class="subhead">an archive of poutine crimes</div>
-              <div class="description"><p>Poutine is a dish made with french fries, fresh cheese curds and brown gravy.</p><p>This site catalogs meals that describe themselves as poutine and yet are not poutine.</p></div>
+              <div class="title"><a href="https://kinda.fun/invalid">Invalid!</a></div>
+              <div class="subhead">A multiplayer trivia game of needless suffering.</div>
+              <div class="description"><p>Invalid! was the first game for my <strong>kinda.fun</strong> website. The basic premise is that every employee is trying to create a password, while the SysAdmin is busy making their lives miserable.</p></div>
             </figcaption>
             <div class="detail-row">
               <div class="detail launched">
                 <div class="label">LAUNCHED</div>
                 <div class="value">
-                      <time>Jan 12, 2020
+                      <time>Jan 27, 2021
                       </time>
                 </div>
               </div>
@@ -135,12 +135,12 @@
               </div>
               <div class="detail repository">
                 <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/notpoutine.fyi" target="_blank"><span>notpoutine.fyi</span></a></div>
+                <div class="value"><a href="https://github.com/AhoyLemon/kindafun" target="_blank"><span>kindafun</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/notpoutine.fyi
+            <script>//AhoyLemon/kindafun
               $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/notpoutine.fyi/commits/master",
+                url: "https://api.github.com/repos/AhoyLemon/kindafun/commits/master",
                 dataType: 'json',
                 success: function( data ) {
                   var items = [];
@@ -148,12 +148,12 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated').removeClass('invisible');
+                  $('.project[repo="AhoyLemon/kindafun"] .last-updated .value').html(formatDate(lastUpdated));
+                  $('.project[repo="AhoyLemon/kindafun"] .last-updated').removeClass('invisible');
                 },
                 error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/notpoutine.fyi');
-                  //$('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated').remove();
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/kindafun');
+                  //$('.project[repo="AhoyLemon/kindafun"] .last-updated').remove();
                 }
               });
             </script>
@@ -248,50 +248,23 @@
               });
             </script>
           </div>
-          <div class="project" repo="AhoyLemon/pretend.world">
-            <figure style="background-color:#E6E1C5; "><a href="https://ahoylemon.github.io/pretend.world"><img class="logo" src="svg/pretend.svg" alt="PRETEND 🌐 WORLD logo"></a>
+          <div class="project">
+            <figure style="background-image:url(img/radial-dark.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/wrongest.svg" alt="The Wrongest Words logo"></a>
             </figure>
             <figcaption>
-              <div class="title"><a href="https://ahoylemon.github.io/pretend.world">PRETEND 🌐 WORLD</a></div>
-              <div class="subhead">the high stakes game of cheese logs</div>
-              <div class="description"><p>You are at a party of celebrity impersonators. It's up to you to guess which ones.</p><p>This was first launched for KCDC X</p></div>
+              <div class="title"><a href="https://kinda.fun/invalid">The Wrongest Words</a></div>
+              <div class="subhead">Launched, retired, and then launched again.</div>
+              <div class="description"><p>The Wrongest Words launched as the second game on <strong>kinda.fun</strong>. It's a multiplayer game where each player must defend the stupid statements in front of them.</p></div>
             </figcaption>
             <div class="detail-row">
               <div class="detail launched">
                 <div class="label">LAUNCHED</div>
                 <div class="value">
-                      <time>Jul 12, 2018
+                      <time>Jan 27, 2020
                       </time>
                 </div>
               </div>
-              <div class="detail last-updated invisible">
-                <div class="label">LAST UPDATED</div>
-                <div class="value"></div>
-              </div>
-              <div class="detail repository">
-                <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/pretend.world" target="_blank"><span>pretend.world</span></a></div>
-              </div>
             </div>
-            <script>//AhoyLemon/pretend.world
-              $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/pretend.world/commits/master",
-                dataType: 'json',
-                success: function( data ) {
-                  var items = [];
-                  let timeStamp = data.commit.author.date;
-                  let lU = timeStamp.split('T');
-                  let lastUpdated = lU[0];
-                  console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/pretend.world"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/pretend.world"] .last-updated').removeClass('invisible');
-                },
-                error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/pretend.world');
-                  //$('.project[repo="AhoyLemon/pretend.world"] .last-updated').remove();
-                }
-              });
-            </script>
           </div>
           <div class="previous-conferences conferences">
             <div class="slider-header">
@@ -718,6 +691,96 @@
                 </figcaption>
               </figure>
             </div>
+          </div>
+          <div class="project" repo="AhoyLemon/notpoutine.fyi">
+            <figure style="background-color:#D12222; "><a href="https://notpoutine.fyi"><img class="logo" src="svg/poutine.svg" alt="Not Poutine, FYI logo"></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://notpoutine.fyi">Not Poutine, FYI</a></div>
+              <div class="subhead">an archive of poutine crimes</div>
+              <div class="description"><p>Poutine is a dish made with french fries, fresh cheese curds and brown gravy.</p><p>This site catalogs meals that describe themselves as poutine and yet are not poutine.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Jan 12, 2020
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/notpoutine.fyi" target="_blank"><span>notpoutine.fyi</span></a></div>
+              </div>
+            </div>
+            <script>//AhoyLemon/notpoutine.fyi
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/notpoutine.fyi/commits/master",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated .value').html(formatDate(lastUpdated));
+                  $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated').removeClass('invisible');
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/notpoutine.fyi');
+                  //$('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated').remove();
+                }
+              });
+            </script>
+          </div>
+          <div class="project" repo="AhoyLemon/pretend.world">
+            <figure style="background-color:#E6E1C5; "><a href="https://ahoylemon.github.io/pretend.world"><img class="logo" src="svg/pretend.svg" alt="PRETEND 🌐 WORLD logo"></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://ahoylemon.github.io/pretend.world">PRETEND 🌐 WORLD</a></div>
+              <div class="subhead">the high stakes game of cheese logs</div>
+              <div class="description"><p>You are at a party of celebrity impersonators. It's up to you to guess which ones.</p><p>This was first launched for KCDC X</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Jul 12, 2018
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/pretend.world" target="_blank"><span>pretend.world</span></a></div>
+              </div>
+            </div>
+            <script>//AhoyLemon/pretend.world
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/pretend.world/commits/master",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  $('.project[repo="AhoyLemon/pretend.world"] .last-updated .value').html(formatDate(lastUpdated));
+                  $('.project[repo="AhoyLemon/pretend.world"] .last-updated').removeClass('invisible');
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/pretend.world');
+                  //$('.project[repo="AhoyLemon/pretend.world"] .last-updated').remove();
+                }
+              });
+            </script>
           </div>
           <div class="project" repo="AhoyLemon/BG2COOL">
             <figure style="background-image:url(img/terrazzo.gif); "><a class="absolute-link" href="https://ahoylemon.github.io/BG2COOL" style="background-image:url(img/terrazzo.gif); "></a>
@@ -1447,31 +1510,6 @@
                 }
               });
             </script>
-          </div>
-          <div class="project">
-            <figure style="background-color:#2d2929; "><a href="http://ahoylemon.github.io/wrongest.website"><img class="logo" src="svg/wrongest.svg" alt="The Wrongest Words logo"></a>
-            </figure>
-            <figcaption>
-              <div class="title"><a href="http://ahoylemon.github.io/wrongest.website">The Wrongest Words</a></div>
-              <div class="subhead">a now-defunct party game</div>
-              <div class="description"><p>The Wrongest Words was a multiplayer card game where players had to defend the very stupid statements in front of them. It has been retired.</p></div>
-            </figcaption>
-            <div class="detail-row">
-              <div class="detail launched">
-                <div class="label">LAUNCHED</div>
-                <div class="value">
-                      <time>Mar 26, 2015
-                      </time>
-                </div>
-              </div>
-              <div class="detail retired">
-                <div class="label">RETIRED</div>
-                <div class="value">
-                      <time>Mar 20, 2017
-                      </time>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="project">
             <figure style="background-image:url(img/irl.jpg); "><a class="absolute-link" href="https://youtu.be/4YRuHRvniJM" style="background-image:url(img/irl.jpg); "></a>
