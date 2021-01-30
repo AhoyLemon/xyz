@@ -19,15 +19,15 @@
       <height>120</height>
     </image>
     <item>
-      <title>Not Poutine, FYI</title>
-      <link>https://notpoutine.fyi</link>
-      <guid>https://notpoutine.fyi</guid>
-      <description>&lt;p&gt;Poutine is a dish made with french fries, fresh cheese curds and brown gravy.&lt;/p&gt;&lt;p&gt;This site catalogs meals that describe themselves as poutine and yet are not poutine.&lt;/p&gt;</description>
-      <pubDate>2020-01-12</pubDate>
+      <title>Invalid!</title>
+      <link>https://kinda.fun/invalid</link>
+      <guid>https://kinda.fun/invalid</guid>
+      <description>&lt;p&gt;Invalid! was the first game for my &lt;strong&gt;kinda.fun&lt;/strong&gt; website. The basic premise is that every employee is trying to create a password, while the SysAdmin is busy making their lives miserable.&lt;/p&gt;</description>
+      <pubDate>2021-01-27</pubDate>
       <image>
-        <url>https://ahoylemon.xyz/svg/poutine.svg</url>
-        <title>Not Poutine, FYI logo</title>
-        <link>https://notpoutine.fyi</link>
+        <url>https://ahoylemon.xyz/svg/invalid.svg</url>
+        <title>Invalid! logo</title>
+        <link>https://kinda.fun/invalid</link>
       </image>
     </item>
     <item>
@@ -52,6 +52,30 @@
         <url>https://ahoylemon.xyz/svg/idiots.svg</url>
         <title>Idiots win. logo</title>
         <link>https://idiots.win</link>
+      </image>
+    </item>
+    <item>
+      <title>The Wrongest Words</title>
+      <link>https://kinda.fun/invalid</link>
+      <guid>https://kinda.fun/invalid</guid>
+      <description>&lt;p&gt;The Wrongest Words launched as the second game on &lt;strong&gt;kinda.fun&lt;/strong&gt;. It's a multiplayer game where each player must defend the stupid statements in front of them.&lt;/p&gt;</description>
+      <pubDate>2020-01-27</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/wrongest.svg</url>
+        <title>The Wrongest Words logo</title>
+        <link>https://kinda.fun/invalid</link>
+      </image>
+    </item>
+    <item>
+      <title>Not Poutine, FYI</title>
+      <link>https://notpoutine.fyi</link>
+      <guid>https://notpoutine.fyi</guid>
+      <description>&lt;p&gt;Poutine is a dish made with french fries, fresh cheese curds and brown gravy.&lt;/p&gt;&lt;p&gt;This site catalogs meals that describe themselves as poutine and yet are not poutine.&lt;/p&gt;</description>
+      <pubDate>2020-01-12</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/poutine.svg</url>
+        <title>Not Poutine, FYI logo</title>
+        <link>https://notpoutine.fyi</link>
       </image>
     </item>
     <item>
@@ -280,18 +304,6 @@
         <url>https://ahoylemon.xyz/svg/ballpit.svg</url>
         <title>ballp.it logo</title>
         <link>https://ballp.it</link>
-      </image>
-    </item>
-    <item>
-      <title>The Wrongest Words</title>
-      <link>http://ahoylemon.github.io/wrongest.website</link>
-      <guid>http://ahoylemon.github.io/wrongest.website</guid>
-      <description>&lt;p&gt;The Wrongest Words was a multiplayer card game where players had to defend the very stupid statements in front of them. It has been retired.&lt;/p&gt;</description>
-      <pubDate>2015-03-26</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/svg/wrongest.svg</url>
-        <title>The Wrongest Words logo</title>
-        <link>http://ahoylemon.github.io/wrongest.website</link>
       </image>
     </item>
     <item>
