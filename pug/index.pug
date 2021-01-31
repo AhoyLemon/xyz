@@ -20,9 +20,12 @@ html(lang="en")
     
     main.project-summaries
 
-      +talkSlider('upcoming')
+      
 
       each s,index in lemonSites
+
+        if index == 1
+          +talkSlider('upcoming')
 
         if index == 4
           +talkSlider('previous')

@@ -144,7 +144,11 @@ mixin talkSlider(w)
               ul
                 li.talk= t.talk
 
-        if upcomingTalks.length == 1
+        if upcomingTalks.length < 1
+          .conference.upcoming(style="display:flex; align-items:center; justify-content:center;")
+            p(style="font-size:120%") None currently scheduled.
+
+        if upcomingTalks.length < 2
           .conference.upcoming(style="display:flex; align-items:center; justify-content:center;")
             p(style="font-size:120%")
               a(href="https://sessionize.com/lemon") Invite me to speak
