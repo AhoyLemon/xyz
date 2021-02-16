@@ -263,10 +263,15 @@ mixin projectSummary(s)
 
     
     if s.repo
+      - let repoURL = ""
+      if s.repo == "AhoyLemon/kinda.fun"
+        - repoURL = "https://api.github.com/repos/" + s.repo + "/commits/main"
+      else 
+        - repoURL = "https://api.github.com/repos/" + s.repo + "/commits/master"
       script.
-        //#{s.repo}
+
         $.ajax({
-          url: "https://api.github.com/repos/#{s.repo}/commits/master",
+          url: "#{repoURL}",
           dataType: 'json',
           success: function( data ) {
             var items = [];
@@ -274,8 +279,10 @@ mixin projectSummary(s)
             let lU = timeStamp.split('T');
             let lastUpdated = lU[0];
             console.log(lastUpdated);
-            $('.project[repo="#{s.repo}"] .last-updated .value').html(formatDate(lastUpdated));
-            $('.project[repo="#{s.repo}"] .last-updated').removeClass('invisible');
+            if (lastUpdated) {
+              $('.project[repo="#{s.repo}"] .last-updated .value').html(formatDate(lastUpdated));
+              $('.project[repo="#{s.repo}"] .last-updated').removeClass('invisible');
+            }
           },
           error: function( data ) {
             console.log('ERROR ' + data.status + ' on #{s.repo}');

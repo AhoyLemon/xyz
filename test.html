@@ -6,7 +6,7 @@
     <title>ahoylemon 🍋 xyz</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2021-00-31@13:08:37">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2021-01-16@11:37:19">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -96,7 +96,7 @@
               </div>
             </div>
           </div>
-          <div class="project" repo="AhoyLemon/kindafun">
+          <div class="project" repo="AhoyLemon/kinda.fun">
             <figure style="background-image:url(img/radial-grey.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/invalid.svg" alt="Invalid! logo"></a>
             </figure>
             <figcaption>
@@ -118,12 +118,12 @@
               </div>
               <div class="detail repository">
                 <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/kindafun" target="_blank"><span>kindafun</span></a></div>
+                <div class="value"><a href="https://github.com/AhoyLemon/kinda.fun" target="_blank"><span>kinda.fun</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/kindafun
+            <script>
               $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/kindafun/commits/master",
+                url: "https://api.github.com/repos/AhoyLemon/kinda.fun/commits/main",
                 dataType: 'json',
                 success: function( data ) {
                   var items = [];
@@ -131,12 +131,61 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/kindafun"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/kindafun"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/kindafun');
-                  //$('.project[repo="AhoyLemon/kindafun"] .last-updated').remove();
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/kinda.fun');
+                  //$('.project[repo="AhoyLemon/kinda.fun"] .last-updated').remove();
+                }
+              });
+            </script>
+          </div>
+          <div class="project" repo="AhoyLemon/kinda.fun">
+            <figure style="background-color:#23073a; "><a href="https://kinda.fun/cameo"><img class="logo" src="svg/f.svg" alt="Comparatively Famous logo"></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://kinda.fun/cameo">Comparatively Famous</a></div>
+              <div class="subhead">The Game Of Celebrity Value</div>
+              <div class="description"><p>This is a game about guessing the relative value of different celebrities on <b>Cameo</b>.</p><p>I built this one in about a week and a half.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Feb 16, 2021
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/kinda.fun" target="_blank"><span>kinda.fun</span></a></div>
+              </div>
+            </div>
+            <script>
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/kinda.fun/commits/main",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated').removeClass('invisible');
+                  }
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/kinda.fun');
+                  //$('.project[repo="AhoyLemon/kinda.fun"] .last-updated').remove();
                 }
               });
             </script>
@@ -166,7 +215,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/damn.dog" target="_blank"><span>damn.dog</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/damn.dog
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/damn.dog/commits/master",
                 dataType: 'json',
@@ -176,8 +225,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/damn.dog"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/damn.dog"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/damn.dog');
@@ -211,7 +262,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/idiots.win" target="_blank"><span>idiots.win</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/idiots.win
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/idiots.win/commits/master",
                 dataType: 'json',
@@ -221,8 +272,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/idiots.win"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/idiots.win"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/idiots.win"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/idiots.win"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/idiots.win');
@@ -230,24 +283,6 @@
                 }
               });
             </script>
-          </div>
-          <div class="project">
-            <figure style="background-image:url(img/radial-dark.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/wrongest.svg" alt="The Wrongest Words logo"></a>
-            </figure>
-            <figcaption>
-              <div class="title"><a href="https://kinda.fun/invalid">The Wrongest Words</a></div>
-              <div class="subhead">Launched, retired, and then launched again.</div>
-              <div class="description"><p>The Wrongest Words launched as the second game on <strong>kinda.fun</strong>. It's a multiplayer game where each player must defend the stupid statements in front of them.</p></div>
-            </figcaption>
-            <div class="detail-row">
-              <div class="detail launched">
-                <div class="label">LAUNCHED</div>
-                <div class="value">
-                      <time>Jan 27, 2020
-                      </time>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="previous-conferences conferences">
             <div class="slider-header">
@@ -689,6 +724,53 @@
               </figure>
             </div>
           </div>
+          <div class="project" repo="AhoyLemon/kinda.fun">
+            <figure style="background-image:url(img/radial-dark.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/wrongest.svg" alt="The Wrongest Words logo"></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://kinda.fun/invalid">The Wrongest Words</a></div>
+              <div class="subhead">Launched, retired, and then launched again.</div>
+              <div class="description"><p>The Wrongest Words launched as the second game on <strong>kinda.fun</strong>. It's a multiplayer game where each player must defend the stupid statements in front of them.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Jan 27, 2020
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/kinda.fun" target="_blank"><span>kinda.fun</span></a></div>
+              </div>
+            </div>
+            <script>
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/kinda.fun/commits/main",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated').removeClass('invisible');
+                  }
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/kinda.fun');
+                  //$('.project[repo="AhoyLemon/kinda.fun"] .last-updated').remove();
+                }
+              });
+            </script>
+          </div>
           <div class="project" repo="AhoyLemon/notpoutine.fyi">
             <figure style="background-color:#D12222; "><a href="https://notpoutine.fyi"><img class="logo" src="svg/poutine.svg" alt="Not Poutine, FYI logo"></a>
             </figure>
@@ -714,7 +796,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/notpoutine.fyi" target="_blank"><span>notpoutine.fyi</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/notpoutine.fyi
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/notpoutine.fyi/commits/master",
                 dataType: 'json',
@@ -724,8 +806,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/notpoutine.fyi"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/notpoutine.fyi');
@@ -759,7 +843,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/pretend.world" target="_blank"><span>pretend.world</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/pretend.world
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/pretend.world/commits/master",
                 dataType: 'json',
@@ -769,8 +853,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/pretend.world"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/pretend.world"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/pretend.world"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/pretend.world"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/pretend.world');
@@ -804,7 +890,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/BG2COOL" target="_blank"><span>BG2COOL</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/BG2COOL
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/BG2COOL/commits/master",
                 dataType: 'json',
@@ -814,8 +900,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/BG2COOL"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/BG2COOL"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/BG2COOL"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/BG2COOL"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/BG2COOL');
@@ -849,7 +937,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/greatsex.tips" target="_blank"><span>greatsex.tips</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/greatsex.tips
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/greatsex.tips/commits/master",
                 dataType: 'json',
@@ -859,8 +947,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/greatsex.tips"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/greatsex.tips"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/greatsex.tips"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/greatsex.tips"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/greatsex.tips');
@@ -894,7 +984,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/futile.fun" target="_blank"><span>futile.fun</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/futile.fun
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/futile.fun/commits/master",
                 dataType: 'json',
@@ -904,8 +994,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/futile.fun"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/futile.fun"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/futile.fun"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/futile.fun"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/futile.fun');
@@ -939,7 +1031,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/heelies.info" target="_blank"><span>heelies.info</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/heelies.info
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/heelies.info/commits/master",
                 dataType: 'json',
@@ -949,8 +1041,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/heelies.info"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/heelies.info"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/heelies.info"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/heelies.info"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/heelies.info');
@@ -984,7 +1078,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/trumps.pw" target="_blank"><span>trumps.pw</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/trumps.pw
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/trumps.pw/commits/master",
                 dataType: 'json',
@@ -994,8 +1088,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/trumps.pw"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/trumps.pw"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/trumps.pw"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/trumps.pw"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/trumps.pw');
@@ -1029,7 +1125,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/2un.ltd" target="_blank"><span>2un.ltd</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/2un.ltd
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/2un.ltd/commits/master",
                 dataType: 'json',
@@ -1039,8 +1135,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/2un.ltd"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/2un.ltd"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/2un.ltd"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/2un.ltd"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/2un.ltd');
@@ -1074,7 +1172,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/partypartypartypartyparty" target="_blank"><span>partypartypartypartyparty</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/partypartypartypartyparty
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/partypartypartypartyparty/commits/master",
                 dataType: 'json',
@@ -1084,8 +1182,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/partypartypartypartyparty"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/partypartypartypartyparty"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/partypartypartypartyparty"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/partypartypartypartyparty"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/partypartypartypartyparty');
@@ -1119,7 +1219,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/dumb.men" target="_blank"><span>dumb.men</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/dumb.men
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/dumb.men/commits/master",
                 dataType: 'json',
@@ -1129,8 +1229,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/dumb.men"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/dumb.men"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/dumb.men"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/dumb.men"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/dumb.men');
@@ -1164,7 +1266,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/badaccent.club" target="_blank"><span>badaccent.club</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/badaccent.club
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/badaccent.club/commits/master",
                 dataType: 'json',
@@ -1174,8 +1276,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/badaccent.club"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/badaccent.club"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/badaccent.club"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/badaccent.club"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/badaccent.club');
@@ -1209,7 +1313,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/jerking.online" target="_blank"><span>jerking.online</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/jerking.online
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/jerking.online/commits/master",
                 dataType: 'json',
@@ -1219,8 +1323,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/jerking.online"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/jerking.online"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/jerking.online"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/jerking.online"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/jerking.online');
@@ -1254,7 +1360,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/verifiable.win" target="_blank"><span>verifiable.win</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/verifiable.win
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/verifiable.win/commits/master",
                 dataType: 'json',
@@ -1264,8 +1370,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/verifiable.win"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/verifiable.win"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/verifiable.win"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/verifiable.win"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/verifiable.win');
@@ -1335,7 +1443,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/frankwest" target="_blank"><span>frankwest</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/frankwest
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/frankwest/commits/master",
                 dataType: 'json',
@@ -1345,8 +1453,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/frankwest"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/frankwest"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/frankwest"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/frankwest"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/frankwest');
@@ -1398,7 +1508,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/sf-firings" target="_blank"><span>sf-firings</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/sf-firings
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/sf-firings/commits/master",
                 dataType: 'json',
@@ -1408,8 +1518,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/sf-firings"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/sf-firings"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/sf-firings"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/sf-firings"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/sf-firings');
@@ -1443,7 +1555,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/TheFPlus" target="_blank"><span>TheFPlus</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/TheFPlus
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/TheFPlus/commits/master",
                 dataType: 'json',
@@ -1453,8 +1565,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/TheFPlus"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/TheFPlus"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/TheFPlus"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/TheFPlus"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/TheFPlus');
@@ -1488,7 +1602,7 @@
                 <div class="value"><a href="https://github.com/AhoyLemon/ballpit" target="_blank"><span>ballpit</span></a></div>
               </div>
             </div>
-            <script>//AhoyLemon/ballpit
+            <script>
               $.ajax({
                 url: "https://api.github.com/repos/AhoyLemon/ballpit/commits/master",
                 dataType: 'json',
@@ -1498,8 +1612,10 @@
                   let lU = timeStamp.split('T');
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
-                  $('.project[repo="AhoyLemon/ballpit"] .last-updated .value').html(formatDate(lastUpdated));
-                  $('.project[repo="AhoyLemon/ballpit"] .last-updated').removeClass('invisible');
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/ballpit"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/ballpit"] .last-updated').removeClass('invisible');
+                  }
                 },
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/ballpit');
