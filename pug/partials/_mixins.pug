@@ -264,7 +264,7 @@ mixin projectSummary(s)
     
     if s.repo
       - let repoURL = ""
-      if s.repo == "AhoyLemon/kinda.fun"
+      if s.repo == ( "AhoyLemon/kinda.fun" || "AhoyLemon/damn.dog" || "AhoyLemon/TheFPlus" )
         - repoURL = "https://api.github.com/repos/" + s.repo + "/commits/main"
       else 
         - repoURL = "https://api.github.com/repos/" + s.repo + "/commits/master"
