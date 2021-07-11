@@ -175,18 +175,6 @@
       </image>
     </item>
     <item>
-      <title>dumb men</title>
-      <link>https://dumb.men</link>
-      <guid>https://dumb.men</guid>
-      <description>&lt;p&gt;This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.&lt;/p&gt;</description>
-      <pubDate>2017-11-04</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/men-foreground.png</url>
-        <title>dumb men logo</title>
-        <link>https://dumb.men</link>
-      </image>
-    </item>
-    <item>
       <title>Bad Accent Club</title>
       <link>https://play.google.com/store/apps/details?id=club.badaccent</link>
       <guid>https://play.google.com/store/apps/details?id=club.badaccent</guid>
@@ -208,6 +196,18 @@
         <url>https://ahoylemon.xyz/svg/fist.svg</url>
         <title>jerking online logo</title>
         <link>https://ahoylemon.github.io/jerking.online</link>
+      </image>
+    </item>
+    <item>
+      <title>dumb men</title>
+      <link>https://ahoylemon.github.io/dumb.men</link>
+      <guid>https://ahoylemon.github.io/dumb.men</guid>
+      <description>&lt;p&gt;This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.&lt;/p&gt;</description>
+      <pubDate>2017-11-04</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/men-foreground.png</url>
+        <title>dumb men logo</title>
+        <link>https://ahoylemon.github.io/dumb.men</link>
       </image>
     </item>
     <item>

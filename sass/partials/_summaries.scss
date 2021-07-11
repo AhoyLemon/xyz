@@ -88,7 +88,7 @@
 
 
 @media (max-width:1350px) { 
-  .project-summaries { 
+  .project-summaries { grid-template-columns: 1fr;
     .project { grid-template-columns: 120px 1fr; }
   }
 }
@@ -102,7 +102,6 @@
     }
   }
 }
-
 
 @media (min-width:888px) and (max-width:940px) {
   .project-summaries {  grid-template-columns: 1fr;

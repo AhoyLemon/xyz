@@ -6,7 +6,7 @@
     <title>ahoylemon 🍋 xyz</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2021-04-23@13:20:25">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2021-06-11@08:59:50">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -1147,53 +1147,6 @@
               });
             </script>
           </div>
-          <div class="project" repo="AhoyLemon/dumb.men">
-            <figure style="background-image:url(img/men-background.png); "><a href="https://dumb.men"><img class="logo" src="img/men-foreground.png" alt="dumb men logo"></a>
-            </figure>
-            <figcaption>
-              <div class="title"><a href="https://dumb.men">dumb men</a></div>
-              <div class="subhead">hallelujah! it's raining dumb men.</div>
-              <div class="description"><p>This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.</p></div>
-            </figcaption>
-            <div class="detail-row">
-              <div class="detail launched">
-                <div class="label">LAUNCHED</div>
-                <div class="value">
-                      <time>Nov 04, 2017
-                      </time>
-                </div>
-              </div>
-              <div class="detail last-updated invisible">
-                <div class="label">LAST UPDATED</div>
-                <div class="value"></div>
-              </div>
-              <div class="detail repository">
-                <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/dumb.men" target="_blank"><span>dumb.men</span></a></div>
-              </div>
-            </div>
-            <script>
-              $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/dumb.men/commits/master",
-                dataType: 'json',
-                success: function( data ) {
-                  var items = [];
-                  let timeStamp = data.commit.author.date;
-                  let lU = timeStamp.split('T');
-                  let lastUpdated = lU[0];
-                  console.log(lastUpdated);
-                  if (lastUpdated) {
-                    $('.project[repo="AhoyLemon/dumb.men"] .last-updated .value').html(formatDate(lastUpdated));
-                    $('.project[repo="AhoyLemon/dumb.men"] .last-updated').removeClass('invisible');
-                  }
-                },
-                error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/dumb.men');
-                  //$('.project[repo="AhoyLemon/dumb.men"] .last-updated').remove();
-                }
-              });
-            </script>
-          </div>
           <div class="project" repo="AhoyLemon/badaccent.club">
             <figure style="background-color:#a5ed83; "><a href="https://play.google.com/store/apps/details?id=club.badaccent"><img class="logo" src="svg/badaccent.svg" alt="Bad Accent Club logo"></a>
             </figure>
@@ -1284,6 +1237,53 @@
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/jerking.online');
                   //$('.project[repo="AhoyLemon/jerking.online"] .last-updated').remove();
+                }
+              });
+            </script>
+          </div>
+          <div class="project" repo="AhoyLemon/dumb.men">
+            <figure style="background-image:url(img/men-background.png); "><a href="https://ahoylemon.github.io/dumb.men"><img class="logo" src="img/men-foreground.png" alt="dumb men logo"></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://ahoylemon.github.io/dumb.men">dumb men</a></div>
+              <div class="subhead">hallelujah! it's raining dumb men.</div>
+              <div class="description"><p>This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Nov 04, 2017
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/dumb.men" target="_blank"><span>dumb.men</span></a></div>
+              </div>
+            </div>
+            <script>
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/dumb.men/commits/master",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/dumb.men"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/dumb.men"] .last-updated').removeClass('invisible');
+                  }
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/dumb.men');
+                  //$('.project[repo="AhoyLemon/dumb.men"] .last-updated').remove();
                 }
               });
             </script>
