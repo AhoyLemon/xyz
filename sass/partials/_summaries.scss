@@ -1,7 +1,7 @@
 .project-summaries { padding:20px; display:grid; grid-template-columns: repeat(2,calc(50% - 15px)); grid-gap: 30px; 
 
 
-  .project { display:grid; grid-template-columns: 200px 1fr; grid-gap: 20px; background:white; box-shadow:-0.075em -0.075em 0.15em rgba($black,0.75);
+  .project { display:grid; grid-template-columns: 200px 1fr; grid-gap: 20px; background:white; box-shadow:$card-shadow;
 
     figure { background-size:cover; padding:10px; grid-row: span 2; background-position: center; position: relative;
       @media (pointer:fine) {
@@ -51,7 +51,7 @@
   }
 
   .conferences { padding:0; position: relative; overflow: hidden;
-    background:$black; color:$white; box-shadow:-0.075em -0.075em 0.15em rgba($black,0.75);
+    background:$black; color:$white; box-shadow:$card-shadow;
 
     .slider-header { display: grid; grid-template-columns: 1fr 120px; grid-gap: 10px; padding:5px 15px;
       h2 { font-weight: $medium; letter-spacing: 0.05em; font-size:180%;
@@ -87,7 +87,7 @@
 }
 
 
-@media (max-width:1350px) { 
+@media (max-width:1500px) { 
   .project-summaries { grid-template-columns: 1fr;
     .project { grid-template-columns: 120px 1fr; }
   }
