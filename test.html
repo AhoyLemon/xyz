@@ -6,7 +6,7 @@
     <title>ahoylemon 🍋 xyz</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2021-06-24@19:33:51">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2021-07-26@21:50:03">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -84,7 +84,7 @@
           <div class="upcoming-conferences conferences">
             <div class="slider-header">
               <h2>
-                 UPCOMING TALKS <sub>(1)</sub></h2>
+                 UPCOMING TALKS <sub>(3)</sub></h2>
               <div class="more-holder"><a href="talks.html">see all</a></div>
             </div>
             <div class="upcoming-conference-carousel carousel">
@@ -102,10 +102,82 @@
                   <li class="talk">How To Make Your Website A Progressive Web App (And Why You Might Want To)</li>
                 </ul>
               </div>
-              <div class="conference upcoming" style="display:flex; align-items:center; justify-content:center;">
-                <p style="font-size:120%"><a href="https://sessionize.com/lemon">Invite me to speak</a>, please.</p>
+              <div class="conference upcoming">
+                <div class="name"><a href="https://www.buildstuff.events" target="_blank">Build Stuff Lithuania</a></div>
+                <div class="location"><span>Vilnus, Lithuania</span>
+                </div>
+                <div class="date">
+                  <!-- Date-->
+                      <time>Nov 17 -  21,  2021
+                      </time>
+                </div>
+                <div class="presenting">Presenting:</div>
+                <ul class="multiple-talks">
+                  <li class="talk">Shrink The Web!</li>
+                </ul>
+              </div>
+              <div class="conference upcoming">
+                <div class="name"><a href="https://ndcoslo.com" target="_blank">NDC {Oslo}</a></div>
+                <div class="location"><span>Oslo, Norway</span>
+                </div>
+                <div class="date">
+                  <!-- Date-->
+                      <time>Nov 28 -  Dec 02,  2021
+                      </time>
+                </div>
+                <div class="presenting">Presenting:</div>
+                <ul class="multiple-talks">
+                  <li class="talk">How To Make Your Website A Progressive Web App (And Why You Might Want To)</li>
+                </ul>
               </div>
             </div>
+          </div>
+          <div class="project" repo="AhoyLemon/kinda.fun">
+            <figure style="background-image:url(img/futile-512.png); "><a class="absolute-link" href="https://ahoylemon.github.io/futile.fun" style="background-image:url(img/futile-512.png); "></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://ahoylemon.github.io/futile.fun">Sisyphus Clicker</a></div>
+              <div class="subhead">an exercise in active depression</div>
+              <div class="description"><p>In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill. Also, there are acheivements.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Sep 21, 2021
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/kinda.fun" target="_blank"><span>kinda.fun</span></a></div>
+              </div>
+            </div>
+            <script>
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/kinda.fun/commits/main",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated').removeClass('invisible');
+                  }
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/kinda.fun');
+                  //$('.project[repo="AhoyLemon/kinda.fun"] .last-updated').remove();
+                }
+              });
+            </script>
           </div>
           <div class="project" repo="AhoyLemon/kinda.fun">
             <figure style="background-image:url(img/radial-grey.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/invalid.svg" alt="Invalid! logo"></a>
@@ -244,53 +316,6 @@
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/damn.dog');
                   //$('.project[repo="AhoyLemon/damn.dog"] .last-updated').remove();
-                }
-              });
-            </script>
-          </div>
-          <div class="project" repo="AhoyLemon/idiots.win">
-            <figure style="background-color:#f1da5e; "><a href="https://idiots.win"><img class="logo" src="svg/idiots.svg" alt="Idiots win. logo"></a>
-            </figure>
-            <figcaption>
-              <div class="title"><a href="https://idiots.win">Idiots win.</a></div>
-              <div class="subhead">the game of stupid searches</div>
-              <div class="description"><p>The game that challenges you to figure out what people are searching for on Google.</p><p>Idiots Win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.</p></div>
-            </figcaption>
-            <div class="detail-row">
-              <div class="detail launched">
-                <div class="label">LAUNCHED</div>
-                <div class="value">
-                      <time>Jun 02, 2016
-                      </time>
-                </div>
-              </div>
-              <div class="detail last-updated invisible">
-                <div class="label">LAST UPDATED</div>
-                <div class="value"></div>
-              </div>
-              <div class="detail repository">
-                <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/idiots.win" target="_blank"><span>idiots.win</span></a></div>
-              </div>
-            </div>
-            <script>
-              $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/idiots.win/commits/master",
-                dataType: 'json',
-                success: function( data ) {
-                  var items = [];
-                  let timeStamp = data.commit.author.date;
-                  let lU = timeStamp.split('T');
-                  let lastUpdated = lU[0];
-                  console.log(lastUpdated);
-                  if (lastUpdated) {
-                    $('.project[repo="AhoyLemon/idiots.win"] .last-updated .value').html(formatDate(lastUpdated));
-                    $('.project[repo="AhoyLemon/idiots.win"] .last-updated').removeClass('invisible');
-                  }
-                },
-                error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/idiots.win');
-                  //$('.project[repo="AhoyLemon/idiots.win"] .last-updated').remove();
                 }
               });
             </script>
@@ -735,6 +760,53 @@
               </figure>
             </div>
           </div>
+          <div class="project" repo="AhoyLemon/idiots.win">
+            <figure style="background-color:#f1da5e; "><a href="https://idiots.win"><img class="logo" src="svg/idiots.svg" alt="Idiots win. logo"></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://idiots.win">Idiots win.</a></div>
+              <div class="subhead">the game of stupid searches</div>
+              <div class="description"><p>The game that challenges you to figure out what people are searching for on Google.</p><p>Idiots Win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Jun 02, 2016
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/idiots.win" target="_blank"><span>idiots.win</span></a></div>
+              </div>
+            </div>
+            <script>
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/idiots.win/commits/master",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/idiots.win"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/idiots.win"] .last-updated').removeClass('invisible');
+                  }
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/idiots.win');
+                  //$('.project[repo="AhoyLemon/idiots.win"] .last-updated').remove();
+                }
+              });
+            </script>
+          </div>
           <div class="project" repo="AhoyLemon/kinda.fun">
             <figure style="background-image:url(img/radial-dark.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/wrongest.svg" alt="The Wrongest Words logo"></a>
             </figure>
@@ -966,53 +1038,6 @@
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/greatsex.tips');
                   //$('.project[repo="AhoyLemon/greatsex.tips"] .last-updated').remove();
-                }
-              });
-            </script>
-          </div>
-          <div class="project" repo="AhoyLemon/futile.fun">
-            <figure style="background-image:url(img/futile-512.png); "><a class="absolute-link" href="https://ahoylemon.github.io/futile.fun" style="background-image:url(img/futile-512.png); "></a>
-            </figure>
-            <figcaption>
-              <div class="title"><a href="https://ahoylemon.github.io/futile.fun">futile 💀 fun</a></div>
-              <div class="subhead">a depressing clicker game</div>
-              <div class="description"><p>An incremental game where you click Sisypus to push the rock uphill.</p><p>This was first launched for NDC {Sydney}</p></div>
-            </figcaption>
-            <div class="detail-row">
-              <div class="detail launched">
-                <div class="label">LAUNCHED</div>
-                <div class="value">
-                      <time>Sep 21, 2018
-                      </time>
-                </div>
-              </div>
-              <div class="detail last-updated invisible">
-                <div class="label">LAST UPDATED</div>
-                <div class="value"></div>
-              </div>
-              <div class="detail repository">
-                <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/futile.fun" target="_blank"><span>futile.fun</span></a></div>
-              </div>
-            </div>
-            <script>
-              $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/futile.fun/commits/master",
-                dataType: 'json',
-                success: function( data ) {
-                  var items = [];
-                  let timeStamp = data.commit.author.date;
-                  let lU = timeStamp.split('T');
-                  let lastUpdated = lU[0];
-                  console.log(lastUpdated);
-                  if (lastUpdated) {
-                    $('.project[repo="AhoyLemon/futile.fun"] .last-updated .value').html(formatDate(lastUpdated));
-                    $('.project[repo="AhoyLemon/futile.fun"] .last-updated').removeClass('invisible');
-                  }
-                },
-                error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/futile.fun');
-                  //$('.project[repo="AhoyLemon/futile.fun"] .last-updated').remove();
                 }
               });
             </script>

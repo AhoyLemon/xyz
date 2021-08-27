@@ -19,6 +19,18 @@
       <height>120</height>
     </image>
     <item>
+      <title>Sisyphus Clicker</title>
+      <link>https://ahoylemon.github.io/futile.fun</link>
+      <guid>https://ahoylemon.github.io/futile.fun</guid>
+      <description>&lt;p&gt;In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill. Also, there are acheivements.&lt;/p&gt;</description>
+      <pubDate>2021-09-21</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/futile-512.png</url>
+        <title>Sisyphus Clicker logo</title>
+        <link>https://ahoylemon.github.io/futile.fun</link>
+      </image>
+    </item>
+    <item>
       <title>Invalid!</title>
       <link>https://kinda.fun/invalid</link>
       <guid>https://kinda.fun/invalid</guid>
@@ -124,18 +136,6 @@
         <url>https://ahoylemon.xyz/svg/greatsex.svg</url>
         <title>Great Sex Tips! logo</title>
         <link>https://greatsex.tips</link>
-      </image>
-    </item>
-    <item>
-      <title>futile 💀 fun</title>
-      <link>https://ahoylemon.github.io/futile.fun</link>
-      <guid>https://ahoylemon.github.io/futile.fun</guid>
-      <description>&lt;p&gt;An incremental game where you click Sisypus to push the rock uphill.&lt;/p&gt;&lt;p&gt;This was first launched for NDC {Sydney}&lt;/p&gt;</description>
-      <pubDate>2018-09-21</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/futile-512.png</url>
-        <title>futile 💀 fun logo</title>
-        <link>https://ahoylemon.github.io/futile.fun</link>
       </image>
     </item>
     <item>
