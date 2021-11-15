@@ -272,14 +272,14 @@
     </item>
     <item>
       <title>Recent Firings In San Francisco</title>
-      <link>http://ahoylemon.github.io/sf-firings</link>
-      <guid>http://ahoylemon.github.io/sf-firings</guid>
+      <link>https://ahoylemon.github.io/sf-firings</link>
+      <guid>https://ahoylemon.github.io/sf-firings</guid>
       <description>&lt;p&gt;I wanted to make a site that would give the user up-the-second updates of who was just fired in the San Francisco Tech Industry.&lt;/p&gt;&lt;p&gt;In reality, it just works an alogorithm to generate random strings.&lt;/p&gt;</description>
       <pubDate>2015-10-14</pubDate>
       <image>
         <url>https://ahoylemon.xyz/img/firings.png</url>
         <title>Recent Firings In San Francisco logo</title>
-        <link>http://ahoylemon.github.io/sf-firings</link>
+        <link>https://ahoylemon.github.io/sf-firings</link>
       </image>
     </item>
     <item>
