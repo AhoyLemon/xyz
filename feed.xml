@@ -91,18 +91,6 @@
       </image>
     </item>
     <item>
-      <title>Not Poutine, FYI</title>
-      <link>https://notpoutine.fyi</link>
-      <guid>https://notpoutine.fyi</guid>
-      <description>&lt;p&gt;Poutine is a dish made with french fries, fresh cheese curds and brown gravy.&lt;/p&gt;&lt;p&gt;This site catalogs meals that describe themselves as poutine and yet are not poutine.&lt;/p&gt;</description>
-      <pubDate>2020-01-12</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/svg/poutine.svg</url>
-        <title>Not Poutine, FYI logo</title>
-        <link>https://notpoutine.fyi</link>
-      </image>
-    </item>
-    <item>
       <title>PRETEND 🌐 WORLD</title>
       <link>https://ahoylemon.github.io/pretend.world</link>
       <guid>https://ahoylemon.github.io/pretend.world</guid>
@@ -112,6 +100,18 @@
         <url>https://ahoylemon.xyz/svg/pretend.svg</url>
         <title>PRETEND 🌐 WORLD logo</title>
         <link>https://ahoylemon.github.io/pretend.world</link>
+      </image>
+    </item>
+    <item>
+      <title>Not Poutine, FYI</title>
+      <link>https://ahoylemon.github.io/notpoutine.fyi</link>
+      <guid>https://ahoylemon.github.io/notpoutine.fyi</guid>
+      <description>&lt;p&gt;Poutine is a dish made with french fries, fresh cheese curds and brown gravy.&lt;/p&gt;&lt;p&gt;This site catalogs meals that describe themselves as poutine and yet are not poutine.&lt;/p&gt;</description>
+      <pubDate>2020-01-12</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/poutine.svg</url>
+        <title>Not Poutine, FYI logo</title>
+        <link>https://ahoylemon.github.io/notpoutine.fyi</link>
       </image>
     </item>
     <item>
