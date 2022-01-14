@@ -19,30 +19,6 @@
       <height>120</height>
     </image>
     <item>
-      <title>Sisyphus Clicker</title>
-      <link>https://kinda.fun/sisyphus</link>
-      <guid>https://kinda.fun/sisyphus</guid>
-      <description>&lt;p&gt;In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill.&lt;/p&gt; &lt;p&gt;Also, there are acheivements.&lt;/p&gt;</description>
-      <pubDate>2021-09-21</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/futile-512.png</url>
-        <title>Sisyphus Clicker logo</title>
-        <link>https://kinda.fun/sisyphus</link>
-      </image>
-    </item>
-    <item>
-      <title>Invalid!</title>
-      <link>https://kinda.fun/invalid</link>
-      <guid>https://kinda.fun/invalid</guid>
-      <description>&lt;p&gt;Invalid! was the first game for my &lt;strong&gt;kinda.fun&lt;/strong&gt; website. The basic premise is that every employee is trying to create a password, while the SysAdmin is busy making their lives miserable.&lt;/p&gt;</description>
-      <pubDate>2021-01-27</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/svg/invalid.svg</url>
-        <title>Invalid! logo</title>
-        <link>https://kinda.fun/invalid</link>
-      </image>
-    </item>
-    <item>
       <title>Comparatively Famous</title>
       <link>https://kinda.fun/cameo</link>
       <guid>https://kinda.fun/cameo</guid>
@@ -55,6 +31,18 @@
       </image>
     </item>
     <item>
+      <title>Invalid</title>
+      <link>https://kinda.fun/invalid</link>
+      <guid>https://kinda.fun/invalid</guid>
+      <description>&lt;p&gt;Invalid! was the first game for my &lt;strong&gt;kinda.fun&lt;/strong&gt; website. The basic premise is that every employee is trying to create a password, while the SysAdmin is busy making their lives miserable.&lt;/p&gt;</description>
+      <pubDate>2021-01-27</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/invalid.svg</url>
+        <title>Invalid logo</title>
+        <link>https://kinda.fun/invalid</link>
+      </image>
+    </item>
+    <item>
       <title>damn.dog</title>
       <link>https://damn.dog</link>
       <guid>https://damn.dog</guid>
@@ -64,6 +52,18 @@
         <url>https://ahoylemon.xyz/svg/damndog.svg</url>
         <title>damn.dog logo</title>
         <link>https://damn.dog</link>
+      </image>
+    </item>
+    <item>
+      <title>Sisyphus Clicker</title>
+      <link>https://kinda.fun/sisyphus</link>
+      <guid>https://kinda.fun/sisyphus</guid>
+      <description>&lt;p&gt;In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill.&lt;/p&gt; &lt;p&gt;Also, there are acheivements.&lt;/p&gt;</description>
+      <pubDate>2021-09-21</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/futile-512.png</url>
+        <title>Sisyphus Clicker logo</title>
+        <link>https://kinda.fun/sisyphus</link>
       </image>
     </item>
     <item>

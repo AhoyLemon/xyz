@@ -5,7 +5,7 @@
     <title>Hi, my name is Lemon.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2022-00-14@09:47:08">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2022-00-14@11:28:49">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -97,18 +97,18 @@
     </script>
     <main class="project-summaries">     
           <div class="project" repo="AhoyLemon/kinda.fun">
-            <figure style="background-image:url(img/futile-512.png); "><a class="absolute-link" href="https://kinda.fun/sisyphus" style="background-image:url(img/futile-512.png); "></a>
+            <figure style="background-color:#23073a; "><a href="https://kinda.fun/cameo"><img class="logo" src="svg/f.svg" alt="Comparatively Famous logo"></a>
             </figure>
             <figcaption>
-              <div class="title"><a href="https://kinda.fun/sisyphus">Sisyphus Clicker</a></div>
-              <div class="subhead">an exercise in active depression</div>
-              <div class="description"><p>In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill.</p> <p>Also, there are acheivements.</p></div>
+              <div class="title"><a href="https://kinda.fun/cameo">Comparatively Famous</a></div>
+              <div class="subhead">The Game Of Celebrity Value</div>
+              <div class="description"><p>This is a game about guessing the relative value of different celebrities on <b>Cameo</b>.</p><p>I built this one in about a week and a half.</p></div>
             </figcaption>
             <div class="detail-row">
               <div class="detail launched">
                 <div class="label">LAUNCHED</div>
                 <div class="value">
-                      <time>Sep 21, 2021
+                      <time>Feb 16, 2021
                       </time>
                 </div>
               </div>
@@ -182,10 +182,10 @@
             </div>
           </div>
           <div class="project" repo="AhoyLemon/kinda.fun">
-            <figure style="background-image:url(img/radial-grey.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/invalid.svg" alt="Invalid! logo"></a>
+            <figure style="background-image:url(img/radial-grey.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/invalid.svg" alt="Invalid logo"></a>
             </figure>
             <figcaption>
-              <div class="title"><a href="https://kinda.fun/invalid">Invalid!</a></div>
+              <div class="title"><a href="https://kinda.fun/invalid">Invalid</a></div>
               <div class="subhead">A multiplayer trivia game of needless suffering.</div>
               <div class="description"><p>Invalid! was the first game for my <strong>kinda.fun</strong> website. The basic premise is that every employee is trying to create a password, while the SysAdmin is busy making their lives miserable.</p></div>
             </figcaption>
@@ -228,19 +228,19 @@
               });
             </script>
           </div>
-          <div class="project" repo="AhoyLemon/kinda.fun">
-            <figure style="background-color:#23073a; "><a href="https://kinda.fun/cameo"><img class="logo" src="svg/f.svg" alt="Comparatively Famous logo"></a>
+          <div class="project" repo="AhoyLemon/damn.dog">
+            <figure style="background-color:#222730; "><a href="https://damn.dog"><img class="logo" src="svg/damndog.svg" alt="damn.dog logo"></a>
             </figure>
             <figcaption>
-              <div class="title"><a href="https://kinda.fun/cameo">Comparatively Famous</a></div>
-              <div class="subhead">The Game Of Celebrity Value</div>
-              <div class="description"><p>This is a game about guessing the relative value of different celebrities on <b>Cameo</b>.</p><p>I built this one in about a week and a half.</p></div>
+              <div class="title"><a href="https://damn.dog">damn.dog</a></div>
+              <div class="subhead">the wikiHow guessing game</div>
+              <div class="description"><p>The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.</p><p>Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.</p></div>
             </figcaption>
             <div class="detail-row">
               <div class="detail launched">
                 <div class="label">LAUNCHED</div>
                 <div class="value">
-                      <time>Feb 16, 2021
+                      <time>Feb 04, 2016
                       </time>
                 </div>
               </div>
@@ -250,12 +250,12 @@
               </div>
               <div class="detail repository">
                 <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/kinda.fun" target="_blank"><span>kinda.fun</span></a></div>
+                <div class="value"><a href="https://github.com/AhoyLemon/damn.dog" target="_blank"><span>damn.dog</span></a></div>
               </div>
             </div>
             <script>
               $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/kinda.fun/commits/main",
+                url: "https://api.github.com/repos/AhoyLemon/damn.dog/commits/master",
                 dataType: 'json',
                 success: function( data ) {
                   var items = [];
@@ -264,13 +264,13 @@
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
                   if (lastUpdated) {
-                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated .value').html(formatDate(lastUpdated));
-                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated').removeClass('invisible');
+                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated').removeClass('invisible');
                   }
                 },
                 error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/kinda.fun');
-                  //$('.project[repo="AhoyLemon/kinda.fun"] .last-updated').remove();
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/damn.dog');
+                  //$('.project[repo="AhoyLemon/damn.dog"] .last-updated').remove();
                 }
               });
             </script>
@@ -757,19 +757,19 @@
               </figure>
             </div>
           </div>
-          <div class="project" repo="AhoyLemon/damn.dog">
-            <figure style="background-color:#222730; "><a href="https://damn.dog"><img class="logo" src="svg/damndog.svg" alt="damn.dog logo"></a>
+          <div class="project" repo="AhoyLemon/kinda.fun">
+            <figure style="background-image:url(img/futile-512.png); "><a class="absolute-link" href="https://kinda.fun/sisyphus" style="background-image:url(img/futile-512.png); "></a>
             </figure>
             <figcaption>
-              <div class="title"><a href="https://damn.dog">damn.dog</a></div>
-              <div class="subhead">the wikiHow guessing game</div>
-              <div class="description"><p>The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.</p><p>Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.</p></div>
+              <div class="title"><a href="https://kinda.fun/sisyphus">Sisyphus Clicker</a></div>
+              <div class="subhead">an exercise in active depression</div>
+              <div class="description"><p>In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill.</p> <p>Also, there are acheivements.</p></div>
             </figcaption>
             <div class="detail-row">
               <div class="detail launched">
                 <div class="label">LAUNCHED</div>
                 <div class="value">
-                      <time>Feb 04, 2016
+                      <time>Sep 21, 2021
                       </time>
                 </div>
               </div>
@@ -779,12 +779,12 @@
               </div>
               <div class="detail repository">
                 <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/damn.dog" target="_blank"><span>damn.dog</span></a></div>
+                <div class="value"><a href="https://github.com/AhoyLemon/kinda.fun" target="_blank"><span>kinda.fun</span></a></div>
               </div>
             </div>
             <script>
               $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/damn.dog/commits/master",
+                url: "https://api.github.com/repos/AhoyLemon/kinda.fun/commits/main",
                 dataType: 'json',
                 success: function( data ) {
                   var items = [];
@@ -793,13 +793,13 @@
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
                   if (lastUpdated) {
-                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated .value').html(formatDate(lastUpdated));
-                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated').removeClass('invisible');
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated').removeClass('invisible');
                   }
                 },
                 error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/damn.dog');
-                  //$('.project[repo="AhoyLemon/damn.dog"] .last-updated').remove();
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/kinda.fun');
+                  //$('.project[repo="AhoyLemon/kinda.fun"] .last-updated').remove();
                 }
               });
             </script>
