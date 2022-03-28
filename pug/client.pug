@@ -1,6 +1,6 @@
 include partials/_variables.pug
-- const pageTitle = "Hi, my name is Lemon."
-- const slug = "index"
+- const pageTitle = "Some websites I made for clients"
+- const slug = "clients"
 
 doctype html
 html(lang="en")
@@ -22,7 +22,7 @@ html(lang="en")
         return '<time>' + MonthAbbr[parseInt(g[1] - 1)] + ' ' + g[2] + ", " + g[0];
       }
     
-    main.project-summaries      
+    main.project-summaries.client-sites
 
       each s,index in clientSites
 

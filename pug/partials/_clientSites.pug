@@ -4,310 +4,87 @@
   const clientSites = [
 
     {
+      title: "StrongHearts Helpline",
+      url: "https://adycenter.org",
+      tech: [ "PHP", "Scss", "javascript", "Matomo"],
+      cms: "Kirby",
+      client: "Domestic Violence Helpline",
+      screenshots: [
+        "sh1.png","sh2.png","sh3.png","sh4.png", "sh5.png", "sh6.png"
+      ],
+      description: "<p>The StrongHearts organization had a very distinct need to provide resources for people trapped in situations of domestic violence.</p><p>They needed a site which would provide fast and relianble help to those in need, while also being discrete and respectful of the privacy and situations of its vistors.</p><p>This website was built thoughtfully for growth and measurability, while avoiding all Big Data solutons.</p>"
+    },
+
+    {
+      title: "Grumpy's Bar",
+      url: "https://grumpys.bar",
+      tech: [ "PHP", "Scss", "Javascript"],
+      cms: "Kirby",
+      client: "A Local Favorite Bar",
+      description: "<p>Grumpy's has also been a local favorite, but with multiple locations, ever-changing special events, and the havok of COVID on the service industry, they needed something that speak to customers new and old, syncing with Google Places, Untappd, and whatever else thirsty people are using.",
+      screenshots: [
+        "grumpys-1.png", "grumpys-2.png", "grumpys-3.png", "grumpys-4.png", "grumpys-5.png"
+      ],
+    },
+
+    {
+      title: "Ain Dah Yung Center",
+      url: "https://adycenter.org",
+      tech: [ "PHP", "Scss", "javascript"],
+      cms: "Kirby",
+      client: "Youth Crisis Center",
+      description: "<p>As a culturally responsive crisis center for native youth, the Ain Dah Yung Center provides seven different programs for members of the community.</p><p>The purpose of this website is to showcase the good work done by the organization so as to encourage donations, but also to provide a directory of service options to those in need.</p>",
+      screenshots: [
+        "adyc1.png", "adyc2.png", "adyc3.png", "adyc4.png", "adyc5.png",
+      ],
+    },
+
+    {
       title: "Jackpot Junction",
       url: "https://jackpotjunction.dev",
-      tech: [ "PHP", "Scss", "Javascript", "Vue", "Pug"],
+      tech: [ "PHP", "Sass", "Javascript", "Vue", "Pug"],
       cms: "Kirby",
-      problem: "<p>A Minnesota-based casino had a website that was slow, laggy, and difficult to update</p>",
+      client: "A Native Casino",
+      problem: "<p>A Joomla based website which ws slow and difficult to edit.</p>",
       solution: "<p>This build emphasises the timeliness of all their events (promotions, entertainment, dining and hotel specials), and focuses on recency and explorability.</p>",
     },
-
-    {
-      title: "Invalid",
-      url: "https://kinda.fun/invalid",
-      subhead: "A multiplayer trivia game of needless suffering.",
-      launched: "2021-01-27",
-      description: "<p>Invalid! was the first game for my <strong>kinda.fun</strong> website. The basic premise is that every employee is trying to create a password, while the SysAdmin is busy making their lives miserable.</p>",
-      bgImage: "radial-grey.jpg",
-      fgImage: "invalid.svg",
-      type: "website",
-      repo: "AhoyLemon/kinda.fun"
-    },
-
-    {
-      title: "damn.dog",
-      url: "https://damn.dog",
-      subhead: "the wikiHow guessing game",
-      launched: "2016-02-04",
-      description: "<p>The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.</p><p>Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.</p>",
-      bgColor: "#222730",
-      fgImage: "damndog.svg",
-      type: "website",
-      repo: "AhoyLemon/damn.dog"
-    },
-
-    {
-      title: "Sisyphus Clicker",
-      url: "https://kinda.fun/sisyphus",
-      launched: "2021-09-21",
-      subhead: "an exercise in active depression",
-      description: "<p>In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill.</p> <p>Also, there are acheivements.</p>",
-      bgImage: "futile-512.png",
-      type: "website",
-      repo: "AhoyLemon/kinda.fun"
-    },
-
-    {
-      title: "Idiots win.",
-      url: "https://idiots.win",
-      launched: "2016-06-02",
-      subhead: "the game of stupid searches",
-      description: "<p>The game that challenges you to figure out what people are searching for on Google.</p><p>Idiots Win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.</p>",
-      bgColor: "#f1da5e",
-      fgImage: "idiots.svg",
-      type: "website",
-      repo: "AhoyLemon/idiots.win"
-    },
-
-    {
-      title: "The Wrongest Words",
-      url: "https://kinda.fun/invalid",
-      launched: "2020-01-27",
-      //retired: "2017-03-20",
-      subhead: "Launched, retired, and then launched again.",
-      description: "<p>The Wrongest Words launched as the second game on <strong>kinda.fun</strong>. It's a multiplayer game where each player must defend the stupid statements in front of them.</p>",
-      bgImage: "radial-dark.jpg",
-      fgImage: "wrongest.svg",
-      type: "website",
-      repo: "AhoyLemon/kinda.fun"
-    },
-
-    {
-      title: "PRETEND 🌐 WORLD",
-      url: "https://ahoylemon.github.io/pretend.world",
-      launched: "2018-07-12",
-      subhead: "the high stakes game of cheese logs",
-      description: "<p>You are at a party of celebrity impersonators. It's up to you to guess which ones.</p><p>This was first launched for KCDC X</p>",
-      bgColor: "#E6E1C5",
-      fgImage: "pretend.svg",
-      type: "website",
-      repo: "AhoyLemon/pretend.world"
-    },
-
-    {
-      title: "Not Poutine, FYI",
-      url: "https://ahoylemon.github.io/notpoutine.fyi",
-      subhead: "an archive of poutine crimes",
-      launched: "2020-01-12",
-      description: "<p>Poutine is a dish made with french fries, fresh cheese curds and brown gravy.</p><p>This site catalogs meals that describe themselves as poutine and yet are not poutine.</p>",
-      bgColor: "#D12222",
-      fgImage: "poutine.svg",
-      type: "website",
-      repo: "AhoyLemon/notpoutine.fyi"
-    },
     
     {
-      title: "BG2😎COOL",
-      url: "https://ahoylemon.github.io/BG2COOL",
-      subhead: "a radical pattern library",
-      launched: "2019-09-04",
-      description: "<p>We've spent enough of our lives looking at flat, minimalist websites that all look art directed by the same person. Let's turn this ship around.</p><p>BG2COOL provides you with patterns and options. Make your choices, and the site will hand you some CSS.</p>",
-      //bgColor: "#222730",
-      bgImage: "terrazzo.gif",
-      type: "website",
-      repo: "AhoyLemon/BG2COOL"
+      title: "Rose Vine Hall",
+      url: "https://rosevinehall.com",
+      tech: [ "PHP", "Scss", "jQuery", "javscript"],
+      cms: "Kirby",
+      client: "Event Space",
     },
-
     {
-      title: "Great Sex Tips!",
-      url: "https://ahoylemon.github.io/greatsex.tips",
-      launched: "2017-11-13",
-      subhead: "computer generated sex tips just for you",
-      description: "<p>Birthed from a conversation about the editing process of Cosmo's sex tips, this is a site that generates hetero sex advice for women to please their men. How exhilerating!</p>",
-      bgColor: "#ef2525",
-      fgImage: "greatsex.svg",
-      type: "website",
-      repo: "AhoyLemon/greatsex.tips"
-    },
-
-    {
-      title: "Heelies Info",
-      url: "https://ahoylemon.github.io/heelies.info",
-      launched: "2020-06-07",
-      subhead: "useless facts about a guy",
-      description: "<p>My friend likes the website Wookieepedia a lot and then he had a birthday. So I made a Wookieepedia page just for him.</p>",
-      bgColor: "#111",
-      fgImage: "wookieepedia.png",
-      type: "website",
-      repo: "AhoyLemon/heelies.info"
-    },
-
-
-    /*
-    {
-      title: "Trumps PW",
-      url: "https://ahoylemon.github.io/trumps.pw",
-      launched: "2017-12-4",
-      subhead: "a great and good website",
-      description: "<p>This is a great and good service for members of the Trump family where Trumps can enter in their passwords to <i>earn points!</i></p>",
-      bgImage: "gold3.jpg",
-      fgImage: "pw.png",
-      type: "website",
-      repo: "AhoyLemon/trumps.pw"
-    },
-    */ 
-
-    {
-      title: "2UN 🔵 LTD",
-      url: "https://2un.ltd",
-      launched: "2017-04-21",
-      subhead: "are you ready for this?",
-      description: "<p>This is a very important website that asks if if you're ready for this. And if you <i>are</i> ready for this, appropriate measures will be taken.",
-      bgImage: "2unltd-card.svg",
-      type: "website",
-      repo: "AhoyLemon/2un.ltd"
-    },
-
-    {
-      title: "PARTY PARTY PARTY PARTY PARTY",
-      url: "https://partypartypartyparty.party",
-      launched: "2016-09-21",
-      subhead: "you must reach maximum party",
-      description: "<p>This is a button to help you party.</p>",
-      bgColor: "#d1d1d1",
-      fgImage: "party.png",
-      type: "website",
-      repo: "AhoyLemon/partypartypartypartyparty"
-    },
-
-    {
-      title: "Bad Accent Club",
-      url: "https://play.google.com/store/apps/details?id=club.badaccent",
-      launched: "2017-08-18",
-      subhead: "the party game of terrible accents",
-      description: "<p>The Android game that puts your friends' accents to the test (and they will usually fail the test).",
-      bgColor: "#a5ed83",
-      fgImage: "badaccent.svg",
-      type: "android app",
-      repo: "AhoyLemon/badaccent.club"
+      title: "Mille Lacs Band of Ojibwe",
+      url: "https://millelacsband.com",
+      tech: [ "PHP", "Scss", "jQuery", "javscript"],
+      cms: "Kirby",
+      client: "Native American Tribe",
     },
     
+    
     {
-      title: "jerking online",
-      url: "https://ahoylemon.github.io/jerking.online",
-      launched: "2017-01-06",
-      subhead: "a daily generated list of fake porn movies",
-      description: "<p>Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.</p><p>Cause it makes me giggle.</p>",
-      bgColor: "#f0f1f2",
-      fgImage: "fist.svg",
-      type: "website",
-      repo: "AhoyLemon/jerking.online"
+      title: "Spokane Tribe Casino",
+      url: "https://adycenter.org",
+      tech: [ "PHP", "Scss", "javscript"],
+      cms: "Craft",
+      client: "Native Run Casino",
     },
-
     {
-      title: "dumb men",
-      url: "https://ahoylemon.github.io/dumb.men",
-      launched: "2017-11-04",
-      subhead: "hallelujah! it's raining dumb men.",
-      description: "<p>This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.</p>",
-      bgImage: "men-background.png",
-      fgImage: "men-foreground.png",
-      type: "website",
-      repo: "AhoyLemon/dumb.men"
+      title: "pxlclix",
+      url: "https://pxlclix.com",
+      tech: [ "PHP", "Vue", "Scss", "JWPlayer", "javscript"],
+      cms: "Kirby",
+      client: "Video Streaming Service"
     },
-
     {
-      title: "Verifiable Win",
-      url: "https://ahoylemon.github.io/verifiable.win",
-      launched: "2018-05-10",
-      subhead: "a bullshit chart generator",
-      description: "<p>Launched as part of a talk at NDC Minnesota 2018, this is a site to demonstrate you're right about whatever you think.</p>",
-      bgGradient: "linear-gradient(to bottom, #4ac29a, #bdfff3)",
-      fgImage: "verifiable.svg",
-      type: "website",
-      repo: "AhoyLemon/verifiable.win"
-    },
-
-    {
-      title: "@rickross_daily",
-      url: "https://twitter.com/rickross_daily",
-      launched: "2017-09-05",
-      subhead: "a twitterbot of rick ross' day",
-      description: "This twitterbot (which was either the idea of JW Friedman or myself, we can't remember) will inform you what Rick Ross is doing every day, every day.",
-      bgImage: "gold2.jpg",
-      fgImage: "ross_circle.png",
-      type: "twitter bot"
-    },
-
-    {
-      title: "pl_swiftwater",
-      url: "http://www.teamfortress.com/meetyourmatch",
-      launched: "2016-07-07",
-      subhead: "a team fortress 2 level",
-      description: "My friend Schwa and I collaborated on a Team Fortress 2 map called Swiftwater. He did the geometry, I did the art assets and built the story of a bottled water company at war with a chemical mining concern.</p><p>In 2016, Valve bought the map and made it official.</p>",
-      bgColor: "#EDF4F4",
-      fgImage: "swift.svg",
-      type: "video game level"
-    },
-
-    {
-      title: "Frank West Pronounces Emoticons",
-      url: "https://ahoylemon.github.io/frankwest",
-      launched: "2016-06-15",
-      subhead: "a stupid soundboard",
-      description: "<p>Frank West sometimes pronounces emoticons. And now, via this soundboard, he does it on your command.</p><p>Even in comparison to the other sites on this page, this one is really stupid.</p>",
-      bgColor: "#f3c077",
-      fgImage: "frankwest.svg",
-      type: "website",
-      repo: "AhoyLemon/frankwest"
-    },
-
-    {
-      title: "Hamilton -> DOOM",
-      url: "https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&gl=US",
-      launched: "2016-11-19",
-      subhead: "a simple chrome extension",
-      description: "This is a Chrome extension that replaces all instances of “Hamilton” with “the video game DOOM”. For obvious reasons.",
-      bgImage: "gold.jpg",
-      fgImage: "doom320.png",
-      type: "chrome extension"
-    },
-
-    {
-      title: "Recent Firings In San Francisco",
-      url: "https://ahoylemon.github.io/sf-firings",
-      launched: "2015-10-14",
-      subhead: "fake alerts from a fake economy",
-      description: "<p>I wanted to make a site that would give the user up-the-second updates of who was just fired in the San Francisco Tech Industry.</p><p>In reality, it just works an alogorithm to generate random strings.</p>",
-      //bgColor: "#e8d4ad",
-      bgImage: 'sf-skyline.jpg',
-      fgImage: "firings.png",
-      type: "website",
-      repo: "AhoyLemon/sf-firings"
-    },
-
-    {
-      title: "The F Plus",
-      url: "https://thefpl.us",
-      launched: "2014-10-14",
-      subhead: "terrible things, read with enthusiasm",
-      description: "<p>I do a podcast, and also work a fair amount on the website for that podcast, which is a complicated piece of web development.</p><p>That said, I'm pretty happy with how this whole thing works.</p>",
-      bgColor: "#dedcee",
-      fgImage: "thefplus.svg",
-      type: "website",
-      repo: "AhoyLemon/TheFPlus"
-    },
-
-    {
-      title: "ballp.it",
-      url: "https://ballp.it",
-      launched: "2013-02-16",
-      subhead: "a simple machines forum",
-      description: "<p>ballp.it is the forum set up to support the community that surrounds The F Plus. It uses PHP software called SMF, but has been modified heavily.</p>",
-      bgColor: "#150f34",
-      fgImage: "ballpit.svg",
-      type: "website",
-      repo: "AhoyLemon/ballpit"
-    },
-
-    {
-      title: "Me Making Websites IRL",
-      url: "https://youtu.be/4YRuHRvniJM",
-      launched: "2017-12-19",
-      subhead: "a video of my workday",
-      description: "<p>Using an open source software called “Gource”, I made this 3.5 minute YouTube video documenting the process of building most of the websites on this list, set to a Paper Chase song.</p><p>Not incredibly informative, but fun to look at.</p>",
-      bgImage: "irl.jpg",
-      type: "video"
+      title: "Avi",
+      url: "https://avicasino.com",
+      tech: [ "PHP", "Vue", "Scss", "javscript"],
+      cms: "Kirby",
+      client: "Native Run Casino",
     }
 
   ];

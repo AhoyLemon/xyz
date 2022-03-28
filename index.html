@@ -5,7 +5,7 @@
     <title>Hi, my name is Lemon.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2022-03-28T00:34:42.792Z">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2022-03-28T03:56:00.262Z">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -1812,6 +1812,17 @@
     </main>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"> </script>
+    <script>
+      tippy('.tooltip', {
+        //content: 'My tooltip!',
+        allowHTML: true,
+        placement: "left",
+        delay: [100,300]
+      });
+      
+    </script>
     <script>
       $('.upcoming-conference-carousel').slick({
         prevArrow: '<button type="button" class="slick-prev slick-arrow">&lt;</button>',
