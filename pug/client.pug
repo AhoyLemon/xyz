@@ -24,14 +24,14 @@ html(lang="en")
     
     main.project-summaries      
 
-      each s,index in lemonSites
+      each s,index in clientSites
 
-        if index == 1
+        //-if index == 1
           +talkSlider('upcoming')
 
-        if index == 3
+        //-if index == 3
           +talkSlider('previous')
 
-        +projectSummary(s)
+        +clientSiteSummary(s)
     
     include partials/_javascripts.pug
