@@ -127,7 +127,7 @@
 
 .project.client-site { display:grid; grid-template-columns: 460px 1fr 76px;
   figure { grid-row: span 1;
-    .screenshots { position: relative; padding-bottom: 1em;
+    .screenshots { position: relative; padding-bottom: 2em;
       .slick-dots { display: block; text-align: center; @include position(absolute,null,0,5px,0); padding:0 40px;
         li { display: inline-block; padding:0 0.5em 0 0;
           button {  display: inline-block; line-height: 1.3em; height: 1em; width:1em; background:transparent; background: rgba($black,0.2); border:none; transition: background 0.2s linear; border-radius:50%; font-family: $font; padding:0; cursor: pointer; overflow: hidden; text-indent: -999px;  }
@@ -144,6 +144,7 @@
   .tech { padding:20px; display:flex; flex-direction: column; justify-content: space-between;
     svg { width:100%;}
   }
+  .tooltip { cursor: help; }
   .php { fill:$color-php; }
   .sass, .scss { fill:$color-sass;}
   .js, .javascript { fill:$color-js; }
