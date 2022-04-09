@@ -1,6 +1,7 @@
 include partials/_variables.pug
-- const pageTitle = "Hi, my name is Lemon."
-- const slug = "index"
+include partials/_clientSites.pug
+- const pageTitle = "Some websites I made for clients"
+- const slug = "clients"
 
 doctype html
 html(lang="en")
@@ -22,16 +23,13 @@ html(lang="en")
         return '<time>' + MonthAbbr[parseInt(g[1] - 1)] + ' ' + g[2] + ", " + g[0];
       }
     
-    main.project-summaries      
+    main.project-summaries.client-sites
 
-      each s,index in lemonSites
+      section.client-site-overview
+        h1 Here are some websites I made for clients...
 
-        if index == 1
-          +talkSlider('upcoming')
+      each s,index in clientSites
 
-        if index == 3
-          +talkSlider('previous')
-
-        +projectSummary(s)
+        +clientSiteSummary(s)
     
     include partials/_javascripts.pug

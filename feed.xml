@@ -319,18 +319,25 @@
       </image>
     </item>
     <item>
-      <title>🍋/uses</title>
-      <link>https://ahoylemon.xyz/uses/index.html</link>
-      <guid>https://ahoylemon.xyz/uses/index.html</guid>
-      <description>&lt;p&gt;I just recently came across Wes Bos&amp;apos; &lt;a href=&quot;https://github.com/wesbos/awesome-uses&quot;&gt;Awesome Uses&lt;/a&gt; repository. I thought it was interesting to look at the toolkit that other people used, and thought I&amp;apos;d provide my own. &lt;i&gt;But&lt;/i&gt; sometimes the tools a person uses are more about something being the &quot;good enough&quot; option, so I thought I&amp;apos;d get a little more specific: Those things marked with a &lt;span class=&quot;yes&quot;&gt;&lt;/span&gt; are things which I think are great and totally recommend. Those things marked with a &lt;span class=&quot;no&quot;&gt; &lt;/span&gt; are things which I&amp;apos;ve compromised into using for one way or another. It&amp;apos;s the best I&amp;apos;ve found, but you could talk me into something else.&lt;/p&gt;</description>
-      <pubDate>2019-07-09</pubDate>
-    </item>
-    <item>
       <title>🍋/talks</title>
       <link>https://ahoylemon.xyz/talks.html</link>
       <guid>https://ahoylemon.xyz/talks.html</guid>
       <description>&lt;p&gt;I do a certain amount of public speaking. Here is a pge with places I&amp;apos;ve been, and places where I&amp;apos;m going.&lt;/p&gt;</description>
       <pubDate>2019-07-15</pubDate>
+    </item>
+    <item>
+      <title>🍋/clients</title>
+      <link>https://ahoylemon.xyz/clients</link>
+      <guid>https://ahoylemon.xyz/clients</guid>
+      <description>&lt;p&gt;Of course, I make websites for money. This page lists some websites I've done for clients, and the tech I've used on those sites.&lt;/p&gt;</description>
+      <pubDate>2022-04-09</pubDate>
+    </item>
+    <item>
+      <title>🍋/uses</title>
+      <link>https://ahoylemon.xyz/uses/index.html</link>
+      <guid>https://ahoylemon.xyz/uses/index.html</guid>
+      <description>&lt;p&gt;I just recently came across Wes Bos&amp;apos; &lt;a href=&quot;https://github.com/wesbos/awesome-uses&quot;&gt;Awesome Uses&lt;/a&gt; repository. I thought it was interesting to look at the toolkit that other people used, and thought I&amp;apos;d provide my own. &lt;i&gt;But&lt;/i&gt; sometimes the tools a person uses are more about something being the &quot;good enough&quot; option, so I thought I&amp;apos;d get a little more specific: Those things marked with a &lt;span class=&quot;yes&quot;&gt;&lt;/span&gt; are things which I think are great and totally recommend. Those things marked with a &lt;span class=&quot;no&quot;&gt; &lt;/span&gt; are things which I&amp;apos;ve compromised into using for one way or another. It&amp;apos;s the best I&amp;apos;ve found, but you could talk me into something else.&lt;/p&gt;</description>
+      <pubDate>2019-07-09</pubDate>
     </item>
     <item>
       <title>🍋/🍎</title>

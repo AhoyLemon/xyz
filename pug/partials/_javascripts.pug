@@ -1,6 +1,29 @@
 link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
 
+script(src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js")
+script(src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js") 
+
+script.
+  tippy('.tooltip', {
+    //content: 'My tooltip!',
+    allowHTML: true,
+    placement: "left",
+    delay: [100,300]
+  });
+
+if (slug == "clients")
+  script.
+    $('.screenshots').slick({
+      infinite: true,
+      arrows: false,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 5000
+    });
+
 if (slug == "index")
   script.
     $('.upcoming-conference-carousel').slick({
