@@ -4,14 +4,18 @@
     <loc>https://ahoylemon.xyz</loc>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
-    <lastmod>2022-04-05T03:20:31.063Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ahoylemon.xyz/uses/index.html</loc>
-    <priority>0.5</priority>
+    <lastmod>2022-04-09T16:04:05.078Z</lastmod>
   </url>
   <url>
     <loc>https://ahoylemon.xyz/talks.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/clients</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/uses/index.html</loc>
     <priority>0.5</priority>
   </url>
   <url>

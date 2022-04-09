@@ -381,12 +381,12 @@ mixin techIcon(i)
 - let clientSiteCount = 0
 mixin clientSiteSummary(s)
   if s.description && s.screenshots
-    .project.client-site
+    .client-site.featured
       figure
         if s.screenshots
           .screenshots.slick-slider
             each shot in s.screenshots
-              img(src="img/client-sites/"+shot)
+              img(src="../img/client-sites/"+shot)
       figcaption
         if s.title
           .title
@@ -416,7 +416,7 @@ mixin clientSiteSummary(s)
             .tooltip(data-tippy-content=s.cms)
               +techIcon(s.cms)
   else
-    .project.client-site.simple
+    .client-site.simple
       if s.title
         .title
           span= s.title
@@ -425,7 +425,7 @@ mixin clientSiteSummary(s)
       if s.screenshots
         figure
           .screenshot
-            img(src="img/client-sites/"+s.screenshots[0])
+            img(src="../img/client-sites/"+s.screenshots[0])
       if s.description
         .description !{s.description}
       if s.problem
@@ -436,9 +436,6 @@ mixin clientSiteSummary(s)
         .solution
           h3 The Solution
           | !{s.solution}
-      //- if s.url
-      //-   .visit-site
-      //-     a(href=s.url) Visit Site
       if s.tech || s.cms
         .tech
           each tech in s.tech
@@ -447,3 +444,6 @@ mixin clientSiteSummary(s)
           if s.cms
             .tooltip(data-tippy-content=s.cms)
               +techIcon(s.cms)
+      .visit-site
+        if s.url
+          a(href=s.url) Visit Site
