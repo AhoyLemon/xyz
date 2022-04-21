@@ -442,7 +442,7 @@ mixin clientSiteSummary(s)
             .tooltip(data-tippy-content=tech data-tippy-placement="bottom")
               +techIcon(tech)
           if s.cms
-            .tooltip(data-tippy-content=s.cms)
+            .tooltip(data-tippy-content=s.cms  data-tippy-placement="bottom")
               +techIcon(s.cms)
       .visit-site
         if s.url
