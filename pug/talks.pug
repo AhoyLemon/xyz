@@ -27,7 +27,8 @@ html(lang="en")
         each t,index in upcomingTalks
           figure.conference(itemscope itemtype="http://schema.org/Event")
             .details
-              .name 
+              a(name=t.slug class="anchor")
+              .name
                 a(href=t.url target="_blank" itemprop="url")
                   span(itemprop="name")= t.name
 
@@ -92,8 +93,8 @@ html(lang="en")
           h2 Previous Conferences &raquo;
         each t,index in previousTalks
           .conference(itemscope itemtype="http://schema.org/Event")
-
             .details
+              a(name=t.slug class="anchor")
               .name 
                 a(href=t.url target="_blank" itemprop="url")
                   span(itemprop="name")= t.name 
@@ -121,6 +122,10 @@ html(lang="en")
                 .date(itemprop="startDate" content=t.date)
                   +formatDate(t.date)
                 meta(itemprop="endDate" content=t.date)
+
+              div(itemprop="performer" itemscope itemtype="http://schema.org/Person")
+                meta(itemprop="name" content="Lemon")
+                meta(itemprop="name" content=siteURL)
 
               if t.talks || t.talk
                 .presenting Presented:
@@ -170,10 +175,6 @@ html(lang="en")
                 meta(itemprop="image" content=siteURL+'/img/talks/'+t.img)  
 
             figure.cardpic
-
-            div(itemprop="performer" itemscope itemtype="http://schema.org/Person")
-              meta(itemprop="name" content="Lemon")
-              meta(itemprop="name" content=siteURL)
     
         figure.back-home
           a(href="/")

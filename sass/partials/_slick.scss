@@ -4,6 +4,9 @@
   }
   .slick-prev { left:10px; }
   .slick-next { right:10px; }
+  .slick-slide { cursor: grab;
+    &:active { cursor: grabbing; }
+  }
 
   button { outline: none; }
 

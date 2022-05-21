@@ -1,11 +1,53 @@
-- var siteTitle = "ahoylemon 🍋 xyz"
-- var siteURL = "https://ahoylemon.xyz"
-- var description = "I make a lot of stuff, including this website to show the stuff I make."
+- const siteTitle = "ahoylemon 🍋 xyz"
+//- const siteURL = "https://ahoylemon.xyz"
+- const siteURL = "http://localhost:8848"
 - const emailAddress = "lemon@ahoylemon.xyz"
 - const twitterHandle = "@AhoyLemon"
-- var d = new Date()
+- const d = new Date()
 - const lastUpdated = d.toISOString()
+- const talkPage = "talks.html"
+- const talkPageURL = siteURL + "/" + talkPage
+
+- let description = "I make a lot of stuff, including this website to show the stuff I make."
 
 include _sites.pug
 include _talks.pug
+
+
+- let talkNumber = 0
+
+-
+  upcomingTalks.forEach(function(t) {
+    let slug = "";
+    if (t.name && t.startDate) {
+      slug = t.name + t.startDate;
+    } else if (t.name && t.date) {
+      slug = t.name + t.date;
+    } else if (t.name) {
+      slug = t.name
+    } else {
+      slug = "talk"+talkNumber
+    }
+    slug = slug.replace(/[^a-z0-9]/gi, '');
+    t.slug = slug;
+    talkNumber++
+  });
+
+-
+  previousTalks.forEach(function(t) {
+    let slug = "";
+    if (t.name && t.startDate) {
+      slug = t.name + t.startDate;
+    } else if (t.name && t.date) {
+      slug = t.name + t.date;
+    } else if (t.name) {
+      slug = t.name
+    } else {
+      slug = "talk"+talkNumber
+    }
+    slug = slug.replace(/[^a-z0-9]/gi, '');
+    t.slug = slug;
+    talkNumber++
+  });
+
 include _subpages.pug

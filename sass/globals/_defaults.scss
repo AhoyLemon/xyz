@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
-html { font-size:$font-size; }
-body { background-color:$body; color:$copy; background-image:url(../img/cork-wallet.png);
+html { font-size:$font-size; scroll-behavior: smooth; }
+body { background-color:$body; color:$copy; background-image:url(../img/cork-wallet.png); scroll-behavior: smooth;
   font-family:$yrsa;
 }
 img { max-width: 100%; height: auto; }
@@ -25,4 +25,4 @@ ul { padding-left: 1.5em;
 
 @media (max-width: $mobile-max) {
   .desktop-only { display: none; }
-}
+} 

@@ -58,7 +58,8 @@ if (slug == "index")
           breakpoint: 980,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots: false
           }
         }
       ]
@@ -70,13 +71,14 @@ if (slug == "talks")
         let f = $(this).attr('data-pic');
         let i = 'img/talks/'+f;
         $(this).parent().siblings('.cardpic').css('background-image', 'url('+i+')');
-        $(this).parent().siblings('.cardpic').addClass('visible');
-        $(this).siblings('a.close-cardpic').addClass('visible');
+        $(this).parent().parent().addClass('photo-background');
+        $(this).removeClass('inactive').addClass('active');
+        $(this).siblings().removeClass('active').addClass('inactive');
       });
 
       $('a.close-cardpic').click(function() {
-        $(this).parent().siblings('.cardpic').removeClass('visible');
-        $(this).removeClass('visible');
+        $(this).parent().parent().removeClass('photo-background');
+        $(this).siblings().removeClass('active').removeClass('inactive');
       });
 
 script.

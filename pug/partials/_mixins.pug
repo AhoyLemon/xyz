@@ -102,17 +102,13 @@ mixin talkSlider(w)
           | UPCOMING TALKS 
           sub (#{upcomingTalks.length})
         .more-holder
-          a(href="talks.html") see all
+          a(href=talkPageURL) see all
       .upcoming-conference-carousel.carousel
         each t,index in upcomingTalks
           .conference.upcoming
-            if t.name && t.url
-              .name
-                a(href=t.url target="_blank")= t.name
-            else if t.name
-              .name= t.name
+            .name
+              a(href=talkPageURL+"#"+t.slug)= t.name
             .location
-              
               if t.city && t.state
                 span #{t.city}, #{t.state}
                 if t.online
@@ -132,8 +128,6 @@ mixin talkSlider(w)
               else if t.date
                 .date(itemprop="startDate" content=t.date)
                   +formatDate(t.date)
-                //-meta(itemprop="endDate" content=t.date)
-
 
             if t.talks || t.talk
               .presenting Presenting:
@@ -172,8 +166,8 @@ mixin talkSlider(w)
             - p = "img/talks/" + t.img
           figure.conference.prev(style="background-image:url("+p+")")
             figcaption
-              .name= t.name
-                //-a(href=t.url target="_blank")= t.name
+              .name
+                a(href="talks.html#"+t.slug)= t.name
               .location(style="text-transform:uppercase; font-size:100%; font-weight:bold;")
                 if t.city && t.state
                   span #{t.city}, #{t.state}
@@ -231,10 +225,6 @@ mixin projectSummary(s)
       .description !{s.description}
 
     .detail-row
-      //-if (s.type)
-        .detail
-          .label &nbsp;
-          .value= s.type
       if (s.launched)
         .detail.launched
           .label LAUNCHED
