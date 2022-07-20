@@ -19,12 +19,13 @@ html(lang="en")
           h1 The Things I Tend To Use In A Day
           .stamp
             span Last updated 
-            +timeStamp('2022-07-14')
-          p I just recently came across Wes Bos' 
+            +timeStamp('2022-07-20')
+          p I don't know how interesting this is for anybody, but similar to Wes Bos' 
             a(href="https://github.com/wesbos/awesome-uses") Awesome Uses
-            |  repository. I thought it was interesting to look at the toolkit that other people used, and thought I'd provide my own. 
+            |  repository, this is a list of the tech hardware/software I use.
+          p
             i But
-            |  sometimes the tools a person uses are more about something being the "good enough" option, so I thought I'd get a little more specific: Those things marked with a 
+            |  sometimes the tools a person uses are simply “good enough”, so I thought I'd get a little more specific: Those things marked with a 
             span.yes
             |  are things which I think are great and totally recommend. Those things marked with a 
             span.no 
@@ -42,9 +43,9 @@ html(lang="en")
             li.yes I almost always have 
               +link("Prepros","https://prepros.io")
               |  running to handle my Pug, Sass and JS files.
-            li.yes When working with PHP I have 
+            li If I'm working with PHP outside of a docker container, I'm serving it locally via 
               +link("XAMPP","https://www.apachefriends.org/index.html")
-              |  running on my machine.
+              | , which I like a lot better than MAMP or WAMP.
             li
               | I've never been particularly faithful to any one browser and change them around a lot, but right now my primary is 
               +link("Vivaldi", "https://vivaldi.com")
@@ -79,14 +80,14 @@ html(lang="en")
               | I use the 
               +link("Slack app", "https://slack.com/downloads")
               | .
-            li
+            li.yes
               | I use 
               +link("1Password", "https://1password.com")
               |  to keep track of all my passwords (499 at the time of this post)
 
           h3 Hardware
           ul.things
-            li 
+            li
               | My primary personal computer is a 
               +link('NZXT Starter Pro', "https://nzxt.com/product/starter-pro")
               | .
@@ -101,11 +102,17 @@ html(lang="en")
               i loud as fuck
               | , and I love it. I've also got a 
               +link("Bejoy w/ Silent Red Switches", "https://www.bejoyusa.com/products/gm212-rgb-mechanical-gaming-keyboard")
-              |  when I don't want my keyboard to be the loudes thing in the world.
+              |  when I don't want my keyboard to be the loudest thing in the world.
             li
               | I use 
               +link("Anker vertical mice", "https://www.amazon.com/Anker-Ergonomic-Optical-Vertical-Buttons/dp/B00FPAVUHC")
               | .
+            li.yes
+              | I have both the PC and the Mac plugged into the workstation setup via a 
+              +link("CKL KVM Switch", "https://cklkvm.com/")
+              | , which is then plugged into the aforementioned keyboards, mouse and two 
+              +link('basic Acer 24" monitors', "https://www.acer.com/ac/en/US/content/model/UM.WX3AA.004")
+              | . 
             li
               | My phone is a 
               +link("Pixel 5a", "https://store.google.com/product/pixel_5a_5g?hl=en-US")
@@ -134,9 +141,9 @@ html(lang="en")
           ul.things
             li.yes
               | My preferred messenging app is 
-              +link("https://telegram.org", "Telegram") 
+              +link("Telegram", "https://telegram.org") 
               | , and I'll use that with people who have an account. If they don't I'll use 
-              +link('https://signal.org/en/', 'Signal')
+              +link("Signal", 'https://signal.org/en/')
               | .
             li
               | I use 
