@@ -7,7 +7,7 @@
       "uuidString" : "3AD75757-9552-4EE4-9FBC-C9FABFF5304E"
     }
   ],
-  "creatorBuild" : "34335",
+  "creatorBuild" : "34408",
   "files" : {
     "\/_Art Assets\/BusinessCard.afdesign" : {
       "cB" : 0,
@@ -1808,6 +1808,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/talks\/kcdc\/2022-crowd.jpg" : {
+      "ft" : 16384,
+      "iS" : 80542,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/kcdc\/2022-crowd.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/kcdc\/2022-lunch.jpg" : {
+      "ft" : 16384,
+      "iS" : 119021,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/kcdc\/2022-lunch.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/kcdc\/2022-slide.jpg" : {
+      "ft" : 16384,
+      "iS" : 54344,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/kcdc\/2022-slide.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/talks\/kcdc\/bitchy.jpg" : {
       "ft" : 16384,
       "iS" : 23092,
@@ -2042,6 +2081,97 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/talks\/ndc\/london-2022-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 246168,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/london-2022-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/ndc\/london-2022-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 283155,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/london-2022-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/ndc\/oslo-2022-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 250908,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/oslo-2022-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/ndc\/oslo-2022-mainroom.jpg" : {
+      "ft" : 16384,
+      "iS" : 252539,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/oslo-2022-mainroom.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/ndc\/oslo-2022-packedroom.jpg" : {
+      "ft" : 16384,
+      "iS" : 312651,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/oslo-2022-packedroom.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/ndc\/oslo-2022-party.jpg" : {
+      "ft" : 16384,
+      "iS" : 318892,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/oslo-2022-party.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/ndc\/oslo-2022-street.jpg" : {
+      "ft" : 16384,
+      "iS" : 272207,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/oslo-2022-street.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/talks\/ndc\/porto-2022-1.jpg" : {
       "ft" : 16384,
       "iS" : 48658,
@@ -2217,6 +2347,45 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/img\/talks\/pubconf\/kc-2019-stage.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/pubconf\/kc-2022-figure.jpg" : {
+      "ft" : 16384,
+      "iS" : 89988,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/pubconf\/kc-2022-figure.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/pubconf\/kc-2022-intro.jpg" : {
+      "ft" : 16384,
+      "iS" : 102905,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/pubconf\/kc-2022-intro.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/pubconf\/kc-2022-pointing.jpg" : {
+      "ft" : 16384,
+      "iS" : 109673,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/pubconf\/kc-2022-pointing.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2588,6 +2757,84 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/talks\/webinale\/2022-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 43594,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/webinale\/2022-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/webinale\/2022-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 73726,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/webinale\/2022-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/webinale\/2022-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 109103,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/webinale\/2022-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/webinale\/2022-4.jpg" : {
+      "ft" : 16384,
+      "iS" : 99977,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/webinale\/2022-4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/webinale\/2022-5.jpg" : {
+      "ft" : 16384,
+      "iS" : 107453,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/webinale\/2022-5.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/webinale\/2022-6.jpg" : {
+      "ft" : 16384,
+      "iS" : 98478,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/webinale\/2022-6.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/terrazzo.gif" : {
       "ft" : 4194304,
       "iS" : 240512,
@@ -2763,14 +3010,6 @@
       "oAP" : "\/prepros.config",
       "oF" : 0
     },
-    "\/pug\/clients.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/pug\/clients.html",
-      "oF" : 0
-    },
     "\/pug\/clients.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -2781,14 +3020,6 @@
       "oF" : 0,
       "oS" : 1
     },
-    "\/pug\/feed.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/pug\/feed.html",
-      "oF" : 0
-    },
     "\/pug\/feed.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -2798,14 +3029,6 @@
       "oAP" : "\/feed.xml",
       "oF" : 2,
       "oS" : 1
-    },
-    "\/pug\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/pug\/index.html",
-      "oF" : 0
     },
     "\/pug\/index.pug" : {
       "cB" : 0,
@@ -2947,14 +3170,6 @@
       "oF" : 0,
       "oS" : 1
     },
-    "\/pug\/sitemap.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/pug\/sitemap.html",
-      "oF" : 0
-    },
     "\/pug\/sitemap.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -2964,14 +3179,6 @@
       "oAP" : "\/sitemap.xml",
       "oF" : 2,
       "oS" : 1
-    },
-    "\/pug\/talks.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/pug\/talks.html",
-      "oF" : 0
     },
     "\/pug\/talks.pug" : {
       "cB" : 0,
@@ -2983,14 +3190,6 @@
       "oF" : 2,
       "oS" : 1
     },
-    "\/pug\/test.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/pug\/test.html",
-      "oF" : 0
-    },
     "\/pug\/test.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -3000,14 +3199,6 @@
       "oAP" : "\/pug\/test.html",
       "oF" : 0,
       "oS" : 1
-    },
-    "\/pug\/uses.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/pug\/uses.html",
-      "oF" : 0
     },
     "\/pug\/uses.pug" : {
       "cB" : 0,
@@ -3971,10 +4162,6 @@
         "active" : 0,
         "optionString" : "'1tbs', {'allowSingleLine': true}"
       },
-      "callback-return" : {
-        "active" : 0,
-        "optionString" : "['callback', 'cb', 'next']"
-      },
       "camelcase" : {
         "active" : 0,
         "optionString" : "{'properties': 'always', 'ignoreDestructuring': false, 'ignoreImports': false}"
@@ -4066,6 +4253,10 @@
         "active" : 0,
         "optionString" : "'expression'"
       },
+      "function-call-argument-newline" : {
+        "active" : 0,
+        "optionString" : "'always'"
+      },
       "function-paren-newline" : {
         "active" : 0,
         "optionString" : "'multiline'"
@@ -4078,9 +4269,6 @@
         "active" : 0,
         "optionString" : "{'allowImplicit': false}"
       },
-      "global-require" : {
-        "active" : 0
-      },
       "grouped-accessor-pairs" : {
         "active" : 0,
         "optionString" : "'anyOrder'"
@@ -4088,11 +4276,7 @@
       "guard-for-in" : {
         "active" : 0
       },
-      "handle-callback-err" : {
-        "active" : 0,
-        "optionString" : "'err'"
-      },
-      "id-blacklist" : {
+      "id-denylist" : {
         "active" : 0,
         "optionString" : "'data', 'err', 'e', 'cb', 'callback'"
       },
@@ -4216,9 +4400,6 @@
         "active" : 0,
         "optionString" : "{'allow': ['~'], 'int32Hint': true}"
       },
-      "no-buffer-constructor" : {
-        "active" : 0
-      },
       "no-caller" : {
         "active" : 0
       },
@@ -4245,6 +4426,9 @@
       },
       "no-const-assign" : {
         "active" : 1
+      },
+      "no-constant-binary-expression" : {
+        "active" : 0
       },
       "no-constant-condition" : {
         "active" : 1,
@@ -4278,6 +4462,9 @@
         "active" : 1
       },
       "no-dupe-keys" : {
+        "active" : 1
+      },
+      "no-duplicate-case" : {
         "active" : 1
       },
       "no-duplicate-imports" : {
@@ -4321,7 +4508,7 @@
       "no-extra-boolean-cast" : {
         "active" : 1
       },
-      "no-extra-labels" : {
+      "no-extra-label" : {
         "active" : 0
       },
       "no-extra-parens" : {
@@ -4409,10 +4596,6 @@
         "active" : 0,
         "optionString" : "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
       },
-      "no-mixed-requires" : {
-        "active" : 0,
-        "optionString" : "{'grouping': false, 'allowCall': false }"
-      },
       "no-mixed-spaces-and-tabs" : {
         "active" : 0,
         "optionString" : ""
@@ -4447,9 +4630,6 @@
       "no-new-object" : {
         "active" : 0
       },
-      "no-new-require" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -4472,18 +4652,9 @@
         "active" : 0,
         "optionString" : "{'props': false}"
       },
-      "no-path-concat" : {
-        "active" : 0
-      },
       "no-plusplus" : {
         "active" : 0,
         "optionString" : "{'allowForLoopAfterthoughts': false}"
-      },
-      "no-process-env" : {
-        "active" : 0
-      },
-      "no-process-exit" : {
-        "active" : 0
       },
       "no-promise-executor-return" : {
         "active" : 0
@@ -4510,9 +4681,6 @@
         "optionString" : "'event', 'fdescribe'"
       },
       "no-restricted-imports" : {
-        "active" : 0
-      },
-      "no-restricted-modules" : {
         "active" : 0,
         "optionString" : ""
       },
@@ -4557,10 +4725,6 @@
       },
       "no-sparse-arrays" : {
         "active" : 1
-      },
-      "no-sync" : {
-        "active" : 0,
-        "optionString" : "{'allowAtRootLevel': false}"
       },
       "no-tabs" : {
         "active" : 0,
@@ -4793,10 +4957,6 @@
       "require-await" : {
         "active" : 0
       },
-      "require-jsdoc" : {
-        "active" : 0,
-        "optionString" : "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
-      },
       "require-unicode-regexp" : {
         "active" : 0
       },
@@ -4881,10 +5041,6 @@
       "use-isnan" : {
         "active" : 1,
         "optionString" : "{'enforceForSwitchCase': true, 'enforceForIndexOf': false}"
-      },
-      "valid-jsdoc" : {
-        "active" : 0,
-        "optionString" : "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
       },
       "valid-typeof" : {
         "active" : 1,
@@ -5154,6 +5310,7 @@
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
+      "moduleDetectionType" : 0,
       "moduleResolutionType" : 0,
       "moduleType" : 2,
       "removeComments" : 0,
@@ -5386,6 +5543,10 @@
         "active" : 0,
         "flagValue" : -1
       },
+      "keep_numbers" : {
+        "active" : 0,
+        "flagValue" : -1
+      },
       "keep_quoted_props" : {
         "active" : 0,
         "flagValue" : -1
@@ -5409,6 +5570,10 @@
       "passes" : {
         "active" : 1,
         "flagValue" : 1
+      },
+      "preserve_annotations" : {
+        "active" : 0,
+        "flagValue" : -1
       },
       "properties" : {
         "active" : 1,
@@ -5512,6 +5677,10 @@
       },
       "webkit" : {
         "active" : 0,
+        "flagValue" : -1
+      },
+      "wrap_func_args" : {
+        "active" : 1,
         "flagValue" : -1
       },
       "wrap_iife" : {
