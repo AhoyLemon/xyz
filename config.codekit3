@@ -2107,19 +2107,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/talks\/ndc\/oslo-2022-1.jpg" : {
-      "ft" : 16384,
-      "iS" : 250908,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/talks\/ndc\/oslo-2022-1.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/img\/talks\/ndc\/oslo-2022-mainroom.jpg" : {
       "ft" : 16384,
       "iS" : 252539,
@@ -3010,6 +2997,14 @@
       "oAP" : "\/prepros.config",
       "oF" : 0
     },
+    "\/pug\/clients.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/pug\/clients.html",
+      "oF" : 0
+    },
     "\/pug\/clients.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -3190,6 +3185,14 @@
       "oF" : 2,
       "oS" : 1
     },
+    "\/pug\/test.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/pug\/test.html",
+      "oF" : 0
+    },
     "\/pug\/test.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -3199,6 +3202,14 @@
       "oAP" : "\/pug\/test.html",
       "oF" : 0,
       "oS" : 1
+    },
+    "\/pug\/uses.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/pug\/uses.html",
+      "oF" : 0
     },
     "\/pug\/uses.pug" : {
       "cB" : 0,
