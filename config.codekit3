@@ -2419,6 +2419,58 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/talks\/pubconf\/mn-2022-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 74539,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/pubconf\/mn-2022-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/pubconf\/mn-2022-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 90967,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/pubconf\/mn-2022-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/pubconf\/mn-2022-3.jpg" : {
+      "ft" : 16384,
+      "iS" : 866007,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/pubconf\/mn-2022-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/pubconf\/mn-2022-4.jpg" : {
+      "ft" : 16384,
+      "iS" : 78556,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/pubconf\/mn-2022-4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/talks\/pubconf\/nl-hotel.jpg" : {
       "ft" : 16384,
       "iS" : 42179,
