@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" ?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://ahoylemon.xyz</loc><changefreq>monthly</changefreq><priority>1</priority><lastmod>2022-11-18T20:22:43.233Z</lastmod></url><url><loc>https://ahoylemon.xyz/talks.html</loc><priority>0.5</priority></url><url><loc>https://ahoylemon.xyz/clients</loc><priority>0.5</priority></url><url><loc>https://ahoylemon.xyz/uses/index.html</loc><priority>0.5</priority></url><url><loc>https://ahoylemon.xyz/blog/apple-names.html</loc><priority>0.5</priority></url><url><loc>https://ahoylemon.xyz/feed.xml</loc><priority>0.5</priority></url><url><loc>https://ahoylemon.xyz/sitemap.xml</loc><priority>0.5</priority></url></urlset>
+<?xml version="1.0" encoding="utf-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ahoylemon.xyz</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2022-11-23T19:35:14.327Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/talks.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/clients</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/uses/index.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/blog/apple-names.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/feed.xml</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/sitemap.xml</loc>
+    <priority>0.5</priority>
+  </url>
+</urlset>

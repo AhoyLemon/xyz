@@ -19,6 +19,9 @@
     }
     .subhead { text-transform: uppercase; letter-spacing: 0.1em; font-weight:$bold; margin-bottom: 1em; }
     .description { font-size:120%;
+      a { color:$orange; text-decoration: none;
+        &:hover, &:focus { text-decoration: underline;}
+      }
       p:last-of-type { margin-bottom:0; }
     }
 
