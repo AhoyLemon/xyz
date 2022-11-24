@@ -103,6 +103,18 @@
       </image>
     </item>
     <item>
+      <title>Rick Ross Daily</title>
+      <link>https://botsin.space/@rickross</link>
+      <guid>https://botsin.space/@rickross</guid>
+      <description>This was a Twitterbot, but now I have it set up on Mastodon instead.</description>
+      <pubDate>2022-11-23</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/ross_circle.png</url>
+        <title>Rick Ross Daily logo</title>
+        <link>https://botsin.space/@rickross</link>
+      </image>
+    </item>
+    <item>
       <title>PRETEND 🌐 WORLD</title>
       <link>https://ahoylemon.github.io/pretend.world</link>
       <guid>https://ahoylemon.github.io/pretend.world</guid>
@@ -151,15 +163,15 @@
       </image>
     </item>
     <item>
-      <title>Heelies Info</title>
-      <link>https://ahoylemon.github.io/heelies.info</link>
-      <guid>https://ahoylemon.github.io/heelies.info</guid>
-      <description>&lt;p&gt;My friend likes the website Wookieepedia a lot and then he had a birthday. So I made a Wookieepedia page just for him.&lt;/p&gt;</description>
-      <pubDate>2020-06-07</pubDate>
+      <title>PARTY PARTY PARTY PARTY PARTY</title>
+      <link>https://partypartypartyparty.party</link>
+      <guid>https://partypartypartyparty.party</guid>
+      <description>&lt;p&gt;This is a button to help you party.&lt;/p&gt;</description>
+      <pubDate>2016-09-21</pubDate>
       <image>
-        <url>https://ahoylemon.xyz/img/wookieepedia.png</url>
-        <title>Heelies Info logo</title>
-        <link>https://ahoylemon.github.io/heelies.info</link>
+        <url>https://ahoylemon.xyz/img/party.png</url>
+        <title>PARTY PARTY PARTY PARTY PARTY logo</title>
+        <link>https://partypartypartyparty.party</link>
       </image>
     </item>
     <item>
@@ -175,15 +187,15 @@
       </image>
     </item>
     <item>
-      <title>PARTY PARTY PARTY PARTY PARTY</title>
-      <link>https://partypartypartyparty.party</link>
-      <guid>https://partypartypartyparty.party</guid>
-      <description>&lt;p&gt;This is a button to help you party.&lt;/p&gt;</description>
-      <pubDate>2016-09-21</pubDate>
+      <title>Heelies Info</title>
+      <link>https://ahoylemon.github.io/heelies.info</link>
+      <guid>https://ahoylemon.github.io/heelies.info</guid>
+      <description>&lt;p&gt;My friend likes the website Wookieepedia a lot and then he had a birthday. So I made a Wookieepedia page just for him.&lt;/p&gt;</description>
+      <pubDate>2020-06-07</pubDate>
       <image>
-        <url>https://ahoylemon.xyz/img/party.png</url>
-        <title>PARTY PARTY PARTY PARTY PARTY logo</title>
-        <link>https://partypartypartyparty.party</link>
+        <url>https://ahoylemon.xyz/img/wookieepedia.png</url>
+        <title>Heelies Info logo</title>
+        <link>https://ahoylemon.github.io/heelies.info</link>
       </image>
     </item>
     <item>
@@ -232,18 +244,6 @@
         <url>https://ahoylemon.xyz/svg/verifiable.svg</url>
         <title>Verifiable Win logo</title>
         <link>https://ahoylemon.github.io/verifiable.win</link>
-      </image>
-    </item>
-    <item>
-      <title>@rickross_daily</title>
-      <link>https://twitter.com/rickross_daily</link>
-      <guid>https://twitter.com/rickross_daily</guid>
-      <description>This twitterbot (which was either the idea of JW Friedman or myself, we can't remember) will inform you what Rick Ross is doing every day, every day.</description>
-      <pubDate>2017-09-05</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/ross_circle.png</url>
-        <title>@rickross_daily logo</title>
-        <link>https://twitter.com/rickross_daily</link>
       </image>
     </item>
     <item>
