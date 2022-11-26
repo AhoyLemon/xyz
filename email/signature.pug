@@ -1,12 +1,12 @@
 //- var imgPath = "../email"
-- var imgPath = "https://thefpl.us/email"
+- var imgPath = "https://ahoylemon.xyz/email"
 
 - var font = 'font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;'
 - var linkStyle = font + ' color:#313131; text-decoration:none; font-size:16px'
 
 html
   head
-    title Email signature, v.1
+    title Email signature, v.3
   body
 
     style.
@@ -16,7 +16,8 @@ html
     table(style="margin-top:100px;")
       tr
         td(style="vertical-align:center;")
-          img(src=imgPath+"/lemon-square.png" width="75" height="75")
+          a(href="")
+            img(src=imgPath+"/lemon-square.png" width="75" height="75")
 
         td(style="padding-left:15px;")
           table
@@ -29,8 +30,8 @@ html
                 a.siglink(href="https://thefpl.us" style=linkStyle)
                   span(style="text-decoration:none") The F Plus
                 | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                a.siglink(href="https://twitter.com/AhoyLemon" style=linkStyle)
-                        span(style="text-decoration:none") Twitter
+                a.siglink(href="https://mastodon.social/@ahoylemon" style=linkStyle)
+                  span(style="text-decoration:none") Mastodon
                 | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 a.siglink(href="https://github.com/AhoyLemon" style=linkStyle)
                   span(style="text-decoration:none") GitHub
