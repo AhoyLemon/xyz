@@ -6,7 +6,7 @@
     <title>ahoylemon 🍋 xyz</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2022-12-01T02:50:23.440Z">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2022-12-03T04:06:09.943Z">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -114,56 +114,6 @@
                 <p style="font-size:120%"><a href="https://sessionize.com/lemon">Invite me to speak</a>, please.</p>
               </div>
             </div>
-          </div>
-          <div class="project" repo="BootsRaingear/Ready-Rocks">
-            <figure style="background-color:#1B131E; "><a href="https://ready.rocks"><img class="logo" src="svg/rocks.svg" alt="READY 🎤 ROCKS logo"></a>
-            </figure>
-            <figcaption>
-              <div class="title"><a href="https://ready.rocks">READY 🎤 ROCKS</a></div>
-              <div class="subhead">The best goddamn karaoke app you've ever seen.</div>
-              <div class="description"><p>My good friend <a href="https://bootsraingear.bandcamp.com/">Boots</a> and I built our own karaoke softare. He built the Windows backend, I built the web PWA to handle signups.</p></div>
-            </figcaption>
-            <div class="detail-row">
-              <div class="detail launched">
-                <div class="label">LAUNCHED</div>
-                <div class="value">
-                      <time>Oct 01, 2018
-                      </time>
-                </div>
-              </div>
-              <div class="detail last-updated invisible">
-                <div class="label">LAST UPDATED</div>
-                <div class="value"></div>
-              </div>
-              <div class="detail repository">
-                <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/BootsRaingear/Ready-Rocks" target="_blank"><span>Ready-Rocks</span></a></div>
-              </div>
-            </div>
-            <script>
-              $.ajax({
-                url: "https://api.github.com/repos/BootsRaingear/Ready-Rocks/commits/master",
-                dataType: 'json',
-                success: function( data ) {
-                  var items = [];
-                  let timeStamp = data.commit.author.date;
-                  let lU = timeStamp.split('T');
-                  let lastUpdated = lU[0];
-                  console.log(lastUpdated);
-                  if (lastUpdated) {
-                    $('.project[repo="BootsRaingear/Ready-Rocks"] .last-updated .value').html(formatDate(lastUpdated));
-                    $('.project[repo="BootsRaingear/Ready-Rocks"] .last-updated').removeClass('invisible');
-                  }
-                },
-                error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on BootsRaingear/Ready-Rocks');
-                  //$('.project[repo="BootsRaingear/Ready-Rocks"] .last-updated').remove();
-                }
-              });
-              
-              
-              
-            </script>
           </div>
           <div class="project" repo="AhoyLemon/kinda.fun">
             <figure style="background-color:#23073a; "><a href="https://kinda.fun/cameo"><img class="logo" src="svg/f.svg" alt="Comparatively Famous logo"></a>
@@ -308,6 +258,56 @@
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/damn.dog');
                   //$('.project[repo="AhoyLemon/damn.dog"] .last-updated').remove();
+                }
+              });
+              
+              
+              
+            </script>
+          </div>
+          <div class="project" repo="AhoyLemon/kinda.fun">
+            <figure style="background-image:url(img/futile-512.png); "><a class="absolute-link" href="https://kinda.fun/sisyphus" style="background-image:url(img/futile-512.png); "></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://kinda.fun/sisyphus">Sisyphus Clicker</a></div>
+              <div class="subhead">an exercise in active depression</div>
+              <div class="description"><p>In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill.</p> <p>Also, there are acheivements.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Sep 21, 2021
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/kinda.fun" target="_blank"><span>kinda.fun</span></a></div>
+              </div>
+            </div>
+            <script>
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/kinda.fun/commits/main",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated').removeClass('invisible');
+                  }
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/kinda.fun');
+                  //$('.project[repo="AhoyLemon/kinda.fun"] .last-updated').remove();
                 }
               });
               
@@ -907,19 +907,19 @@
               </figure>
             </div>
           </div>
-          <div class="project" repo="AhoyLemon/kinda.fun">
-            <figure style="background-image:url(img/futile-512.png); "><a class="absolute-link" href="https://kinda.fun/sisyphus" style="background-image:url(img/futile-512.png); "></a>
+          <div class="project" repo="AhoyLemon/jerking.online">
+            <figure style="background-color:#f0f1f2; "><a href="https://ahoylemon.github.io/jerking.online"><img class="logo" src="svg/fist.svg" alt="jerking online logo"></a>
             </figure>
             <figcaption>
-              <div class="title"><a href="https://kinda.fun/sisyphus">Sisyphus Clicker</a></div>
-              <div class="subhead">an exercise in active depression</div>
-              <div class="description"><p>In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill.</p> <p>Also, there are acheivements.</p></div>
+              <div class="title"><a href="https://ahoylemon.github.io/jerking.online">jerking online</a></div>
+              <div class="subhead">a daily generated list of fake porn movies</div>
+              <div class="description"><p>Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.</p><p>Cause it makes me giggle.</p></div>
             </figcaption>
             <div class="detail-row">
               <div class="detail launched">
                 <div class="label">LAUNCHED</div>
                 <div class="value">
-                      <time>Sep 21, 2021
+                      <time>Jan 06, 2017
                       </time>
                 </div>
               </div>
@@ -929,12 +929,12 @@
               </div>
               <div class="detail repository">
                 <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/kinda.fun" target="_blank"><span>kinda.fun</span></a></div>
+                <div class="value"><a href="https://github.com/AhoyLemon/jerking.online" target="_blank"><span>jerking.online</span></a></div>
               </div>
             </div>
             <script>
               $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/kinda.fun/commits/main",
+                url: "https://api.github.com/repos/AhoyLemon/jerking.online/commits/master",
                 dataType: 'json',
                 success: function( data ) {
                   var items = [];
@@ -943,13 +943,63 @@
                   let lastUpdated = lU[0];
                   console.log(lastUpdated);
                   if (lastUpdated) {
-                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated .value').html(formatDate(lastUpdated));
-                    $('.project[repo="AhoyLemon/kinda.fun"] .last-updated').removeClass('invisible');
+                    $('.project[repo="AhoyLemon/jerking.online"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/jerking.online"] .last-updated').removeClass('invisible');
                   }
                 },
                 error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/kinda.fun');
-                  //$('.project[repo="AhoyLemon/kinda.fun"] .last-updated').remove();
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/jerking.online');
+                  //$('.project[repo="AhoyLemon/jerking.online"] .last-updated').remove();
+                }
+              });
+              
+              
+              
+            </script>
+          </div>
+          <div class="project" repo="BootsRaingear/Ready-Rocks">
+            <figure style="background-color:#1B131E; "><a href="https://ready.rocks"><img class="logo" src="svg/rocks.svg" alt="READY 🎤 ROCKS logo"></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://ready.rocks">READY 🎤 ROCKS</a></div>
+              <div class="subhead">The best goddamn karaoke app you've ever seen.</div>
+              <div class="description"><p>My good friend <a href="https://bootsraingear.bandcamp.com/">Boots</a> and I built our own karaoke softare. He built the Windows backend, I built the web PWA to handle signups.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Oct 01, 2018
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/BootsRaingear/Ready-Rocks" target="_blank"><span>Ready-Rocks</span></a></div>
+              </div>
+            </div>
+            <script>
+              $.ajax({
+                url: "https://api.github.com/repos/BootsRaingear/Ready-Rocks/commits/master",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  if (lastUpdated) {
+                    $('.project[repo="BootsRaingear/Ready-Rocks"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="BootsRaingear/Ready-Rocks"] .last-updated').removeClass('invisible');
+                  }
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on BootsRaingear/Ready-Rocks');
+                  //$('.project[repo="BootsRaingear/Ready-Rocks"] .last-updated').remove();
                 }
               });
               
@@ -1500,56 +1550,6 @@
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/badaccent.club');
                   //$('.project[repo="AhoyLemon/badaccent.club"] .last-updated').remove();
-                }
-              });
-              
-              
-              
-            </script>
-          </div>
-          <div class="project" repo="AhoyLemon/jerking.online">
-            <figure style="background-color:#f0f1f2; "><a href="https://ahoylemon.github.io/jerking.online"><img class="logo" src="svg/fist.svg" alt="jerking online logo"></a>
-            </figure>
-            <figcaption>
-              <div class="title"><a href="https://ahoylemon.github.io/jerking.online">jerking online</a></div>
-              <div class="subhead">a daily generated list of fake porn movies</div>
-              <div class="description"><p>Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.</p><p>Cause it makes me giggle.</p></div>
-            </figcaption>
-            <div class="detail-row">
-              <div class="detail launched">
-                <div class="label">LAUNCHED</div>
-                <div class="value">
-                      <time>Jan 06, 2017
-                      </time>
-                </div>
-              </div>
-              <div class="detail last-updated invisible">
-                <div class="label">LAST UPDATED</div>
-                <div class="value"></div>
-              </div>
-              <div class="detail repository">
-                <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/jerking.online" target="_blank"><span>jerking.online</span></a></div>
-              </div>
-            </div>
-            <script>
-              $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/jerking.online/commits/master",
-                dataType: 'json',
-                success: function( data ) {
-                  var items = [];
-                  let timeStamp = data.commit.author.date;
-                  let lU = timeStamp.split('T');
-                  let lastUpdated = lU[0];
-                  console.log(lastUpdated);
-                  if (lastUpdated) {
-                    $('.project[repo="AhoyLemon/jerking.online"] .last-updated .value').html(formatDate(lastUpdated));
-                    $('.project[repo="AhoyLemon/jerking.online"] .last-updated').removeClass('invisible');
-                  }
-                },
-                error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/jerking.online');
-                  //$('.project[repo="AhoyLemon/jerking.online"] .last-updated').remove();
                 }
               });
               

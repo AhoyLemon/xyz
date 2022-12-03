@@ -19,18 +19,6 @@
       <height>120</height>
     </image>
     <item>
-      <title>READY 🎤 ROCKS</title>
-      <link>https://ready.rocks</link>
-      <guid>https://ready.rocks</guid>
-      <description>&lt;p&gt;My good friend &lt;a href=&quot;https://bootsraingear.bandcamp.com/&quot;&gt;Boots&lt;/a&gt; and I built our own karaoke softare. He built the Windows backend, I built the web PWA to handle signups.&lt;/p&gt;</description>
-      <pubDate>2018-10-01</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/svg/rocks.svg</url>
-        <title>READY 🎤 ROCKS logo</title>
-        <link>https://ready.rocks</link>
-      </image>
-    </item>
-    <item>
       <title>Comparatively Famous</title>
       <link>https://kinda.fun/cameo</link>
       <guid>https://kinda.fun/cameo</guid>
@@ -76,6 +64,30 @@
         <url>https://ahoylemon.xyz/img/futile-512.png</url>
         <title>Sisyphus Clicker logo</title>
         <link>https://kinda.fun/sisyphus</link>
+      </image>
+    </item>
+    <item>
+      <title>jerking online</title>
+      <link>https://ahoylemon.github.io/jerking.online</link>
+      <guid>https://ahoylemon.github.io/jerking.online</guid>
+      <description>&lt;p&gt;Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.&lt;/p&gt;&lt;p&gt;Cause it makes me giggle.&lt;/p&gt;</description>
+      <pubDate>2017-01-06</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/fist.svg</url>
+        <title>jerking online logo</title>
+        <link>https://ahoylemon.github.io/jerking.online</link>
+      </image>
+    </item>
+    <item>
+      <title>READY 🎤 ROCKS</title>
+      <link>https://ready.rocks</link>
+      <guid>https://ready.rocks</guid>
+      <description>&lt;p&gt;My good friend &lt;a href=&quot;https://bootsraingear.bandcamp.com/&quot;&gt;Boots&lt;/a&gt; and I built our own karaoke softare. He built the Windows backend, I built the web PWA to handle signups.&lt;/p&gt;</description>
+      <pubDate>2018-10-01</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/rocks.svg</url>
+        <title>READY 🎤 ROCKS logo</title>
+        <link>https://ready.rocks</link>
       </image>
     </item>
     <item>
@@ -208,18 +220,6 @@
         <url>https://ahoylemon.xyz/svg/badaccent.svg</url>
         <title>Bad Accent Club logo</title>
         <link>https://play.google.com/store/apps/details?id=club.badaccent</link>
-      </image>
-    </item>
-    <item>
-      <title>jerking online</title>
-      <link>https://ahoylemon.github.io/jerking.online</link>
-      <guid>https://ahoylemon.github.io/jerking.online</guid>
-      <description>&lt;p&gt;Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.&lt;/p&gt;&lt;p&gt;Cause it makes me giggle.&lt;/p&gt;</description>
-      <pubDate>2017-01-06</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/svg/fist.svg</url>
-        <title>jerking online logo</title>
-        <link>https://ahoylemon.github.io/jerking.online</link>
       </image>
     </item>
     <item>
