@@ -29,7 +29,10 @@ html(lang="en")
             .details
               a(name=t.slug class="anchor")
               .name
-                a(href=t.url target="_blank" itemprop="url")
+                if t.url && t.name
+                  a(href=t.url target="_blank" itemprop="url")
+                    span(itemprop="name")= t.name
+                else if t.name
                   span(itemprop="name")= t.name
 
               if t.online
@@ -96,8 +99,11 @@ html(lang="en")
             .details
               a(name=t.slug class="anchor")
               .name 
-                a(href=t.url target="_blank" itemprop="url")
-                  span(itemprop="name")= t.name 
+                if t.url && t.name
+                  a(href=t.url target="_blank" itemprop="url")
+                    span(itemprop="name")= t.name
+                else if t.name
+                  span(itemprop="name")= t.name
               
               .location(itemprop="location" itemscope itemtype="http://schema.org/City")
                 if t.city && t.state
