@@ -5,7 +5,7 @@
     <title>Hi, my name is Lemon.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Yrsa:300,400,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2022-12-03T04:06:10.478Z">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2022-12-14T04:37:33.703Z">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -146,6 +146,82 @@
       
     </script>
     <main class="project-summaries">     
+          <div class="project" repo="AhoyLemon/SANE">
+            <figure style="background-image:url(img/plasma.jpg); "><a class="absolute-link" href="https://sane.science" style="background-image:url(img/plasma.jpg); "></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://sane.science">SANE SCIENCE</a></div>
+              <div class="subhead">An Online Gaslighting Simulator</div>
+              <div class="description"><p>Are you in need of documentation of your own sanity? Yes, of course you are. Well, this online exam is meant to provide just that: Answer our questions and you'll get a diagnosis on the other end.</p><p>Only one caveat: The exam is gaslighting you.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Dec 13, 2022
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/SANE" target="_blank"><span>SANE</span></a></div>
+              </div>
+            </div>
+            <script>
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/SANE/commits/master",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/SANE"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/SANE"] .last-updated').removeClass('invisible');
+                  }
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/SANE');
+                  //$('.project[repo="AhoyLemon/SANE"] .last-updated').remove();
+                }
+              });
+              
+              
+              
+            </script>
+          </div>
+          <div class="upcoming-conferences conferences">
+            <div class="slider-header">
+              <h2>
+                 UPCOMING TALKS <sub>(1)</sub></h2>
+              <div class="more-holder"><a href="https://ahoylemon.xyz/talks.html">see all</a></div>
+            </div>
+            <div class="upcoming-conference-carousel carousel">
+              <div class="conference upcoming">
+                <div class="name"><a href="https://ahoylemon.xyz/talks.html#DevSum20230525">DevSum</a></div>
+                <div class="location"><span>Stockholm, Sweden</span>
+                </div>
+                <div class="date">
+                  <!-- Date-->
+                      <time>May 25 -  26,  2023
+                      </time>
+                </div>
+                <div class="presenting">Presenting:</div>
+                <ul class="multiple-talks">
+                  <li class="talk">{TBD}</li>
+                </ul>
+              </div>
+              <div class="conference upcoming" style="display:flex; align-items:center; justify-content:center;">
+                <p style="font-size:120%"><a href="https://sessionize.com/lemon">Invite me to speak</a>, please.</p>
+              </div>
+            </div>
+          </div>
           <div class="project" repo="AhoyLemon/kinda.fun">
             <figure style="background-color:#23073a; "><a href="https://kinda.fun/cameo"><img class="logo" src="svg/f.svg" alt="Comparatively Famous logo"></a>
             </figure>
@@ -196,32 +272,6 @@
               
             </script>
           </div>
-          <div class="upcoming-conferences conferences">
-            <div class="slider-header">
-              <h2>
-                 UPCOMING TALKS <sub>(1)</sub></h2>
-              <div class="more-holder"><a href="https://ahoylemon.xyz/talks.html">see all</a></div>
-            </div>
-            <div class="upcoming-conference-carousel carousel">
-              <div class="conference upcoming">
-                <div class="name"><a href="https://ahoylemon.xyz/talks.html#DevSum20230525">DevSum</a></div>
-                <div class="location"><span>Stockholm, Sweden</span>
-                </div>
-                <div class="date">
-                  <!-- Date-->
-                      <time>May 25 -  26,  2023
-                      </time>
-                </div>
-                <div class="presenting">Presenting:</div>
-                <ul class="multiple-talks">
-                  <li class="talk">{TBD}</li>
-                </ul>
-              </div>
-              <div class="conference upcoming" style="display:flex; align-items:center; justify-content:center;">
-                <p style="font-size:120%"><a href="https://sessionize.com/lemon">Invite me to speak</a>, please.</p>
-              </div>
-            </div>
-          </div>
           <div class="project" repo="AhoyLemon/kinda.fun">
             <figure style="background-image:url(img/radial-grey.jpg); "><a href="https://kinda.fun/invalid"><img class="logo" src="svg/invalid.svg" alt="Invalid logo"></a>
             </figure>
@@ -265,56 +315,6 @@
                 error: function( data ) {
                   console.log('ERROR ' + data.status + ' on AhoyLemon/kinda.fun');
                   //$('.project[repo="AhoyLemon/kinda.fun"] .last-updated').remove();
-                }
-              });
-              
-              
-              
-            </script>
-          </div>
-          <div class="project" repo="AhoyLemon/damn.dog">
-            <figure style="background-color:#222730; "><a href="https://damn.dog"><img class="logo" src="svg/damndog.svg" alt="damn.dog logo"></a>
-            </figure>
-            <figcaption>
-              <div class="title"><a href="https://damn.dog">damn.dog</a></div>
-              <div class="subhead">the wikiHow guessing game</div>
-              <div class="description"><p>The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.</p><p>Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.</p></div>
-            </figcaption>
-            <div class="detail-row">
-              <div class="detail launched">
-                <div class="label">LAUNCHED</div>
-                <div class="value">
-                      <time>Feb 04, 2016
-                      </time>
-                </div>
-              </div>
-              <div class="detail last-updated invisible">
-                <div class="label">LAST UPDATED</div>
-                <div class="value"></div>
-              </div>
-              <div class="detail repository">
-                <div class="label">REPOSITORY</div>
-                <div class="value"><a href="https://github.com/AhoyLemon/damn.dog" target="_blank"><span>damn.dog</span></a></div>
-              </div>
-            </div>
-            <script>
-              $.ajax({
-                url: "https://api.github.com/repos/AhoyLemon/damn.dog/commits/master",
-                dataType: 'json',
-                success: function( data ) {
-                  var items = [];
-                  let timeStamp = data.commit.author.date;
-                  let lU = timeStamp.split('T');
-                  let lastUpdated = lU[0];
-                  console.log(lastUpdated);
-                  if (lastUpdated) {
-                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated .value').html(formatDate(lastUpdated));
-                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated').removeClass('invisible');
-                  }
-                },
-                error: function( data ) {
-                  console.log('ERROR ' + data.status + ' on AhoyLemon/damn.dog');
-                  //$('.project[repo="AhoyLemon/damn.dog"] .last-updated').remove();
                 }
               });
               
@@ -913,6 +913,56 @@
                 </figcaption>
               </figure>
             </div>
+          </div>
+          <div class="project" repo="AhoyLemon/damn.dog">
+            <figure style="background-color:#222730; "><a href="https://damn.dog"><img class="logo" src="svg/damndog.svg" alt="damn.dog logo"></a>
+            </figure>
+            <figcaption>
+              <div class="title"><a href="https://damn.dog">damn.dog</a></div>
+              <div class="subhead">the wikiHow guessing game</div>
+              <div class="description"><p>The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.</p><p>Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.</p></div>
+            </figcaption>
+            <div class="detail-row">
+              <div class="detail launched">
+                <div class="label">LAUNCHED</div>
+                <div class="value">
+                      <time>Feb 04, 2016
+                      </time>
+                </div>
+              </div>
+              <div class="detail last-updated invisible">
+                <div class="label">LAST UPDATED</div>
+                <div class="value"></div>
+              </div>
+              <div class="detail repository">
+                <div class="label">REPOSITORY</div>
+                <div class="value"><a href="https://github.com/AhoyLemon/damn.dog" target="_blank"><span>damn.dog</span></a></div>
+              </div>
+            </div>
+            <script>
+              $.ajax({
+                url: "https://api.github.com/repos/AhoyLemon/damn.dog/commits/master",
+                dataType: 'json',
+                success: function( data ) {
+                  var items = [];
+                  let timeStamp = data.commit.author.date;
+                  let lU = timeStamp.split('T');
+                  let lastUpdated = lU[0];
+                  console.log(lastUpdated);
+                  if (lastUpdated) {
+                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated .value').html(formatDate(lastUpdated));
+                    $('.project[repo="AhoyLemon/damn.dog"] .last-updated').removeClass('invisible');
+                  }
+                },
+                error: function( data ) {
+                  console.log('ERROR ' + data.status + ' on AhoyLemon/damn.dog');
+                  //$('.project[repo="AhoyLemon/damn.dog"] .last-updated').remove();
+                }
+              });
+              
+              
+              
+            </script>
           </div>
           <div class="project" repo="AhoyLemon/kinda.fun">
             <figure style="background-image:url(img/futile-512.png); "><a class="absolute-link" href="https://kinda.fun/sisyphus" style="background-image:url(img/futile-512.png); "></a>

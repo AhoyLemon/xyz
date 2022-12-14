@@ -1,4 +1,4 @@
-![ahoylemon.xyz](http://ahoylemon.xyz/favicon-194x194.png)
+![ahoylemon.xyz](https://ahoylemon.xyz/favicon-194x194.png)
 #### (A Site Lemon Built To Show Sites Lemon Built)
 
 ### What is this?
