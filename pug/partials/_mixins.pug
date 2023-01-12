@@ -211,9 +211,9 @@ mixin projectSummary(s)
     if (fgImage)
       .image-holder(style=bgStyle)
         a(href=s.url)
-          img.logo(src=fgImage alt=s.title+" logo")
+          img.logo(src=fgImage alt=s.title+" logo" width="100" height="100")
     else if (bgStyle)
-      .image-holder()
+      .image-holder
         a.absolute-link(href=s.url style=bgStyle title=s.title)
     figcaption
       .project-text

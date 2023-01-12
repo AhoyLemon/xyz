@@ -4,11 +4,10 @@
   .project { display:grid; grid-template-columns: 200px 1fr; grid-gap: 20px; background:white; box-shadow:$card-shadow;
 
     .image-holder { background-size:cover; padding:10px; background-position: center; position: relative; overflow: hidden;
-      @media (pointer:fine) {
-        a:hover, &.focus {
-          img { transform: scale(1.09); }
-        } 
-      } 
+      img { width:100%; height: auto; }
+      a:hover, &.focus {
+        img { transform: scale(1.09); }
+      }
       .absolute-link { @include position(absolute,0,0,0,0); background-size:cover; background-position: center; transition: transform 0.25s ease;
         &:hover, &:focus { transform: scale(1.2); }
       }
