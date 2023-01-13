@@ -3,21 +3,23 @@
 
   .project { display:grid; grid-template-columns: 200px 1fr; grid-gap: 20px; background:white; box-shadow:$card-shadow;
 
-    figure { background-size:cover; padding:10px; grid-row: span 2; background-position: center; position: relative; overflow: hidden;
-      @media (pointer:fine) {
-        a:hover img { transform: scale(1.09); }
-      } 
+    .image-holder { background-size:cover; padding:10px; background-position: center; position: relative; overflow: hidden;
+      img { width:100%; height: auto; }
+      a:hover, &.focus {
+        img { transform: scale(1.09); }
+      }
       .absolute-link { @include position(absolute,0,0,0,0); background-size:cover; background-position: center; transition: transform 0.25s ease;
-        &:hover { transform: scale(1.2); }
+        &:hover, &:focus { transform: scale(1.2); }
       }
     }
-    figcaption { padding:10px; }
-    .title { font-size:215%; line-height: 100%; padding-top:10px; word-break: break-word;
+    figcaption { display:flex; flex-direction: column; justify-content: space-between; padding:16px 10px 10px 0; }
+    .project-text { padding-bottom: 2rem; }
+    .title { font-size:215%; line-height: 100%; word-break: break-word; padding-bottom: 10px;
       a { color:$orange; text-decoration: none;
         &:hover { text-decoration: underline; }
       }
     }
-    .subhead { text-transform: uppercase; letter-spacing: 0.1em; font-weight:$bold; margin-bottom: 1em; }
+    .subhead { text-transform: uppercase; letter-spacing: 0.1em; font-weight:$bold; padding-bottom: 10px; }
     .description { font-size:120%;
       a { color:$orange; text-decoration: none;
         &:hover, &:focus { text-decoration: underline;}
@@ -25,11 +27,12 @@
       p:last-of-type { margin-bottom:0; }
     }
 
-    .detail-row { display:grid; grid-template-columns:repeat(3, 1fr); padding-bottom: 10px; padding-left:10px; 
+    
+    .detail-row { display:grid; grid-template-columns:repeat(2, 1fr);
       .detail { @extend %truncate; }
       .invisible { display:none; }
-      .label { font-size:80%; }
-      .value { display: block; font-size:140%; @extend %truncate; }
+      .label { font-size:80%; text-transform: uppercase; }
+      .value { display: block; font-size:125%; @extend %truncate; }
       .repository {
         a { color: $orange; text-decoration: none;
           &:hover {  text-decoration: underline; }
@@ -84,9 +87,7 @@
 
 }
 @media (min-width:2150px) { 
-  .project-summaries { grid-template-columns: repeat(3,calc(33.333333% - 15px));
-
-  }
+  .project-summaries { grid-template-columns: repeat(3,calc(33.333333% - 15px)); }
 }
 
 
@@ -99,9 +100,10 @@
 @media (max-width:1170px) {
   .project-summaries { 
     .project { grid-template-columns: 1fr;
-      figure { height:64px;
+      .image-holder { height:64px;
         img { height:100%; }
       }
+      figcaption { padding-left:20px;}
     }
   }
 }
