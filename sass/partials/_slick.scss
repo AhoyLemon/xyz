@@ -1,5 +1,5 @@
 .slick-slider {
-  .slick-arrow { background: transparent; border:none; position: absolute; bottom: 10px; font-family: $font; font-size:240%; color:$orange; z-index: 3; cursor: pointer; 
+  .slick-arrow { background: transparent; border:none; position: absolute; bottom: 10px; font-family: $font; font-size:240%; color:$lightOrange; z-index: 3; cursor: pointer; 
     &:hover, &:active { transform: scale(1.2); }
   }
   .slick-prev { left:10px; }
@@ -13,4 +13,16 @@
   &.talks { @include position(absolute,0,0,0,0);
     .slick-list { height: 100%; padding-top: 85px; padding-left: 15px; padding-right: 15px; }
   }
+
+  .slick-dots { display: block; text-align: center; @include position(absolute,null,0,7px,0); padding:0 40px;
+    li { display: inline-block; padding:0 0.5em 0 0;
+      button {  display: inline-block; line-height: 1.3em; height: 1em; width:1em; background:transparent; background: $lightOrange; border:none; transition: background 0.2s linear; border-radius:50%; font-family: $font; padding:0; cursor: pointer; overflow: hidden; text-indent: -999px;
+        &:hover, &:focus { /*background: lighten($lightOrange,20%); */ transform:scale(1.15); }
+      }
+      &.slick-active {
+        button { background:$white; cursor: default; }
+      }
+    }
+  }
+
 }

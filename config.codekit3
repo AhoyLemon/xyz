@@ -41,6 +41,14 @@
       "oAP" : "\/_Art Assets\/Wide.ai",
       "oF" : 0
     },
+    "\/_config.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/_config.yml",
+      "oF" : 0
+    },
     "\/.gitattributes" : {
       "cB" : 0,
       "ft" : 8192,
@@ -56,6 +64,14 @@
       "oA" : 0,
       "oAP" : "\/.gitignore",
       "oF" : 0
+    },
+    "\/.well-known\/webfinger\/index.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.well-known\/webfinger\/index-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/ahrefs_d29426ff11b8b9efb340a7994aae09d3b5f70c21017bc7b6cf70854252dbd916" : {
       "cB" : 0,
@@ -386,6 +402,14 @@
       "oAP" : "\/css\/ahoylemon-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/css\/ahoylemon.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/ahoylemon.css.map",
+      "oF" : 0
     },
     "\/css\/partials\/_summaries.css" : {
       "aP" : 1,
@@ -1381,6 +1405,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/plasma.jpg" : {
+      "ft" : 16384,
+      "iS" : 24311,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/plasma.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/profile-square-800.jpg" : {
       "ft" : 16384,
       "iS" : 124112,
@@ -1847,6 +1884,17 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/talks\/kcdc\/2022-slide.webp" : {
+      "ft" : 8388608,
+      "iS" : 17088,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/kcdc\/2022-slide.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/img\/talks\/kcdc\/bitchy.jpg" : {
       "ft" : 16384,
       "iS" : 23092,
@@ -2094,17 +2142,39 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/talks\/ndc\/london-2022-3.jpg" : {
+    "\/img\/talks\/ndc\/london-2022-royal-guard.webp" : {
+      "ft" : 8388608,
+      "iS" : 31982,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/london-2022-royal-guard.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/talks\/ndc\/london-2022-seats.jpg" : {
       "ft" : 16384,
-      "iS" : 283155,
+      "iS" : 121534,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/talks\/ndc\/london-2022-3.jpg",
+      "oAP" : "\/img\/talks\/ndc\/london-2022-seats.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/ndc\/london-2022-seats.webp" : {
+      "ft" : 8388608,
+      "iS" : 38806,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/london-2022-seats.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/talks\/ndc\/oslo-2022-mainroom.jpg" : {
@@ -2131,6 +2201,17 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/ndc\/oslo-2022-packedroom.webp" : {
+      "ft" : 8388608,
+      "iS" : 25006,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/ndc\/oslo-2022-packedroom.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/talks\/ndc\/oslo-2022-party.jpg" : {
@@ -2235,6 +2316,126 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-funzone.jpg" : {
+      "ft" : 16384,
+      "iS" : 64826,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-funzone.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-funzone.webp" : {
+      "ft" : 8388608,
+      "iS" : 21062,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-funzone.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-group.jpg" : {
+      "ft" : 16384,
+      "iS" : 106801,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-group.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-group.webp" : {
+      "ft" : 8388608,
+      "iS" : 38030,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-group.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-notpoutine.jpg" : {
+      "ft" : 16384,
+      "iS" : 102616,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-notpoutine.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-notpoutine.webp" : {
+      "ft" : 8388608,
+      "iS" : 29200,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-notpoutine.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-screen.jpg" : {
+      "ft" : 16384,
+      "iS" : 79262,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-screen.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-screen.webp" : {
+      "ft" : 8388608,
+      "iS" : 25656,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-screen.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-whiskeysour.jpg" : {
+      "ft" : 16384,
+      "iS" : 73634,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-whiskeysour.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/prdc\/2022-calgary-whiskeysour.webp" : {
+      "ft" : 8388608,
+      "iS" : 23034,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/prdc\/2022-calgary-whiskeysour.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/talks\/pubconf-kc-2018.jpg" : {
@@ -2380,6 +2581,17 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/talks\/pubconf\/kc-2022-pointing.webp" : {
+      "ft" : 8388608,
+      "iS" : 49340,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/pubconf\/kc-2022-pointing.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/img\/talks\/pubconf\/kc-belt-hotel.jpg" : {
       "ft" : 16384,
       "iS" : 23333,
@@ -2430,6 +2642,17 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/talks\/pubconf\/mn-2022-1.webp" : {
+      "ft" : 8388608,
+      "iS" : 25266,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/pubconf\/mn-2022-1.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/talks\/pubconf\/mn-2022-2.jpg" : {
@@ -2809,6 +3032,17 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/talks\/webinale\/2022-1.webp" : {
+      "ft" : 8388608,
+      "iS" : 12590,
+      "oA" : 0,
+      "oAP" : "\/img\/talks\/webinale\/2022-1.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/img\/talks\/webinale\/2022-2.jpg" : {
       "ft" : 16384,
       "iS" : 73726,
@@ -2930,6 +3164,39 @@
       "oA" : 0,
       "oAP" : "\/index.html",
       "oF" : 0
+    },
+    "\/js\/page\/clients.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/page\/clients-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/page\/home.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/page\/home-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/page\/talks.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/page\/talks-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/manifest.json" : {
       "ft" : 524288,
@@ -3310,17 +3577,37 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/sass\/ahoylemon.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/sass\/ahoylemon-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/sass\/ahoylemon.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sass\/ahoylemon.css.map",
+      "oF" : 0
+    },
     "\/sass\/ahoylemon.scss" : {
       "aP" : 0,
-      "bl" : 0,
+      "bl" : 1,
       "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 0,
-      "oAP" : "\/sass\/ahoylemon.css",
-      "oF" : 0,
+      "oAP" : "\/css\/ahoylemon.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -3430,21 +3717,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/sass\/partials\/_cards.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/sass\/partials\/_cards.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/sass\/partials\/_client-sites.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3470,21 +3742,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/sass\/partials\/_fullpage.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/sass\/partials\/_main.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/sass\/partials\/_main.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -3774,6 +4031,26 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/svg\/pw.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/svg\/rocks.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/svg\/rocks.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/svg\/sane.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/svg\/sane.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
