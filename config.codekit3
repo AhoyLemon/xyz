@@ -3504,24 +3504,6 @@
       "oF" : 2,
       "oS" : 1
     },
-    "\/pug\/test.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/pug\/test.html",
-      "oF" : 0
-    },
-    "\/pug\/test.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/pug\/test.html",
-      "oF" : 0,
-      "oS" : 1
-    },
     "\/pug\/uses.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3576,18 +3558,6 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
-    },
-    "\/sass\/ahoylemon.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/sass\/ahoylemon-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/sass\/ahoylemon.css.map" : {
       "cB" : 0,
