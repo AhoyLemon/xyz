@@ -139,6 +139,18 @@
       </image>
     </item>
     <item>
+      <title>Rick Ross Daily</title>
+      <link>https://botsin.space/@rickross</link>
+      <guid>https://botsin.space/@rickross</guid>
+      <description>This was a Twitterbot, but now I have it set up on Mastodon instead.</description>
+      <pubDate>2022-11-23</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/ross_circle.png</url>
+        <title>Rick Ross Daily logo</title>
+        <link>https://botsin.space/@rickross</link>
+      </image>
+    </item>
+    <item>
       <title>PRETEND 🌐 WORLD</title>
       <link>https://ahoylemon.github.io/pretend.world</link>
       <guid>https://ahoylemon.github.io/pretend.world</guid>
