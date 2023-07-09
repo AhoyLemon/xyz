@@ -1,8 +1,8 @@
 .project-summaries { padding:20px; display:grid; grid-template-columns: repeat(2,calc(50% - 15px)); grid-gap: 30px; 
 
 
-  .project { display:grid; grid-template-columns: 200px 1fr; grid-gap: 20px; background:white; box-shadow:$card-shadow;
-
+  .project { box-shadow: $card-shadow; background:white;
+    .inside { height:100%; }
     .image-holder { background-size:cover; padding:10px; background-position: center; position: relative; overflow: hidden;
       a:hover, &.focus {
         img { transform: scale(1.09); }
@@ -11,8 +11,7 @@
         &:hover, &:focus { transform: scale(1.2); }
       }
     }
-    figcaption { display:flex; flex-direction: column; justify-content: space-between; padding:16px 10px 10px 0; }
-    .project-text { padding-bottom: 2rem; }
+    figcaption { padding:20px; }
     .title { font-size:215%; line-height: 100%; word-break: break-word; padding-bottom: 10px;
       a { color:$orange; text-decoration: none;
         &:hover { text-decoration: underline; }
@@ -25,8 +24,6 @@
       }
       p:last-of-type { margin-bottom:0; }
     }
-
-    
     .detail-row { display:grid; grid-template-columns:repeat(2, 1fr);
       .detail { @extend %truncate; }
       .invisible { display:none; }
@@ -38,9 +35,27 @@
         } 
       }
     }
+    container-type: inline-size;
+    container-name: project-card;
   }
 
-  .conference { background:$white; color:$black; padding:15px; margin-right: 15px; height:260px;
+
+  @container project-card (min-width: 500px) {
+    .inside { display:grid; grid-template-columns:1fr 3fr; }
+    .image-holder { 
+      img { display:block; margin-left: auto; margin-right:auto; margin-top:10px; }
+    }
+    figcaption { display:grid; gap:10px; }
+  }
+  @container project-card (max-width: 499px) {
+    .inside { display:flex; flex-direction:column; }
+    .image-holder { height:100px;
+      img { height:100%; width:auto; }
+    }
+    figcaption { height:100%; display: flex; flex-direction: column; justify-content: space-between; }
+  }
+
+  .conference { background:$white; color:$black; padding:15px; margin-right: 15px; height:280px;
     &.prev { background-size:cover; background-position: center; position: relative;
       figcaption { background:rgba($white,0.8); @include position(absolute,null,null,0,0); padding:10px; color:$black;
         .name { font-size:130%; }
@@ -83,43 +98,20 @@
 
 
 @media (max-width:1550px) { 
-  .project-summaries { grid-template-columns: 1fr;
-    .project { grid-template-columns: 120px 1fr; }
-  }
-}
-
-
-
-@media (min-width:1171px) {
-  .project-summaries { 
-    .project {
-      .image-holder {
-        img { width:100%; height: auto; }
-      }
-    }
-  }
+  .project-summaries { grid-template-columns: 1fr; }
 }
 
 
 @media (min-width:1170px) and (max-width:1550px) {
-  .project-summaries { grid-template-columns: repeat(2,1fr);
-    .project { grid-template-columns: 1fr;
-      .image-holder { height:72px;
-        img { height:100%; width:auto; margin-left: auto; margin-right: auto; }
-      }
-      figcaption { padding-left:20px;}
-    }
-  }
+  .project-summaries { grid-template-columns: repeat(2,1fr); }
 }
 
 @media (min-width:888px) and (max-width:940px) {
-  .project-summaries {  grid-template-columns: 1fr;
-  }
+  .project-summaries {  grid-template-columns: 1fr; }
 }
 
 @media (max-width:610px) {
-  .project-summaries {  grid-template-columns: 1fr;
-  }
+  .project-summaries {  grid-template-columns: 1fr; }
 }
 
 
