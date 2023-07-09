@@ -27,6 +27,8 @@ html(lang="en")
         each t,index in upcomingTalks
           figure.conference(itemscope itemtype="http://schema.org/Event")
             .details
+              if t.flag
+                img.flag(src="/svg/flags/"+t.flag+".svg")
               a(name=t.slug class="anchor")
               .name
                 if t.url && t.name
@@ -97,6 +99,10 @@ html(lang="en")
         each t,index in previousTalks
           .conference(itemscope itemtype="http://schema.org/Event")
             .details
+              if t.online
+                img.virtual-icon(src="/svg/virtual-talk.svg")
+              else if t.flag
+                img.flag(src="/svg/flags/"+t.flag+".svg")
               a(name=t.slug class="anchor")
               .name 
                 if t.url && t.name
