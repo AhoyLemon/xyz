@@ -8,7 +8,7 @@ $('.upcoming-conference-carousel').slick({
   slidesToScroll: 2,
   responsive: [
     {
-      breakpoint: 980,
+      breakpoint: 1600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1

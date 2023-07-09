@@ -82,11 +82,12 @@
 }
 
 
-@media (max-width:1500px) { 
+@media (max-width:1550px) { 
   .project-summaries { grid-template-columns: 1fr;
     .project { grid-template-columns: 120px 1fr; }
   }
 }
+
 
 
 @media (min-width:1171px) {
@@ -98,8 +99,10 @@
     }
   }
 }
-@media (max-width:1170px) {
-  .project-summaries { 
+
+
+@media (min-width:1170px) and (max-width:1550px) {
+  .project-summaries { grid-template-columns: repeat(2,1fr);
     .project { grid-template-columns: 1fr;
       .image-holder { height:72px;
         img { height:100%; width:auto; margin-left: auto; margin-right: auto; }

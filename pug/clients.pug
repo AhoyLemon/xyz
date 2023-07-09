@@ -31,5 +31,27 @@ html(lang="en")
       each s,index in clientSites
 
         +clientSiteSummary(s)
+
+        if index == 3
+          - let displayedTech = []
+          section.client-site-tech
+            h2 Technologies used...
+            .tech.listout
+              each s,index in clientSites
+                if s.cms && !displayedTech.includes(s.cms)
+                  dl.icon-and-name
+                    dt 
+                      +techIcon(s.cms)
+                    dd.name
+                      span= s.cms
+                  - displayedTech.push(s.cms)
+                each tech,index in s.tech
+                  if !displayedTech.includes(tech)
+                    dl.icon-and-name
+                      dt.icon 
+                        +techIcon(tech)
+                      dd.name
+                        span= tech
+                    - displayedTech.push(tech)
     
     include partials/_javascripts.pug
