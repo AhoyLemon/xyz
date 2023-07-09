@@ -96,14 +96,14 @@ mixin prevTalk(title,img,d,city)
 
 mixin talkSlider(w)
   if w == "upcoming"
-    .upcoming-conferences.conferences
-      .slider-header
+    .new-talkbox.upcoming
+      .talkbox-header
         h2 
           | UPCOMING TALKS 
           sub (#{upcomingTalks.length})
         .more-holder
           a(href=talkPageURL) see all
-      .upcoming-conference-carousel.carousel
+      .conference-boxes.upcoming-conferences
         each t,index in upcomingTalks
           .conference.upcoming
             .name
@@ -150,14 +150,15 @@ mixin talkSlider(w)
               | , please.
 
   else if w == 'previous'
-    .previous-conferences.conferences
-      .slider-header
+    .new-talkbox.upcoming
+      //.inside
+      .talkbox-header
         h2 
           | PREVIOUS TALKS 
           sub (#{previousTalks.length})
         .more-holder
           a(href="talks.html#previous") see all
-      .previous-conference-carousel.carousel
+      .conference-boxes.previous-conferences#PreviousConferences
         each t,index in previousTalks
           - let p = ""
           if t.pics
