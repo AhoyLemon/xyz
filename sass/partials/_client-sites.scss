@@ -31,6 +31,7 @@ section.client-site-tech { grid-column: 1 / -1; padding:30px 20px 20px 20px;
 .client-site { display:grid; grid-template-columns: 460px 1fr 76px; grid-gap: 40px; background:white; box-shadow:$card-shadow; padding:20px;
   figure { grid-row: span 1;
     .screenshots { position: relative; padding:0 0 50px 0;
+      &:not(.slick-initialized) { opacity: 0; }
       .slick-list { background-image:url(../img/client-sites/browser.png); background-size:cover; background-repeat: no-repeat; background-position: top center; padding:19px 0 0 0; border:1px solid rgba(0,0,0,0.4); overflow: hidden; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; cursor:grab; }
       .slick-dots { display: block; text-align: center; @include position(absolute,null,0,0,0);
         li { display: inline-block; padding:0 0.5em 0 0;
