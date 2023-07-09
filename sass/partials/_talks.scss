@@ -65,6 +65,6 @@
 
 
 .talk-grid { 
-  @media (min-width:401px) { grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); }
+  @media (min-width:401px) { grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); }
   @media (max-width:400px) { grid-template-columns:1fr; }
 }
