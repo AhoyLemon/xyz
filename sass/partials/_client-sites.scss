@@ -10,7 +10,7 @@
 
 section.client-site-overview { grid-column: 1 / -1; }
 
-section.client-site-tech { grid-column: 1 / -1; padding:30px 20px 20px 20px;
+section.client-site-tech { grid-column: 1 / -1; padding:30px 20px 20px 20px; background:rgba(#666,0.1);
   // box-shadow: inset 6px 6px 16px rgba(0,0,0,0.5);
   border:3px solid rgba($black,0.3); color:#666;
   h2 { margin-bottom: 20px; }
@@ -43,16 +43,17 @@ section.client-site-tech { grid-column: 1 / -1; padding:30px 20px 20px 20px;
       }
     }
   }
-  .title { font-size:215%; line-height: 100%; padding-top:10px; word-break: break-word;
+  figcaption { height:100%; display: flex; gap: 10px; flex-direction: column; }
+  .title { line-height: 100%; word-break: break-word;
     span { background: linear-gradient(36deg, rgba($yellow,0.5), rgba($yellow,0.25));
-      padding: 4px 24px 3px 13px; transform: translateX(-13px); display: inline-block; margin-bottom: 0.5em; }
+      padding: 4px 24px 3px 13px; transform: translateX(-13px); display: inline-block; }
   }
-  .subhead { text-transform: uppercase; letter-spacing: 0.1em; font-weight:$bold; margin-bottom: 1em; }
+  .subhead { text-transform: uppercase; letter-spacing: 0.1em; font-weight:$bold; }
   .description {
-    line-height: 1.4; font-size:22px; max-width: 68ch;
-    p:last-of-type { margin-bottom: 1em; }
+    line-height: 1.4; max-width: 68ch;
+    p:last-of-type { margin-bottom: 0; }
   }
-  .visit-site { font-size:0.85rem; margin-bottom: 1em;
+  .visit-site { font-size:0.85rem;
     a { color:$orange; text-decoration: none; text-transform: uppercase;
       &:hover, &:focus { text-decoration: underline; }
     }
@@ -90,20 +91,32 @@ section.client-site-tech { grid-column: 1 / -1; padding:30px 20px 20px 20px;
     .jwplayer { fill:$color-jwplayer; }
   }
 
+  &.featured { 
+    .title { font-size:215%; }
+    .description { font-size:120%; }
+  }
 
-  &.simple { grid-template-columns: 1fr; grid-column: span 1; padding:1rem; gap:unset;
-    .title {
+  &.secondary { grid-column: span 1; display:flex; flex-direction: column; gap:10px; justify-content: space-between;
+    
+    .title { font-size:175%;
       span { transform:unset; margin-bottom: 0.25em; }
     }
     .subhead { margin-bottom: unset; }
     figure { padding:0; margin-top:0.5rem;
       .screenshot { background-image:url(../img/client-sites/browser.png); background-size:cover; background-repeat: no-repeat; background-position: top center; padding:18px 1px 1px 1px; border:1px solid rgba(0,0,0,0.4); overflow: hidden; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
     }
+    figcaption { height:100%; display: flex; gap: 10px; flex-direction: column; padding-top:10px; }
     .visit-site { padding-top: 1rem; }
-    .tech { flex-direction: row;
+    .tech { flex-direction: row; order:3;
       svg { height:32px; width:32px; }
     }
+  }
 
+
+  .no-js-carousel { 
+    background-image:url(../img/client-sites/browser2.png); background-size:cover; background-repeat: no-repeat; background-position: top center; padding:20px 0 0 0; border:1px solid rgba(0,0,0,0.4); overflow: hidden; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .shots { display:flex; overflow-x: auto; scroll-snap-type: x mandatory; }
+    .shot { flex-basis:100%; flex-shrink: 0; scroll-snap-align: start; }
   }
 }
 

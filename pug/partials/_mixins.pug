@@ -349,49 +349,56 @@ mixin techIcon(i)
 
 
 
-
-
-
-
 - let clientSiteCount = 0
 mixin clientSiteSummary(s)
-  if s.description && s.screenshots
-    .client-site.featured
-      .screenshots-carousel-wrapper
-        figure
-          if s.screenshots
-            .screenshots.slick-slider
-              each shot in s.screenshots
-                img(src="../img/client-sites/"+shot)
-      figcaption
-        if s.title
-          .title
-            span= s.title
-        if s.client
-          .subhead= s.client
-        if s.description
-          .description !{s.description}
-        if s.problem
-          .problem
-            h3 The Problem
-            | !{s.problem}
-        if s.solution
-          .solution
-            h3 The Solution
-            | !{s.solution}
-        if s.url
-          .visit-site
-            a(href=s.url) Visit Site
 
-      if s.tech || s.cms
-        .tech
-          each tech in s.tech
-            .tooltip(data-tippy-content=tech)
-              +techIcon(tech)
-          if s.cms
-            .tooltip(data-tippy-content=s.cms)
-              +techIcon(s.cms)
-  else
+  .client-site(class=s.class)
+    if s.screenshots
+      .no-js-carousel-wrapper
+        .no-js-carousel
+          .shots
+            each shot in s.screenshots
+              .shot
+                img(src="../img/client-sites/"+shot)
+    
+    figcaption
+      if s.title
+        .title
+          span= s.title
+      if s.client
+        .subhead= s.client
+      if s.description
+        .description !{s.description}
+      if s.problem
+        .problem
+          h3 The Problem
+          | !{s.problem}
+      if s.solution
+        .solution
+          h3 The Solution
+          | !{s.solution}
+      if s.url
+        .visit-site
+          a(href=s.url target="_blank") Visit Site
+
+    if s.tech || s.cms
+      .tech
+        each tech in s.tech
+          .tooltip(data-tippy-content=tech)
+            +techIcon(tech)
+        if s.cms
+          .tooltip(data-tippy-content=s.cms)
+            +techIcon(s.cms)
+      
+      
+
+      //- .screenshots-carousel-wrapper
+      //-   figure
+      //-     if s.screenshots
+      //-       .screenshots.slick-slider
+      //-         each shot in s.screenshots
+      //-           img(src="../img/client-sites/"+shot)
+  //-else
     .client-site.simple
       if s.title
         .title
