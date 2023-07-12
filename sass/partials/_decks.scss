@@ -43,6 +43,9 @@
           &:hover, &:focus { text-decoration: underline; }
         }
       }
+      .logo { flex-basis: 100%; text-align: right;
+        img { width:72px; }
+      }
     }
 
     // .history { display:flex; gap:10px; align-items: center; margin-bottom: 10px;

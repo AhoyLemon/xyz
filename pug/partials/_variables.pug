@@ -53,6 +53,56 @@ include _talks.pug
 -
   myDecks.forEach(function(d) {
     d.history = [];
+
+    upcomingTalks.forEach(function(c) {
+
+      let foundMatch = false;
+      let talkVideo = null
+
+
+      if (c.talks) {
+        c.talks.forEach(function(t) {
+        if (t == d.title) {
+          foundMatch = true;
+        } else if (t.name && t.name == d.title) {
+          foundMatch = true;
+          if (t.video) {
+            talkVideo = t.video
+          }
+
+        } else if (d.alias && d.alias.includes(t)) {
+          foundMatch = true;
+        } else if (d.alias && d.alias.includes(t.name)) {
+          foundMatch = true;
+          if (t.video) {
+            talkVideo = t.video
+          }
+        }
+      }); 
+      } else if (c.talk) {
+        if (c.talk == d.title ) {
+          foundMatch = true;
+        }
+      }
+
+      if (foundMatch) {
+        let newHistory = {
+          name: c.name,
+          startDate: c.startDate,
+          endDate: c.endDate,
+          date: c.date,
+          online: c.online,
+          flag: c.flag
+        }
+        if (talkVideo) {
+          newHistory.video = talkVideo;
+        }
+        d.history.push(newHistory);
+      }
+    });
+
+
+
     previousTalks.forEach(function(c) {
 
       let foundMatch = false;
@@ -99,6 +149,8 @@ include _talks.pug
         d.history.push(newHistory);
       }
     });
+
+
   });
 
 include _subpages.pug
