@@ -1,0 +1,55 @@
+.deck-grid {
+  .deck { background-color:white; box-shadow:$card-shadow; padding:15px; position: relative; min-height: 240px;
+
+    display:flex; flex-direction: column; justify-content: space-between; gap:20px;
+
+
+    .title { font-size:210%; margin-bottom: 10px; font-weight: 570; color:$black; }
+    table { width:100%;
+      td { padding:4px 0; vertical-align: middle; }
+      td.location {  width:40px;
+        // img { width:40px; }
+      }
+      .name { font-size:125%; font-weight: 600; padding-left: 10px; }
+      .video { font-size:95%; font-weight: 600;
+        &:before { content: ' | '}
+        a { text-decoration: none; color:$orange;
+          &:hover, &:focus { text-decoration: underline; }
+        }
+        
+      }
+      td.icon { text-align: center; width:50px;
+        svg { width:26px;
+          * { fill:#313131; }
+        }
+      }
+      td.link { font-size:115%; font-weight: 625;
+        a { color: $orange; text-decoration: none;
+          &:hover, &:focus { text-decoration: underline; }
+        }
+      }
+    }
+
+
+    .deck-links { display:flex; gap:10px; align-items: center;
+      > * { display:flex; align-items: center; flex-basis: 50%; flex-grow: 1; flex-shrink: 1; }
+      .icon { flex-basis: 40px; flex-grow: 0;
+        svg { width:32px;
+          * { fill:#676767; }
+        }
+      }
+      .link { font-size:135%; font-weight: 625; flex-basis: 50%; flex-grow: 1; flex-shrink: 1;
+        a { color: $orange; text-decoration: none;
+          &:hover, &:focus { text-decoration: underline; }
+        }
+      }
+    }
+
+    // .history { display:flex; gap:10px; align-items: center; margin-bottom: 10px;
+    //   .location {
+    //     img { width:32px;}
+    //   }
+    //   .name { font-size:15%; font-weight: 525; }
+    // }
+  }
+}
