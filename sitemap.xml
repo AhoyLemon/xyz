@@ -4,7 +4,7 @@
     <loc>https://ahoylemon.xyz</loc>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
-    <lastmod>2023-07-12T21:20:35.159Z</lastmod>
+    <lastmod>2023-07-13T20:37:55.841Z</lastmod>
   </url>
   <url>
     <loc>https://ahoylemon.xyz/talks.html</loc>
@@ -12,6 +12,10 @@
   </url>
   <url>
     <loc>https://ahoylemon.xyz/clients</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ahoylemon.xyz/decks.html</loc>
     <priority>0.5</priority>
   </url>
   <url>
