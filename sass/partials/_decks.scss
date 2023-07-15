@@ -1,23 +1,19 @@
 .deck-grid {
   .deck { background-color:white; box-shadow:$card-shadow; padding:15px; position: relative; min-height: 240px;
-
     display:flex; flex-direction: column; justify-content: space-between; gap:20px;
-
-
     .title { font-size:210%; margin-bottom: 10px; font-weight: 570; color:$black; }
     table { width:100%;
       td { padding:4px 0; vertical-align: middle; }
-      td.location {  width:40px;
-        // img { width:40px; }
-      }
-      .name { font-size:125%; font-weight: 600; padding-left: 10px; }
-      .video { font-size:95%; font-weight: 600;
-        &:before { content: ' | '}
-        a { text-decoration: none; color:$orange;
-          &:hover, &:focus { text-decoration: underline; }
+      td.location {  width:40px; }
+      td.conf { font-size:125%; font-weight: 600; padding-left: 10px;
+        .video { font-size:75%; font-weight: 600; vertical-align: middle;
+          &:before { content: ' | '}
+          a { text-decoration: none; color:$orange;
+            &:hover, &:focus { text-decoration: underline; }
+          }
         }
-        
       }
+      
       td.icon { text-align: center; width:50px;
         svg { width:26px;
           * { fill:#313131; }
@@ -47,12 +43,5 @@
         img { width:72px; }
       }
     }
-
-    // .history { display:flex; gap:10px; align-items: center; margin-bottom: 10px;
-    //   .location {
-    //     img { width:32px;}
-    //   }
-    //   .name { font-size:15%; font-weight: 525; }
-    // }
   }
 }
