@@ -7,7 +7,7 @@ mixin timeStamp(t)
 
 
   - var m = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
-  time 
+  time(datetime=t)
     = m[d.getMonth()] 
     |  
     = d.getDate()
@@ -24,12 +24,12 @@ mixin formatDate(e, f)
   - var MonthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
   - var g = e.split("-");
   if f == "m d"
-    time
+    time(datetime=e)
       = MonthAbbr[parseInt(g[1] - 1)]
       |  
       = g[2]
   else
-    time
+    time(datetime=e)
       = MonthAbbr[parseInt(g[1] - 1)]
       |  
       = g[2]
@@ -44,7 +44,7 @@ mixin dateRange(e,f)
   - var h = f.split("-");
 
   if (g[1] == h[1])
-    time
+    time(datetime=e)
       = MonthAbbr[parseInt(g[1] - 1)]
       |  
       = g[2]
@@ -53,7 +53,7 @@ mixin dateRange(e,f)
       | ,  
       = h[0]
   else
-    time
+    time(datetime=e)
       = MonthAbbr[parseInt(g[1] - 1)]
       |  
       = g[2]
