@@ -62,17 +62,22 @@ section.client-site-tech { grid-column: 1 / -1; padding:30px 20px 20px 20px; bac
     li { margin-left: 1.25em;}
   }
   .tech { padding:20px; display:flex; flex-direction: column; justify-content: space-between;
-    // svg { width:100%;}
-    .tech-icon { position: relative;
-      span { position:absolute; background:$black; color:$white; padding:0.25em .5em;  white-space: nowrap;
-        &:after { content:''; background:$black; display: block; position: absolute; clip-path: polygon(0 0, 0% 100%, 100% 50%); }
-      }
+  }
+
+
+  div.tech-icon { cursor: help; position: relative;
+    span { position:absolute; background:$black; color:$white; padding:0.25em .75em;  white-space: nowrap; pointer-events: none;
+      &:after { content:''; background:$black; display: block; position: absolute; }
+      opacity: 0; transition: opacity 0.35s linear, transform 0.35s ease;
+    }
+    &:hover, &:focus {
+      span { opacity: 1; transform: translateX(0); pointer-events: all; }
     }
   }
 
   &.featured {
     .tech-icon {
-      span { right:3em; top:calc(50% - 1.1em); transform: translateX(50%);
+      span { right:3em; top:calc(50% - 1.1em); transform: translateX(32px);
         &:after { width:.75em; height:1.72em; top:0em; right:-.7em; bottom:0; clip-path: polygon(0 0, 0% 100%, 100% 50%); }
       }
     }
@@ -80,22 +85,14 @@ section.client-site-tech { grid-column: 1 / -1; padding:30px 20px 20px 20px; bac
 
   &.secondary {
     .tech-icon {
-      span { top:-52px; transform: translateY(50%);
-        &:after { width:32px; height:18px; left:1px; bottom:-17px; clip-path: polygon(0 0, 50% 100%, 100% 0); }
+      span { top:-52px; left:-10px; transform: translateY(32px);
+        &:after { width:32px; height:18px; left:10px; bottom:-17px; clip-path: polygon(0 0, 50% 100%, 100% 0); }
       }
-    }
-  }
-
-  .tech-icon { cursor: help;
-    span { opacity: 0; transition: opacity 0.35s linear, transform 0.35s ease; pointer-events: none; }
-    &:hover, &:focus {
-      span { opacity: 1; transform: translateX(0); pointer-events: all; }
     }
   }
 
 
   .tech {
-    // .tooltip { cursor: help; }
     .php { fill:$color-php; }
     .sass { fill:$color-sass;}
     .javascript { fill:$color-js; }
@@ -124,34 +121,36 @@ section.client-site-tech { grid-column: 1 / -1; padding:30px 20px 20px 20px; bac
     .vimeo { fill:$color-vimeo; }
     .platform-sh { fill:$color-platform-sh; }
     
-    span { font-weight: 625;
-      &.php, &.php:after { background:$color-php; }
-      &.sass, &.sass:after { background:$color-sass; }
-      &.javascript, &.javascript:after { background:$color-js; color:$true-black; }
-      &.pug, &.pug:after { background-color: $color-pug; }
-      &.yaml, &.yaml:after { background:$color-yaml; }
-      &.twig, &.twig:after { background:$color-twig; color:$true-black; }
-      &.net, &.net:after { background-color:$color-dotnet; }
-      &.gutenberg, &.gutenberg:after { background-color:$color-gutenberg; }
-      &.vue, &.vue:after { background-color: $color-vue; color:$true-black; }
-      &.jquery, &.jquery:after { background-color: $color-jquery; }
-      &.aosjs, &.aosjs:after { background:$color-aos; }
-      &.lottie, &.lottie:after { background:$color-lottie; color:$true-black; }
-      &.howlerjs, &.howlerjs:after { background-color: $color-howler; }
-      &.scrollmagic, &.scrollmagic:after { background-color: $color-scrollmagic; }
-      &.json, &.json:after { background-color: $color-scrollmagic; }
+    span { font-weight: 625; background:$true-black;
+      &:after { background:$true-black; }
 
-      &.kirby, &.kirby:after { background:$color-kirby; }
-      &.concrete5, &.concrete5:after { background:$color-concrete5; }
-      &.craft, &.craft:after { background:$color-craft; }
-      &.drupal, &.drupal:after { background:$color-drupal; }
+      // &.php, &.php:after { background:$color-php; }
+      // &.sass, &.sass:after { background:$color-sass; }
+      // &.javascript, &.javascript:after { background:$color-js; color:$true-black; }
+      // &.pug, &.pug:after { background-color: $color-pug; }
+      // &.yaml, &.yaml:after { background:$color-yaml; }
+      // &.twig, &.twig:after { background:$color-twig; color:$true-black; }
+      // &.net, &.net:after { background-color:$color-dotnet; }
+      // &.gutenberg, &.gutenberg:after { background-color:$color-gutenberg; }
+      // &.vue, &.vue:after { background-color: $color-vue; color:$true-black; }
+      // &.jquery, &.jquery:after { background-color: $color-jquery; }
+      // &.aosjs, &.aosjs:after { background:$color-aos; }
+      // &.lottie, &.lottie:after { background:$color-lottie; color:$true-black; }
+      // &.howlerjs, &.howlerjs:after { background-color: $color-howler; }
+      // &.scrollmagic, &.scrollmagic:after { background-color: $color-scrollmagic; }
+      // &.json, &.json:after { background-color: $color-scrollmagic; }
+
+      // &.kirby, &.kirby:after { background:$color-kirby; }
+      // &.concrete5, &.concrete5:after { background:$color-concrete5; }
+      // &.craft, &.craft:after { background:$color-craft; }
+      // &.drupal, &.drupal:after { background:$color-drupal; }
       
-      &.azure, &.azure:after { background:$color-azure; }
-      &.untappd, &.untappd:after { background:$color-untappd; color:$true-black; }
-      &.matomo, &.matomo:after { background:$color-matomo; }
-      &.jwplayer, &.jwplayer:after { background:$color-jwplayer; }
-      &.vimeo, &.vimeo:after { background:$color-vimeo; color:$true-black; }
-      &.platformsh, &.platformsh:after { background:$color-platform-sh; }
+      // &.azure, &.azure:after { background:$color-azure; }
+      // &.untappd, &.untappd:after { background:$color-untappd; color:$true-black; }
+      // &.matomo, &.matomo:after { background:$color-matomo; }
+      // &.jwplayer, &.jwplayer:after { background:$color-jwplayer; }
+      // &.vimeo, &.vimeo:after { background:$color-vimeo; color:$true-black; }
+      // &.platformsh, &.platformsh:after { background:$color-platform-sh; }
     }
   }
 
