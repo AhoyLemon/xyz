@@ -74,7 +74,7 @@
         }
         .location { font-size:135%; }
         .presenting { margin-top:0.7em; }
-        &.upcoming { scroll-snap-align: end; flex-basis: 270px; }
+        &.upcoming { scroll-snap-align: end; flex-basis: calc(50% - 20px); }
         &.prev { scroll-snap-align: start; min-height: 300px; flex-basis:300px; background-size:cover; background-position: center; display:flex; align-items: flex-end;
           figcaption { background:linear-gradient(rgba(#1c1b1b,0), rgba(#1c1b1b,0.99) ) ; padding:80px 10px 10px 10px; width:100%;}
         }
