@@ -83,6 +83,12 @@
     container-type: inline-size;
     @container (max-width:520px) {
       .talkbox-header { grid-template-columns: 1fr; }
+      .conference-boxes {
+        .conference {
+          &.upcoming { flex-basis:calc(100% - 40px); }
+        }
+      }
+      
     }
   }
 

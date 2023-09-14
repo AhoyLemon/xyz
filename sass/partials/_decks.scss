@@ -4,7 +4,11 @@
     .title { font-size:210%; margin-bottom: 10px; font-weight: 570; color:$black; }
     table { width:100%;
       td { padding:4px 0; vertical-align: middle; }
-      td.location {  width:40px; }
+      td.location {  width:40px;
+        &.country {
+          img { outline: 1px solid rgba(#444,0.35); }
+        }
+      }
       td.conf { font-size:125%; font-weight: 600; padding-left: 10px;
         .video { font-size:75%; font-weight: 600; vertical-align: middle;
           &:before { content: ' | '}

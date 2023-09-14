@@ -1,6 +1,6 @@
 .talk-grid { display: grid; gap:30px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;
   .conference { background-color:white; box-shadow:$card-shadow; padding:15px; position: relative; min-height: 240px;
-    img.flag { width: 3rem; float: right; margin-left: 10px; margin-bottom: 10px; }
+    img.flag { width: 3rem; float: right; margin-left: 10px; margin-bottom: 10px; outline: 1px solid rgba(#444,0.35); }
     img.virtual-icon { width: 3rem; float: right; margin-left: 10px; margin-bottom: 10px; }
     .name { font-size:210%; }
     a { color:$orange; text-decoration: none;
