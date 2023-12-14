@@ -19,7 +19,7 @@ html(lang="en")
           h1 The Things I Tend To Use In A Day
           .stamp
             span Last updated 
-            +timeStamp('2022-07-20')
+            +timeStamp('2023-12-14')
           p I don't know how interesting this is for anybody, but similar to Wes Bos' 
             a(href="https://github.com/wesbos/awesome-uses") Awesome Uses
             |  repository, this is a list of the tech hardware/software I use.
@@ -35,7 +35,7 @@ html(lang="en")
           //- Coding
           h3 Development
           ul.things
-            li I write code using 
+            li.yes I write code using 
               +link("VS Code", "https://code.visualstudio.com/")
               | , having moved away from Brackets some time in 2018. My theme of choice is 
               +link("Plastic", "https://marketplace.visualstudio.com/itemdetails?itemName=will-stone.plastic")
@@ -43,6 +43,14 @@ html(lang="en")
             li.yes I almost always have 
               +link("Prepros","https://prepros.io")
               |  running to handle my Pug, Sass and JS files.
+            li.no
+              | A lot of the work projects I use are Dockerized, and so I'm using 
+              +link("Docker Desktop", "https://www.docker.com/products/docker-desktop/")
+              |  with either 
+              +link("Docksal", "https://docksal.io/")
+              |  or 
+              +link("DDEV", "https://ddev.com/")
+              | . Not a fan of any of that, to be honest.
             li If I'm working with PHP outside of a docker container, I'm serving it locally via 
               +link("XAMPP","https://www.apachefriends.org/index.html")
               | , which I like a lot better than MAMP or WAMP.
@@ -50,8 +58,8 @@ html(lang="en")
               | I've never been particularly faithful to any one browser and change them around a lot, but right now my primary is 
               +link("Vivaldi", "https://vivaldi.com")
               | , my secondary is 
-              +link("Firefox Developer Edition", "https://www.mozilla.org/en-US/firefox/developer")
-              | , and I'll only use Chrome when I'm specifically using a Google product, like Meet or Docs.
+              +link("Brave", "https://brave.com")
+              | , and I stopped using Chrome entirely.
             li I use 
               +link("GitHub Desktop", "https://desktop.github.com")
               |  every day and only use command line Git if I'm absolutely forced to.
@@ -83,7 +91,7 @@ html(lang="en")
             li.yes
               | I use 
               +link("1Password", "https://1password.com")
-              |  to keep track of all my passwords (499 at the time of this post)
+              |  to keep track of all my passwords (610 at the time of this update)
 
           h3 Hardware
           ul.things
@@ -107,16 +115,20 @@ html(lang="en")
               | I use 
               +link("Anker vertical mice", "https://www.amazon.com/Anker-Ergonomic-Optical-Vertical-Buttons/dp/B00FPAVUHC")
               | .
-            li.yes
+            li
               | I have both the PC and the Mac plugged into the workstation setup via a 
               +link("CKL KVM Switch", "https://cklkvm.com/")
               | , which is then plugged into the aforementioned keyboards, mouse and two 
               +link('basic Acer 24" monitors', "https://www.acer.com/ac/en/US/content/model/UM.WX3AA.004")
-              | . 
+              | . I #[i do] like having a KVM switch, although this particular KVM switch is pretty flaky and I wish I had a better one.
             li
               | My phone is a 
-              +link("Pixel 5a", "https://store.google.com/product/pixel_5a_5g?hl=en-US")
+              +link("Pixel 7a", "https://store.google.com/product/pixel_7a_5g?hl=en-US")
               | , using Google Fi.
+            li.yes
+              | My primary headphones are these 
+              +link("Soundcore Space Ones", "https://us.soundcore.com/products/space-one-a3035011")
+              | , which I use both wirless and wired. I like them a lot.
 
           h3 Podcasting
           ul.things
@@ -133,9 +145,8 @@ html(lang="en")
               +link("Discord", "https://discordapp.com/")
               |  for all our VOIP.
             li
-              | When an episode is edited, I use 
-              +link("MP3TAG", "https://www.mp3tag.de/en/")
-              |  to give that mp3 metadata.
+              | After an episode is edited, I do the post-processing in 
+              +link("Auphonic", "https://auphonic.com/")
 
           h3 Misc
           ul.things
