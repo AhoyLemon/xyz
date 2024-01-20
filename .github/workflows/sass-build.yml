@@ -27,5 +27,5 @@ jobs:
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.5.1
         with:
-          source: scss/ahoylemon.scss
+          source: sass/ahoylemon.scss
           destination: css/ahoylemon.css
