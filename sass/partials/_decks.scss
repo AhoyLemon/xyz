@@ -16,6 +16,9 @@
             &:hover, &:focus { text-decoration: underline; }
           }
         }
+        .keynote { font-size:75%; font-weight: 800; vertical-align: middle;
+          &:before { content: ' | '}
+        }
       }
       
       td.icon { text-align: center; width:50px;

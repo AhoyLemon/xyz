@@ -15,7 +15,6 @@ mixin timeStamp(t)
     = d.getFullYear() 
   //- var lastUpdated = d.getFullYear() + '-' + (d.getMonth()<10?'0':'') + d.getMonth() + '-' + (d.getDate()<10?'0':'') + d.getDate() + '@' + (d.getHours()<10?'0':'') + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + ':' + (d.getSeconds()<10?'0':'') + d.getSeconds()  
 
-
 mixin formatDate(e, f)
   if !e
     - var x = new Date()
@@ -35,7 +34,6 @@ mixin formatDate(e, f)
       = g[2]
       | , 
       = g[0]
-
 
 mixin dateRange(e,f)
   - var allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
@@ -63,8 +61,6 @@ mixin dateRange(e,f)
       = h[2]
       | ,  
       = h[0]
-      
-
 
 mixin link(title,url)
   a(href=url target="_blank" nofollow noopener)= title
@@ -134,7 +130,25 @@ mixin talkSlider(w)
               if t.talks
                 ul.multiple-talks
                   each u,uindex in t.talks
-                    li.talk= u
+                    if typeof u === 'string'
+                      li.talk
+                        span.talk-name(itemprop="workFeatured")= u
+                    else if typeof u === 'object'
+                      li.talk
+                        if u.name
+                          span.talk-name(itemprop="workFeatured")= u.name
+                        if u.slides || u.video || u.keynote || u.blindDeck
+                          span.talk-supplements
+                            if (u.keynote)
+                              span.keynote KEYNOTE
+                            if (u.blindDeck)
+                              span.blind-deck BLIND DECK
+                            if (u.slides)
+                              span
+                                a(href=u.slides) Slides
+                            if (u.video)
+                              span 
+                                a(href=u.video) Video
               else if t.talk
                 ul
                   li.talk= t.talk
@@ -354,8 +368,6 @@ mixin techIcon(i)
     svg(role="img" class="platform-sh" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg")
       //-title Platform.sh
       path(d="M24 0H0v9.541h24V0zM24 20.755H0V24h24v-3.245zM0 12.618h24v4.892H0v-4.892z")
-
-
 
 - let clientSiteCount = 0
 mixin clientSiteSummary(s)

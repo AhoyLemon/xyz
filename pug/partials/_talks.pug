@@ -51,7 +51,10 @@
       country: "Germany",
       address: "Friedrichstraße 151 Dorotheenstraße 65 (Navigationsadresse, 10117 Berlin, Germany",
       talks: [
-        "Designers vs Developers: Who Is In Control Here?",
+        {
+          name: "Designers vs Developers: Who Is In Control Here?",
+          keynote: true
+        },
         "Solving Layout Challenges With Pure Sass"
       ],
       flag: "de"
@@ -211,7 +214,10 @@
       state: "MN",
       address: "1070 Nicollet Mall, Minneapolis, MN 55403", 
       talks: [
-        "Blind Deck: I'll See You In Hell"
+        {
+          name: "I'll See You In Hell",
+          blindDeck: true
+        }
       ],
       pics: [
         "pubconf/mn-2022-1.webp",
@@ -254,7 +260,8 @@
       address: "111 E 13th St, Kansas City, MO 64106",
       talks: [
         {
-          name: "Blind Deck: Burning Production",
+          name: "Burning Production",
+          blindDeck: true,
           video: "https://youtu.be/plIleT9dMys"
         }
       ],
@@ -454,7 +461,10 @@
       name: "International PHP Conference",
       url: "https://webinale.de",
       talks: [
-        "Shrink The Web! [Keynote]",
+        {
+          name: "Shrink The Web!",
+          keynote: true
+        },
         "CMS Speed Dating"
       ],
       startDate: "2020-12-07",
@@ -804,7 +814,10 @@
       address: "6 W 6th St, St Paul, MN 55102",
       talks: [
         "ACME Bears No Responsibility For Mr. Coyote Exploding",
-        "BLIND DECK: PubConf Jr. Presents DevOps"
+        {
+          name: "PubConf Jr. Presents DevOps",
+          blindDeck: true
+        }
       ],
       flag: "us"
     },

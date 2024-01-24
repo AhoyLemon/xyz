@@ -47,6 +47,8 @@ html(lang="en")
                           if history.video
                             span.video
                               a(href=history.video) Video
+                          if history.keynote
+                            span.keynote KEYNOTE
                         if history.date
                           - const yearSplit = history.date.split("-")
                           td.year= yearSplit[0]

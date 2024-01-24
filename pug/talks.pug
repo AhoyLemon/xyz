@@ -19,8 +19,8 @@ html(lang="en")
     
     main.talks-only
 
+      // UPCOMING CONFERENCES
       .talk-grid
-
         figure.leading
           a(name="upcoming")
           h2 Upcoming Conferences &raquo;
@@ -79,7 +79,25 @@ html(lang="en")
                 if t.talks
                   ul.multiple-talks
                     each u,uindex in t.talks
-                      li.talk(itemprop="workFeatured")= u
+                      if typeof u === 'string'
+                        li.talk
+                          span.talk-name(itemprop="workFeatured")= u
+                      else if typeof u === 'object'
+                        li.talk
+                          if u.name
+                            span.talk-name(itemprop="workFeatured")= u.name
+                          if u.slides || u.video || u.keynote || u.blindDeck
+                            span.talk-supplements
+                              if (u.keynote)
+                                span.keynote KEYNOTE
+                              if (u.blindDeck)
+                                span.blind-deck BLIND DECK
+                              if (u.slides)
+                                span
+                                  a(href=u.slides) Slides
+                              if (u.video)
+                                span 
+                                  a(href=u.video) Video
                 else if t.talk
                   ul
                     li.talk= t.talk
@@ -144,31 +162,26 @@ html(lang="en")
                   if t.talks
                     ul.multiple-talks
                       each u,uindex in t.talks
-                        if u.video && u.slides && u.name
-                          li.talk
-                            span(itemprop="workFeatured") #{u.name} 
-                            | ( 
-                            a(href=u.slides) Slides
-                            |  | 
-                            a(href=u.video) Video
-                            | )
-                        else if u.video && u.name
-                          li.talk
-                            span(itemprop="workFeatured") #{u.name}
-                            |  (
-                            a(href=u.video) Video
-                            | )
-                        else if u.slides && u.name
-                          li.talk
-                            span(itemprop="workFeatured") #{u.name}
-                            |  (
-                            a(href=u.slides) Slides
-                            | )
-                        else if u.url && u.name
-                          li.talk(itemprop="workFeatured")
-                            a(href=u.url) #{u.name}
-                        else
+
+                        if typeof u === 'string'
                           li.talk(itemprop="workFeatured")= u
+                        else if typeof u === 'object'
+                          li.talk
+                            if u.name
+                              span(itemprop="workFeatured")= u.name
+                            if u.slides || u.video || u.keynote || u.blindDeck
+                              span.talk-supplements
+                                if (u.keynote)
+                                  span.keynote KEYNOTE
+                                if (u.blindDeck)
+                                  span.blind-deck BLIND DECK
+                                if (u.slides)
+                                  span
+                                    a(href=u.slides) Slides
+                                if (u.video)
+                                  span 
+                                    a(href=u.video) Video
+                                
                   else if t.talk
                     ul
                       li.talk(itemprop="workFeatured")= t.talk

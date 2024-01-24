@@ -9,6 +9,18 @@
     .location { font-size:115%; letter-spacing: 0.1em; }
     .date { font-weight: bold; }
     .presenting { margin-top:0.5em; }
+    .multiple-talks {
+      li { margin-bottom: 0.4em; }
+    }
+    .talk-supplements { white-space: nowrap;
+      .keynote, .blind-deck { font-weight: 700; }
+      &:before { content: " ( "}
+      > span { 
+        &:after { content: " | "; }
+        &:last-child:after { content:"";  }
+      }
+      &:after { content: " )"}
+    }
   }
 
   .leading {
