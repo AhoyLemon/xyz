@@ -261,6 +261,9 @@ mixin projectSummary(s)
               .value
                 a(href="https://github.com/"+s.repo target="_blank" itemprop="archivedAt")
                   span= s.repo.split('/')[1]
+          div(itemprop="creator" itemscope itemtype="https://schema.org/Person")
+            meta(itemprop="name" content="Lemon")
+            meta(itemprop="url" content=siteURL)
 
 mixin techIcon(i)
   - i = i.toLowerCase()
