@@ -182,7 +182,8 @@ mixin talkSlider(w)
             - p = "img/talks/" + t.pics[0]
           else if t.img
             - p = "img/talks/" + t.img
-          figure.conference.prev(style="background-image:url("+p+")")
+          figure.conference.prev
+            img(src=p alt="photo from Lemon in "+t.name loading="lazy")
             figcaption
               .name
                 a(href="talks.html#"+t.slug)= t.name
