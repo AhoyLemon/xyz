@@ -192,7 +192,7 @@ html(lang="en")
                 a.close-cardpic() 
                   span X
                 each pic, index in t.pics
-                  a.pic
+                  a.pic(data-pic=pic)
                     img(src='/img/talks/'+pic itemprop="image" loading="lazy")
               else if t.img
                 a.close-cardpic
