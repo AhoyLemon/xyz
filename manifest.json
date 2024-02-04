@@ -3,7 +3,7 @@
   "short_name": "Lemon",
   "description": "I make stuff, like this...",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "https://ahoylemon.xyz",
 	"version": "3.15",
 	"icons": [
 		{
@@ -11,6 +11,12 @@
 			"sizes": "512x512",
 			"type": "image/png",
 			"purpose": "any"
+		},
+		{
+			"src": "/maskable-196x196.png",
+			"sizes": "196x196",
+      "type": "image/png",
+      "purpose": "maskable"
 		},
 		{
 			"src": "/android-chrome-192x192.png?v=2024",
