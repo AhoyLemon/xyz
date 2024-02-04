@@ -8,15 +8,16 @@ aside { padding:1em; background:$yellow; color:$black; font-size:22px;
   }
   ul { padding-left: 0; }
   li { list-style: none;
-    span, del { line-height: 160%; font-size:1.35em; }
-    del { text-decoration:line-through; text-decoration-thickness: 0.15em; text-decoration-color: rgba($orange,0.75); }
+    span { line-height: 160%; font-size:1.35em; }
     .icon { display: inline-block; margin-right: 0.5em; fill:currentColor; }
     a { 
       &:hover {
         span { text-decoration: underline; }
         .icon { transform: scale(1.25); }
       }
-      &.twitter { opacity: 0.85; }
+      &.twitter { opacity: 0.85;
+        span { text-decoration:line-through; text-decoration-thickness: 0.15em; text-decoration-color: rgba($orange,0.75); }
+      }
     }
   }
 }
@@ -31,6 +32,9 @@ aside { padding:1em; background:$yellow; color:$black; font-size:22px;
         //span { margin-right: 0.5em; }
         .icon { height: 36px; }
         span { display: none; }
+        .twitter { position: relative;
+          &:after { content: "X"; position: absolute; left:0.35em; top:0; line-height: 0.2; font-size:1.5em; font-weight: 825; color:rgba($yellow,0.75); }
+        }
       }
     }
   }
