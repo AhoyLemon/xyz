@@ -224,7 +224,7 @@ mixin projectSummary(s)
     else if s.fgImage
       - fgImage = "img/"+s.fgImage
 
-  figure.project(repo=s.repo itemscope itemtype="https://schema.org/CreativeWork")
+  figure.project(repo=s.repo itemscope itemtype="https://schema.org/WebSite")
     .inside
 
       if (fgImage)
@@ -376,23 +376,23 @@ mixin techIcon(i)
 - let clientSiteCount = 0
 mixin clientSiteSummary(s)
 
-  .client-site(class=s.class)
+  .client-site(class=s.class itemscope itemtype="https://schema.org/WebSite")
     if s.screenshots
       .no-js-carousel-wrapper
         .no-js-carousel
           .shots
             each shot in s.screenshots
               .shot
-                img(src="../img/client-sites/"+shot)
+                img(src=siteURL+"/img/client-sites/"+shot itemprop="thumbnailUrl")
     
     figcaption
       if s.title
         .title
-          span= s.title
+          span(itemprop="name")= s.title
       if s.client
         .subhead= s.client
       if s.description
-        .description !{s.description}
+        .description(itemprop="abstract") !{s.description}
       if s.problem
         .problem
           h3 The Problem
@@ -403,7 +403,7 @@ mixin clientSiteSummary(s)
           | !{s.solution}
       if s.url
         .visit-site
-          a(href=s.url target="_blank") Visit Site
+          a(href=s.url target="_blank" itemprop="url") Visit Site
 
     if s.tech || s.cms
       .tech
