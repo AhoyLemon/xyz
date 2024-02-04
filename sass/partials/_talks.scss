@@ -32,7 +32,8 @@
   }
 
   .pics { z-index: 3; padding-top:2rem;
-    a.pic { background-size:cover; height: 72px; width:72px; vertical-align: bottom; display:inline-block; background-position: center; cursor: pointer; background-repeat: no-repeat; position: relative;
+    a.pic { background-size:cover; display:inline-block; background-position: center; cursor: pointer; background-repeat: no-repeat; position: relative;
+      img { height:72px; width:72px; object-fit: cover; object-position: center; }
       &:before { @include position(absolute,0,0,0,0); background:$orange; content:''; display: block; mix-blend-mode: color; opacity: 0; }
       &:hover, &:focus, &:active, &.active {
         &:before { opacity: 0.5; }
@@ -72,10 +73,6 @@
     }
   }
 }
-
-
-.carousel:not(.slick-initialized) { display: none !important; }
-
 
 .talk-grid { 
   @media (min-width:401px) { grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); }

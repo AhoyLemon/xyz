@@ -110,6 +110,7 @@ html(lang="en")
           a.absolute-link(href="https://drive.google.com/open?id=1UXVK7n3Sxknm92AQXx6WoIgNDiKFC9OW&usp=sharing" target="_blank")
             span Location Map
 
+      // PREVIOUS CONFERENCES
       .talk-grid
         figure.leading
           a(name="previous")
@@ -191,8 +192,8 @@ html(lang="en")
                 a.close-cardpic() 
                   span X
                 each pic, index in t.pics
-                  a.pic(data-pic=pic style="background-image:url(img/talks/"+pic+")")
-                  meta(itemprop="image" content=siteURL+'/img/talks/'+pic)
+                  a.pic
+                    img(src='/img/talks/'+pic itemprop="image" loading="lazy")
               else if t.img
                 a.close-cardpic
                   span X

@@ -91,7 +91,9 @@ mixin prevTalk(title,img,d,city)
       .city #{city}
 
 mixin talkSlider(w)
+
   if w == "upcoming"
+    // UPCOMING TALKS
     .new-talkbox.upcoming
       .talkbox-header
         h2 
@@ -162,8 +164,9 @@ mixin talkSlider(w)
             p(style="font-size:120%")
               a(href="https://sessionize.com/lemon") Invite me to speak
               | , please.
-
+  
   else if w == 'previous'
+    // PREVIOUS TALKS
     .new-talkbox.upcoming
       //.inside
       .talkbox-header
