@@ -1,9 +1,9 @@
 {
 	"name": "Lemon",
-  "short_name": "Lemon",
-  "description": "I make stuff, like this...",
-  "scope": "/",
-  "start_url": "https://ahoylemon.xyz",
+	"short_name": "Lemon",
+	"description": "I make stuff, like this...",
+	"scope": "/",
+	"start_url": "https://ahoylemon.xyz",
 	"version": "3.15",
 	"icons": [
 		{
@@ -15,8 +15,8 @@
 		{
 			"src": "/maskable-196x196.png",
 			"sizes": "196x196",
-      "type": "image/png",
-      "purpose": "maskable"
+			"type": "image/png",
+			"purpose": "maskable"
 		},
 		{
 			"src": "/android-chrome-192x192.png?v=2024",
@@ -47,7 +47,7 @@
 			"type": "image/png"
 		}
 	],
-  "theme_color": "#e5e828",
-  "background_color": "#e5e828",
-  "display": "standalone"
+	"theme_color": "#e5e828",
+	"background_color": "#e5e828",
+	"display": "standalone"
 }
