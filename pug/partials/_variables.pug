@@ -1,13 +1,16 @@
+- const testing = false
+
+
+- let siteURL = "https://ahoylemon.xyz"
+if testing
+  - siteURL = "http://localhost:8848"
 - const siteTitle = "ahoylemon 🍋 xyz"
-- const siteURL = "https://ahoylemon.xyz"
-//- const siteURL = "http://localhost:8848"
 - const emailAddress = "lemon@ahoylemon.xyz"
 - const twitterHandle = "@AhoyLemon"
 - const d = new Date()
 - const lastUpdated = d.toISOString()
 - const talkPage = "talks.html"
 - const talkPageURL = siteURL + "/" + talkPage
-
 - let description = "I make a lot of stuff, including this website to show the stuff I make."
 
 include _sites.pug
