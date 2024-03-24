@@ -78,7 +78,7 @@
           li { margin-bottom: 0.4em; }
         }
         .talk-supplements { white-space: nowrap;
-          .keynote, .blind-deck { font-weight: 700; }
+          .keynote, .blind-deck, .host { font-weight: 700; }
           &:before { content: " ( "}
           > span { 
             &:after { content: " | "; }
@@ -86,7 +86,7 @@
           }
           &:after { content: " )"}
         }
-        &.upcoming { scroll-snap-align: end; flex-basis: calc(50% - 20px); }
+        &.upcoming { scroll-snap-align: end; flex-basis: calc(50% - 20px); min-width:360px; }
         &.prev { scroll-snap-align: start; min-height: 300px; flex-basis:300px; display:flex; align-items: flex-end; position: relative;
           img { height:300px; width:100%; object-fit: cover; position: relative; }
           figcaption { background:linear-gradient(rgba(#1c1b1b,0), rgba(#1c1b1b,0.99) ) ; padding:80px 10px 10px 10px; width:100%; @include position(absolute,null,0,0,0);}

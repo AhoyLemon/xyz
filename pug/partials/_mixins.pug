@@ -139,10 +139,12 @@ mixin talkSlider(w)
                       li.talk
                         if u.name
                           span.talk-name(itemprop="workFeatured")= u.name
-                        if u.slides || u.video || u.keynote || u.blindDeck
+                        if u.slides || u.video || u.keynote || u.blindDeck || u.host || u.keynote
                           span.talk-supplements
                             if (u.keynote)
                               span.keynote KEYNOTE
+                            if (u.host || u.emcee)
+                              span.host HOST
                             if (u.blindDeck)
                               span.blind-deck BLIND DECK
                             if (u.slides)
