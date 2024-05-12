@@ -21,7 +21,12 @@
       }
       &:after { content: " )"}
     }
-    &.photo-background { grid-row: span 2; grid-column: span 2;}
+    &.photo-background {
+      min-height: 22rem;
+      @media (min-width:771px) {
+        grid-row: span 2; grid-column: span 2;
+      }
+    }
   }
 
   .leading {
@@ -33,7 +38,7 @@
   }
 
   .pics { z-index: 3; padding-top:2rem;
-    a.pic { background-size:cover; display:inline-block; background-position: center; cursor: pointer; background-repeat: no-repeat; position: relative;
+    .pic { padding:0; border:none; background-size:cover; display:inline-block; background-position: center; cursor: pointer; background-repeat: no-repeat; position: relative;
       img { height:72px; width:72px; object-fit: cover; object-position: center; }
       &:before { @include position(absolute,0,0,0,0); background:$orange; content:''; display: block; mix-blend-mode: color; opacity: 0; }
       &:hover, &:focus, &:active, &.active {
@@ -43,7 +48,7 @@
         &:hover, &:focus { opacity: 1; }
       }
     }
-    a.close-cardpic { position: absolute; top:0; right:0.75rem; font-size: 36px; display:none; text-decoration: none;
+    .close-cardpic { position: absolute; top:0; right:0.75rem; font-size: 36px; display:none; text-decoration: none; color:$orange; background-color: transparent; border:none; font-family: $font;
       &:hover, &:focus { color:white; text-shadow: 0 0 3px black; }
     }
   }
@@ -51,8 +56,8 @@
 
   .cardpic { @include position(absolute,0,0,0,0); background:#111; display: none; background-position: center; background-size:contain; background-repeat: no-repeat; z-index: 2; }
 
-  .photo-background {
-    .pics a.close-cardpic { display:block; cursor: pointer;  }
+  .photo-background { min-height: 22rem;
+    .pics .close-cardpic { display:block; cursor: pointer;  }
     .cardpic { display: block; }
   }
 

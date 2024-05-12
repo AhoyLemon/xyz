@@ -28,7 +28,14 @@ html(lang="en")
           figure.conference(itemscope itemtype="http://schema.org/Event")
             .details
               if t.flag
-                img.flag(src="/svg/flags/"+t.flag+".svg")
+                - let flagAlt
+                if t.country
+                  - flagAlt = "flag of "+t.country
+                else if t.flag == "us"
+                  - flagAlt = "flag of United States"
+                else
+                  - flagAlt = t.flag.toUpperCase() + " flag"
+                img.flag(src="/svg/flags/"+t.flag+".svg" alt=flagAlt)
               a(name=t.slug class="anchor")
               .name
                 if t.url && t.name
@@ -119,9 +126,16 @@ html(lang="en")
           .conference(itemscope itemtype="http://schema.org/Event")
             .details
               if t.online
-                img.virtual-icon(src="/svg/virtual-talk.svg")
+                img.virtual-icon(src="/svg/virtual-talk.svg" alt="icon of virtual conference")
               else if t.flag
-                img.flag(src="/svg/flags/"+t.flag+".svg")
+                - let flagAlt
+                if t.country
+                  - flagAlt = "flag of "+t.country
+                else if t.flag == "us"
+                  - flagAlt = "flag of United States"
+                else
+                  - flagAlt = t.flag.toUpperCase() + " flag"
+                img.flag(src="/svg/flags/"+t.flag+".svg" alt=flagAlt)
               a(name=t.slug class="anchor")
               .name 
                 if t.url && t.name
@@ -189,15 +203,15 @@ html(lang="en")
 
             .pics
               if t.pics
-                a.close-cardpic() 
+                button.close-cardpic(title="close large image view")
                   span X
                 each pic, index in t.pics
-                  a.pic(data-pic=pic)
-                    img(src='/img/talks/'+pic itemprop="image" loading="lazy")
+                  button.pic(data-pic=pic title="view larger image")
+                    img(src='/img/talks/'+pic itemprop="image" loading="lazy" alt="thumbnail photo from "+t.name)
               else if t.img
-                a.close-cardpic
+                button.close-cardpic(title="close large image view")
                   span X
-                a.pic(data-pic=t.img style="background-image:url(img/talks/"+t.img+")")
+                button.pic(data-pic=t.img style="background-image:url(img/talks/"+t.img+")" title="view larger image")
                 meta(itemprop="image" content=siteURL+'/img/talks/'+t.img)  
 
             figure.cardpic

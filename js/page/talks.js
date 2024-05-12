@@ -1,4 +1,4 @@
-$('.conference a.pic').click(function() {
+$('.conference .pic').click(function() {
   let f = $(this).attr('data-pic');
   let i = 'img/talks/'+f;
 
@@ -19,7 +19,7 @@ $('.conference a.pic').click(function() {
 
 });
 
-$('a.close-cardpic').click(function() {
+$('button.close-cardpic').click(function() {
   $(this).parent().parent().removeClass('photo-background');
   $(this).siblings().removeClass('active').removeClass('inactive');
 });
