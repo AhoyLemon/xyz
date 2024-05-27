@@ -93,10 +93,12 @@ html(lang="en")
                         li.talk
                           if u.name
                             span.talk-name(itemprop="workFeatured")= u.name
-                          if u.slides || u.video || u.keynote || u.blindDeck
+                          if u.slides || u.video || u.keynote || u.blindDeck || u.host
                             span.talk-supplements
                               if (u.keynote)
                                 span.keynote KEYNOTE
+                              if (u.host)
+                                span.keynote HOST
                               if (u.blindDeck)
                                 span.blind-deck BLIND DECK
                               if (u.slides)
