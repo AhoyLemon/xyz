@@ -25,6 +25,7 @@ html(lang="en")
           a(name="upcoming")
           h2 Upcoming Conferences &raquo;
         each t,index in upcomingTalks
+
           figure.conference(itemscope itemtype="http://schema.org/Event")
             .details
               if t.flag
@@ -125,6 +126,12 @@ html(lang="en")
           a(name="previous")
           h2 Previous Conferences &raquo;
         each t,index in previousTalks
+
+          // Add the "Aiports I Have Known" map
+          if index === 7
+            figure.airport-map
+              iframe(src="https://www.google.com/maps/d/u/0/embed?mid=1uZYZYquIbRfnRUcPlA9tA4Z3c0P6fTI&ehbc=2E312F&noprof=1")
+
           .conference(itemscope itemtype="http://schema.org/Event")
             .details
               if t.online

@@ -29,6 +29,14 @@
     }
   }
 
+  .airport-map { margin: unset; padding:unset; background-color: red;
+    iframe { aspect-ratio: 5/3; width:100%; margin: unset; padding:unset; margin-bottom: -7px; }
+    @media (min-width:771px) {
+      //grid-row: span 2; grid-column: span 2;
+      grid-column: span 2;
+    }
+  }
+
   .leading {
     h2 { font-weight: $light; font-size:260%; letter-spacing: 0.1em; padding-top: 1em; }
   }
