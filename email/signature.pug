@@ -2,36 +2,40 @@
 - var imgPath = "https://ahoylemon.xyz/email"
 
 - var font = 'font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;'
-- var linkStyle = font + ' color:#313131; text-decoration:none; font-size:16px'
+- var linkStyle = font + ' color:#313131; text-decoration:none; font-size:14px'
+
+
+mixin siglink(text, url, isSpaceAfter)
+  a.siglink(href=url style=linkStyle)
+    span(style="text-decoration:none")= text
+    if (isSpaceAfter)
+      span(style="color:#919191; font-size:12px;") &nbsp; | &nbsp;
 
 html
   head
-    title Email signature, v.3
+    title Email signature, v.4
   body
 
     style.
       a.siglink, a.siglink[href] {text-decoration:none !important;}
-      a.siglink:hover { color:#C75E28 !important }
+      a.siglink:hover, a.siglink[href]:hover { color:#C75E28 !important }
 
-    table(style="margin-top:100px;")
+    table(style="margin-top:50px;")
       tr
         td(style="vertical-align:center;")
-          a(href="")
+          a(href="https://ahoylemon.xyz")
             img(src=imgPath+"/lemon-square.png" width="75" height="75")
 
         td(style="padding-left:15px;")
           table
             tr
               td(style="padding-bottom:5px;")
-                a.siglink(style=linkStyle href="https://ahoylemon.xyz")
+                a.siglink(href="https://ahoylemon.xyz" style=linkStyle)
                   span(style='font-size:26px;') Lemon.
             tr
               td
-                a.siglink(href="https://thefpl.us" style=linkStyle)
-                  span(style="text-decoration:none") The F Plus
-                | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                a.siglink(href="https://mastodon.social/@ahoylemon" style=linkStyle)
-                  span(style="text-decoration:none") Mastodon
-                | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                a.siglink(href="https://github.com/AhoyLemon" style=linkStyle)
-                  span(style="text-decoration:none") GitHub
+                +siglink("Sites", "https://ahoylemon.xyz", true)
+                +siglink("Talks", "https://ahoylemon.xyz/talks.html", true)
+                +siglink("The F Plus", "https://thefpl.us", true)
+                +siglink("GitHub", "https://github.com/AhoyLemon", true)
+                +siglink("Mastodon", "https://mastodon.social/@ahoylemon")
