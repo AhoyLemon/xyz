@@ -13,7 +13,7 @@
       li { margin-bottom: 0.4em; }
     }
     .talk-supplements { white-space: nowrap;
-      .keynote, .blind-deck { font-weight: 700; }
+      .keynote, .workshop, .blind-deck { font-weight: 700; }
       &:before { content: " ( "}
       > span { 
         &:after { content: " | "; }

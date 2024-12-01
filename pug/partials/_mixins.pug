@@ -139,10 +139,12 @@ mixin talkSlider(w)
                       li.talk
                         if u.name
                           span.talk-name(itemprop="workFeatured")= u.name
-                        if u.slides || u.video || u.keynote || u.blindDeck || u.host || u.keynote
+                        if u.slides || u.video || u.keynote || u.blindDeck || u.host || u.keynote || u.workshop
                           span.talk-supplements
                             if (u.keynote)
                               span.keynote KEYNOTE
+                            if (u.workshop)
+                              span.workshop Workshop
                             if (u.host || u.emcee)
                               span.host HOST
                             if (u.blindDeck)
@@ -423,44 +425,3 @@ mixin clientSiteSummary(s)
           .tech-icon
             span(class=i)= s.cms
             +techIcon(s.cms)
-      
-      
-
-      //- .screenshots-carousel-wrapper
-      //-   figure
-      //-     if s.screenshots
-      //-       .screenshots.slick-slider
-      //-         each shot in s.screenshots
-      //-           img(src="../img/client-sites/"+shot)
-  //-else
-    .client-site.simple
-      if s.title
-        .title
-          span= s.title
-      if s.client
-        .subhead= s.client
-      if s.screenshots
-        figure
-          .screenshot
-            img(src="../img/client-sites/"+s.screenshots[0])
-      if s.description
-        .description !{s.description}
-      if s.problem
-        .problem
-          h3 The Problem
-          | !{s.problem}
-      if s.solution
-        .solution
-          h3 The Solution
-          | !{s.solution}
-      if s.tech || s.cms
-        .tech
-          each tech in s.tech
-            .tooltip(data-tippy-content=tech data-tippy-placement="bottom")
-              +techIcon(tech)
-          if s.cms
-            .tooltip(data-tippy-content=s.cms  data-tippy-placement="bottom")
-              +techIcon(s.cms)
-      .visit-site
-        if s.url
-          a(href=s.url) Visit Site

@@ -77,8 +77,8 @@
         .multiple-talks {
           li { margin-bottom: 0.4em; }
         }
-        .talk-supplements { white-space: nowrap;
-          .keynote, .blind-deck, .host { font-weight: 700; }
+        .talk-supplements { white-space: nowrap; margin-left: 0.5em;
+          .keynote, .workshop, .blind-deck, .host { font-weight: 700; }
           &:before { content: " ( "}
           > span { 
             &:after { content: " | "; }
