@@ -14,13 +14,13 @@ html(lang="en")
 
     include partials/_aside.pug
 
-    script.
-      function formatDate(e) {
-        let allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
-        let MonthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
-        let g = e.split("-");
-        return '<time>' + MonthAbbr[parseInt(g[1] - 1)] + ' ' + g[2] + ", " + g[0];
-      }
+    //- script.
+    //-   function formatDate(e) {
+    //-     let allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
+    //-     let MonthAbbr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
+    //-     let g = e.split("-");
+    //-     return '<time>' + MonthAbbr[parseInt(g[1] - 1)] + ' ' + g[2] + ", " + g[0];
+    //-   }
 
     main.project-summaries
       each s,index in lemonSites 
