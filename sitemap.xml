@@ -4,7 +4,7 @@
     <loc>https://ahoylemon.xyz</loc>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
-    <lastmod>2025-01-14T01:18:50.187Z</lastmod>
+    <lastmod>2025-01-14T16:37:20.967Z</lastmod>
   </url>
   <url>
     <loc>https://ahoylemon.xyz/talks.html</loc>
@@ -32,6 +32,18 @@
   </url>
   <url>
     <loc>https://ahoylemon.xyz/sitemap.xml</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jerking.ahoylemon.xyz</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://ready.ahoylemon.xyz</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://notpoutine.ahoylemon.xyz</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
