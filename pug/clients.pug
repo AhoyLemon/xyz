@@ -8,13 +8,11 @@ html(lang="en")
   head
     include partials/_mixins.pug
     include partials/_head.pug
+    link(rel="canonical" href=siteURL+"/clients")
   body
-
     include ../html/comment.html    
     include partials/_schema.pug
-
     include partials/_aside.pug
-
     script.
       function formatDate(e) {
         let allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
