@@ -4,7 +4,7 @@
     <loc>https://ahoylemon.xyz</loc>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
-    <lastmod>2025-01-14T22:01:48.191Z</lastmod>
+    <lastmod>2025-01-14T22:03:03.706Z</lastmod>
   </url>
   <url>
     <loc>https://ahoylemon.xyz/talks.html</loc>
@@ -47,7 +47,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://8u.ahoylemon.xyz</loc>
+    <loc>https://8U.ahoylemon.xyz</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
