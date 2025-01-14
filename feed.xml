@@ -127,6 +127,18 @@
       </image>
     </item>
     <item>
+      <title>PARTY PARTY PARTY PARTY PARTY</title>
+      <link>https://partypartypartyparty.party</link>
+      <guid>https://partypartypartyparty.party</guid>
+      <description>&lt;p&gt;This is a button to help you party.&lt;/p&gt;</description>
+      <pubDate>2016-09-21</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/sites/party-fg.webp</url>
+        <title>PARTY PARTY PARTY PARTY PARTY logo</title>
+        <link>https://partypartypartyparty.party</link>
+      </image>
+    </item>
+    <item>
       <title>READY 🎤 ROCKS</title>
       <link>https://ready.rocks</link>
       <guid>https://ready.rocks</guid>
@@ -163,27 +175,15 @@
       </image>
     </item>
     <item>
-      <title>Rick Ross Daily</title>
-      <link>https://botsin.space/@rickross</link>
-      <guid>https://botsin.space/@rickross</guid>
-      <description>This was a Twitterbot, but now I have it set up on Mastodon instead.</description>
-      <pubDate>2022-11-23</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/sites/ross_circle.webp</url>
-        <title>Rick Ross Daily logo</title>
-        <link>https://botsin.space/@rickross</link>
-      </image>
-    </item>
-    <item>
-      <title>Not Poutine, FYI</title>
-      <link>https://ahoylemon.github.io/notpoutine.fyi</link>
-      <guid>https://ahoylemon.github.io/notpoutine.fyi</guid>
-      <description>&lt;p&gt;Poutine is a dish made with french fries, fresh cheese curds and brown gravy.&lt;/p&gt;&lt;p&gt;This site catalogs meals that describe themselves as poutine and yet are not poutine.&lt;/p&gt;</description>
+      <title>That's Not Poutine.</title>
+      <link>https://notpoutine.ahoylemon.xyz/</link>
+      <guid>https://notpoutine.ahoylemon.xyz/</guid>
+      <description>&lt;p&gt;Poutine is a dish made with french fries, fresh cheese curds and brown gravy.&lt;/p&gt;&lt;p&gt;This website showcases dishes which purport to be poutine, and yet fail that criteria.&lt;/p&gt;</description>
       <pubDate>2020-01-12</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/poutine.svg</url>
-        <title>Not Poutine, FYI logo</title>
-        <link>https://ahoylemon.github.io/notpoutine.fyi</link>
+        <title>That's Not Poutine. logo</title>
+        <link>https://notpoutine.ahoylemon.xyz/</link>
       </image>
     </item>
     <item>
@@ -199,6 +199,18 @@
       </image>
     </item>
     <item>
+      <title>Rick Ross Daily</title>
+      <link>https://botsin.space/@rickross</link>
+      <guid>https://botsin.space/@rickross</guid>
+      <description>This was a Twitterbot, but now I have it set up on Mastodon instead.</description>
+      <pubDate>2022-11-23</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/sites/ross_circle.webp</url>
+        <title>Rick Ross Daily logo</title>
+        <link>https://botsin.space/@rickross</link>
+      </image>
+    </item>
+    <item>
       <title>Great Sex Tips!</title>
       <link>https://ahoylemon.github.io/greatsex.tips</link>
       <guid>https://ahoylemon.github.io/greatsex.tips</guid>
@@ -208,18 +220,6 @@
         <url>https://ahoylemon.xyz/svg/greatsex.svg</url>
         <title>Great Sex Tips! logo</title>
         <link>https://ahoylemon.github.io/greatsex.tips</link>
-      </image>
-    </item>
-    <item>
-      <title>PARTY PARTY PARTY PARTY PARTY</title>
-      <link>https://partypartypartyparty.party</link>
-      <guid>https://partypartypartyparty.party</guid>
-      <description>&lt;p&gt;This is a button to help you party.&lt;/p&gt;</description>
-      <pubDate>2016-09-21</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/sites/party-fg.webp</url>
-        <title>PARTY PARTY PARTY PARTY PARTY logo</title>
-        <link>https://partypartypartyparty.party</link>
       </image>
     </item>
     <item>
