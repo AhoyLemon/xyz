@@ -1,25 +1,32 @@
-$('.conference .pic').click(function() {
-  let f = $(this).attr('data-pic');
-  let i = 'img/talks/'+f;
+document.querySelectorAll('.conference .pic').forEach(function(pic) {
+  pic.addEventListener('click', function() {
+    let f = pic.getAttribute('data-pic');
+    let i = 'img/talks/' + f;
 
-  if ($(this).hasClass('active')) {
-
-    $(this).removeClass('active').removeClass('inactive');
-    $(this).siblings().removeClass('active').removeClass('inactive');
-    $(this).parent().parent().removeClass('photo-background');
-
-  } else {
-
-    $(this).parent().siblings('.cardpic').css('background-image', 'url('+i+')');
-    $(this).parent().parent().addClass('photo-background');
-    $(this).removeClass('inactive').addClass('active');
-    $(this).siblings().removeClass('active').addClass('inactive');
-    
-  }
-
+    if (pic.classList.contains('active')) {
+      pic.classList.remove('active', 'inactive');
+      pic.parentNode.querySelectorAll('.pic').forEach(function(sibling) {
+        sibling.classList.remove('active', 'inactive');
+      });
+      pic.closest('.conference').classList.remove('photo-background');
+    } else {
+      pic.closest('.conference').querySelector('.cardpic').style.backgroundImage = 'url(' + i + ')';
+      pic.closest('.conference').classList.add('photo-background');
+      pic.classList.remove('inactive');
+      pic.classList.add('active');
+      pic.parentNode.querySelectorAll('.pic').forEach(function(sibling) {
+        sibling.classList.remove('active');
+        sibling.classList.add('inactive');
+      });
+    }
+  });
 });
 
-$('button.close-cardpic').click(function() {
-  $(this).parent().parent().removeClass('photo-background');
-  $(this).siblings().removeClass('active').removeClass('inactive');
+document.querySelectorAll('button.close-cardpic').forEach(function(button) {
+  button.addEventListener('click', function() {
+    button.closest('.conference').classList.remove('photo-background');
+    button.closest('.conference').querySelectorAll('.pic').forEach(function(pic) {
+      pic.classList.remove('active', 'inactive');
+    });
+  });
 });
