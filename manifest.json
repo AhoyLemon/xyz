@@ -2,9 +2,22 @@
 	"name": "Lemon",
 	"short_name": "Lemon",
 	"description": "I make stuff, like this...",
+	"id": "xyz.ahoylemon",
 	"scope": "/",
 	"start_url": "https://ahoylemon.xyz",
-	"version": "3.15",
+	"version": "3.2",
+	"dir": "ltr",
+	"lang": "en",
+	"theme_color": "#e5e828",
+	"background_color": "#e5e828",
+	"display": "fullscreen",
+	"orientation": "any",
+	"categories": [
+    "lifestyle",
+    "social",
+    "utilities"
+  ],
+	"prefer_related_applications": false,
 	"icons": [
 		{
 			"src": "/android-chrome-512x512.png?v=2024",
@@ -47,7 +60,26 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#e5e828",
-	"background_color": "#e5e828",
-	"display": "standalone"
+	"screenshots": [
+		{
+			"src": "/screenshots/1920x1080.png",
+			"sizes": "1920x1080",
+			"type": "image/png"
+		},
+		{
+			"src": "/screenshots/480x800.png",
+			"sizes": "480x800",
+			"type": "image/png"
+		},
+		{
+			"src": "/screenshots/1280x720.png",
+			"sizes": "1280x720",
+			"type": "image/png"
+		},
+		{
+			"src": "/img/screenshots/1024x768.png",
+			"sizes": "1024x768",
+			"type": "image/png"
+		}
+	]
 }
