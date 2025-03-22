@@ -62,17 +62,17 @@
 	],
 	"screenshots": [
 		{
-			"src": "/screenshots/1920x1080.png",
+			"src": "/img/screenshots/1920x1080.png",
 			"sizes": "1920x1080",
 			"type": "image/png"
 		},
 		{
-			"src": "/screenshots/480x800.png",
+			"src": "/img/screenshots/480x800.png",
 			"sizes": "480x800",
 			"type": "image/png"
 		},
 		{
-			"src": "/screenshots/1280x720.png",
+			"src": "/img/screenshots/1280x720.png",
 			"sizes": "1280x720",
 			"type": "image/png"
 		},
