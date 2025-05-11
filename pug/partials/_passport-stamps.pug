@@ -1,0 +1,15 @@
+figure.passport.passport-stamps
+  a(name="countries")
+  h3 Passport Stamps
+  .all-stamps
+    each item in sortedCountryCounts
+      .stamp.country(country=item.country)
+        .icon
+          if item.country === "Virtual"
+            img(src="/svg/virtual-talk.svg", alt="Virtual icon")
+          else
+            img(src="/svg/flags/" + item.flag + ".svg", alt="Flag of " + item.country)
+        .text
+          span= item.country
+        .count
+          span= item.count

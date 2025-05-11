@@ -1,4 +1,4 @@
-- const testing = false
+- const testing = true
 
 - let siteURL = "https://ahoylemon.xyz"
 if testing
@@ -51,6 +51,44 @@ include _decks.pug
     slug = slug.replace(/[^a-z0-9]/gi, '');
     t.slug = slug;
     talkNumber++
+  });
+
+- const countryCounts = {};
+- const countryFlags = {};
+-
+  previousTalks.forEach(function(t) {
+    let country = t.country;
+
+    if (t.flag === "us") {
+      country = "United States";
+    }
+    if (t.online) {
+      country = "Virtual";
+    }
+
+    if (country) {
+      countryCounts[country] = (countryCounts[country] || 0) + 1;
+      if (!countryFlags[country] && !t.online) {
+        countryFlags[country] = t.flag; // Store the flag for the country
+      }
+    }
+  });
+
+- const sortedCountryCounts = [];
+-
+  Object.entries(countryCounts).sort(function(a, b) {
+    if (a[0] === "Virtual") return 1; // Place "Virtual" at the end
+    if (b[0] === "Virtual") return -1; // Place "Virtual" at the end
+    if (b[1] !== a[1]) {
+      return b[1] - a[1]; // Sort by count in descending order
+    }
+    return a[0].localeCompare(b[0]); // Sort alphabetically by country name for ties
+  }).forEach(function([country, count]) {
+    sortedCountryCounts.push({ 
+      country, 
+      count, 
+      flag: country === "Virtual" ? "virtual-talk" : countryFlags[country] // Use "virtual-talk" for Virtual
+    });
   });
 
 -

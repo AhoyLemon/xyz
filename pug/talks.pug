@@ -25,23 +25,23 @@ html(lang="en")
         figure.leading
           a(name="upcoming")
           h2 Upcoming Conferences &raquo;
-        each t,index in upcomingTalks
+        each t, index in upcomingTalks
 
           figure.conference(itemscope itemtype="http://schema.org/Event")
             .details
               if t.flag
                 - let flagAlt
                 if t.country
-                  - flagAlt = "flag of "+t.country
+                  - flagAlt = "flag of " + t.country
                 else if t.flag == "us"
                   - flagAlt = "flag of United States"
                 else
                   - flagAlt = t.flag.toUpperCase() + " flag"
-                img.flag(src="/svg/flags/"+t.flag+".svg" alt=flagAlt)
-              a(name=t.slug class="anchor")
+                img.flag(src="/svg/flags/" + t.flag + ".svg", alt=flagAlt)
+              a(name=t.slug, class="anchor")
               .name
                 if t.url && t.name
-                  a(href=t.url target="_blank" itemprop="url")
+                  a(href=t.url, target="_blank", itemprop="url")
                     span(itemprop="name")= t.name
                 else if t.name
                   span(itemprop="name")= t.name
@@ -124,7 +124,7 @@ html(lang="en")
             span Location Map
 
       // PREVIOUS CONFERENCES
-      .talk-grid
+      .talk-grid.previous
         figure.leading
           a(name="previous")
           h2 Previous Conferences &raquo;
@@ -165,7 +165,7 @@ html(lang="en")
                   meta(itemprop="address" content=t.address) 
 
                 if t.online
-                  span (Virtual)
+                  span &nbsp;(Virtual)
 
               // Date
               if t.startDate && t.endDate
@@ -234,5 +234,8 @@ html(lang="en")
         figure.back-home
           a(href="/")
             span Back Home
+
+        // Add country list table
+        //include partials/_passport-stamps.pug
 
     include partials/_javascripts.pug
