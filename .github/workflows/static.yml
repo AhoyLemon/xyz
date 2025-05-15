@@ -30,6 +30,14 @@ jobs:
     steps:
       - name: 🛒 Checkout source Git branch
         uses: actions/checkout@v4
+
+      - name: 🔍 Check for testing mode or localhost
+        run: |
+          if grep -q "testing = true" pug/partials/_variables.pug || grep -q "localhost" index.html; then
+            echo "🚫 Deployment blocked: 'testing = true' or 'localhost' found."
+            exit 1
+          fi
+
       - name: 🧑‍🔧 Setup Pages
         uses: actions/configure-pages@v5
       - name: 📤 Uploading artifact
