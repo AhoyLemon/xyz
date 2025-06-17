@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ahoylemon 🍋 xyz</title>
-    <link>http://localhost:8848</link>
+    <link>https://ahoylemon.xyz</link>
     <author>
       <name>Lemon</name>
       <email>lemon@ahoylemon.xyz</email>
@@ -10,11 +10,11 @@
     </author>
     <language>en-us</language>
     <description>I make a lot of stuff, including this website to show the stuff I make.</description>
-    <icon>http://localhost:8848/apple-touch-icon-120x120.png</icon>
+    <icon>https://ahoylemon.xyz/apple-touch-icon-120x120.png</icon>
     <image>
-      <url>http://localhost:8848/apple-touch-icon-120x120.png</url>
+      <url>https://ahoylemon.xyz/apple-touch-icon-120x120.png</url>
       <title>Lemon Logo</title>
-      <link>http://localhost:8848</link>
+      <link>https://ahoylemon.xyz</link>
       <width>120</width>
       <height>120</height>
     </image>
@@ -25,7 +25,7 @@
       <description>&lt;p&gt;There are so many things in this world, but can you tell which of them is Nicki Minaj? The answer may &lt;em&gt;shake you to your very core!&lt;/em&gt;&lt;/p&gt;</description>
       <pubDate>2024-01-10</pubDate>
       <image>
-        <url>http://localhost:8848/img/sites/nicki-fg.webp</url>
+        <url>https://ahoylemon.xyz/img/sites/nicki-fg.webp</url>
         <title>Is This Nicki Minaj? logo</title>
         <link>https://isthisnickiminaj.com</link>
       </image>
@@ -37,7 +37,7 @@
       <description>&lt;p&gt;Are you in need of documentation of your own sanity? Yes, of course you are. Well, this online exam is meant to provide just that: Answer our questions and you'll get a diagnosis on the other end.&lt;/p&gt;&lt;p&gt;Only one caveat: The exam is gaslighting you.&lt;/p&gt;</description>
       <pubDate>2022-12-13</pubDate>
       <image>
-        <url>http://localhost:8848/img/plasma.jpg</url>
+        <url>https://ahoylemon.xyz/img/plasma.jpg</url>
         <title>SANE SCIENCE logo</title>
         <link>https://sane.science</link>
       </image>
@@ -49,7 +49,7 @@
       <description>&lt;p&gt;Using the Forbes' Billionaires List (and public education statistics) as primary sources, this game allows you to improve the world every day by making five decisions.&lt;/p&gt;</description>
       <pubDate>2022-04-16</pubDate>
       <image>
-        <url>http://localhost:8848/img/guillotine.jpg</url>
+        <url>https://ahoylemon.xyz/img/guillotine.jpg</url>
         <title>No More Billionaires logo</title>
         <link>https://kinda.fun/guillotine</link>
       </image>
@@ -61,7 +61,7 @@
       <description>&lt;p&gt;This is a game about guessing the relative value of different celebrities on &lt;b&gt;Cameo&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;I built this one in about a week and a half.&lt;/p&gt;</description>
       <pubDate>2021-02-16</pubDate>
       <image>
-        <url>http://localhost:8848/svg/f.svg</url>
+        <url>https://ahoylemon.xyz/svg/f.svg</url>
         <title>Comparatively Famous logo</title>
         <link>https://kinda.fun/cameo</link>
       </image>
@@ -73,7 +73,7 @@
       <description>&lt;p&gt;You are at a party of celebrity impersonators. You must try to guess who is pretending to be whom, in an effort to eat an entire cheese log before you are kicked out of the party.&lt;/p&gt;</description>
       <pubDate>2023-08-23</pubDate>
       <image>
-        <url>http://localhost:8848/svg/pretend-new.svg</url>
+        <url>https://ahoylemon.xyz/svg/pretend-new.svg</url>
         <title>PRETEND 🌐 WORLD logo</title>
         <link>https://ahoylemon.github.io/pretend.world</link>
       </image>
@@ -85,7 +85,7 @@
       <description>&lt;p&gt;Invalid was the first game for my &lt;strong&gt;kinda.fun&lt;/strong&gt; website. The basic premise is that every employee is trying to create a password, while the SysAdmin is busy making their lives miserable.&lt;/p&gt;</description>
       <pubDate>2021-01-27</pubDate>
       <image>
-        <url>http://localhost:8848/svg/invalid.svg</url>
+        <url>https://ahoylemon.xyz/svg/invalid.svg</url>
         <title>Invalid logo</title>
         <link>https://kinda.fun/invalid</link>
       </image>
@@ -97,7 +97,7 @@
       <description>&lt;p&gt;The game that shows you an actual WikiHow illustration, and asks you which actual Wikihow article it came from.&lt;/p&gt;&lt;p&gt;Called “The Best Game On The Internet” by Gizmodo, this project has been the subject of literally hundreds of YouTube videos.&lt;/p&gt;</description>
       <pubDate>2016-02-04</pubDate>
       <image>
-        <url>http://localhost:8848/svg/damndog.svg</url>
+        <url>https://ahoylemon.xyz/svg/damndog.svg</url>
         <title>damn.dog logo</title>
         <link>https://damn.dog</link>
       </image>
@@ -109,7 +109,7 @@
       <description>&lt;p&gt;In this clicker game, you tap on Sisyphus to roll the rock uphill. Once the rock gets near the top, it will roll back downhill.&lt;/p&gt; &lt;p&gt;Also, there are acheivements.&lt;/p&gt;</description>
       <pubDate>2021-09-21</pubDate>
       <image>
-        <url>http://localhost:8848/img/futile-512.png</url>
+        <url>https://ahoylemon.xyz/img/futile-512.png</url>
         <title>Sisyphus Clicker logo</title>
         <link>https://kinda.fun/sisyphus</link>
       </image>
@@ -121,7 +121,7 @@
       <description>&lt;p&gt;Working from a shockingly long list of fake porn titles my friends and I have come up with, this site promises new titles every day.&lt;/p&gt;&lt;p&gt;Cause it makes me giggle.&lt;/p&gt;</description>
       <pubDate>2017-01-06</pubDate>
       <image>
-        <url>http://localhost:8848/svg/fist.svg</url>
+        <url>https://ahoylemon.xyz/svg/fist.svg</url>
         <title>Jerking logo</title>
         <link>https://jerking.ahoylemon.xyz</link>
       </image>
@@ -133,7 +133,7 @@
       <description>&lt;p&gt;This is a button to help you party.&lt;/p&gt;</description>
       <pubDate>2016-09-21</pubDate>
       <image>
-        <url>http://localhost:8848/img/sites/party-fg.webp</url>
+        <url>https://ahoylemon.xyz/img/sites/party-fg.webp</url>
         <title>PARTY PARTY PARTY PARTY PARTY logo</title>
         <link>https://partypartypartyparty.party</link>
       </image>
@@ -145,7 +145,7 @@
       <description>&lt;p&gt;My good friend &lt;a href=&quot;https://bootsraingear.bandcamp.com/&quot;&gt;Boots&lt;/a&gt; and I built our own karaoke softare. He built the Windows backend, I built the web PWA to handle signups.&lt;/p&gt;</description>
       <pubDate>2018-10-01</pubDate>
       <image>
-        <url>http://localhost:8848/svg/rocks.svg</url>
+        <url>https://ahoylemon.xyz/svg/rocks.svg</url>
         <title>READY 🎤 ROCKS logo</title>
         <link>https://ready.rocks</link>
       </image>
@@ -157,7 +157,7 @@
       <description>&lt;p&gt;The game that challenges you to figure out what people are searching for on Google.&lt;/p&gt;&lt;p&gt;Idiots Win takes a search query, sends it to Google for autocomplete suggestions, then randomizes them and asks you to guess the top.&lt;/p&gt;</description>
       <pubDate>2016-06-02</pubDate>
       <image>
-        <url>http://localhost:8848/svg/idiots.svg</url>
+        <url>https://ahoylemon.xyz/svg/idiots.svg</url>
         <title>Idiots win. logo</title>
         <link>https://idiots.win</link>
       </image>
@@ -169,7 +169,7 @@
       <description>&lt;p&gt;The Wrongest Words launched as the second game on &lt;strong&gt;kinda.fun&lt;/strong&gt;. It's a multiplayer game where each player must defend the stupid statements in front of them.&lt;/p&gt;</description>
       <pubDate>2020-01-27</pubDate>
       <image>
-        <url>http://localhost:8848/svg/wrongest.svg</url>
+        <url>https://ahoylemon.xyz/svg/wrongest.svg</url>
         <title>The Wrongest Words logo</title>
         <link>https://kinda.fun/wrongest</link>
       </image>
@@ -181,7 +181,7 @@
       <description>&lt;p&gt;Poutine is a dish made with french fries, fresh cheese curds and brown gravy.&lt;/p&gt;&lt;p&gt;This website showcases dishes which purport to be poutine, and yet fail that criteria.&lt;/p&gt;</description>
       <pubDate>2020-01-12</pubDate>
       <image>
-        <url>http://localhost:8848/svg/poutine.svg</url>
+        <url>https://ahoylemon.xyz/svg/poutine.svg</url>
         <title>That's Not Poutine. logo</title>
         <link>https://notpoutine.ahoylemon.xyz/</link>
       </image>
@@ -193,7 +193,7 @@
       <description>&lt;p&gt;We've spent enough of our lives looking at flat, minimalist websites that all look art directed by the same person. Let's turn this ship around.&lt;/p&gt;&lt;p&gt;BG2COOL provides you with patterns and options. Make your choices, and the site will hand you some CSS.&lt;/p&gt;</description>
       <pubDate>2019-09-04</pubDate>
       <image>
-        <url>http://localhost:8848/img/terrazzo.gif</url>
+        <url>https://ahoylemon.xyz/img/terrazzo.gif</url>
         <title>BG2😎COOL logo</title>
         <link>https://ahoylemon.github.io/BG2COOL</link>
       </image>
@@ -205,7 +205,7 @@
       <description>This was a Twitterbot, but now I have it set up on Mastodon instead.</description>
       <pubDate>2022-11-23</pubDate>
       <image>
-        <url>http://localhost:8848/img/sites/ross_circle.webp</url>
+        <url>https://ahoylemon.xyz/img/sites/ross_circle.webp</url>
         <title>Rick Ross Daily logo</title>
         <link>https://botsin.space/@rickross</link>
       </image>
@@ -217,7 +217,7 @@
       <description>&lt;p&gt;Birthed from a conversation about the editing process of Cosmo's sex tips, this is a site that generates hetero sex advice for women to please their men. How exhilerating!&lt;/p&gt;</description>
       <pubDate>2017-11-13</pubDate>
       <image>
-        <url>http://localhost:8848/svg/greatsex.svg</url>
+        <url>https://ahoylemon.xyz/svg/greatsex.svg</url>
         <title>Great Sex Tips! logo</title>
         <link>https://sextips.ahoylemon.xyz</link>
       </image>
@@ -229,7 +229,7 @@
       <description>&lt;p&gt;This is a very important website that asks if if you're ready for this. And if you &lt;i&gt;are&lt;/i&gt; ready for this, appropriate measures will be taken.</description>
       <pubDate>2017-04-21</pubDate>
       <image>
-        <url>http://localhost:8848/svg/ready.svg</url>
+        <url>https://ahoylemon.xyz/svg/ready.svg</url>
         <title>Are you ready for this? logo</title>
         <link>https://ready.ahoylemon.xyz</link>
       </image>
@@ -241,7 +241,7 @@
       <description>&lt;p&gt;My friend likes the website Wookieepedia a lot and then he had a birthday. So I made a Wookieepedia page just for him.&lt;/p&gt;</description>
       <pubDate>2020-06-07</pubDate>
       <image>
-        <url>http://localhost:8848/img/sites/wookieepedia-fg.webp</url>
+        <url>https://ahoylemon.xyz/img/sites/wookieepedia-fg.webp</url>
         <title>Heelies Info logo</title>
         <link>https://ahoylemon.github.io/heelies.info</link>
       </image>
@@ -253,7 +253,7 @@
       <description>&lt;p&gt;The Android game that puts your friends' accents to the test (and they will usually fail the test).</description>
       <pubDate>2017-08-18</pubDate>
       <image>
-        <url>http://localhost:8848/svg/badaccent.svg</url>
+        <url>https://ahoylemon.xyz/svg/badaccent.svg</url>
         <title>Bad Accent Club logo</title>
         <link>https://play.google.com/store/apps/details?id=club.badaccent</link>
       </image>
@@ -265,7 +265,7 @@
       <description>&lt;p&gt;This is a online web experience when men rain down from the sky! What kind of men? Well, it's up to you to find out.&lt;/p&gt;</description>
       <pubDate>2017-11-04</pubDate>
       <image>
-        <url>http://localhost:8848/img/sites/men-foreground.webp</url>
+        <url>https://ahoylemon.xyz/img/sites/men-foreground.webp</url>
         <title>dumb men logo</title>
         <link>https://ahoylemon.github.io/dumb.men</link>
       </image>
@@ -277,7 +277,7 @@
       <description>&lt;p&gt;Launched as part of a talk at NDC Minnesota 2018, this is a site to demonstrate you're right about whatever you think.&lt;/p&gt;</description>
       <pubDate>2018-05-10</pubDate>
       <image>
-        <url>http://localhost:8848/svg/verifiable.svg</url>
+        <url>https://ahoylemon.xyz/svg/verifiable.svg</url>
         <title>Verifiable Win logo</title>
         <link>https://ahoylemon.github.io/verifiable.win</link>
       </image>
@@ -289,7 +289,7 @@
       <description>My friend Schwa and I collaborated on a Team Fortress 2 map called Swiftwater. He did the geometry, I did the art assets and built the story of a bottled water company at war with a chemical mining concern.&lt;/p&gt;&lt;p&gt;In 2016, Valve bought the map and made it official.&lt;/p&gt;</description>
       <pubDate>2016-07-07</pubDate>
       <image>
-        <url>http://localhost:8848/svg/swift.svg</url>
+        <url>https://ahoylemon.xyz/svg/swift.svg</url>
         <title>pl_swiftwater logo</title>
         <link>http://www.teamfortress.com/meetyourmatch</link>
       </image>
@@ -301,7 +301,7 @@
       <description>&lt;p&gt;Frank West sometimes pronounces emoticons. And now, via this soundboard, he does it on your command.&lt;/p&gt;&lt;p&gt;Even in comparison to the other sites on this page, this one is really stupid.&lt;/p&gt;</description>
       <pubDate>2016-06-15</pubDate>
       <image>
-        <url>http://localhost:8848/svg/frankwest.svg</url>
+        <url>https://ahoylemon.xyz/svg/frankwest.svg</url>
         <title>Frank West Pronounces Emoticons logo</title>
         <link>https://8U.ahoylemon.xyz/</link>
       </image>
@@ -313,7 +313,7 @@
       <description>This is a Chrome extension that replaces all instances of “Hamilton” with “the video game DOOM”. For obvious reasons.</description>
       <pubDate>2016-11-19</pubDate>
       <image>
-        <url>http://localhost:8848/img/doom320.png</url>
+        <url>https://ahoylemon.xyz/img/doom320.png</url>
         <title>Hamilton -&gt; DOOM logo</title>
         <link>https://chrome.google.com/webstore/detail/hamilton-to-doom/hkedheclgkcdkjabeklkiifpbhlnaknd?hl=en-US&amp;gl=US</link>
       </image>
@@ -325,7 +325,7 @@
       <description>&lt;p&gt;I wanted to make a site that would give the user up-the-second updates of who was just fired in the San Francisco Tech Industry.&lt;/p&gt;&lt;p&gt;In reality, it just works an alogorithm to generate random strings.&lt;/p&gt;</description>
       <pubDate>2015-10-14</pubDate>
       <image>
-        <url>http://localhost:8848/img/sites/firings-fg.webp</url>
+        <url>https://ahoylemon.xyz/img/sites/firings-fg.webp</url>
         <title>Recent Firings In San Francisco logo</title>
         <link>https://ahoylemon.github.io/sf-firings</link>
       </image>
@@ -337,7 +337,7 @@
       <description>&lt;p&gt;I do a podcast, and also work a fair amount on the website for that podcast, which is a complicated piece of web development.&lt;/p&gt;&lt;p&gt;That said, I'm pretty happy with how this whole thing works.&lt;/p&gt;</description>
       <pubDate>2014-10-14</pubDate>
       <image>
-        <url>http://localhost:8848/svg/thefplus.svg</url>
+        <url>https://ahoylemon.xyz/svg/thefplus.svg</url>
         <title>The F Plus logo</title>
         <link>https://thefpl.us</link>
       </image>
@@ -349,7 +349,7 @@
       <description>&lt;p&gt;ballp.it is the forum set up to support the community that surrounds The F Plus. It uses PHP software called SMF, but has been modified heavily.&lt;/p&gt;</description>
       <pubDate>2013-02-16</pubDate>
       <image>
-        <url>http://localhost:8848/svg/ballpit.svg</url>
+        <url>https://ahoylemon.xyz/svg/ballpit.svg</url>
         <title>ballp.it logo</title>
         <link>https://ballp.it</link>
       </image>
@@ -361,57 +361,57 @@
       <description>&lt;p&gt;Using an open source software called “Gource”, I made this 3.5 minute YouTube video documenting the process of building most of the websites on this list, set to a Paper Chase song.&lt;/p&gt;&lt;p&gt;Not incredibly informative, but fun to look at.&lt;/p&gt;</description>
       <pubDate>2017-12-19</pubDate>
       <image>
-        <url>http://localhost:8848/img/irl.jpg</url>
+        <url>https://ahoylemon.xyz/img/irl.jpg</url>
         <title>Me Making Websites IRL logo</title>
         <link>https://youtu.be/4YRuHRvniJM</link>
       </image>
     </item>
     <item>
       <title>🍋/talks</title>
-      <link>http://localhost:8848/talks.html</link>
-      <guid>http://localhost:8848/talks.html</guid>
+      <link>https://ahoylemon.xyz/talks.html</link>
+      <guid>https://ahoylemon.xyz/talks.html</guid>
       <description>&lt;p&gt;I do a certain amount of public speaking. Here is a pge with places I&amp;apos;ve been, and places where I&amp;apos;m going.&lt;/p&gt;</description>
       <pubDate>2019-07-15</pubDate>
     </item>
     <item>
       <title>🍋/clients</title>
-      <link>http://localhost:8848/clients</link>
-      <guid>http://localhost:8848/clients</guid>
+      <link>https://ahoylemon.xyz/clients</link>
+      <guid>https://ahoylemon.xyz/clients</guid>
       <description>&lt;p&gt;Of course, I make websites for money. This page lists some websites I've done for clients, and the tech I've used on those sites.&lt;/p&gt;</description>
       <pubDate>2022-04-09</pubDate>
     </item>
     <item>
       <title>🍋/decks</title>
-      <link>http://localhost:8848/decks.html</link>
-      <guid>http://localhost:8848/decks.html</guid>
+      <link>https://ahoylemon.xyz/decks.html</link>
+      <guid>https://ahoylemon.xyz/decks.html</guid>
       <description>&lt;p&gt;Public speaking talk titles and slide decks, and where each has been presented&lt;/p&gt;</description>
       <pubDate>2022-07-13</pubDate>
     </item>
     <item>
       <title>🍋/uses</title>
-      <link>http://localhost:8848/uses/index.html</link>
-      <guid>http://localhost:8848/uses/index.html</guid>
+      <link>https://ahoylemon.xyz/uses/index.html</link>
+      <guid>https://ahoylemon.xyz/uses/index.html</guid>
       <description>&lt;p&gt;I just recently came across Wes Bos&amp;apos; &lt;a href=&quot;https://github.com/wesbos/awesome-uses&quot;&gt;Awesome Uses&lt;/a&gt; repository. I thought it was interesting to look at the toolkit that other people used, and thought I&amp;apos;d provide my own. &lt;i&gt;But&lt;/i&gt; sometimes the tools a person uses are more about something being the &quot;good enough&quot; option, so I thought I&amp;apos;d get a little more specific: Those things marked with a &lt;span class=&quot;yes&quot;&gt;&lt;/span&gt; are things which I think are great and totally recommend. Those things marked with a &lt;span class=&quot;no&quot;&gt; &lt;/span&gt; are things which I&amp;apos;ve compromised into using for one way or another. It&amp;apos;s the best I&amp;apos;ve found, but you could talk me into something else.&lt;/p&gt;</description>
       <pubDate>2019-07-09</pubDate>
     </item>
     <item>
       <title>🍋/🍎</title>
-      <link>http://localhost:8848/blog/apple-names.html</link>
-      <guid>http://localhost:8848/blog/apple-names.html</guid>
+      <link>https://ahoylemon.xyz/blog/apple-names.html</link>
+      <guid>https://ahoylemon.xyz/blog/apple-names.html</guid>
       <description>Hi, I wanted you personally to see a list of some actual apple names, and some that aren't.</description>
       <pubDate>2020-09-03</pubDate>
     </item>
     <item>
       <title>🍋/feed</title>
-      <link>http://localhost:8848/feed.xml</link>
-      <guid>http://localhost:8848/feed.xml</guid>
+      <link>https://ahoylemon.xyz/feed.xml</link>
+      <guid>https://ahoylemon.xyz/feed.xml</guid>
       <description>&lt;p&gt;An RSS feed? Why!?&lt;/p&gt;</description>
       <pubDate>2019-06-10</pubDate>
     </item>
     <item>
       <title>🍋/sitemap</title>
-      <link>http://localhost:8848/sitemap.xml</link>
-      <guid>http://localhost:8848/sitemap.xml</guid>
+      <link>https://ahoylemon.xyz/sitemap.xml</link>
+      <guid>https://ahoylemon.xyz/sitemap.xml</guid>
       <description>&lt;p&gt;Let's build a sitemap, we can make it our best friend.&lt;/p&gt;</description>
       <pubDate>2019-07-23</pubDate>
     </item>
