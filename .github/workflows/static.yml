@@ -33,8 +33,8 @@ jobs:
 
       - name: 🔍 Check for testing mode or localhost
         run: |
-          if grep -q "testing = true" pug/partials/_variables.pug || grep -q "localhost" index.html; then
-            echo "🚫 Deployment blocked: 'testing = true' or 'localhost' found."
+          if grep -r -q "testing = true" --include="*.pug" pug/partials/ || grep -r -q "localhost" --include="*.html" .; then
+            echo "🚫 Deployment blocked: 'testing = true' found in pug or 'localhost' found in html."
             exit 1
           fi
 
