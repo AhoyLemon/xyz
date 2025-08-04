@@ -19,6 +19,19 @@
       <height>120</height>
     </image>
     <item>
+      <title>Invalid</title>
+      <link>https://kinda.fun/invalid</link>
+      <guid>https://kinda.fun/invalid</guid>
+      <description>&lt;p&gt;A game for &lt;strong&gt;2-8 players&lt;/strong&gt; to suffer thru corporate onboarding hell by answering trivia questions.&lt;/p&gt;
+                  &lt;p&gt;Employees want to create a new password so they can get on with their lives. But the SysAdmin wants to make every employee's life difficult&lt;/p&gt;</description>
+      <pubDate>2021-01-27</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/invalid.svg</url>
+        <title>Invalid logo</title>
+        <link>https://kinda.fun/invalid</link>
+      </image>
+    </item>
+    <item>
       <title>This Meeting Has Points</title>
       <link>https://kinda.fun/meeting</link>
       <guid>https://kinda.fun/meeting</guid>
@@ -28,42 +41,6 @@
         <url>https://ahoylemon.xyz/svg/thismeetinghaspoints.svg</url>
         <title>This Meeting Has Points logo</title>
         <link>https://kinda.fun/meeting</link>
-      </image>
-    </item>
-    <item>
-      <title>Is This Nicki Minaj?</title>
-      <link>https://isthisnickiminaj.com</link>
-      <guid>https://isthisnickiminaj.com</guid>
-      <description>&lt;p&gt;There are so many things in this world, but can you tell which of them is Nicki Minaj? The answer may &lt;em&gt;shake you to your very core!&lt;/em&gt;&lt;/p&gt;</description>
-      <pubDate>2024-01-10</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/sites/nicki-fg.webp</url>
-        <title>Is This Nicki Minaj? logo</title>
-        <link>https://isthisnickiminaj.com</link>
-      </image>
-    </item>
-    <item>
-      <title>SANE SCIENCE</title>
-      <link>https://sane.science</link>
-      <guid>https://sane.science</guid>
-      <description>&lt;p&gt;Are you in need of documentation of your own sanity? Yes, of course you are. Well, this online exam is meant to provide just that: Answer our questions and you'll get a diagnosis on the other end.&lt;/p&gt;&lt;p&gt;Only one caveat: The exam is gaslighting you.&lt;/p&gt;</description>
-      <pubDate>2022-12-13</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/plasma.jpg</url>
-        <title>SANE SCIENCE logo</title>
-        <link>https://sane.science</link>
-      </image>
-    </item>
-    <item>
-      <title>No More Billionaires</title>
-      <link>https://kinda.fun/guillotine</link>
-      <guid>https://kinda.fun/guillotine</guid>
-      <description>&lt;p&gt;Using the Forbes' Billionaires List (and public education statistics) as primary sources, this game allows you to improve the world every day by making five decisions.&lt;/p&gt;</description>
-      <pubDate>2022-04-16</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/img/guillotine.jpg</url>
-        <title>No More Billionaires logo</title>
-        <link>https://kinda.fun/guillotine</link>
       </image>
     </item>
     <item>
@@ -79,6 +56,42 @@
       </image>
     </item>
     <item>
+      <title>SANE SCIENCE</title>
+      <link>https://sane.science</link>
+      <guid>https://sane.science</guid>
+      <description>&lt;p&gt;Are you in need of documentation of your own sanity? Yes, of course you are. Well, this online exam is meant to provide just that: Answer our questions and you'll get a diagnosis on the other end.&lt;/p&gt;&lt;p&gt;Only one caveat: The exam is gaslighting you.&lt;/p&gt;</description>
+      <pubDate>2022-12-13</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/plasma.jpg</url>
+        <title>SANE SCIENCE logo</title>
+        <link>https://sane.science</link>
+      </image>
+    </item>
+    <item>
+      <title>Is This Nicki Minaj?</title>
+      <link>https://isthisnickiminaj.com</link>
+      <guid>https://isthisnickiminaj.com</guid>
+      <description>&lt;p&gt;There are so many things in this world, but can you tell which of them is Nicki Minaj? The answer may &lt;em&gt;shake you to your very core!&lt;/em&gt;&lt;/p&gt;</description>
+      <pubDate>2024-01-10</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/sites/nicki-fg.webp</url>
+        <title>Is This Nicki Minaj? logo</title>
+        <link>https://isthisnickiminaj.com</link>
+      </image>
+    </item>
+    <item>
+      <title>No More Billionaires</title>
+      <link>https://kinda.fun/guillotine</link>
+      <guid>https://kinda.fun/guillotine</guid>
+      <description>&lt;p&gt;Using the Forbes' Billionaires List (and public education statistics) as primary sources, this game allows you to improve the world every day by making five decisions.&lt;/p&gt;</description>
+      <pubDate>2022-04-16</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/guillotine.jpg</url>
+        <title>No More Billionaires logo</title>
+        <link>https://kinda.fun/guillotine</link>
+      </image>
+    </item>
+    <item>
       <title>PRETEND 🌐 WORLD</title>
       <link>https://ahoylemon.github.io/pretend.world</link>
       <guid>https://ahoylemon.github.io/pretend.world</guid>
@@ -88,18 +101,6 @@
         <url>https://ahoylemon.xyz/svg/pretend-new.svg</url>
         <title>PRETEND 🌐 WORLD logo</title>
         <link>https://ahoylemon.github.io/pretend.world</link>
-      </image>
-    </item>
-    <item>
-      <title>Invalid</title>
-      <link>https://kinda.fun/invalid</link>
-      <guid>https://kinda.fun/invalid</guid>
-      <description>&lt;p&gt;Invalid was the first game for my &lt;strong&gt;kinda.fun&lt;/strong&gt; website. The basic premise is that every employee is trying to create a password, while the SysAdmin is busy making their lives miserable.&lt;/p&gt;</description>
-      <pubDate>2021-01-27</pubDate>
-      <image>
-        <url>https://ahoylemon.xyz/svg/invalid.svg</url>
-        <title>Invalid logo</title>
-        <link>https://kinda.fun/invalid</link>
       </image>
     </item>
     <item>
