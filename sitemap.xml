@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:8848</loc>
+    <loc>https://ahoylemon.xyz</loc>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
-    <lastmod>2025-08-05T18:56:58.145Z</lastmod>
+    <lastmod>2025-08-13T21:56:24.105Z</lastmod>
   </url>
   <url>
-    <loc>http://localhost:8848/talks.html</loc>
+    <loc>https://ahoylemon.xyz/talks.html</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8848/clients</loc>
+    <loc>https://ahoylemon.xyz/clients</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8848/decks.html</loc>
+    <loc>https://ahoylemon.xyz/decks.html</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8848/uses/index.html</loc>
+    <loc>https://ahoylemon.xyz/uses/index.html</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8848/blog/apple-names.html</loc>
+    <loc>https://ahoylemon.xyz/blog/apple-names.html</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8848/feed.xml</loc>
+    <loc>https://ahoylemon.xyz/feed.xml</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:8848/sitemap.xml</loc>
+    <loc>https://ahoylemon.xyz/sitemap.xml</loc>
     <priority>0.5</priority>
   </url>
   <url>
