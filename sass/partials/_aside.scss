@@ -1,4 +1,4 @@
-aside { padding:1em; background:$yellow; color:$black; font-size:22px;
+header.left-side { padding:1em; background:$yellow; color:$black; font-size:22px;
   
   h1 {  padding-right: 0.25em; line-height: 115%; }
   a { color:$orange; text-decoration: none;
@@ -23,7 +23,7 @@ aside { padding:1em; background:$yellow; color:$black; font-size:22px;
 }
 
 @media screen and (max-width:887px) {
-  aside { position: relative; margin-bottom: 1em;
+  header.left-side { position: relative; margin-bottom: 1em;
     h1 { font-size:8.5vw; text-align: center;
       .big { font-size:1.5em; }
     }
@@ -41,7 +41,7 @@ aside { padding:1em; background:$yellow; color:$black; font-size:22px;
 }
 
 @media screen and (min-width:888px) {
-  aside { @include position(fixed,0,null,0,0); width:$sidebar; box-shadow:inset 0 0 0.5em rgba($black,0.95);
+  header.left-side { @include position(fixed,0,null,0,0); width:$sidebar; box-shadow:inset 0 0 0.5em rgba($black,0.95);
     h1 { font-size:1.9em; margin-bottom:0.5em;
       .big { font-size:2.21em; }
     }

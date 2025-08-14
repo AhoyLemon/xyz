@@ -11,7 +11,7 @@
       }
     }
     figcaption { padding:20px; }
-    .title { font-size:215%; line-height: 100%; word-break: break-word; padding-bottom: 10px;
+    .title { font-size:215%; font-weight: 400; line-height: 100%; word-break: break-word; padding-bottom: 10px;
       a { color:$orange; text-decoration: none;
         &:hover { text-decoration: underline; }
       }

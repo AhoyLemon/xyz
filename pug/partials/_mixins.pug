@@ -240,7 +240,7 @@ mixin projectSummary(s)
           a.absolute-link(href=s.url style=bgStyle title=s.title)
       figcaption
         .project-text
-          .title
+          h3.title
             a(href=s.url itemprop="url")
               span(itemprop="name")= s.title
           if (s.subhead)
