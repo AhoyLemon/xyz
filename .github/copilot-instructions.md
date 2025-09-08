@@ -75,6 +75,11 @@ ahoylemon.xyz is a static personal website built with Pug templates and SASS/SCS
 5. Check that no localhost references remain
 6. Commit changes (GitHub Actions will handle deployment)
 
+**Pull Request Creation:**
+- **ALWAYS** include `This closes #XX` in the PR description when working on an issue (where XX is the issue number)
+- This ensures the issue automatically closes when the PR is merged
+- Example: If working on issue #42, include "This closes #42" in the PR description
+
 ## Repository Structure
 
 **Source Files:**
