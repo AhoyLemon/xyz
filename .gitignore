@@ -1,6 +1,10 @@
 .sass-cache/
 *.css.map
 
+# Node.js
+node_modules/
+package-lock.json
+
 # =========================
 # Operating System Files
 # =========================
