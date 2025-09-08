@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const chokidar = require('chokidar');
-const { buildSass } = require('./build-sass.js');
-const { compilePugFile } = require('./build-pug.js');
+const { buildSass } = require('../../build-sass.js');
+const { compilePugFile } = require('../../build-pug.js');
 const path = require('path');
 
 // Debounce function to prevent multiple rapid rebuilds

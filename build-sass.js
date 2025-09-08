@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 async function buildSass(options = {}) {
-  const { sourceMap = false, style = 'expanded', silenceDeprecations = false } = options;
+  const { sourceMap = false, style = 'expanded', silenceDeprecations = true } = options;
   
   try {
     console.log('🔨 Compiling Sass...');
