@@ -34,13 +34,33 @@ This project uses npm scripts to handle Pug and Sass compilation with live reloa
    - Watch for changes to `.scss` files and compile to CSS with autoprefixer
    - Start a local server at http://localhost:3000 with live reloading
 
+⚡ **Fast Development Mode** (Recommended for active development):
+   ```bash
+   npm run dev
+   ```
+   Features optimized build performance with:
+   - Debounced file watching (prevents excessive rebuilds)
+   - Targeted Pug compilation (only rebuilds changed files)
+   - Fast Sass compilation (no source maps in dev mode)
+   - Optimized browser sync configuration
+
+🔧 **Legacy Mode** (If you encounter issues):
+   ```bash
+   npm run dev:legacy  
+   ```
+   Uses the original build pipeline for compatibility.
+
 ### Individual Build Commands
 
+- **Build all files:** `npm run build`
 - **Build Pug files:** `npm run build:pug`
 - **Build Sass files:** `npm run build:sass`
+- **Build Sass (production):** `npm run build:sass:prod` (compressed + source maps)
+- **Watch files (optimized):** `npm run watch:optimized`
 - **Watch Pug files:** `npm run watch:pug`
 - **Watch Sass files:** `npm run watch:sass`
 - **Start dev server:** `npm run serve`
+- **Start fast dev server:** `npm run serve:fast`
 
 ### File Structure & Compilation
 

@@ -14,12 +14,19 @@ const compilations = [
   { src: 'pug/uses.pug', dest: 'uses/index.html' }
 ];
 
-function compilePugFiles() {
+function compilePugFile(srcFile = null) {
+  const start = Date.now();
   let hasErrors = false;
+  let compiledCount = 0;
   
-  compilations.forEach(({ src, dest }) => {
+  // If specific file is provided, only compile that one
+  const filesToCompile = srcFile ? 
+    compilations.filter(({ src }) => src === srcFile || src.endsWith(path.basename(srcFile))) :
+    compilations;
+  
+  filesToCompile.forEach(({ src, dest }) => {
     try {
-      console.log(`Compiling ${src} → ${dest}`);
+      console.log(`🔨 Compiling ${src} → ${dest}`);
       
       // Read the pug file
       const pugContent = fs.readFileSync(src, 'utf8');
@@ -39,25 +46,34 @@ function compilePugFiles() {
       
       // Write the compiled HTML
       fs.writeFileSync(dest, html);
-      console.log(`✓ ${dest} rendered successfully`);
+      compiledCount++;
       
     } catch (error) {
-      console.error(`✗ Error compiling ${src}:`, error.message);
+      console.error(`❌ Error compiling ${src}:`, error.message);
       hasErrors = true;
     }
   });
   
+  const duration = Date.now() - start;
+  
   if (hasErrors) {
-    console.error('\n❌ Pug compilation completed with errors!');
-    process.exit(1);
+    console.error(`❌ Pug compilation failed!`);
+    return false;
   } else {
-    console.log('\n✅ All Pug files compiled successfully!');
+    console.log(`✅ ${compiledCount} Pug file(s) compiled successfully in ${duration}ms`);
+    return true;
   }
+}
+
+// Legacy function for backward compatibility
+function compilePugFiles() {
+  return compilePugFile();
 }
 
 // If this script is run directly
 if (require.main === module) {
-  compilePugFiles();
+  const targetFile = process.argv[2];
+  compilePugFile(targetFile);
 }
 
-module.exports = { compilePugFiles };
+module.exports = { compilePugFiles, compilePugFile };
