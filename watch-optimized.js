@@ -19,7 +19,7 @@ function debounce(func, wait) {
 
 // Optimized Sass watcher
 const debouncedSassBuild = debounce(() => {
-  buildSass({ sourceMap: false, style: 'expanded' });
+  buildSass({ sourceMap: false, style: 'expanded', silenceDeprecations: true });
 }, 100);
 
 // Optimized Pug watcher

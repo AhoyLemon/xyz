@@ -1,22 +1,10 @@
 module.exports = {
   server: true,
   files: [
-    {
-      match: ["css/ahoylemon.css"],
-      fn: function (event, file) {
-        if (event === "change") {
-          console.log(`🔄 CSS updated: ${file}`);
-        }
-      }
-    },
-    {
-      match: ["*.html", "clients/*.html", "uses/*.html"],
-      fn: function (event, file) {
-        if (event === "change") {
-          console.log(`🔄 HTML updated: ${file}`);
-        }
-      }
-    }
+    "css/ahoylemon.css",
+    "*.html", 
+    "clients/*.html", 
+    "uses/*.html"
   ],
   watchOptions: {
     ignoreInitial: true,

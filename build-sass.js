@@ -6,16 +6,17 @@ const fs = require('fs');
 const path = require('path');
 
 async function buildSass(options = {}) {
-  const { sourceMap = false, style = 'expanded' } = options;
+  const { sourceMap = false, style = 'expanded', silenceDeprecations = false } = options;
   
   try {
     console.log('🔨 Compiling Sass...');
     const start = Date.now();
     
-    // Compile Sass
+    // Compile Sass with option to silence deprecations
     const result = sass.compile('sass/ahoylemon.scss', {
       style: style,
-      sourceMap: sourceMap
+      sourceMap: sourceMap,
+      silenceDeprecations: silenceDeprecations ? ['import'] : []
     });
     
     // Process with PostCSS (autoprefixer)
