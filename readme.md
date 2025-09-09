@@ -4,7 +4,7 @@
 <!-- Badges -->
 [![Last Deploy](https://img.shields.io/github/last-commit/AhoyLemon/xyz?label=Last%20Deploy&style=for-the-badge)](https://github.com/AhoyLemon/xyz/actions)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/AhoyLemon/xyz/static.yml?branch=main&style=for-the-badge)](https://github.com/AhoyLemon/xyz/actions)
-[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fahoylemon.xyz&style=for-the-badge)](https://ahoylemon.xyz)
+[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=00B01B&up_message=online&url=https%3A%2F%2Fahoylemon.xyz&style=for-the-badge)](https://ahoylemon.xyz)
 [![Activity](https://img.shields.io/github/commit-activity/m/AhoyLemon/xyz?style=for-the-badge)](https://github.com/AhoyLemon/xyz/commits)
 
 <!-- Extended Badges -->
