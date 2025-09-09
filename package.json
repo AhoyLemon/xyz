@@ -4,9 +4,9 @@
   "description": "![ahoylemon.xyz](https://ahoylemon.xyz/android-chrome-512x512.png) #### (A Site Lemon Built To Show Sites Lemon Built)",
   "main": "index.js",
   "scripts": {
-    "build:pug": "node build-pug.js",
-    "build:sass": "node build-sass.js",
-    "build:sass:prod": "node build-sass.js --compressed --source-map",
+    "build:pug": "node scripts/npm/build-pug.js",
+    "build:sass": "node scripts/npm/build-sass.js",
+    "build:sass:prod": "node scripts/npm/build-sass.js --compressed --source-map",
     "build": "npm run build:pug && npm run build:sass",
     "watch": "node scripts/npm/watch.js",
     "serve": "browser-sync start --config scripts/npm/bs-config.js",
