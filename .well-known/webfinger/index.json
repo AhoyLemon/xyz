@@ -1,72 +1,59 @@
-[
-  {
-    "subject": "acct:lemon@ahoylemon.xyz",
-    "aliases": [
-      "https://ahoylemon.xyz/",
-      "https://mastodon.social/@ahoylemon",
-      "acct:ahoylemon@mastodon.social"
-    ],
-    "links": [
-      {
-        "rel": "http://webfinger.net/rel/profile-page",
-        "type": "text/html",
-        "href": "https://ahoylemon.xyz/",
-        "_comment": "Main personal website profile page"
-      },
-      {
-        "rel": "http://webfinger.net/rel/avatar",
-        "type": "image/jpeg",
-        "href": "https://ahoylemon.xyz/img/lemon-square600.jpg",
-        "_comment": "Profile avatar image"
-      },
-      {
-        "rel": "me",
-        "href": "https://github.com/AhoyLemon",
-        "_comment": "GitHub profile"
-      },
-      {
-        "rel": "me",
-        "href": "https://mastodon.social/@ahoylemon",
-        "_comment": "Mastodon profile"
-      },
-      {
-        "rel": "me",
-        "href": "https://bsky.app/profile/ahoylemon.xyz",
-        "_comment": "Bluesky profile"
-      },
-      {
-        "rel": "me",
-        "href": "https://sessionize.com/lemon/",
-        "_comment": "Sessionize speaker profile"
-      },
-      {
-        "rel": "mailto",
-        "href": "mailto:lemon@ahoylemon.xyz",
-        "_comment": "Preferred public email address"
-      }
-    ]
-  },
-  {
-    "subject": "acct:ahoylemon@mastodon.social",
-    "aliases": [
-      "https://mastodon.social/@ahoylemon",
-      "https://mastodon.social/users/ahoylemon"
-    ],
-    "links": [
-      {
-        "rel": "http://webfinger.net/rel/profile-page",
-        "type": "text/html",
-        "href": "https://mastodon.social/@ahoylemon"
-      },
-      {
-        "rel": "self",
-        "type": "application/activity+json",
-        "href": "https://mastodon.social/users/ahoylemon"
-      },
-      {
-        "rel": "http://ostatus.org/schema/1.0/subscribe",
-        "template": "https://mastodon.social/authorize_interaction?uri={uri}"
-      }
-    ]
-  }
-]
+{
+  "subject": "acct:lemon@ahoylemon.xyz",
+  "aliases": [
+    "https://ahoylemon.xyz/",
+    "https://mastodon.social/@ahoylemon",
+    "acct:ahoylemon@mastodon.social",
+    "https://mastodon.social/users/ahoylemon"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://ahoylemon.xyz/",
+      "_comment": "Main personal website profile page"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "type": "image/jpeg",
+      "href": "https://ahoylemon.xyz/img/lemon-square600.jpg",
+      "_comment": "Profile avatar image"
+    },
+    {
+      "rel": "me",
+      "href": "https://github.com/AhoyLemon",
+      "_comment": "GitHub profile"
+    },
+    {
+      "rel": "me",
+      "href": "https://mastodon.social/@ahoylemon",
+      "_comment": "Mastodon profile"
+    },
+    {
+      "rel": "me",
+      "href": "https://bsky.app/profile/ahoylemon.xyz",
+      "_comment": "Bluesky profile"
+    },
+    {
+      "rel": "me",
+      "href": "https://sessionize.com/lemon/",
+      "_comment": "Sessionize speaker profile"
+    },
+    {
+      "rel": "mailto",
+      "href": "mailto:lemon@ahoylemon.xyz",
+      "_comment": "Preferred public email address"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://mastodon.social/users/ahoylemon",
+      "_comment": "Mastodon ActivityPub actor document"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://mastodon.social/authorize_interaction?uri={uri}",
+      "_comment": "Mastodon subscribe template"
+    }
+  ]
+}
