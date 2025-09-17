@@ -1,17 +1,18 @@
 {
   "name": "xyz",
   "version": "1.0.0",
-  "description": "![ahoylemon.xyz](https://ahoylemon.xyz/android-chrome-512x512.png) #### (A Site Lemon Built To Show Sites Lemon Built)",
+  "description": "ahoylemon.xyz",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently \"npm run watch\" \"npm run serve\" --names \"WATCH,SERVE\" --prefix-colors \"cyan,magenta\"",
+    "build": "npm run build:pug && npm run build:sass",
     "build:pug": "node scripts/npm/build-pug.js",
     "build:sass": "node scripts/npm/build-sass.js",
-    "build:sass:prod": "node scripts/npm/build-sass.js --compressed --source-map",
-    "build": "npm run build:pug && npm run build:sass",
-    "watch": "node scripts/npm/watch.js",
-    "serve": "browser-sync start --config scripts/npm/bs-config.js",
-    "dev": "concurrently \"npm run watch\" \"npm run serve\" --names \"BUILD,SERVER\" --prefix-colors \"cyan,magenta\" --restart-tries 3",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:sass:prod": "node scripts/npm/build-sass.js --compressed --no-source-map",
+    "serve": "browser-sync start --server --files \"*.html,css/*.css\" --port 3000",
+    "watch": "concurrently \"npm run watch:pug\" \"npm run watch:sass\"",
+  "watch:pug": "chokidar \"pug/**/*.pug\" -c \"npm run build:pug\"",
+    "watch:sass": "chokidar \"sass/**/*.scss\" -c \"npm run build:sass\""
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "autoprefixer": "^10.4.21",
     "browser-sync": "^3.0.3",
     "chokidar": "^4.0.1",
+    "chokidar-cli": "^3.0.0",
     "concurrently": "^9.2.1",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",

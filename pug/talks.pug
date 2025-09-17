@@ -196,12 +196,14 @@ html(lang="en")
                           li.talk
                             if u.name
                               span(itemprop="workFeatured")= u.name
-                            if u.slides || u.video || u.keynote || u.blindDeck
+                            if u.slides || u.video || u.keynote || u.blindDeck || u.workshop
                               span.talk-supplements
                                 if (u.keynote)
                                   span.keynote KEYNOTE
                                 if (u.blindDeck)
                                   span.blind-deck BLIND DECK
+                                if (u.workshop)
+                                  span.workshop workshop
                                 if (u.slides)
                                   span
                                     a(href=u.slides) Slides
