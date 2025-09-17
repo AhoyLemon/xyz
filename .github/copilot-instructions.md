@@ -96,7 +96,7 @@ ahoylemon.xyz is a static personal website built with Pug templates and SASS/SCS
 - `*.html` - Generated HTML files from Pug templates
 
 **Configuration:**
-- `_config.yml` - Jekyll configuration (minimal, only for GitHub Pages)
+- `_config.yml` - allow webfinger via .well-known folder
 - `config.codekit3` - CodeKit configuration (alternative build tool)
 - `prepros.config` - Prepros configuration (alternative build tool)
 
