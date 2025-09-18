@@ -728,36 +728,12 @@ section.client-site-tech h2 {
 section.client-site-tech .tech {
   -moz-column-gap: 20px;
        column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
-@media (min-width: 1820px) {
-  section.client-site-tech .tech {
-    -moz-columns: 8;
-         columns: 8;
-  }
-}
-@media (min-width: 1600px) and (max-width: 1819px) {
-  section.client-site-tech .tech {
-    -moz-columns: 5;
-         columns: 5;
-  }
-}
-@media (min-width: 1380px) and (max-width: 1599px) {
-  section.client-site-tech .tech {
-    -moz-columns: 4;
-         columns: 4;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1379px) {
-  section.client-site-tech .tech {
-    -moz-columns: 3;
-         columns: 3;
-  }
-}
-@media (min-width: 460px) and (max-width: 999px) {
-  section.client-site-tech .tech {
-    -moz-columns: 2;
-         columns: 2;
-  }
+section.client-site-tech .tech > * {
+  flex-basis: 160px;
+  flex-shrink: 1;
 }
 section.client-site-tech .tech .icon-and-name {
   display: grid;
@@ -1018,6 +994,18 @@ section.client-site-tech .tech .name {
 }
 .client-site .tech .platform-sh {
   fill: #1A182A;
+}
+.client-site .tech .xata * {
+  fill: #8B6FFB;
+}
+.client-site .tech .typescript {
+  fill: #3178C6;
+}
+.client-site .tech .vite {
+  fill: #646CFF;
+}
+.client-site .tech .wordpress {
+  fill: #21759B;
 }
 .client-site .tech span {
   font-weight: 625;

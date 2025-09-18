@@ -30,26 +30,24 @@ html(lang="en")
 
         +clientSiteSummary(s)
 
-        if index == 4
+        if index == 5
           - let displayedTech = []
           section.client-site-tech
             h2 Technologies used...
             .tech.listout
-              each s,index in clientSites
-                if s.cms && !displayedTech.includes(s.cms)
-                  dl.icon-and-name
-                    dt 
-                      +techIcon(s.cms)
-                    dd.name
-                      span= s.cms
-                  - displayedTech.push(s.cms)
-                each tech,index in s.tech
-                  if !displayedTech.includes(tech)
-                    dl.icon-and-name
-                      dt.icon 
-                        +techIcon(tech)
-                      dd.name
-                        span= tech
-                    - displayedTech.push(tech)
+              - let allTech = []
+              each s in clientSites
+                if s.cms && !allTech.includes(s.cms)
+                  - allTech.push(s.cms)
+                each tech in s.tech
+                  if !allTech.includes(tech)
+                    - allTech.push(tech)
+              - allTech = allTech.sort((a, b) => a.localeCompare(b))
+              each tech in allTech
+                dl.icon-and-name
+                  dt.icon
+                    +techIcon(tech)
+                  dd.name
+                    span= tech
     
     include partials/_javascripts.pug
