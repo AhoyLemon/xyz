@@ -16,17 +16,11 @@ section.client-site-tech { grid-column: 1 / -1; padding:30px 20px 20px 20px; bac
   .tech { column-gap: 20px;
     display:flex; flex-wrap: wrap;
     > * { flex-basis: 160px; flex-shrink: 1; }
-    // @media (min-width:1820px) { columns: 8; }
-    // @media (min-width:1600px) and (max-width:1819px) { columns: 5; }
-    // @media (min-width:1380px) and (max-width:1599px) { columns: 4; }
-    // @media (min-width:1000px) and (max-width:1379px) { columns: 3; }
-    // @media (min-width:460px)  and (max-width:999px)  { columns: 2; }
     .icon-and-name { display:grid; grid-template-columns: 32px 1fr; gap:10px; margin-bottom: 20px;
       svg { fill:#666; }
     }
     .name { display:flex; align-items: center; font-size:135%; font-weight: 600; }
   }
-  // @media (max-width:888px) { display:none; }
 }
 
 .client-site { display:grid; grid-template-columns: 460px 1fr 76px; grid-gap: 40px; background:white; box-shadow:$card-shadow; padding:20px;
