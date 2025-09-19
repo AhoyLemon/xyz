@@ -2,6 +2,22 @@
   const clientSites = [
 
     {
+      title: "Oil & Gas Watch",
+      url: "https://oilandgaswatch.org/",
+      tech: [ "Vite", "Vue", "Sass", "TypeScript" ],
+      cms: "Xata",
+      client: "Environmental Integrity Project",
+      screenshots: [
+        "ogw1.webp", "ogw2.webp", "ogw3.webp", "ogw4.webp"
+      ],
+      description: `
+        <p>The Environmental Integrity Project (EIP) have a massive task of monitoring the polluting effects of oil, gas and petrochemical facilities and pipelines across the United States. </p>
+        <p>This site communicates directly with a Postgres database API (provided by Xata webhooks) to display dashboard information on both an individual and summary level.</p>
+      `,
+      class: 'featured'
+    },
+
+    {
       title: "StrongHearts Helpline",
       url: "https://strongheartshelpline.org",
       tech: [ "PHP", "Sass", "YAML", "AOS.js", "JavaScript", "Matomo"],
@@ -17,7 +33,7 @@
     {
       title: "EDF Vital Signs",
       url: "https://vitalsigns.edf.org",
-      tech: [ "Twig", "Sass", "JavaScript", "Vimeo Developer API", "Platform.sh" ],
+      tech: [ "Twig", "Sass", "JavaScript", "Vimeo API" ],
       cms: "Drupal",
       client: "Climate Change News",
       screenshots: [
@@ -38,6 +54,21 @@
       ],
       description: `<p>Duke University had an outdated concept of an online magazine. What was once a visually indistinct dumping ground for copy/pasted material from their print magazine became a vibrant space for online-first multimedia content.</p>`,
       class: 'secondary'
+    },
+    {
+      title: "Global Teaching Partners",
+      url: "https://globalteachingpartners.com/",
+      tech: [ "PHP", "Sass", "JavaScript", "Gutenberg", "JSON", ],
+      cms: "WordPress",
+      client: "Staffing resource for underfunded schools",
+      screenshots: [
+        "gtp1.webp", "gtp2.webp", "gtp3.webp"
+      ],
+      description: `
+        <p>Global Teaching Partners is a resource that provides temporary US visas to eductors who would like the opportunity to temporarily live and teach in the United States.</p>
+        <p>We set up a site to explain the program, the requirements and the benefits, show success stories, and of course - provide an application process that talks directly to their bespoke application software</p>
+      `,
+      class:"secondary"
     },
 
     {
@@ -81,7 +112,7 @@
       screenshots: [
         "pxlclix1.jpg", "pxlclix2.jpg", "pxlclix3.jpg", "pxlclix4.jpg"
       ],
-      class: "featured"
+      class: "secondary"
     },
 
     { 
@@ -96,12 +127,11 @@
       screenshots: [
         "ramada1.jpg", "ramada2.jpg", "ramada3.jpg", "ramada4.jpg"
       ],
-      class: "featured"
+      class: "secondary"
     },
 
     {
       title: "Grumpy's Bar",
-      url: "https://grumpys.bar",
       tech: [ "PHP", "Untappd", "Sass", "JavaScript"],
       cms: "Kirby",
       client: "A Local Favorite Bar",
@@ -188,7 +218,7 @@
     {
       title: "Rose Vine Hall",
       //url: "https://rosevinehall.com",
-      tech: [ "PHP", "Sass", "jQuery", "JavaScript"],
+      tech: [ "PHP", "Sass", "JavaScript"],
       cms: "Kirby",
       client: "Event Space",
       description: `
@@ -201,19 +231,35 @@
     },
 
     {
-      title: "Voice From Hale",
-      url: "https://voicefromhale.com",
-      tech: [ "Pug", "Sass", "ScrollMagic", "Howler.js"],
-      client: "Voice Actor",
+      title: "ProspectCloud",
+      url: "https://prospect-cloud.com",
+      tech: [ "PHP", "Sass", "JavaScript", "Gutenberg"],
+      cms: "WordPress",
+      client: "Lead & Contact Management",
       description: `
-        <p>Even by voice actor standards, Eric is gifted with a magnificent and distinct vocal signature.</p>
-        <p>As such, our primary goal was to get prospective clients to experience that voice as quickly and directly as possible, which we solved with a script, scroll timeline, and audio triggers.</p>
+        <p>ProspectCloud provides bespoke outreach solutions for helping their clients know the right people to contact for the right questions in different industries.</p>
+        <p>They needed a flexible site that would explain their approach and of course encourage people to connect.</p>
       `,
       screenshots: [
-        "hale1.jpg"
+        "pc1.webp"
       ],
       class: "secondary"
     },
+
+    //- {
+    //-   title: "Voice From Hale",
+    //-   url: "https://voicefromhale.com",
+    //-   tech: [ "Pug", "Sass", "ScrollMagic", "Howler.js"],
+    //-   client: "Voice Actor",
+    //-   description: `
+    //-     <p>Even by voice actor standards, Eric is gifted with a magnificent and distinct vocal signature.</p>
+    //-     <p>As such, our primary goal was to get prospective clients to experience that voice as quickly and directly as possible, which we solved with a script, scroll timeline, and audio triggers.</p>
+    //-   `,
+    //-   screenshots: [
+    //-     "hale1.jpg"
+    //-   ],
+    //-   class: "secondary"
+    //- },
     
     {
       title: "Spokane Tribe Casino",
@@ -257,20 +303,18 @@
       ],
       class: "secondary"
     },
-    {
-      title: "Akwesasne Mohawk",
-      url: "https://mohawkcasino.com/",
-      client: "New York Casino",
-      tech: [ "PHP", "Sass", "jQuery"],
-      cms: "Concrete5",
-      screenshots: [
-        "mohawk1.jpg"
-      ],
-      class: "secondary"
-    },
+    //- {
+    //-   title: "Akwesasne Mohawk",
+    //-   client: "New York Casino",
+    //-   tech: [ "PHP", "Sass", "jQuery"],
+    //-   cms: "Concrete5",
+    //-   screenshots: [
+    //-     "mohawk1.jpg"
+    //-   ],
+    //-   class: "secondary"
+    //- },
     {
       title: "Grand Casino",
-      url: "https://grandcasinomn.com",
       client: "Minnesota Casino",
       tech: [ "PHP", "Sass", "jQuery"],
       cms: "Concrete5",
@@ -279,16 +323,16 @@
       ],
       class: "secondary"
     },
-    {
-      title: "Meskwaki",
-      url: "https://www.meskwaki.com/",
-      client: "Iowa Casino",
-      tech: [ "PHP", "Sass", "jQuery"],
-      cms: "Concrete5",
-      screenshots: [ 
-        "meskwaki1.jpg"
-      ],
-      class: "secondary"
-    }
+    //- {
+    //-   title: "Meskwaki",
+    //-   url: "https://www.meskwaki.com/",
+    //-   client: "Iowa Casino",
+    //-   tech: [ "PHP", "Sass", "jQuery"],
+    //-   cms: "Concrete5",
+    //-   screenshots: [ 
+    //-     "meskwaki1.jpg"
+    //-   ],
+    //-   class: "secondary"
+    //- }
 
   ];
