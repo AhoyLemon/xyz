@@ -1,0 +1,46 @@
+name: Update README Badges
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 🛒 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: 📊 Update README badges with current counts
+        run: |
+          node scripts/npm/update-badges.js
+          
+      - name: 📝 Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          if git diff --quiet README.md; then
+            echo "📋 No changes to README.md badges"
+          else
+            git add README.md
+            git commit -m "📊 Update README badges with current counts [skip ci]"
+            git push
+            echo "✅ README.md badges updated and committed"
+          fi

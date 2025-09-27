@@ -11,8 +11,9 @@
     "build:sass:prod": "node scripts/npm/build-sass.js --compressed --no-source-map",
     "serve": "browser-sync start --server --files \"*.html,css/*.css\" --port 3000",
     "watch": "concurrently \"npm run watch:pug\" \"npm run watch:sass\"",
-  "watch:pug": "chokidar \"pug/**/*.pug\" -c \"npm run build:pug\"",
-    "watch:sass": "chokidar \"sass/**/*.scss\" -c \"npm run build:sass\""
+    "watch:pug": "chokidar \"pug/**/*.pug\" -c \"npm run build:pug\"",
+    "watch:sass": "chokidar \"sass/**/*.scss\" -c \"npm run build:sass\"",
+    "update:badges": "node scripts/npm/update-badges.js"
   },
   "keywords": [],
   "author": "",
