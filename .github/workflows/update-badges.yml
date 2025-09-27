@@ -36,11 +36,24 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          if git diff --quiet README.md; then
-            echo "📋 No changes to README.md badges"
+          # Check for both README.md and readme.md
+          README_FILE=""
+          if [ -f "README.md" ]; then
+            README_FILE="README.md"
+          elif [ -f "readme.md" ]; then
+            README_FILE="readme.md"
+          fi
+          
+          if [ -z "$README_FILE" ]; then
+            echo "❌ No README file found"
+            exit 1
+          fi
+          
+          if git diff --quiet "$README_FILE"; then
+            echo "📋 No changes to $README_FILE badges"
           else
-            git add README.md
+            git add "$README_FILE"
             git commit -m "📊 Update README badges with current counts [skip ci]"
             git push
-            echo "✅ README.md badges updated and committed"
+            echo "✅ $README_FILE badges updated and committed"
           fi

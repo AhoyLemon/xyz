@@ -100,7 +100,11 @@ function countArrayInPugFile(filePath, arrayName) {
 }
 
 function updateReadmeBadges(upcomingCount, previousCount, sitesCount) {
-  const readmePath = path.join(__dirname, '../../README.md');
+  // Check for both README.md and readme.md (case sensitivity)
+  let readmePath = path.join(__dirname, '../../README.md');
+  if (!fs.existsSync(readmePath)) {
+    readmePath = path.join(__dirname, '../../readme.md');
+  }
   
   try {
     let content = fs.readFileSync(readmePath, 'utf8');
@@ -172,10 +176,10 @@ function updateReadmeBadges(upcomingCount, previousCount, sitesCount) {
     }
     
     fs.writeFileSync(readmePath, content, 'utf8');
-    console.log('✅ README.md badges updated successfully');
+    console.log('✅ README badges updated successfully');
     
   } catch (error) {
-    console.error('❌ Error updating README.md:', error.message);
+    console.error('❌ Error updating README file:', error.message);
     process.exit(1);
   }
 }

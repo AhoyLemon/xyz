@@ -1,3 +1,5 @@
+name: Minify Sass for Production
+
 on:
   push:
     branches:
