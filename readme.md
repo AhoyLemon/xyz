@@ -8,8 +8,8 @@
 [![Activity](https://img.shields.io/github/commit-activity/m/AhoyLemon/xyz?style=for-the-badge)](https://github.com/AhoyLemon/xyz/commits)
 
 [![Projects](https://img.shields.io/badge/Projects-30-black?style=for-the-badge)](https://github.com/AhoyLemon?tab=repositories)
-[![Upcoming Conferences](https://img.shields.io/badge/Upcoming%20Conferences-1-black?style=for-the-badge)](https://ahoylemon.xyz/talks.html#upcoming)
-[![Previous Conferences](https://img.shields.io/badge/Previous%20Conferences-64-black?style=for-the-badge)](https://ahoylemon.xyz/talks.html#previous)
+[![Upcoming Conferences](https://img.shields.io/badge/Upcoming%20Conferences-0-black?style=for-the-badge)](https://ahoylemon.xyz/talks.html#upcoming)
+[![Previous Conferences](https://img.shields.io/badge/Previous%20Conferences-65-black?style=for-the-badge)](https://ahoylemon.xyz/talks.html#previous)
 
 [![Open Issues](https://img.shields.io/github/issues/AhoyLemon/xyz?label=OPEN%20ISSUES&style=for-the-badge&color=orange)](https://github.com/AhoyLemon/xyz/issues) 
 [![Closed Issues](https://img.shields.io/github/issues-closed/AhoyLemon/xyz?label=&style=for-the-badge&color=555)](https://github.com/AhoyLemon/xyz/issues?q=is%3Aissue+is%3Aclosed)
