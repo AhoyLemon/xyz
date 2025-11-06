@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@300..700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/ahoylemon.css?v=2025-09-19T16:12:29.856Z">
+    <link rel="stylesheet" href="/css/ahoylemon.css?v=2025-11-06T19:23:11.592Z">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I make a lot of stuff, including this website to show the stuff I make.">
     <!-- RSS Feed-->
@@ -82,9 +82,17 @@
         <figure class="leading"><a name="upcoming"></a>
           <h2>Upcoming Conferences &raquo;</h2>
         </figure>
-        <figure class="conference" itemscope itemtype="http://schema.org/Event">
+        <figure class="map"><a class="absolute-link" href="https://drive.google.com/open?id=1UXVK7n3Sxknm92AQXx6WoIgNDiKFC9OW&amp;usp=sharing" target="_blank"><span>Location Map</span></a></figure>
+      </div>
+      <!-- PREVIOUS CONFERENCES-->
+      <div class="talk-grid previous">
+        <figure class="leading"><a name="previous"></a>
+          <h2>Previous Conferences &raquo;</h2>
+        </figure>
+        <!-- Add the "Aiports I Have Known" map-->
+        <div class="conference" itemscope itemtype="http://schema.org/Event">
           <div class="details"><img class="flag" src="/svg/flags/us.svg" alt="flag of United States"><a class="anchor" name="LonghornPHP20251023"></a>
-            <div class="name"><a href="https://longhornphp.com" target="_blank" itemprop="url"><span itemprop="name">Longhorn PHP</span></a>
+            <div class="name"> <a href="https://longhornphp.com" target="_blank" itemprop="url"><span itemprop="name">Longhorn PHP</span></a>
             </div>
             <div class="location" itemprop="location" itemscope itemtype="http://schema.org/City"><span itemprop="name">Austin, TX</span>
               <meta itemprop="address" content="6000 Middle Fiskville Road, Austin, Texas 78752 United States">
@@ -95,26 +103,25 @@
                     </time></span>- <span itemprop="endDate" content="2025-10-25">
                     <time datetime="2025-10-25">Oct 25, 2025
                     </time></span></div>
-            <!-- Talks-->
-            <div class="presenting">Presenting:
-              <ul class="multiple-talks">
-                <li class="talk"><span class="talk-name" itemprop="workFeatured">How To Make Your Website A PWA</span>
-                </li>
-              </ul>
-            </div>
             <div itemprop="performer" itemscope itemtype="http://schema.org/Person">
               <meta itemprop="name" content="Lemon">
               <meta itemprop="url" content="https://ahoylemon.xyz">
             </div>
+            <div class="presenting">Presented:
+              <ul class="multiple-talks">
+                <li class="talk"><span itemprop="workFeatured">How To Make Your Website A PWA</span>
+                </li>
+              </ul>
+            </div>
           </div>
-        </figure>
-        <figure class="map"><a class="absolute-link" href="https://drive.google.com/open?id=1UXVK7n3Sxknm92AQXx6WoIgNDiKFC9OW&amp;usp=sharing" target="_blank"><span>Location Map</span></a></figure>
-      </div>
-      <!-- PREVIOUS CONFERENCES-->
-      <div class="talk-grid previous">
-        <figure class="leading"><a name="previous"></a>
-          <h2>Previous Conferences &raquo;</h2>
-        </figure>
+          <div class="pics">
+            <button class="close-cardpic" title="close large image view"><span>X</span></button>
+            <button class="pic" data-pic="longhorn/2025-partyparty.webp" title="view larger image"><img src="/img/talks/longhorn/2025-partyparty.webp" itemprop="image" loading="lazy" alt="thumbnail photo from Longhorn PHP"></button>
+            <button class="pic" data-pic="longhorn/2025-beer.webp" title="view larger image"><img src="/img/talks/longhorn/2025-beer.webp" itemprop="image" loading="lazy" alt="thumbnail photo from Longhorn PHP"></button>
+            <button class="pic" data-pic="longhorn/2025-wurst.webp" title="view larger image"><img src="/img/talks/longhorn/2025-wurst.webp" itemprop="image" loading="lazy" alt="thumbnail photo from Longhorn PHP"></button>
+          </div>
+          <figure class="cardpic"></figure>
+        </div>
         <!-- Add the "Aiports I Have Known" map-->
         <div class="conference" itemscope itemtype="http://schema.org/Event">
           <div class="details"><img class="flag" src="/svg/flags/dk.svg" alt="flag of Denmark"><a class="anchor" name="NDCCopenhagen20250908"></a>
@@ -322,6 +329,9 @@
           <figure class="cardpic"></figure>
         </div>
         <!-- Add the "Aiports I Have Known" map-->
+        <figure class="airport-map">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1uZYZYquIbRfnRUcPlA9tA4Z3c0P6fTI&amp;ehbc=2E312F&amp;ll=47%2C-55&amp;z=3"></iframe>
+        </figure>
         <div class="conference" itemscope itemtype="http://schema.org/Event">
           <div class="details"><img class="flag" src="/svg/flags/us.svg" alt="flag of United States"><a class="anchor" name="InternationalJavaScript20241007"></a>
             <div class="name"> <a href="https://javascript-conference.com/new-york/" target="_blank" itemprop="url"><span itemprop="name">International JavaScript</span></a>
@@ -357,9 +367,6 @@
           <figure class="cardpic"></figure>
         </div>
         <!-- Add the "Aiports I Have Known" map-->
-        <figure class="airport-map">
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1uZYZYquIbRfnRUcPlA9tA4Z3c0P6fTI&amp;ehbc=2E312F&amp;ll=47%2C-55&amp;z=3"></iframe>
-        </figure>
         <div class="conference" itemscope itemtype="http://schema.org/Event">
           <div class="details"><img class="flag" src="/svg/flags/dk.svg" alt="flag of Denmark"><a class="anchor" name="CopenhagenDevelopersFestival20240826"></a>
             <div class="name"> <a href="https://cphdevfest.com/" target="_blank" itemprop="url"><span itemprop="name">Copenhagen Developers Festival</span></a>
