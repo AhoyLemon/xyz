@@ -201,6 +201,10 @@ svg {
 html {
   font-size: 18px;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  scrollbar-color: #313131 transparent;
+  scroll-behavior: auto;
 }
 
 body {
@@ -216,7 +220,8 @@ img {
   height: auto;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 600;
 }
 
@@ -244,7 +249,12 @@ h6 {
   font-size: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 105%;
 }
 
@@ -569,6 +579,10 @@ header.left-side li a.twitter span {
   margin-top: 10px;
   padding: 20px;
   scroll-snap-type: x mandatory;
+  scrollbar-width: initial;
+  scrollbar-gutter: stable;
+  scrollbar-color: #e4e72c transparent;
+  scroll-behavior: auto;
 }
 .project-summaries .new-talkbox .conference-boxes .conference {
   flex-shrink: 0;
@@ -600,7 +614,10 @@ header.left-side li a.twitter span {
   white-space: nowrap;
   margin-left: 0.5em;
 }
-.project-summaries .new-talkbox .conference-boxes .conference .talk-supplements .keynote, .project-summaries .new-talkbox .conference-boxes .conference .talk-supplements .workshop, .project-summaries .new-talkbox .conference-boxes .conference .talk-supplements .blind-deck, .project-summaries .new-talkbox .conference-boxes .conference .talk-supplements .host {
+.project-summaries .new-talkbox .conference-boxes .conference .talk-supplements .keynote,
+.project-summaries .new-talkbox .conference-boxes .conference .talk-supplements .workshop,
+.project-summaries .new-talkbox .conference-boxes .conference .talk-supplements .blind-deck,
+.project-summaries .new-talkbox .conference-boxes .conference .talk-supplements .host {
   font-weight: 700;
 }
 .project-summaries .new-talkbox .conference-boxes .conference .talk-supplements:before {
