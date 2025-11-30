@@ -35,7 +35,8 @@
       <title>This Meeting Has Points</title>
       <link>https://kinda.fun/meeting</link>
       <guid>https://kinda.fun/meeting</guid>
-      <description>&lt;p&gt;Q: You're invited to all sorts of virtual meetings, but what's the point of to &lt;em&gt;any of them&lt;/em&gt;?&lt;/p&gt;&lt;p&gt;A: Because now with this game you can get points for tricking your coworkers!&lt;/p&gt;</description>
+      <description>&lt;p&gt;A game for &lt;strong&gt;2-8 players&lt;/strong&gt; to make work meetings slightly less terrible by giving everybody a reason to pay attention.&lt;/p&gt;
+                  &lt;p&gt;Try to slip one of the phrases on your card past the other players without them noticing. But if they catch you, they'll steal your card.&lt;/p&gt;</description>
       <pubDate>2025-07-10</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/thismeetinghaspoints.svg</url>
@@ -176,6 +177,19 @@
       </image>
     </item>
     <item>
+      <title>The Wrongest Words</title>
+      <link>https://kinda.fun/wrongest</link>
+      <guid>https://kinda.fun/wrongest</guid>
+      <description>&lt;p&gt;The Wrongest Words has actually been rebuild several times along with the kinda.fun platform.&lt;/p&gt;
+                  &lt;p&gt;The goal of this one is to defend whatever stupid thing it says on your card.&lt;/p&gt;</description>
+      <pubDate>2020-01-27</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/wrongest.svg</url>
+        <title>The Wrongest Words logo</title>
+        <link>https://kinda.fun/wrongest</link>
+      </image>
+    </item>
+    <item>
       <title>That's Not Poutine.</title>
       <link>https://notpoutine.ahoylemon.xyz/</link>
       <guid>https://notpoutine.ahoylemon.xyz/</guid>
@@ -201,14 +215,15 @@
     </item>
     <item>
       <title>Rick Ross Daily</title>
-      <link>https://botsin.space/@rickross</link>
-      <guid>https://botsin.space/@rickross</guid>
-      <description>This was a Twitterbot, but now I have it set up on Mastodon instead.</description>
+      <link></link>
+      <guid></guid>
+      <description>&lt;p&gt;Originally built as a Twitter Bot, this bot would share Rick Ross' thoughts every day, and every day? He was hustlin.&lt;/p&gt;
+                  &lt;p&gt;It was converted to a Mastodon bot in 2022, but it had to be retired when botsin.space shut down.&lt;/p&gt;</description>
       <pubDate>2022-11-23</pubDate>
       <image>
         <url>https://ahoylemon.xyz/img/sites/ross_circle.webp</url>
         <title>Rick Ross Daily logo</title>
-        <link>https://botsin.space/@rickross</link>
+        <link></link>
       </image>
     </item>
     <item>
@@ -249,14 +264,15 @@
     </item>
     <item>
       <title>Bad Accent Club</title>
-      <link>https://play.google.com/store/apps/details?id=club.badaccent</link>
-      <guid>https://play.google.com/store/apps/details?id=club.badaccent</guid>
-      <description>&lt;p&gt;The Android game that puts your friends' accents to the test (and they will usually fail the test).</description>
+      <link></link>
+      <guid></guid>
+      <description>&lt;p&gt;The mobile app that puts your friends' accents to the test (and they will usually fail the test).
+                  &lt;p&gt;Eventually removed from the app stores because, honestly, it was annoying to maintain. I might revisit this as a PWA some day.&lt;/p&gt;</description>
       <pubDate>2017-08-18</pubDate>
       <image>
         <url>https://ahoylemon.xyz/svg/badaccent.svg</url>
         <title>Bad Accent Club logo</title>
-        <link>https://play.google.com/store/apps/details?id=club.badaccent</link>
+        <link></link>
       </image>
     </item>
     <item>

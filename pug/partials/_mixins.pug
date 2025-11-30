@@ -233,7 +233,10 @@ mixin projectSummary(s)
 
       if (fgImage)
         .image-holder(style=bgStyle)
-          a(href=s.url)
+          if (s.url)
+            a(href=s.url)
+              img.logo(src=fgImage alt=s.title+" logo" width="100" height="100" itemprop="image")
+          else
             img.logo(src=fgImage alt=s.title+" logo" width="100" height="100" itemprop="image")
       else if (bgStyle)
         .image-holder
@@ -241,7 +244,10 @@ mixin projectSummary(s)
       figcaption
         .project-text
           h3.title
-            a(href=s.url itemprop="url")
+            if (s.url)
+              a(href=s.url itemprop="url")
+                span(itemprop="name")= s.title
+            else
               span(itemprop="name")= s.title
           if (s.subhead)
             .subhead= s.subhead

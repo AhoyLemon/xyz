@@ -3,17 +3,6 @@
 -
   var lemonSites = [
 
-    //- {
-    //-   title: "The White Elephant Game",
-    //-   url: "https://sane.science",
-    //-   subhead: "An Online Gaslighting Simulator",
-    //-   launched: "2022-12-13",
-    //-   description: "<p>Are you in need of documentation of your own sanity? Yes, of course you are. Well, this online exam is meant to provide just that: Answer our questions and you'll get a diagnosis on the other end.</p><p>Only one caveat: The exam is gaslighting you.</p>",
-    //-   bgImage: "plasma.jpg",
-    //-   type: "website",
-    //-   repo: "AhoyLemon/SANE" 
-    //- }, 
-
     {
       title: "Invalid",
       url: "https://kinda.fun/invalid",
@@ -32,7 +21,8 @@
       url: "https://kinda.fun/meeting",
       subhead: "So now you have a reason to pay attention.",
       launched: "2025-07-10",
-      description: "<p>Q: You're invited to all sorts of virtual meetings, but what's the point of to <em>any of them</em>?</p><p>A: Because now with this game you can get points for tricking your coworkers!</p>",
+      description: `<p>A game for <strong>2-8 players</strong> to make work meetings slightly less terrible by giving everybody a reason to pay attention.</p>
+                    <p>Try to slip one of the phrases on your card past the other players without them noticing. But if they catch you, they'll steal your card.</p>`,
       bgColor: "#121212",
       fgImage: "thismeetinghaspoints.svg",
       type: "website",
@@ -170,18 +160,19 @@
       repo: "AhoyLemon/idiots.win"
     },
 
-    //- {
-    //-   title: "The Wrongest Words",
-    //-   url: "https://kinda.fun/wrongest",
-    //-   launched: "2020-01-27",
-    //-   //retired: "2017-03-20",
-    //-   subhead: "Launched, retired, and then launched again.",
-    //-   description: "<p>The Wrongest Words launched as the second game on <strong>kinda.fun</strong>. It's a multiplayer game where each player must defend the stupid statements in front of them.</p>",
-    //-   bgImage: "radial-dark.jpg",
-    //-   fgImage: "wrongest.svg",
-    //-   type: "website",
-    //-   repo: "AhoyLemon/kinda.fun"
-    //- }, 
+    {
+      title: "The Wrongest Words",
+      url: "https://kinda.fun/wrongest",
+      launched: "2020-01-27",
+      //retired: "2017-03-20",
+      subhead: "The multiplayer game defending stupidity statements",
+      description: `<p>The Wrongest Words has actually been rebuild several times along with the kinda.fun platform.</p>
+                    <p>The goal of this one is to defend whatever stupid thing it says on your card.</p>`,
+      bgImage: "radial-dark.jpg",
+      fgImage: "wrongest.svg",
+      type: "website",
+      repo: "AhoyLemon/kinda.fun"
+    }, 
 
     {
       title: "That's Not Poutine.",
@@ -209,10 +200,12 @@
     
     {
       title: "Rick Ross Daily",
-      url: "https://botsin.space/@rickross",
+      //url: "https://botsin.space/@rickross",
       launched: "2022-11-23",
+      retired: "2025-06-06",
       subhead: "What is Rick Ross gonna get up to today?",
-      description: "This was a Twitterbot, but now I have it set up on Mastodon instead.",
+      description: `<p>Originally built as a Twitter Bot, this bot would share Rick Ross' thoughts every day, and every day? He was hustlin.</p>
+                    <p>It was converted to a Mastodon bot in 2022, but it had to be retired when botsin.space shut down.</p>`,
       bgImage: "gold2.jpg",
       fgImage: "sites/ross_circle.webp",
       type: "bot",
@@ -271,10 +264,12 @@
 
     {
       title: "Bad Accent Club",
-      url: "https://play.google.com/store/apps/details?id=club.badaccent",
+      //url: "https://play.google.com/store/apps/details?id=club.badaccent",
       launched: "2017-08-18",
+      retired: "2025-08-30",
       subhead: "the party game of terrible accents",
-      description: "<p>The Android game that puts your friends' accents to the test (and they will usually fail the test).",
+      description: `<p>The mobile app that puts your friends' accents to the test (and they will usually fail the test).
+                    <p>Eventually removed from the app stores because, honestly, it was annoying to maintain. I might revisit this as a PWA some day.</p>`,
       bgColor: "#a5ed83",
       fgImage: "badaccent.svg",
       type: "android app",
