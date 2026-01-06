@@ -19,16 +19,27 @@
       <height>120</height>
     </image>
     <item>
-      <title>Invalid</title>
-      <link>https://kinda.fun/invalid</link>
-      <guid>https://kinda.fun/invalid</guid>
-      <description>&lt;p&gt;A game for &lt;strong&gt;2-8 players&lt;/strong&gt; to suffer thru corporate onboarding hell by answering trivia questions.&lt;/p&gt;
-                  &lt;p&gt;Employees want to create a new password so they can get on with their lives. But the SysAdmin wants to make every employee's life difficult&lt;/p&gt;</description>
-      <pubDate>2025-08-01</pubDate>
+      <title>Nobody's Sweetheart</title>
+      <link>https://nobodyssweetheart.com</link>
+      <guid>https://nobodyssweetheart.com</guid>
+      <description>&lt;p&gt;Dyna Moe needed a simple personal website. So I cranked out some animations.&lt;/p&gt;</description>
+      <pubDate>2026-01-05</pubDate>
       <image>
-        <url>https://ahoylemon.xyz/svg/invalid.svg</url>
-        <title>Invalid logo</title>
-        <link>https://kinda.fun/invalid</link>
+        <url>https://ahoylemon.xyz/img/tigerhead.png</url>
+        <title>Nobody's Sweetheart logo</title>
+        <link>https://nobodyssweetheart.com</link>
+      </image>
+    </item>
+    <item>
+      <title>Megachurch Tycoon</title>
+      <link>https://kinda.fun/megachurch</link>
+      <guid>https://kinda.fun/megachurch</guid>
+      <description>&lt;p&gt;Starting with no money and a crippling drug addiction, Megachurch Tycoon will have you preaching to larger and larger audiences, motivated by the only thing you believe in: &lt;strong&gt;Geting paid.&lt;/strong&gt;&lt;/p&gt;</description>
+      <pubDate>2025-11-18</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/img/megachurch-icon.png</url>
+        <title>Megachurch Tycoon logo</title>
+        <link>https://kinda.fun/megachurch</link>
       </image>
     </item>
     <item>
@@ -54,6 +65,19 @@
         <url>https://ahoylemon.xyz/svg/f.svg</url>
         <title>Comparatively Famous logo</title>
         <link>https://kinda.fun/cameo</link>
+      </image>
+    </item>
+    <item>
+      <title>Invalid</title>
+      <link>https://kinda.fun/invalid</link>
+      <guid>https://kinda.fun/invalid</guid>
+      <description>&lt;p&gt;A game for &lt;strong&gt;2-8 players&lt;/strong&gt; to suffer thru corporate onboarding hell by answering trivia questions.&lt;/p&gt;
+                  &lt;p&gt;Employees want to create a new password so they can get on with their lives. But the SysAdmin wants to make every employee's life difficult&lt;/p&gt;</description>
+      <pubDate>2025-08-01</pubDate>
+      <image>
+        <url>https://ahoylemon.xyz/svg/invalid.svg</url>
+        <title>Invalid logo</title>
+        <link>https://kinda.fun/invalid</link>
       </image>
     </item>
     <item>
