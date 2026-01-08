@@ -1,0 +1,43 @@
+# GitHub Statistics for AhoyLemon
+# Last Updated: 2026-01-08T16:25:50.510Z
+
+lastUpdated: "2026-01-08T16:25:50.510Z"
+username: "AhoyLemon"
+
+profile:
+  name: "Lemon"
+  bio: "I make websites."
+  location: "Minneapolis, MN"
+  website: "https://ahoylemon.xyz"
+  followers: 159
+  following: 47
+  publicGists: 5
+  createdAt: "2013-01-29T04:58:55Z"
+
+repositories:
+  total: 152
+  public: 72
+  private: 80
+  original: 131
+  forked: 21
+
+engagement:
+  totalStars: 209
+  totalForks: 34
+  totalWatchers: 156
+
+contributions:
+  commits:
+    total: 21045
+    thisYear: 692
+    restricted: 1187
+    note: "Total commits across all repository default branches"
+  pullRequests:
+    total: 549
+    open: 3
+    closed: 546
+  issues:
+    total: 1116
+    open: 50
+    closed: 1066
+  reviews: 23

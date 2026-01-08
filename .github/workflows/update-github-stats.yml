@@ -1,0 +1,53 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    # Run daily at 9:00 AM UTC
+    - cron: "0 9 * * *"
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛒 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: 📊 Fetch GitHub statistics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/npm/fetch-github-stats.js
+
+      - name: 📝 Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Add all generated files
+          git add stats/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "📭 No changes to commit"
+            exit 0
+          fi
+
+          # Commit and push
+          git commit -m "📊 Update GitHub statistics [automated]"
+          git push
+
+          echo "✅ Statistics updated and pushed"

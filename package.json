@@ -13,7 +13,8 @@
     "watch": "concurrently \"npm run watch:pug\" \"npm run watch:sass\"",
     "watch:pug": "chokidar \"pug/**/*.pug\" -c \"npm run build:pug\"",
     "watch:sass": "chokidar \"sass/**/*.scss\" -c \"npm run build:sass\"",
-    "update:badges": "node scripts/npm/update-badges.js"
+    "update:badges": "node scripts/npm/update-badges.js",
+    "stats": "node scripts/npm/fetch-github-stats.js"
   },
   "keywords": [],
   "author": "",
