@@ -135,9 +135,6 @@ async function getUserStats() {
         following {
           totalCount
         }
-        gists {
-          totalCount
-        }
         createdAt
         contributionsCollection {
           totalCommitContributions
@@ -170,7 +167,26 @@ async function getUserStats() {
   `;
 
   const data = await githubGraphQLRequest(query, { login: GITHUB_USERNAME });
-  return data.user;
+  
+  // Fetch gists separately with error handling (not available with GitHub Actions token)
+  let gistsCount = 0;
+  try {
+    const gistsQuery = `
+      query($login: String!) {
+        user(login: $login) {
+          gists {
+            totalCount
+          }
+        }
+      }
+    `;
+    const gistsData = await githubGraphQLRequest(gistsQuery, { login: GITHUB_USERNAME });
+    gistsCount = gistsData.user.gists.totalCount;
+  } catch (error) {
+    console.log('⚠️  Gists count not available (requires additional permissions)');
+  }
+  
+  return { ...data.user, gistsCount };
 }
 
 /**
@@ -322,7 +338,7 @@ async function collectStats() {
         website: user.websiteUrl,
         followers: user.followers.totalCount,
         following: user.following.totalCount,
-        publicGists: user.gists.totalCount,
+        publicGists: user.gistsCount || 0,
         createdAt: user.createdAt,
       },
       repositories: {
