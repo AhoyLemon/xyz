@@ -4,7 +4,6 @@ const currentPath = window.location.pathname;
 // Extract the slug from the path
 const pathSegments = currentPath.split("/").filter((segment) => segment.length > 0);
 const lastSegment = pathSegments[pathSegments.length - 1];
-alert(lastSegment);
 
 // Determine what to display
 let message;
