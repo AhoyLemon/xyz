@@ -1768,3 +1768,20 @@ span.no:before {
   content: "💔";
   font-size: 65%;
 }
+
+main.error-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+main.error-404 .inner {
+  padding: 40px;
+  background: white;
+  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+main.error-404 h1 {
+  font-size: 32dvw;
+  line-height: 70%;
+}

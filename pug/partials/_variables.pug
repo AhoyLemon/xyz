@@ -10,7 +10,8 @@ if testing
 - const lastUpdated = d.toISOString()
 - const talkPage = "talks.html"
 - const talkPageURL = siteURL + "/" + talkPage
-- let description = "I make a lot of stuff, including this website to show the stuff I make."
+if !description
+  - let description = "I make a lot of stuff, including this website to show the stuff I make."
 
 include _sites.pug
 include _talks.pug

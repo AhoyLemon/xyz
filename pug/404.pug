@@ -1,0 +1,25 @@
+
+- const pageTitle = "404 - Page Not Found"
+- const slug = "404"
+- const description = "The requested page could not be found on ahoylemon.xyz"
+include partials/_variables.pug
+
+doctype html
+html(lang="en")
+  head
+    include partials/_mixins.pug
+    include partials/_head.pug
+    
+    //- 404-specific meta tags
+    meta(name="robots" content="noindex, follow")
+    meta(http-equiv="status" content="404")
+  body
+
+    include partials/_left-side.pug
+    
+    main.error-404
+      section.inner
+        h1 404 
+        h2 Page Not Found
+
+    include partials/_javascripts.pug 

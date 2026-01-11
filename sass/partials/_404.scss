@@ -1,0 +1,17 @@
+main.error-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+
+  .inner {
+    padding: 40px;
+    background: white;
+    box-shadow: $card-shadow;
+    text-align: center;
+  }
+  h1 {
+    font-size: 32dvw;
+    line-height: 70%;
+  }
+}
