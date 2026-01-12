@@ -1785,3 +1785,6 @@ main.error-404 h1 {
   font-size: 32dvw;
   line-height: 70%;
 }
+main.error-404 h2 {
+  font-weight: 300;
+}

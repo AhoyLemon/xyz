@@ -5,6 +5,18 @@
 node_modules/
 package-lock.json
 
+# built pages
+index.html
+clients.html
+clients/index.html
+decks.html
+decks/index.html
+talks.html
+talks/index.html
+
+
+
+
 # =========================
 # Operating System Files
 # =========================

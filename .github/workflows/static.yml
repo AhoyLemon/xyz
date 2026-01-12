@@ -4,7 +4,7 @@ on:
   push:
     branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,13 +37,21 @@ jobs:
             echo "🚫 Deployment blocked: 'testing = true' found in pug or 'localhost' found in html."
             exit 1
           fi
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - name: 🛠️ Install dependencies
+        run: npm install
 
+      - name: 🏗️ Build static pages
+        run: npm run build
       - name: 🧑‍🔧 Setup Pages
         uses: actions/configure-pages@v5
       - name: 📤 Uploading artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: "."
       - name: 🚢 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

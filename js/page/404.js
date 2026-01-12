@@ -10,11 +10,11 @@ let message;
 
 // Check if this is the actual 404 page being visited intentionally
 if (lastSegment === "404" || lastSegment === "404.html") {
-  message = "This is the 404 page";
+  message = "This is the 404 page.";
 } else {
   // Extract the slug (remove .html extension if present)
   const slug = lastSegment ? lastSegment.replace(".html", "") : "page";
-  message = `${slug} not found`;
+  message = `${slug} not found.`;
 }
 
 // Update the h2 element with the message
