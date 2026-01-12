@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run watch\" \"npm run serve\" --names \"WATCH,SERVE\" --prefix-colors \"cyan,magenta\"",
-    "build": "npm run build:pug && npm run build:sass",
+    "build": "npm run build:pug && npm run build:sass:prod",
     "build:pug": "node scripts/npm/build-pug.js",
     "build:sass": "node scripts/npm/build-sass.js",
     "build:sass:prod": "node scripts/npm/build-sass.js --compressed --no-source-map",

@@ -7,12 +7,14 @@ package-lock.json
 
 # built pages
 index.html
+404.html
 clients.html
 clients/index.html
 decks.html
 decks/index.html
 talks.html
 talks/index.html
+uses/index.html
 
 
 
