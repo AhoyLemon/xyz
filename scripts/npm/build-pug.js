@@ -6,16 +6,21 @@ const path = require("path");
 // Define the compilation mappings based on prepros.config
 const compilations = [
   { src: "pug/index.pug", dest: "index.html" },
+  // Clients
   { src: "pug/clients.pug", dest: "clients/index.html" },
   { src: "pug/clients.pug", dest: "clients.html" },
+  // Decks
+  { src: "pug/decks.pug", dest: "decks/index.html" },
   { src: "pug/decks.pug", dest: "decks.html" },
+  // Talks
   { src: "pug/talks.pug", dest: "talks/index.html" },
   { src: "pug/talks.pug", dest: "talks.html" },
-  { src: "pug/talks.pug", dest: "talks/index.html" },
+  // Other pages
+  { src: "pug/uses.pug", dest: "uses/index.html" },
+  { src: "blog/_pug/apple-names.pug", dest: "blog/apple-names.html" },
   { src: "pug/feed.pug", dest: "feed.xml" },
   { src: "pug/sitemap.pug", dest: "sitemap.xml" },
   { src: "pug/404.pug", dest: "404.html" },
-  { src: "pug/uses.pug", dest: "uses/index.html" },
 ];
 
 function compilePugFile(srcFile = null) {
