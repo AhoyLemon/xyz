@@ -18,56 +18,71 @@ if (!fs.existsSync(BADGES_DIR)) {
 }
 
 /**
- * Make a GitHub GraphQL API request
+ * Make a GitHub GraphQL API request with retry logic
  */
-function githubGraphQLRequest(query, variables = {}) {
-  return new Promise((resolve, reject) => {
-    const postData = JSON.stringify({ query, variables });
+async function githubGraphQLRequest(query, variables = {}, retries = 3) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      return await new Promise((resolve, reject) => {
+        const postData = JSON.stringify({ query, variables });
 
-    const options = {
-      hostname: "api.github.com",
-      path: "/graphql",
-      method: "POST",
-      headers: {
-        "User-Agent": "GitHub-Stats-Collector",
-        "Content-Type": "application/json",
-        "Content-Length": Buffer.byteLength(postData),
-        Authorization: `bearer ${process.env.GITHUB_TOKEN || ""}`,
-      },
-    };
+        const options = {
+          hostname: "api.github.com",
+          path: "/graphql",
+          method: "POST",
+          headers: {
+            "User-Agent": "GitHub-Stats-Collector",
+            "Content-Type": "application/json",
+            "Content-Length": Buffer.byteLength(postData),
+            Authorization: `bearer ${process.env.GITHUB_TOKEN || ""}`,
+          },
+        };
 
-    const req = https.request(options, (res) => {
-      let data = "";
+        const req = https.request(options, (res) => {
+          let data = "";
 
-      res.on("data", (chunk) => {
-        data += chunk;
-      });
+          res.on("data", (chunk) => {
+            data += chunk;
+          });
 
-      res.on("end", () => {
-        if (res.statusCode === 200) {
-          try {
-            const result = JSON.parse(data);
-            if (result.errors) {
-              reject(new Error(`GraphQL errors: ${JSON.stringify(result.errors)}`));
+          res.on("end", () => {
+            if (res.statusCode === 200) {
+              try {
+                const result = JSON.parse(data);
+                if (result.errors) {
+                  reject(new Error(`GraphQL errors: ${JSON.stringify(result.errors)}`));
+                } else {
+                  resolve(result.data);
+                }
+              } catch (e) {
+                reject(new Error(`Failed to parse JSON: ${e.message}`));
+              }
+            } else if (res.statusCode >= 500 && res.statusCode < 600) {
+              // Server error - retryable
+              reject(new Error(`Server error ${res.statusCode} (retryable)`));
             } else {
-              resolve(result.data);
+              reject(new Error(`API request failed with status ${res.statusCode}: ${data}`));
             }
-          } catch (e) {
-            reject(new Error(`Failed to parse JSON: ${e.message}`));
-          }
-        } else {
-          reject(new Error(`API request failed with status ${res.statusCode}: ${data}`));
-        }
+          });
+        });
+
+        req.on("error", (error) => {
+          reject(error);
+        });
+
+        req.write(postData);
+        req.end();
       });
-    });
-
-    req.on("error", (error) => {
-      reject(error);
-    });
-
-    req.write(postData);
-    req.end();
-  });
+    } catch (error) {
+      if (attempt < retries && error.message.includes('retryable')) {
+        const delay = Math.pow(2, attempt) * 1000; // Exponential backoff
+        console.log(`⚠️  Request failed (${error.message}), retrying in ${delay/1000}s... (${attempt}/${retries})`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        continue;
+      }
+      throw error;
+    }
+  }
 }
 
 /**
