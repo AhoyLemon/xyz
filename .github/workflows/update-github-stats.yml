@@ -28,7 +28,7 @@ jobs:
 
       - name: 📊 Fetch GitHub statistics
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_STATS_PAT || secrets.GITHUB_TOKEN }}
         run: |
           node scripts/npm/fetch-github-stats.js
 
