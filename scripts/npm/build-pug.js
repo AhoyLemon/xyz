@@ -18,8 +18,10 @@ const compilations = [
   // Other pages
   { src: "pug/uses.pug", dest: "uses/index.html" },
   { src: "blog/_pug/apple-names.pug", dest: "blog/apple-names.html" },
+  // XML
   { src: "pug/feed.pug", dest: "feed.xml" },
   { src: "pug/sitemap.pug", dest: "sitemap.xml" },
+  // Error page
   { src: "pug/404.pug", dest: "404.html" },
 ];
 
