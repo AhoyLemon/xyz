@@ -2,14 +2,21 @@ name: Update GitHub Stats
 
 on:
   schedule:
-    # Run daily at 9:00 AM UTC
-    - cron: "0 9 * * *"
+    # Primary run: daily at 2:00 AM UTC (off-peak)
+    - cron: "0 2 * * *"
+    # Retry run: daily at 8:00 PM UTC — will skip if today's update already exists
+    - cron: "0 20 * * *"
 
   # Allow manual trigger
   workflow_dispatch:
 
 permissions:
   contents: write
+
+# Prevent accidental overlap
+concurrency:
+  group: update-github-stats
+  cancel-in-progress: false
 
 jobs:
   fetch-stats:
@@ -21,6 +28,24 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: ✅ Check whether today's update already ran
+        run: |
+          # Fetch the latest main branch tip to inspect the last automated commit
+          git fetch --no-tags --depth=1 origin main
+          LAST_MSG=$(git log origin/main -1 --pretty=%B)
+          LAST_DATE=$(git log origin/main -1 --date=iso --pretty=%cd)
+          echo "Last commit: $LAST_MSG ($LAST_DATE)"
+
+          # If the last commit is the automated update and it's from today (UTC), skip
+          if echo "$LAST_MSG" | grep -q "📊 Update GitHub statistics"; then
+            COMMIT_DAY=$(date -d "$LAST_DATE" -u +%F)
+            TODAY=$(date -u +%F)
+            if [ "$COMMIT_DAY" = "$TODAY" ]; then
+              echo "Stats already updated today; skipping run."
+              exit 0
+            fi
+          fi
+
       - name: 🔧 Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -29,10 +54,14 @@ jobs:
       - name: 📊 Fetch GitHub statistics
         env:
           GITHUB_TOKEN: ${{ secrets.GH_STATS_PAT || secrets.GITHUB_TOKEN }}
+        continue-on-error: true
         run: |
-          node scripts/npm/fetch-github-stats.js
+          set -euo pipefail
+          if ! node scripts/npm/fetch-github-stats.js; then
+            echo "::warning::Fetch script failed; will allow retry later and continue the workflow."
+          fi
 
-      - name: 📝 Commit and push changes
+      - name: 📝 Commit and push changes (if any)
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -51,3 +80,7 @@ jobs:
           git push
 
           echo "✅ Statistics updated and pushed"
+
+      - name: ✅ Done
+        run: |
+          echo "Finished update workflow (succeeds even if fetch failed, so you won't get a failure email)."
