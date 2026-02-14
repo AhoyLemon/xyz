@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="152" height="40" role="img" aria-label="Pull Requests: 150, Closed PRs: 146">
-  <title>Pull Requests: 150, Closed PRs: 146</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="152" height="40" role="img" aria-label="Pull Requests: 150, Closed PRs: 147">
+  <title>Pull Requests: 150, Closed PRs: 147</title>
   <style>
     .label-bg { fill: #555; }
     .value-bg { fill: #777; }
@@ -44,6 +44,6 @@
     
     <!-- Bottom row -->
     <text class="label-text" x="106" y="34" text-anchor="end" font-size="10">Closed PRs</text>
-    <text class="value-text" x="116" y="34" text-anchor="start" font-size="10">146</text>
+    <text class="value-text" x="116" y="34" text-anchor="start" font-size="10">147</text>
   </g>
 </svg>
