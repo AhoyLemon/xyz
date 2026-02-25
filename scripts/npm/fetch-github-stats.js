@@ -540,12 +540,32 @@ function generateBadges(stats) {
     },
   ];
 
+  let updatedCount = 0;
+
   badges.forEach((badge) => {
     const svg = createTwoTierBadge(badge);
     const badgePath = path.join(BADGES_DIR, `${badge.name}.svg`);
-    fs.writeFileSync(badgePath, svg, "utf8");
-    console.log(`  ✅ Created badge: ${badge.name}.svg`);
+
+    // Only write if values changed
+    let existingContent = "";
+    try {
+      if (fs.existsSync(badgePath)) {
+        existingContent = fs.readFileSync(badgePath, "utf8");
+      }
+    } catch (e) {
+      // Can't read existing file — treat as changed
+    }
+
+    if (svg !== existingContent) {
+      fs.writeFileSync(badgePath, svg, "utf8");
+      console.log(`  ✅ Updated badge: ${badge.name}.svg`);
+      updatedCount++;
+    } else {
+      console.log(`  ⏭️  No change: ${badge.name}.svg`);
+    }
   });
+
+  return updatedCount;
 }
 
 /**
@@ -623,12 +643,19 @@ async function main() {
     // Collect statistics
     const stats = await collectStats();
 
-    // Save to different formats
+    // Check badges first — only update other files if values actually changed
+    const badgesUpdated = generateBadges(stats);
+
+    if (badgesUpdated === 0) {
+      console.log("\n📭 No stat values changed. Skipping YAML/markdown update and git push.");
+      return;
+    }
+
+    // At least one badge changed — save updated YAML and markdown
     saveToYAML(stats);
     generateMarkdown(stats);
-    generateBadges(stats);
 
-    console.log("\n✨ Done! Statistics collected successfully.\n");
+    console.log("\n✨ Done! Statistics updated successfully.\n");
     console.log(`📁 Output files:`);
     console.log(`   - ${YAML_FILE}`);
     console.log(`   - ${MARKDOWN_FILE}`);
