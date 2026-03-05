@@ -4,8 +4,6 @@ on:
   schedule:
     # Primary run: daily at 2:00 AM UTC (off-peak)
     - cron: "0 2 * * *"
-    # Retry run: daily at 8:00 PM UTC — will skip if today's update already exists
-    - cron: "0 20 * * *"
 
   # Allow manual trigger
   workflow_dispatch:
