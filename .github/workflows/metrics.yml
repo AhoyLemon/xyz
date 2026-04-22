@@ -1,7 +1,9 @@
 name: Metrics
 on:
-  schedule:
-    - cron: "17 4 * * *"   # daily at 04:17 UTC — off-peak for lowlighter's servers
+  # Chains off the daily Update GitHub Stats run — one cron, whole pipeline runs in order.
+  workflow_run:
+    workflows: ["Update GitHub Stats"]
+    types: [completed]
   workflow_dispatch:
   push:
     branches: [main]
