@@ -3,9 +3,7 @@ name: Update README Badges
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
-  
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -15,27 +13,27 @@ permissions:
 jobs:
   update-badges:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: 🛒 Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: 🔧 Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          
+          node-version: "18"
+
       - name: 📊 Update README badges with current counts
         run: |
           node scripts/npm/update-badges.js
-          
+
       - name: 📝 Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
+
           # Check for both README.md and readme.md
           README_FILE=""
           if [ -f "README.md" ]; then
@@ -43,12 +41,12 @@ jobs:
           elif [ -f "readme.md" ]; then
             README_FILE="readme.md"
           fi
-          
+
           if [ -z "$README_FILE" ]; then
             echo "❌ No README file found"
             exit 1
           fi
-          
+
           if git diff --quiet "$README_FILE"; then
             echo "📋 No changes to $README_FILE badges"
           else
