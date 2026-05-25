@@ -15,7 +15,7 @@
 [![Open PRs](https://img.shields.io/github/issues-pr/AhoyLemon/xyz?label=Pull%20Requests&style=for-the-badge&color=orange)](https://github.com/AhoyLemon/xyz/pulls)
 [![Closed PRs](https://img.shields.io/github/issues-pr-closed/AhoyLemon/xyz?label=&style=for-the-badge&color=222)](https://github.com/AhoyLemon/xyz/pulls?q=is%3Apr+is%3Aclosed)
 
-[![Projects](https://img.shields.io/badge/Projects-34-black?style=for-the-badge)](https://github.com/AhoyLemon?tab=repositories)
+[![Projects](https://img.shields.io/badge/Projects-35-black?style=for-the-badge)](https://github.com/AhoyLemon?tab=repositories)
 [![Upcoming Conferences](https://img.shields.io/badge/Upcoming%20Conferences-3-black?style=for-the-badge)](https://ahoylemon.xyz/talks.html#upcoming)
 [![Previous Conferences](https://img.shields.io/badge/Previous%20Conferences-67-black?style=for-the-badge)](https://ahoylemon.xyz/talks.html#previous)
 
