@@ -1,6 +1,6 @@
 # GitHub Statistics for Lemon
 
-*Last updated: 6/5/2026, 3:20:16 AM*
+*Last updated: 6/6/2026, 3:16:49 AM*
 
 ## 📊 Overview
 
@@ -17,14 +17,14 @@
 | **Engagement** | Total Stars ⭐ | 217 |
 | | Total Forks 🍴 | 35 |
 | | Total Watchers 👀 | 156 |
-| **Contributions** | Total Commits 💾 | 21,799 |
-| | Commits This Year | 1,079 |
+| **Contributions** | Total Commits 💾 | 21,801 |
+| | Commits This Year | 1,080 |
 | | Pull Requests | 194 |
-| | Open PRs | 6 |
-| | Closed/Merged PRs | 188 |
+| | Open PRs | 5 |
+| | Closed/Merged PRs | 189 |
 | | Issues | 712 |
-| | Open Issues | 60 |
-| | Closed Issues | 652 |
+| | Open Issues | 59 |
+| | Closed Issues | 653 |
 | | PR Reviews | 45 |
 
 ## 🎯 Highlights
@@ -32,9 +32,9 @@
 - 📦 **159** repositories (75 public, 84 private)
 - ⭐ **217** stars received
 - 👥 **159** followers
-- 💾 **21,799** total commits
-- 🔀 **194** pull requests (6 open)
-- 🐛 **712** issues (60 open)
+- 💾 **21,801** total commits
+- 🔀 **194** pull requests (5 open)
+- 🐛 **712** issues (59 open)
 - 👀 **45** pull request reviews
 
 ---
