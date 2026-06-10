@@ -1,13 +1,13 @@
 # GitHub Statistics for Lemon
 
-*Last updated: 6/8/2026, 3:21:43 AM*
+*Last updated: 6/10/2026, 3:18:45 AM*
 
 ## 📊 Overview
 
 | Category | Statistic | Count |
 |----------|-----------|-------|
 | **Profile** | Followers | 158 |
-| | Following | 51 |
+| | Following | 52 |
 | | Public Gists | 0 |
 | **Repositories** | Total Repos | 159 |
 | | Public Repos | 75 |
@@ -17,25 +17,25 @@
 | **Engagement** | Total Stars ⭐ | 217 |
 | | Total Forks 🍴 | 35 |
 | | Total Watchers 👀 | 156 |
-| **Contributions** | Total Commits 💾 | 21,805 |
+| **Contributions** | Total Commits 💾 | 21,818 |
 | | Commits This Year | 1,082 |
-| | Pull Requests | 195 |
+| | Pull Requests | 198 |
 | | Open PRs | 4 |
-| | Closed/Merged PRs | 191 |
-| | Issues | 712 |
-| | Open Issues | 57 |
-| | Closed Issues | 655 |
-| | PR Reviews | 45 |
+| | Closed/Merged PRs | 194 |
+| | Issues | 715 |
+| | Open Issues | 55 |
+| | Closed Issues | 660 |
+| | PR Reviews | 46 |
 
 ## 🎯 Highlights
 
 - 📦 **159** repositories (75 public, 84 private)
 - ⭐ **217** stars received
 - 👥 **158** followers
-- 💾 **21,805** total commits
-- 🔀 **195** pull requests (4 open)
-- 🐛 **712** issues (57 open)
-- 👀 **45** pull request reviews
+- 💾 **21,818** total commits
+- 🔀 **198** pull requests (4 open)
+- 🐛 **715** issues (55 open)
+- 👀 **46** pull request reviews
 
 ---
 
