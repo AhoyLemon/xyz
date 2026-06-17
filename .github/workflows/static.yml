@@ -48,7 +48,7 @@ jobs:
           path: "."
       - name: 🚢 Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
       - name: 🫠 This job's status is ${{ job.status }}.
         run: echo "🫠 This job's status is ${{ job.status }}."
       - name: 🌐 Deployed to ${{ steps.deployment.outputs.page_url }}.
