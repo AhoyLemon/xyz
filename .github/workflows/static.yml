@@ -35,10 +35,6 @@ jobs:
             echo "🚫 Deployment blocked: 'testing = true' found in pug or 'localhost' found in html."
             exit 1
           fi
-      - name: 📦 Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
       - name: 🛠️ Install dependencies
         run: npm install
 
