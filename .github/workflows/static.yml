@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛒 Checkout source Git branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: 🔍 Check for testing mode or localhost
         run: |
