@@ -51,9 +51,11 @@ if (require.main === module) {
   const sourceMap = args.includes('--source-map');
   const compressed = args.includes('--compressed');
   
-  buildSass({ 
-    sourceMap, 
-    style: compressed ? 'compressed' : 'expanded' 
+  buildSass({
+    sourceMap,
+    style: compressed ? 'compressed' : 'expanded'
+  }).then((success) => {
+    process.exit(success ? 0 : 1);
   });
 }
 

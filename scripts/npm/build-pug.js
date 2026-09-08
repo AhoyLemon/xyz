@@ -81,7 +81,8 @@ function compilePugFiles() {
 // If this script is run directly
 if (require.main === module) {
   const targetFile = process.argv[2];
-  compilePugFile(targetFile);
+  const success = compilePugFile(targetFile);
+  process.exit(success ? 0 : 1);
 }
 
-module.exports = { compilePugFiles, compilePugFile };
+module.exports = { compilations, compilePugFiles, compilePugFile };
