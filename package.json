@@ -14,7 +14,11 @@
     "watch:pug": "chokidar \"pug/**/*.pug\" -c \"npm run build:pug\"",
     "watch:sass": "chokidar \"sass/**/*.scss\" -c \"npm run build:sass\"",
     "update:badges": "node scripts/npm/update-badges.js",
-    "stats": "node scripts/npm/fetch-github-stats.js"
+    "stats": "node scripts/npm/fetch-github-stats.js",
+    "test:safety": "node scripts/npm/test-safety.js",
+    "test:pug": "node scripts/npm/test-pug.js",
+    "test:sass": "node scripts/npm/test-sass.js",
+    "test": "npm run test:safety && npm run test:pug && npm run test:sass"
   },
   "keywords": [],
   "author": "",
